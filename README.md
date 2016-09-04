@@ -33,8 +33,12 @@
 			+ arm-part/IAR/history/
 			
 			+ arm-part/IAR/doc/
+			
+	+ clients/
+		
+		+ clients/python/ 
 
 Further readme files are contained in sub-directories as appropriate.
 
-Author: Ninfeion
-Data: 8/29/2016
+*Author: Ninfeion
+*Data: 8/29/2016
