@@ -1,0 +1,19 @@
+* source BB_BUCK
+M_M1         N00136 N00132 N00143 N00143 IRF150
+V_V1         N00136 0 70Vdc
+V_V2         N00132 N00143  
++PULSE 0 5 0 0.01us 0.01us {DUTY} 10us
+C_C1         0 OUT  470uF  TC=0,0 
+R_R1         0 N00181  50 TC=0,0 
+L_L1         N00143 OUT  0.5mH  
+D_D1         0 N00143 D1N5818 
+R_R2         N00181 OUT  0.1 TC=0,0 
+X_U1         N02079 AD_I+ VCC VEE AD_I+ AD8072jn/AD
+X_U2         N02066 AD_I- VCC VEE AD_I- AD8072jn/AD
+R_R3         N02079 OUT  9K TC=0,0 
+R_R4         N02079 0  1k TC=0,0 
+R_R5         N00181 N02066  9K TC=0,0 
+R_R6         N02066 0  1k TC=0,0 
+V_V3         0 VEE 15Vdc
+V_V4         VCC 0 15Vdc
+.PARAM  duty=1us

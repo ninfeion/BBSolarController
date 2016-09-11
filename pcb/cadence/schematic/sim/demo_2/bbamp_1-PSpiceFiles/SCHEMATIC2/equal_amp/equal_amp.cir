@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC2-equal_amp"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_1\demo_2\bbamp_1-pspicefiles\schematic2\equal_amp.sim ] 
+
+** Creating circuit file "equal_amp.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 -15 15 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC2.net" 
+
+
+.END

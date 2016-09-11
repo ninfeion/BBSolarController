@@ -1,0 +1,45 @@
+
+**** 09/08/16 11:53:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "zener_diode_analyze.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10000us 0 1us 
+.STEP LIN V_V1 -20 20 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\zener_diode.net" 
+
+
+
+**** INCLUDING zener_diode.net ****
+* source BB_BUCK
+V_V1         N00206 0 0Vdc
+D_D3         0 N00103 D1N4744A 
+D_D2         N00187 N00103 D1N4744A 
+R_R2         N00187 0  1k TC=0,0 
+R_R1         N00206 N00187  0 TC=0,0 
+----------------------------$
+ERROR(ORPSIM-16144): Value may not be 0
+
+**** RESUMING zener_diode_analyze.cir ****
+.END
+

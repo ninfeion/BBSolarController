@@ -1,0 +1,122 @@
+
+**** 09/05/16 20:40:36 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-volt_ensmall"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\DEMO_1\demo_2\bbamp_1-PSpiceFil
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "volt_ensmall.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 10 100 10 
+.STEP LIN PARAM Rf 100K 1Meg 50K 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BBAMP_1
+R_R2         N00857 N00783  5M  
+R_R1         N00783 OUT  {Rf}  
+X_U1         N00889 N00783 N00700 N00720 OUT AD8072jn/AD
+V_V1         N00700 0 0Vdc
+V_V2         0 N00720 15Vdc
+V_V3         N00857 0 100Vdc
+R_R3         0 N00889  5M  
+R_R4         0 N00889  {Rf}  
+.PARAM  rf=100k rp=98k
+
+**** RESUMING volt_ensmall.cir ****
+.END
+
+**** 09/05/16 20:40:36 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-volt_ensmall"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\DEMO_1\demo_2\bbamp_1-PSpiceFil
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         X_U1.dn1        
+          IS   10.000000E-15   10.000000E-15 
+          KF                  100.000000E-12 
+
+
+**** 09/05/16 20:40:36 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-volt_ensmall"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\DEMO_1\demo_2\bbamp_1-PSpiceFil
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qn1        X_U1.qp1        X_U1.qn2        X_U1.qp2        
+               NPN             PNP             NPN             PNP             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF    1.000000E+03    1.000000E+03    1.000000E+03    1.000000E+03 
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.42            2.2          
+           D     .87             .52             .87             .52         
+
+
+
+          JOB CONCLUDED
+
+**** 09/05/16 20:40:36 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-volt_ensmall"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\DEMO_1\demo_2\bbamp_1-PSpiceFil
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM RF =    1.0000E+06
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .08
+

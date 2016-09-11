@@ -1,0 +1,3 @@
+ lib=C:\Cadence\SPB_16.6\tools\PSpice\Library\diode.lib, offset=459026, size=174
+ lib=C:\Cadence\SPB_16.6\tools\PSpice\Library\pwrmos.lib, offset=32570, size=339
+ lib=C:\Cadence\SPB_16.6\tools\PSpice\Library\anlg_dev.lib, offset=481932, size=2401

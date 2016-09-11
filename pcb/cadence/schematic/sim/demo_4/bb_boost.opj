@@ -1,0 +1,59 @@
+(ExpressProject "bb_boost"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\bb_boost.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\bb_boost-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\bb_boost-pspicefiles\schematic1\bb_boost_analyze.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bb_boost-pspicefiles\schematic1\bb_boost_analyze.sim"
+        (DisplayName "SCHEMATIC1-bb_boost_analyze")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_4\bb_boost.dsn")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_4\bb_boost.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_4\bb_boost.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -23 0 200 0 277"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 132 1257 132 436")
+        (Scroll "0 187")
+        (Zoom "112")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\DEMO_4\BB_BOOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "N"))

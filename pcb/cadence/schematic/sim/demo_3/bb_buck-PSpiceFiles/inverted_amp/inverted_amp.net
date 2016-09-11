@@ -1,0 +1,10 @@
+* source BB_BUCK
+R_R2         N00265 N00248  {R1} TC=0,0 
+R_R1         N00248 OUT  1k TC=0,0 
+V_V3         N00265 0 30Vdc
+V_V2         0 N00170 9Vdc
+V_V1         N00182 0 9Vdc
+X_U1         N00523 N00248 N00182 N00170 OUT AD8072jn/AD
+R_R3         0 N00523  1k TC=0,0 
+R_R4         0 N00523  {R1} TC=0,0 
+.PARAM  r1=1k

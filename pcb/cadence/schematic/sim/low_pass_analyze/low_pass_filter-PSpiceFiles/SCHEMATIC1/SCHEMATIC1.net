@@ -1,0 +1,11 @@
+* source LOW_PASS_FILTER
+D_D1         OUT N62235 D1N4744A 
+D_D2         N622290 N62235 D1N4744A 
+V_V1         N62243 0 DC 0Vdc AC 70Vac 
+R_R2         0 OUT  5k TC=0,0 
+R_R1         OUT N62243  45k TC=0,0 
+R_R3         0 OUT_2  50k TC=0,0 
+R_R4         OUT_2 N64703  450k TC=0,0 
+V_V2         N64703 0 DC 0Vdc AC 70Vac 
+C_C1         0 OUT_2  150p  TC=0,0 
+R_R5         0 N622290  5k TC=0,0 

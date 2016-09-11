@@ -1,0 +1,122 @@
+
+**** 09/08/16 23:30:13 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-low_pass_filter_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\low_pass_analyze\low
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "low_pass_filter_analyze.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC LIN 10 1hz 1Meghz
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LOW_PASS_FILTER
+D_D1         OUT N62235 D1N4744A 
+D_D2         N622290 N62235 D1N4744A 
+V_V1         N62243 0 DC 0Vdc AC 70Vac 
+R_R2         0 OUT  5k TC=0,0 
+R_R1         OUT N62243  45k TC=0,0 
+R_R3         0 OUT_2  50k TC=0,0 
+R_R4         OUT_2 N64703  450k TC=0,0 
+V_V2         N64703 0 DC 0Vdc AC 70Vac 
+C_C1         0 OUT_2  150p  TC=0,0 
+R_R5         0 N622290  5k TC=0,0 
+
+**** RESUMING low_pass_filter_analyze.cir ****
+.END
+
+**** 09/08/16 23:30:13 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-low_pass_filter_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\low_pass_analyze\low
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4744A        
+          IS    4.997600E-24 
+           N    1.6405       
+         ISR    2.247333E-06 
+          NR    2.89714      
+          BV   15.048        
+         IBV     .1296       
+          RS     .21797      
+          TT  605.000000E-09 
+         CJO  260.000000E-12 
+          VJ     .46328      
+           M     .2466       
+
+
+**** 09/08/16 23:30:13 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-low_pass_filter_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\low_pass_analyze\low
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    0.0000  (OUT_2)    0.0000  (N62235)-4.186E-18 (N62243)    0.0000     
+
+(N64703)    0.0000 (N622290)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/08/16 23:30:13 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-low_pass_filter_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\low_pass_analyze\low
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

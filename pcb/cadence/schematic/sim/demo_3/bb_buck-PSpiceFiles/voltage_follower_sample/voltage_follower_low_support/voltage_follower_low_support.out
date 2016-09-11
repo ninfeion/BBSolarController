@@ -1,0 +1,277 @@
+
+**** 09/11/16 11:33:01 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "voltage_follower_sample-voltage_follower_low_support"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\de
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "voltage_follower_low_support.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 1ms 
+.STEP LIN PARAM DUTY 6us 6us 1us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\voltage_follower_sample.net" 
+
+
+
+**** INCLUDING voltage_follower_sample.net ****
+* source BB_BUCK
+M_M1         N00136 N13377 N00143 N00143 IRF150
+V_V1         N00136 0 70Vdc
+V_V2         N13377 N00143  
++PULSE 0 5 0 0.01us 0.01us {DUTY} 10us
+C_C1         0 OUT  4700uF  TC=0,0 
+R_R1         0 N00181  50 TC=0,0 
+D_D1         0 N00143 D1N5818 
+R_R2         OUT N00181  0.1 TC=0,0 
+R_R3         N02079 OUT  420K TC=0,0 
+R_R4         N02079 0  60k TC=0,0 
+R_R5         N00181 N02066  420K TC=0,0 
+R_R6         N02066 0  60k TC=0,0 
+V_V3         0 VEE 0Vdc
+V_V4         VCC 0 6Vdc
+M_M2         N00136 N13287 N00143 N00143 IRF150
+M_M3         N00136 N14575 N00143 N00143 IRF150
+V_V5         N13287 N00143  
++PULSE 0 5 0 0.01us 0.01us {DUTY} 10us
+V_V6         N14575 N00143  
++PULSE 0 5 0 0.01us 0.01us {DUTY} 10us
+L_L2         N00143 OUT  5mH  
+X_U3A         N02079 AD_I+ VCC VEE AD_I+ LM358/ON
+X_U3B         N02066 AD_I- VCC VEE AD_I- LM358/ON
+.PARAM  duty=1us
+
+**** RESUMING voltage_follower_low_support.cir ****
+.END
+
+**** 09/11/16 11:33:01 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "voltage_follower_sample-voltage_follower_low_support"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\de
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N5818         X_U3A.dx        X_U3B.dx        
+          IS    2.835000E-06  800.000000E-18  800.000000E-18 
+         ISR   26.460000E-06                                 
+         IKF     .3227                                       
+          RS     .04712                                      
+         CJO  359.300000E-12                                 
+          VJ     .75                                         
+           M     .6513                                       
+         XTI    0                                            
+
+
+**** 09/11/16 11:33:01 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "voltage_follower_sample-voltage_follower_low_support"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\de
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3A.qx        X_U3B.qx        
+               PNP             PNP             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF   32.03           32.03         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.2             2.2          
+           D     .52             .52         
+
+
+**** 09/11/16 11:33:01 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "voltage_follower_sample-voltage_follower_low_support"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\de
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 09/11/16 11:33:01 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "voltage_follower_sample-voltage_follower_low_support"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\de
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM DUTY =    6.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .0231  (  VCC)    6.0000  (  VEE)    0.0000  (AD_I+)     .3156      
+
+(AD_I-)     .3156  (N00136)   70.0000 (N00143)     .0231 (N00181)     .0230     
+
+(N02066)     .0070 (N02079)     .0070 (N13287)     .0231 (N13377)     .0231     
+
+(N14575)     .0231 (X_U3A.6)     .2494                   (X_U3A.7)     .3154    
+
+(X_U3A.8)     .3154                   (X_U3A.9)    0.0000                       
+
+(X_U3B.6)     .2494                   (X_U3B.7)     .3154                       
+
+(X_U3B.8)     .3154                   (X_U3B.9)    0.0000                       
+
+(X_U3A.10)     .5802                  (X_U3A.11) 558.1E-09                      
+
+(X_U3A.12)     .0602                  (X_U3A.13)     .5802                      
+
+(X_U3A.14)     .5724                  (X_U3A.53)    4.2000                      
+
+(X_U3A.54)     .8800                  (X_U3A.90)    -.0024                      
+
+(X_U3A.91)   40.0000                  (X_U3A.92)  -40.0000                      
+
+(X_U3A.99)    3.0000                  (X_U3B.10)     .5802                      
+
+(X_U3B.11) 558.0E-09                  (X_U3B.12)     .0602                      
+
+(X_U3B.13)     .5802                  (X_U3B.14)     .5724                      
+
+(X_U3B.53)    4.2000                  (X_U3B.54)     .8800                      
+
+(X_U3B.90)    -.0024                  (X_U3B.91)   40.0000                      
+
+(X_U3B.92)  -40.0000                  (X_U3B.99)    3.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.724E-04
+    V_V2         1.372E-15
+    V_V3        -3.192E-04
+    V_V4        -3.241E-04
+    V_V5         0.000E+00
+    V_V6         0.000E+00
+    X_U3A.vb     2.494E-06
+    X_U3A.vc     3.885E-12
+    X_U3A.ve    -2.404E-06
+    X_U3A.vlim  -2.404E-06
+    X_U3A.vlp   -4.000E-11
+    X_U3A.vln   -4.000E-11
+    X_U3B.vb     2.494E-06
+    X_U3B.vc     3.885E-12
+    X_U3B.ve    -2.404E-06
+    X_U3B.vlim  -2.404E-06
+    X_U3B.vlp   -4.000E-11
+    X_U3B.vln   -4.000E-11
+
+    TOTAL POWER DISSIPATION   3.50E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/11/16 11:33:01 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "voltage_follower_sample-voltage_follower_low_support"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\de
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM DUTY =    6.0000E-06
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =      142.65
+

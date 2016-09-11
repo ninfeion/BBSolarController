@@ -1,0 +1,336 @@
+
+**** 09/07/16 15:42:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bb_buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-pspicefiles\s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bb_buck_analyze.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100000us 0 1us 
+.STEP LIN PARAM DUTY 3us 3us 1us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BB_BUCK
+M_M1         N00136 N00132 N00143 N00143 IRF150
+V_V1         N00136 0 70Vdc
+V_V2         N00132 N00143  
++PULSE 0 5 0 0.01us 0.01us {DUTY} 10us
+C_C1         0 OUT  470uF  TC=0,0 
+R_R1         0 N00181  50 TC=0,0 
+L_L1         N00143 OUT  0.5mH  
+D_D1         0 N00143 D1N5818 
+R_R2         N00181 OUT  0.1 TC=0,0 
+X_U1         N02079 AD_I+ VCC VEE AD_I+ AD8072jn/AD
+X_U2         N02066 AD_I- VCC VEE AD_I- AD8072jn/AD
+R_R3         N02079 OUT  9K TC=0,0 
+R_R4         N02079 0  1k TC=0,0 
+R_R5         N00181 N02066  9K TC=0,0 
+R_R6         N02066 0  1k TC=0,0 
+V_V3         0 VEE 15Vdc
+V_V4         VCC 0 15Vdc
+.PARAM  duty=1us
+
+**** RESUMING bb_buck_analyze.cir ****
+.END
+
+**** 09/07/16 15:42:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bb_buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-pspicefiles\s
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N5818         X_U1.dx         X_U1.dn1        X_U2.dx         
+          IS    2.835000E-06   10.000000E-15   10.000000E-15   10.000000E-15 
+         ISR   26.460000E-06                                                 
+         IKF     .3227                                                       
+          RS     .04712                                                      
+         CJO  359.300000E-12                                                 
+          VJ     .75                                                         
+           M     .6513                                                       
+         XTI    0                                                            
+          KF                                  100.000000E-12                 
+
+
+               X_U2.dn1        
+          IS   10.000000E-15 
+          KF  100.000000E-12 
+
+
+**** 09/07/16 15:42:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bb_buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-pspicefiles\s
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qn1        X_U1.qp1        X_U1.qn2        X_U1.qp2        
+               NPN             PNP             NPN             PNP             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF    1.000000E+03    1.000000E+03    1.000000E+03    1.000000E+03 
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.42            2.2          
+           D     .87             .52             .87             .52         
+
+
+               X_U2.qn1        X_U2.qp1        X_U2.qn2        X_U2.qp2        
+               NPN             PNP             NPN             PNP             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF    1.000000E+03    1.000000E+03    1.000000E+03    1.000000E+03 
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.42            2.2          
+           D     .87             .52             .87             .52         
+
+
+**** 09/07/16 15:42:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bb_buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-pspicefiles\s
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 09/07/16 15:42:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bb_buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-pspicefiles\s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM DUTY =    3.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .0076  (  VCC)   15.0000  (  VEE)  -15.0000  (AD_I+)     .0063      
+
+(AD_I-)     .0063  (N00132)     .0076 (N00136)   70.0000 (N00143)     .0076     
+
+(N00181)     .0076 (N02066)     .0044 (N02079)     .0044 (X_U1.3)     .0063     
+
+(X_U1.4)    -.7103 (X_U1.5)     .7229 (X_U1.8)     .0063 (X_U2.3)     .0063     
+
+(X_U2.4)    -.7103 (X_U2.5)     .7229 (X_U2.8)     .0063 (X_U1.12)     .0171    
+
+(X_U1.13)   12.4600                   (X_U1.14)  -12.1600                       
+
+(X_U1.17)     .0062                   (X_U1.19)     .6723                       
+
+(X_U1.20)    -.6617                   (X_U1.23)     .0063                       
+
+(X_U1.30)     .5550                   (X_U1.31)    0.0000                       
+
+(X_U1.32)-20.85E-06                   (X_U1.33)     .5950                       
+
+(X_U1.34)    0.0000                   (X_U1.35)-97.92E-06                       
+
+(X_U1.70)     .3844                   (X_U1.72) 769.8E-09                       
+
+(X_U1.73) 769.8E-09                   (X_U1.90)   15.0000                       
+
+(X_U1.91)  -15.0000                   (X_U1.98)    0.0000                       
+
+(X_U2.12)     .0171                   (X_U2.13)   12.4600                       
+
+(X_U2.14)  -12.1600                   (X_U2.17)     .0062                       
+
+(X_U2.19)     .6723                   (X_U2.20)    -.6617                       
+
+(X_U2.23)     .0063                   (X_U2.30)     .5550                       
+
+(X_U2.31)    0.0000                   (X_U2.32)-20.85E-06                       
+
+(X_U2.33)     .5950                   (X_U2.34)    0.0000                       
+
+(X_U2.35)-97.92E-06                   (X_U2.70)     .3844                       
+
+(X_U2.72) 769.7E-09                   (X_U2.73) 769.7E-09                       
+
+(X_U2.90)   15.0000                   (X_U2.91)  -15.0000                       
+
+(X_U2.98)    0.0000                   (X_U1.300)    -.5050                      
+
+(X_U1.311)    0.0000                  (X_U1.312)    0.0000                      
+
+(X_U2.300)    -.5050                  (X_U2.311)    0.0000                      
+
+(X_U2.312)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.575E-04
+    V_V2         5.954E-18
+    V_V3        -1.399E-02
+    V_V4        -1.400E-02
+    X_U1.v1      5.702E-08
+    X_U1.vl1     2.851E-08
+    X_U1.v3      1.245E-11
+    X_U1.v4      1.219E-11
+    X_U1.vn1    -2.085E-05
+    X_U1.vn2     2.085E-05
+    X_U1.vn3    -9.792E-05
+    X_U1.vn4     9.792E-05
+    X_U1.vi1    -5.150E-13
+    X_U1.vi2     3.019E-06
+    X_U1.vo1    -3.019E-06
+    X_U1.vo2    -5.592E-05
+    X_U1.vo3     5.592E-05
+    X_U1.v5      1.531E-03
+    X_U1.v6      1.640E-03
+    X_U2.v1      5.702E-08
+    X_U2.vl1     2.851E-08
+    X_U2.v3      1.245E-11
+    X_U2.v4      1.219E-11
+    X_U2.vn1    -2.085E-05
+    X_U2.vn2     2.085E-05
+    X_U2.vn3    -9.792E-05
+    X_U2.vn4     9.792E-05
+    X_U2.vi1    -5.150E-13
+    X_U2.vi2     3.019E-06
+    X_U2.vo1    -3.019E-06
+    X_U2.vo2    -5.592E-05
+    X_U2.vo3     5.592E-05
+    X_U2.v5      1.531E-03
+    X_U2.v6      1.640E-03
+
+    TOTAL POWER DISSIPATION   4.35E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/07/16 15:42:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bb_buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-pspicefiles\s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM DUTY =    3.0000E-06
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =      112.79
+

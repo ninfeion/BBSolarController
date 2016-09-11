@@ -1,0 +1,156 @@
+(ExpressProject "bb_buck"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\bb_buck.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\bb_buck-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\bb_buck-pspicefiles\inverted_amp_sample\inverted_amp_sample.net"
+      (Type "Report"))
+    (File ".\bb_buck-pspicefiles\inverted_amp\inverted_amp.net"
+      (Type "Report"))
+    (File
+       ".\bb_buck-pspicefiles\voltage_follower_sample\voltage_follower_sample.net"
+      (Type "Report"))
+    (File ".\bb_buck-pspicefiles\zener_diode\zener_diode.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bb_buck-pspicefiles\voltage_follower_sample\bb_buck_analyze.sim"
+        (DisplayName "voltage_follower_sample-bb_buck_analyze")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bb_buck-pspicefiles\inverted_amp_sample\inverted_amp_sample.sim"
+        (DisplayName "inverted_amp_sample-inverted_amp_sample")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bb_buck-pspicefiles\inverted_amp\inverted_amp_analyze.sim"
+        (DisplayName "inverted_amp-inverted_amp_analyze")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bb_buck-pspicefiles\zener_diode\zener_diode_analyze.sim"
+        (DisplayName "zener_diode-zener_diode_analyze")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bb_buck-pspicefiles\voltage_follower_sample\voltage_follower_low_support.sim"
+        (DisplayName "voltage_follower_sample-voltage_follower_low_support")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\bb_buck-pspicefiles\voltage_follower_sample\voltage_follower_low_support.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (LM358/ON
+      (FullPartName "LM358/ON.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ON_AMP.OLB")
+      (DeviceIndex "1"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C_elect
+      (FullPartName "C_elect.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (1N4744A
+      (FullPartName "1N4744A.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (1n4698/ON
+      (FullPartName "1n4698/ON.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ON_DIODE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (AD8072jn/AD
+      (FullPartName "AD8072jn/AD.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANLG_DEV.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (D1N5818
+      (FullPartName "D1N5818.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (IRF150
+      (FullPartName "IRF150.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\PWRMOS.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
+         "voltage_follower_sample")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
+         "inverted_amp")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
+         "inverted_amp_sample")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
+         "zener_diode")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
+         "inverted_amp_sample" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -23 0 200 0 277"))
+      (Tab 0)))
+  (MPSSessionName "N"))

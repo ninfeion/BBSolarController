@@ -1,0 +1,10 @@
+* source BBAMP_1
+R_R2         N00857 N00783  5M  
+R_R1         N00783 OUT  {Rf}  
+X_U1         N00889 N00783 N00700 N00720 OUT AD8072jn/AD
+V_V1         N00700 0 0Vdc
+V_V2         0 N00720 15Vdc
+V_V3         N00857 0 100Vdc
+R_R3         0 N00889  5M  
+R_R4         0 N00889  {Rf}  
+.PARAM  rf=100k rp=98k

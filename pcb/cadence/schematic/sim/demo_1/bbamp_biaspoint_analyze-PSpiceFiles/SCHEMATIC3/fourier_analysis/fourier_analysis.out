@@ -1,0 +1,221 @@
+
+**** 09/05/16 19:52:14 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC3-fourier_analysis"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_anal
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "fourier_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN 100m 100ms 0 0.1ms 
+.FOUR 100 9 V([OUT]) 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC3.net" 
+
+
+
+**** INCLUDING SCHEMATIC3.net ****
+* source BBAMP_BIASPOINT_ANALYZE
+X_U3         0 N00361 N00427 N00449 OUT AD8072jn/AD
+V_V1         N00427 0 15Vdc
+V_V2         0 N00449 15Vdc
+V_V3         N00403 0  AC 1
++SIN 0 5 100 0 0 0
+R_R1         N00361 OUT  10k  
+R_R2         N00403 N00361  1k  
+
+**** RESUMING fourier_analysis.cir ****
+.END
+
+**** 09/05/16 19:52:14 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC3-fourier_analysis"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_anal
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.dx         X_U3.dn1        
+          IS   10.000000E-15   10.000000E-15 
+          KF                  100.000000E-12 
+
+
+**** 09/05/16 19:52:14 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC3-fourier_analysis"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_anal
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.qn1        X_U3.qp1        X_U3.qn2        X_U3.qp2        
+               NPN             PNP             NPN             PNP             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF    1.000000E+03    1.000000E+03    1.000000E+03    1.000000E+03 
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.42            2.2          
+           D     .87             .52             .87             .52         
+
+
+**** 09/05/16 19:52:14 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC3-fourier_analysis"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_anal
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    -.0080  (N00361)     .0020 (N00403)    0.0000 (N00427)   15.0000     
+
+(N00449)  -15.0000 (X_U3.3)     .0020 (X_U3.4)    -.7146 (X_U3.5)     .7186     
+
+(X_U3.8)     .0020 (X_U3.12)     .0028                   (X_U3.13)   12.4600    
+
+(X_U3.14)  -12.1600                   (X_U3.17)    -.0081                       
+
+(X_U3.19)     .6580                   (X_U3.20)    -.6760                       
+
+(X_U3.23)    -.0080                   (X_U3.30)     .5550                       
+
+(X_U3.31)    0.0000                   (X_U3.32)-20.85E-06                       
+
+(X_U3.33)     .5950                   (X_U3.34)    0.0000                       
+
+(X_U3.35)-97.92E-06                   (X_U3.70)     .3374                       
+
+(X_U3.72) 125.1E-09                   (X_U3.73) 125.1E-09                       
+
+(X_U3.90)   15.0000                   (X_U3.91)  -15.0000                       
+
+(X_U3.98)    0.0000                   (X_U3.300)    -.4766                      
+
+(X_U3.311)    0.0000                  (X_U3.312)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -7.001E-03
+    V_V2        -6.995E-03
+    V_V3         1.978E-06
+    X_U3.v1      9.269E-09
+    X_U3.vl1     4.634E-09
+    X_U3.v3      1.247E-11
+    X_U3.v4      1.217E-11
+    X_U3.vn1    -2.085E-05
+    X_U3.vn2     2.085E-05
+    X_U3.vn3    -9.792E-05
+    X_U3.vn4     9.792E-05
+    X_U3.vi1    -4.866E-13
+    X_U3.vi2     1.007E-06
+    X_U3.vo1    -1.007E-06
+    X_U3.vo2    -5.503E-05
+    X_U3.vo3     5.503E-05
+    X_U3.v5      1.531E-03
+    X_U3.v6      1.640E-03
+
+    TOTAL POWER DISSIPATION   2.12E-01  WATTS
+
+
+**** 09/05/16 19:52:14 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC3-fourier_analysis"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_anal
+
+
+ ****     FOURIER ANALYSIS                 TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+FOURIER COMPONENTS OF TRANSIENT RESPONSE V(OUT)
+
+
+
+ DC COMPONENT =   1.1472E-01
+
+ HARMONIC   FREQUENCY     FOURIER     NORMALIZED     PHASE     NORMALIZED
+    NO         (HZ)      COMPONENT     COMPONENT     (DEG)     PHASE (DEG)
+
+     1    1.0000E+02   1.6292E+01   1.0000E+00  -1.7996E+02   0.0000E+00
+     2    2.0000E+02   4.6439E-02   2.8504E-03  -8.9596E+01   2.7033E+02
+     3    3.0000E+02   4.8844E+00   2.9980E-01  -1.7992E+02   3.5998E+02
+     4    4.0000E+02   4.0670E-02   2.4963E-03  -8.9125E+01   6.3073E+02
+     5    5.0000E+02   2.3493E+00   1.4420E-01  -1.7994E+02   7.1988E+02
+     6    6.0000E+02   3.2002E-02   1.9642E-03  -8.8491E+01   9.9130E+02
+     7    7.0000E+02   1.1548E+00   7.0879E-02   1.7985E+02   1.4396E+03
+     8    8.0000E+02   2.1538E-02   1.3220E-03  -8.7521E+01   1.3522E+03
+     9    9.0000E+02   4.7572E-01   2.9200E-02   1.7907E+02   1.7988E+03
+
+
+     TOTAL HARMONIC DISTORTION =   3.4142E+01 PERCENT
+
+
+          JOB CONCLUDED
+
+**** 09/05/16 19:52:14 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC3-fourier_analysis"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_anal
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .17
+

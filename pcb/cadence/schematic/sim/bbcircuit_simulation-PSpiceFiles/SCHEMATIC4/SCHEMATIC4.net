@@ -1,0 +1,6 @@
+* source BBCIRCUIT_SIMULATION
+V_V1         IN 0 DC 0Vdc AC 1Vac 
+C_C2         0 OUT  200p   
+R_R2         0 N00184  1k  
+R_R1         N00184 OUT  1k  
+C_C1         IN N00184  0.1u   

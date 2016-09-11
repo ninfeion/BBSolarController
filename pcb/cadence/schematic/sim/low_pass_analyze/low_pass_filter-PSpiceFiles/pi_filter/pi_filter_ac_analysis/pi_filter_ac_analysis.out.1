@@ -1,0 +1,45 @@
+
+**** 09/10/16 22:04:25 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "pi_filter-pi_filter_ac_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\low_pass_analyze\low_pa
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pi_filter_ac_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC LIN 10 1Hz 10megHz
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\pi_filter.net" 
+
+
+
+**** INCLUDING pi_filter.net ****
+* source LOW_PASS_FILTER
+V_V1         N14038 0 DC 0Vdc AC 10Vac 
+C_C28         N14086 OUT  10u  TC=0,0 
+C_C30         N14038 0  10u  TC=0,0 
+R_R1         N14086 OUT  1k TC=0,0 
+
+**** RESUMING pi_filter_ac_analysis.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N14086 is floating
+
+ERROR(ORPSIM-15142): Node OUT is floating
+

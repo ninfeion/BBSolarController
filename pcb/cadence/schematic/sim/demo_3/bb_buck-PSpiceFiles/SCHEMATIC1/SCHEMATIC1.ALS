@@ -1,0 +1,25 @@
+.ALIASES
+M_M1            M1(d=N00136 g=N00132 s=N00143 s=N00143 ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS28@PWRMOS.IRF150.Normal(chips)
+V_V1            V1(+=N00136 -=0 ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS55@SOURCE.VDC.Normal(chips)
+V_V2            V2(+=N00132 -=N00143 ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS92@SOURCE.VPULSE.Normal(chips)
+C_C1            C1(1=0 2=OUT ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS222@ANALOG.C.Normal(chips)
+R_R1            R1(1=0 2=N00181 ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS247@ANALOG.R.Normal(chips)
+L_L1            L1(1=N00143 2=OUT ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS398@ANALOG.L.Normal(chips)
+D_D1            D1(1=0 2=N00143 ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS486@DIODE.D1N5818.Normal(chips)
+R_R2            R2(1=N00181 2=OUT ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS1526@ANALOG.R.Normal(chips)
+X_U1            U1(+=N02079 -=AD_I+ V+=VCC V-=VEE OUT=AD_I+ ) CN
++@BB_BUCK.SCHEMATIC1(sch_1):INS1757@ANLG_DEV.AD8072jn/AD.Normal(chips)
+X_U2            U2(+=N02066 -=AD_I- V+=VCC V-=VEE OUT=AD_I- ) CN
++@BB_BUCK.SCHEMATIC1(sch_1):INS1794@ANLG_DEV.AD8072jn/AD.Normal(chips)
+R_R3            R3(1=N02079 2=OUT ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS1939@ANALOG.R.Normal(chips)
+R_R4            R4(1=N02079 2=0 ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS1955@ANALOG.R.Normal(chips)
+R_R5            R5(1=N00181 2=N02066 ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS1971@ANALOG.R.Normal(chips)
+R_R6            R6(1=N02066 2=0 ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS1987@ANALOG.R.Normal(chips)
+V_V3            V3(+=0 -=VEE ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS2257@SOURCE.VDC.Normal(chips)
+V_V4            V4(+=VCC -=0 ) CN @BB_BUCK.SCHEMATIC1(sch_1):INS2277@SOURCE.VDC.Normal(chips)
+_    _(AD_I+=AD_I+)
+_    _(AD_I-=AD_I-)
+_    _(out=OUT)
+_    _(VCC=VCC)
+_    _(VEE=VEE)
+.ENDALIASES

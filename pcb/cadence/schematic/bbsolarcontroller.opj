@@ -9,7 +9,23 @@
     (File ".\bbsolarcontroller.dsn"
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
-    (CompileFileAddedOrDeleted "x"))
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "0")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "FALSE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80"))
   (Folder "Outputs"
     (File ".\fpga_export\ep4ce6e144.v"
       (Type "Report"))
@@ -17,6 +33,92 @@
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("NPN BCE"
+      (FullPartName "NPN BCE.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    (20Pin_Header
+      (FullPartName "20Pin_Header.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
+      (DeviceIndex "0"))
+    (14Pin_Header
+      (FullPartName "14Pin_Header.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
+      (DeviceIndex "0"))
+    (EPCS4SI8N
+      (FullPartName "EPCS4SI8N.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
+      (DeviceIndex "0"))
+    ("CAP NP"
+      (FullPartName "CAP NP.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (LM358-SingleChip
+      (FullPartName "LM358-SingleChip.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
+      (DeviceIndex "0"))
+    (ADC122S101
+      (FullPartName "ADC122S101.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
+      (DeviceIndex "0"))
+    (GND_SIGNAL
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (TPS76801
+      (FullPartName "TPS76801.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
+      (DeviceIndex "0"))
+    (TPS79301
+      (FullPartName "TPS79301.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    ("DIODE SCHOTTKY"
+      (FullPartName "DIODE SCHOTTKY.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("INDUCTOR IRON"
+      (FullPartName "INDUCTOR IRON.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (TPS54331
+      (FullPartName "TPS54331.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-L
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (STM32C8T6
+      (FullPartName "STM32C8T6.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
+      (DeviceIndex "0"))
+    (1N5255
+      (FullPartName "1N5255.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (1N4744A
+      (FullPartName "1N4744A.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (CAP
+      (FullPartName "CAP.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("DIODE ZENER"
+      (FullPartName "DIODE ZENER.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
     (AD8072
       (FullPartName "AD8072.Normal")
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\AMPLIFIER.OLB")
@@ -28,87 +130,6 @@
     (PV
       (FullPartName "PV.Normal")
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
-      (DeviceIndex "0"))
-    (Load
-      (FullPartName "Load.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
-      (DeviceIndex "0"))
-    (Bat
-      (FullPartName "Bat.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
-      (DeviceIndex "0"))
-    (DIODE
-      (FullPartName "DIODE.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    ("CAP NP"
-      (FullPartName "CAP NP.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (TRAN_HM31
-      (FullPartName "TRAN_HM31.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (INDUCTOR
-      (FullPartName "INDUCTOR.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (MPF4150
-      (FullPartName "MPF4150.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
-      (DeviceIndex "0"))
-    (CSTCE8M00G55R0
-      (FullPartName "CSTCE8M00G55R0.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
-      (DeviceIndex "0"))
-    (CRYSTAL1-4/SM
-      (FullPartName "CRYSTAL1-4/SM.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (LED
-      (FullPartName "LED.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (GND_SIGNAL
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (VCC_BAR
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (GND_EARTH
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (GND
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (CAP
-      (FullPartName "CAP.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (PORTRIGHT-R
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (PORTRIGHT-L
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    ("GND_FIELD SIGNAL"
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    ("Header 5X2"
-      (FullPartName "Header 5X2.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
-      (DeviceIndex "0"))
-    (C8T6
-      (FullPartName "C8T6.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\LUOJIAN.OLB")
-      (DeviceIndex "0"))
-    (STM32C8T6
-      (FullPartName "STM32C8T6.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
-      (DeviceIndex "0"))
-    (EP4CE6E144
-      (FullPartName "EP4CE6E144-1.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\EP4CE6.OLB")
       (DeviceIndex "0")))
   (GlobalState
     (FileView
@@ -117,15 +138,11 @@
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn"
-         "fpga-part")
-      (Path "Design Resources"
-         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn"
-         "arm-part")
-      (Path "Design Resources"
-         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn"
-         "control-part")
+         "Main Circuit")
       (Path "Design Resources" "Library")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources" "Library"
+         "c:\cadence\spb_16.6\tools\capture\library\bbflight.olb"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -135,44 +152,46 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 110 943 110 410")
-        (Scroll "-43 0")
-        (Zoom "73"))
-      (Path
-         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSOLARCONTROLLER.DSN")
-      (Schematic "control-part")
-      (Page "mppt-buck-boost"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 132 965 132 432")
-        (Scroll "0 0")
-        (Zoom "54")
+        (Placement "44 0 1 -1 -1 -4 -23 88 1213 88 392")
+        (Scroll "-9 0")
+        (Zoom "110")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSOLARCONTROLLER.DSN")
-      (Schematic "fpga-part")
+      (Schematic "Main Circuit")
+      (Page "arm-core"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -23 110 1360 110 502")
+        (Scroll "-187 -1")
+        (Zoom "24")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSOLARCONTROLLER.DSN")
+      (Schematic "Main Circuit")
       (Page "fpga-core"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -4 -23 66 1024 66 454")
-        (Scroll "-2 -14")
-        (Zoom "70"))
+        (Placement "44 0 1 -1 -1 -4 -23 132 965 132 436")
+        (Scroll "-33 0")
+        (Zoom "56")
+        (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSOLARCONTROLLER.DSN")
-      (Schematic "control-part")
+      (Schematic "Main Circuit")
       (Page "adc-preconvert"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 132 1090 132 520")
-        (Scroll "-105 0")
-        (Zoom "73")
+        (Placement "44 0 1 -1 -1 -4 -23 0 833 0 304")
+        (Scroll "0 180")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSOLARCONTROLLER.DSN")
-      (Schematic "fpga-part")
-      (Page "fpga-adc")))
+      (Schematic "Main Circuit")
+      (Page "mppt-buck-boost")))
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_16.6\tools\capture\library")
   (MPSSessionName "N"))

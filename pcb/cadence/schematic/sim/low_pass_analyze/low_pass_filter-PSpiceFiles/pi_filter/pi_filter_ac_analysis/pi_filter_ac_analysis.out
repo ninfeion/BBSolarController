@@ -1,0 +1,147 @@
+
+**** 09/11/16 21:42:26 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "pi_filter-pi_filter_ac_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\low_pass_analyze\low_pa
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pi_filter_ac_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000s 0 1s 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\pi_filter.net" 
+
+
+
+**** INCLUDING pi_filter.net ****
+* source LOW_PASS_FILTER
+V_V1         N14183 0 DC 0Vdc AC 10Vac 
+C_C28         N14086 OUT  0.1u  TC=0,0 
+L_L5         N14038 OUT  47nH  
+C_C30         N14038 0  0.1u  TC=0,0 
+R_R1         N14086 OUT  1k TC=0,0 
+R_R2         N14183 N14038  1 TC=0,0 
+L_L6         0 N14086  47nH  
+Q_Q1         N17680 N176100 0 BC547BP/ZTX 
+R_R3         N17680 N17700  1k TC=0,0 
+V_V3         N17700 0 2.5Vdc
+R_R4         N176100 N17645  100 TC=0,0 
+V_V4         N17645 0 0Vdc
+
+**** RESUMING pi_filter_ac_analysis.cir ****
+.END
+
+**** 09/11/16 21:42:26 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "pi_filter-pi_filter_ac_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\low_pass_analyze\low_pa
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC547BP/ZTX     
+               NPN             
+       LEVEL    1            
+          IS   18.000000E-15 
+          BF  400            
+          NF     .9955       
+         VAF   80            
+         IKF     .14         
+         ISE   50.000000E-15 
+          NE    1.46         
+          BR   35.5          
+          NR    1.005        
+         VAR   12.5          
+         IKR     .03         
+         ISC  172.000000E-15 
+          NC    1.27         
+         ISS    0            
+          RB     .56         
+          RE     .6          
+          RC     .25         
+         CJE   13.000000E-12 
+         VJE     .75         
+         CJC    4.000000E-12 
+         VJC     .54         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  640.000000E-12 
+          TR   50.720000E-09 
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 09/11/16 21:42:26 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "pi_filter-pi_filter_ac_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\low_pass_analyze\low_pa
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    0.0000  (N14038)    0.0000 (N14086)    0.0000 (N14183)    0.0000     
+
+(N17645)    0.0000 (N17680)    2.5000 (N17700)    2.5000 (N176100) 24.29E-12    
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V3        -2.840E-12
+    V_V4         2.429E-13
+
+    TOTAL POWER DISSIPATION   7.10E-12  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/11/16 21:42:26 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "pi_filter-pi_filter_ac_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\low_pass_analyze\low_pa
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

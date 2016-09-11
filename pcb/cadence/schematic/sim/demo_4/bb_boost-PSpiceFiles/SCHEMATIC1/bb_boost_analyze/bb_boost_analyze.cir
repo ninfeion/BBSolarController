@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-bb_boost_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_4\bb_boost-pspicefiles\schematic1\bb_boost_analyze.sim ] 
+
+** Creating circuit file "bb_boost_analyze.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100000us 0 10us 
+.STEP LIN PARAM DUTY 1us 10us 1us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

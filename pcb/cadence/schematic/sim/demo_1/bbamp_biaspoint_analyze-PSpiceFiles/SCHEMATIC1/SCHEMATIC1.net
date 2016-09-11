@@ -1,0 +1,13 @@
+* source BBAMP_BIASPOINT_ANALYZE
+Q_Q1         N00225 N00198 N00176 Q2N2222
+C_C1         N00225 OUT  10u   
+R_R1         N00225 VCC  5.1k  
+R_R2         N00198 VCC  300k  
+R_R3         0 N00198  24k  
+R_R4         0 N00176  100  
+C_C2         0 N00176  50u   
+R_R5         0 OUT  5.1k  
+C_C3         N00386 N00198  10u   
+R_R6         N00386 N00390  100  
+V_V1         N00390 0 DC 0 AC 1V sin(0.1mv 10kHz)
+V_V2         VCC 0 12Vdc

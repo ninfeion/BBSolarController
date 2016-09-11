@@ -1,0 +1,85 @@
+
+**** 09/05/16 13:16:05 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC3-dc_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpiceFiles\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dc_analyze.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 -6 10 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC3.net" 
+
+
+
+**** INCLUDING SCHEMATIC3.net ****
+* source BBCIRCUIT_SIMULATION
+D_D1         0 N00972 D1N5225 
+V_V1         N01132 0 12Vdc
+R_R1         N00972 N01132  1k  
+
+**** RESUMING dc_analyze.cir ****
+.END
+
+**** 09/05/16 13:16:05 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC3-dc_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpiceFiles\
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N5225         
+          IS   36.641740E-06 
+           N    4.43382      
+         ISR    9.398687E-06 
+          NR    4.44845      
+         IKF     .020112     
+          BV    3.0207       
+         IBV     .044593     
+          RS   13.186000E-06 
+          TT  289.000000E-09 
+         CJO  200.000000E-12 
+          VJ     .75         
+           M     .43071      
+
+
+
+          JOB CONCLUDED
+
+**** 09/05/16 13:16:05 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC3-dc_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpiceFiles\
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

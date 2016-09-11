@@ -1,0 +1,13 @@
+* source LOW_PASS_FILTER
+V_V1         N14183 0 DC 0Vdc AC 10Vac 
+C_C28         N14086 OUT  0.1u  TC=0,0 
+L_L5         N14038 OUT  47nH  
+C_C30         N14038 0  0.1u  TC=0,0 
+R_R1         N14086 OUT  1k TC=0,0 
+R_R2         N14183 N14038  1 TC=0,0 
+L_L6         0 N14086  47nH  
+Q_Q1         N17680 N176100 0 BC547BP/ZTX 
+R_R3         N17680 N17700  1k TC=0,0 
+V_V3         N17700 0 2.5Vdc
+R_R4         N176100 N17645  100 TC=0,0 
+V_V4         N17645 0 0Vdc

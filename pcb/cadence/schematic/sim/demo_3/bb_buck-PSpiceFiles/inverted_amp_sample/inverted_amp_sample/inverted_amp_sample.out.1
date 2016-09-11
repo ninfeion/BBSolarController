@@ -1,0 +1,64 @@
+
+**** 09/07/16 22:03:19 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp_sample-inverted_amp_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "inverted_amp_sample.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100000us 0 100us 
+.STEP LIN PARAM DUTY 3us 3us 1us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\inverted_amp_sample.net" 
+
+
+
+**** INCLUDING inverted_amp_sample.net ****
+* source BB_BUCK
+R_R4         0 0  1k TC=0,0 
+V_V4         VCC 0 15Vdc
+V_V3         0 VEE 15Vdc
+R_R3         N03853 OUT  10K TC=0,0 
+R_R1         0 N03441  50 TC=0,0 
+V_V2         N03407 N03423  
++PULSE 0 5 0 0.01us 0.01us {DUTY} 10us
+V_V1         N03413 0 70Vdc
+R_R2         N03441 OUT  0.1 TC=0,0 
+D_D1         0 N03423 D1N5818 
+L_L1         N03423 OUT  0.5mH  
+M_M1         N03413 N03407 N03423 N03423 IRF150
+C_C1         0 OUT  470uF  TC=0,0 
+X_U1         0 N03853 VCC VEE AD_I+ AD8072jn/AD
+R_R7         0 0  10K TC=0,0 
+R_R8         N03853 AD_I+  1k TC=0,0 
+R_R12         0 N06953  {R1} TC=0,0 
+R_R9         N06819 OUT  10k TC=0,0 
+R_R10         N03441 N06819  {R1} TC=0,0 
+X_U2         N06953 N06819 N06769 N06735 OUT AD8072jn/AD
+R_R11         0 N06953  1k TC=0,0 
+V_V6         0 N06735 9Vdc
+V_V5         N06769 0 9Vdc
+.PARAM  duty=1us
+
+**** RESUMING inverted_amp_sample.cir ****
+.END
+
+ERROR(ORPSIM-15167): Undefined parameter: R1.
+

@@ -1,0 +1,266 @@
+
+**** 09/06/16 15:49:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefile
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "buck_analyze.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1ms 0 10us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC2.net" 
+
+
+
+**** INCLUDING SCHEMATIC2.net ****
+* source BBCIRCUIT_SIMULATION
+X_M1         VCC N00264 N00164 IRF840
+V_V2         N00264 N00164  
++PULSE 0 15 0 0.1us 0.1us {DUTY} 20us
+V_V1         VCC 0 100Vdc
+D_D1         0 N00164 MUR860 
+R_R1         0 OUT  {RL} TC=0,0 
+L_L1         N00164 OUT  0.5m  
+C_C1         0 OUT  100u  TC=0,0 
+X_U1         N03641 OUT_AD N03809 N03795 OUT_AD AD8072jn/AD
+R_R4         0 N03641  500k TC=0,0 
+R_R3         N03641 OUT  4500k TC=0,0 
+V_V4         0 N03795 15Vdc
+V_V3         N03809 0 5Vdc
+.PARAM  duty=2us rl=5000k
+
+**** RESUMING buck_analyze.cir ****
+.END
+
+**** 09/06/16 15:49:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefile
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MUR860          X_M1.MD         X_M1.MD1        X_M1.MD2        
+          IS  853.700000E-15    6.510410E-09    0             100.000000E-12 
+           N                    1.49911        50                            
+         ISR  217.500000E-09                                                 
+         IKF     .02156                                                      
+          BV                  500                                            
+         IBV                  250.000000E-06                                 
+          RS     .04135          .010627                        3.000000E-06 
+          TT  123.300000E-09  100.000000E-09                                 
+         CJO  367.000000E-12    1.080720E-09    1.819450E-09                 
+          VJ     .75            3.67483         1.07167                      
+           M     .4068           .9              .9                          
+          FC                                   10.000000E-09                 
+          EG                    1.2                                          
+         XTI                    3.02565                                      
+
+
+               X_M1.MD3        X_U1.dx         X_U1.dn1        
+          IS  100.000000E-12   10.000000E-15   10.000000E-15 
+          KF                                  100.000000E-12 
+
+
+**** 09/06/16 15:49:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefile
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qn1        X_U1.qp1        X_U1.qn2        X_U1.qp2        
+               NPN             PNP             NPN             PNP             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF    1.000000E+03    1.000000E+03    1.000000E+03    1.000000E+03 
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.42            2.2          
+           D     .87             .52             .87             .52         
+
+
+**** 09/06/16 15:49:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefile
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M1.MM         
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    3.84925      
+          KP    6.49028      
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.792250E-03 
+          IS    0            
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO   11.893600E-06 
+        CGDO   10.000000E-12 
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 09/06/16 15:49:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefile
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   10.5580  (  VCC)  100.0000  (N00164)   10.5580 (N00264)   10.5580     
+
+(N03641)    2.8558 (N03795)  -15.0000 (N03809)    5.0000 (OUT_AD)    2.8546     
+
+(X_M1.4)    0.0000 (X_M1.5)   89.4420 (X_M1.6)   89.4420 (X_M1.7)   10.5580     
+
+(X_M1.8)   10.5580 (X_M1.9)  100.0000 (X_U1.3)    2.8578 (X_U1.4)    2.1412     
+
+(X_U1.5)    3.5743 (X_U1.8)    2.8546 (X_M1.10)   89.4420                       
+
+(X_M1.11)   89.4420                   (X_U1.12)    2.8651                       
+
+(X_U1.13)    2.4600                   (X_U1.14)  -12.1600                       
+
+(X_U1.17)    2.8545                   (X_U1.19)    3.5206                       
+
+(X_U1.20)    2.1866                   (X_U1.23)    2.8546                       
+
+(X_U1.30)   -4.4450                   (X_U1.31)   -5.0000                       
+
+(X_U1.32)   -5.0000                   (X_U1.33)   -4.4050                       
+
+(X_U1.34)   -5.0000                   (X_U1.35)   -5.0001                       
+
+(X_U1.70)   -4.4566                   (X_U1.72)   -4.9996                       
+
+(X_U1.73)   -4.9996                   (X_U1.90)    5.0000                       
+
+(X_U1.91)  -15.0000                   (X_U1.98)   -5.0000                       
+
+(X_U1.300)   -5.5559                  (X_U1.311)   -5.0000                      
+
+(X_U1.312)   -5.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         2.682E-10
+    V_V1        -4.479E-06
+    V_V4        -7.003E-03
+    V_V3        -7.015E-03
+    X_M1.VFI2    8.944E-11
+    X_M1.VFI1    0.000E+00
+    X_U1.v1      2.646E-05
+    X_U1.vl1     1.314E-05
+    X_U1.v3     -6.351E-08
+    X_U1.v4      1.504E-11
+    X_U1.vn1    -2.085E-05
+    X_U1.vn2     2.085E-05
+    X_U1.vn3    -9.792E-05
+    X_U1.vn4     9.792E-05
+    X_U1.vi1    -5.659E-13
+    X_U1.vi2     2.158E-05
+    X_U1.vo1    -2.158E-05
+    X_U1.vo2    -6.419E-05
+    X_U1.vo3     6.419E-05
+    X_U1.v5      1.532E-03
+    X_U1.v6      1.639E-03
+
+    TOTAL POWER DISSIPATION   1.43E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/06/16 15:49:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefile
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.09
+

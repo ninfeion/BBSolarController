@@ -1,0 +1,90 @@
+
+**** 09/05/16 20:33:51 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-volt_ensmall"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\DEMO_1\demo_2\bbamp_1-PSpiceFil
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "volt_ensmall.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ms 0 10us 
+.STEP LIN PARAM Rf 100K 1Meg 5K 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BBAMP_1
+R_R2         N00857 N00783  5M  
+R_R1         N00783 OUT  {Rf}  
+X_U1         N00889 N00783 N00700 N00720 OUT AD8072jn/AD
+V_V1         N00700 0 15Vdc
+V_V2         0 N00720 15Vdc
+V_V3         N00857 0 100Vdc
+R_R3         0 N00889  {Rp}  
+.PARAM  rf=100k rp={rf}*5meg/({rf}+5meg)
+
+ERROR(ORPSIM-15311): Invalid Param name - *5meg/.
+
+
+ABORTING SIMULATION
+**** 09/05/16 20:33:51 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-volt_ensmall"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\DEMO_1\demo_2\bbamp_1-PSpiceFil
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           1
+  External (NCNODS)                 =           7
+  Total (NUMNOD)                    =           0
+
+Total device count (NUMEL)          =           6
+  Resistors (R)                     =           3
+  Voltage Sources (V)               =           3
+
+Number of subcircuits (X)           =           1
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Readin                            =        0.00
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .05
+  Total job time                    =         .02
+

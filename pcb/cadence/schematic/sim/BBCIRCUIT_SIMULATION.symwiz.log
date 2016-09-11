@@ -1,0 +1,8 @@
+STATUS: PSpice Model Import Wizard for "Capture" (16.6.0.d001)
+STATUS:  
+   INFO: OLB driven flow
+   INFO: Input File: C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\BBCIRCUIT_SIMULATION.DSN
+   INFO: Symbol Name: @BBCIRCUIT_SIMULATION.SCHEMATIC1(sch_1):INS343@ANALOG_P.c.Normal(chips)
+  ERROR: Active base model library not configured.
+Select a library to pick base models from.
+STATUS: 1 Error messages, 0 Warning messages

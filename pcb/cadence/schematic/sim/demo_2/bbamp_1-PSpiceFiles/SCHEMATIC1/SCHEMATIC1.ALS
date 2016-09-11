@@ -1,0 +1,12 @@
+.ALIASES
+R_R2            R2(1=N00857 2=N00783 ) CN @BBAMP_1.SCHEMATIC1(sch_1):INS367@ANALOG_P.r.Normal(chips)
+R_R1            R1(1=N00783 2=OUT ) CN @BBAMP_1.SCHEMATIC1(sch_1):INS347@ANALOG_P.r.Normal(chips)
+X_U1            U1(+=N00889 -=N00783 V+=N00700 V-=N00720 OUT=OUT ) CN
++@BBAMP_1.SCHEMATIC1(sch_1):INS313@ANLG_DEV.AD8072jn/AD.Normal(chips)
+V_V1            V1(+=N00700 -=0 ) CN @BBAMP_1.SCHEMATIC1(sch_1):INS642@SOURCE.VDC.Normal(chips)
+V_V2            V2(+=0 -=N00720 ) CN @BBAMP_1.SCHEMATIC1(sch_1):INS662@SOURCE.VDC.Normal(chips)
+V_V3            V3(+=N00857 -=0 ) CN @BBAMP_1.SCHEMATIC1(sch_1):INS837@SOURCE.VDC.Normal(chips)
+R_R3            R3(1=0 2=N00889 ) CN @BBAMP_1.SCHEMATIC1(sch_1):INS913@ANALOG_P.r.Normal(chips)
+R_R4            R4(1=0 2=N00889 ) CN @BBAMP_1.SCHEMATIC1(sch_1):INS1171@ANALOG_P.r.Normal(chips)
+_    _(out=OUT)
+.ENDALIASES

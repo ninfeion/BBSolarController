@@ -1,0 +1,8 @@
+.ALIASES
+X_U1            U1(+=N01121 -=OUT V+=N01011 V-=N01031 OUT=OUT ) CN
++@BBAMP_1.SCHEMATIC2(sch_1):INS32@ANLG_DEV.AD8072jn/AD.Normal(chips)
+V_V2            V2(+=0 -=N01031 ) CN @BBAMP_1.SCHEMATIC2(sch_1):INS973@SOURCE.VDC.Normal(chips)
+V_V1            V1(+=N01011 -=0 ) CN @BBAMP_1.SCHEMATIC2(sch_1):INS953@SOURCE.VDC.Normal(chips)
+V_V3            V3(+=N01121 -=0 ) CN @BBAMP_1.SCHEMATIC2(sch_1):INS1143@SOURCE.VDC.Normal(chips)
+_    _(out=OUT)
+.ENDALIASES

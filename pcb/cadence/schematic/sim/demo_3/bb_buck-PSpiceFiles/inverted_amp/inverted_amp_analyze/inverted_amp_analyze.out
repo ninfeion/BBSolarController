@@ -1,0 +1,852 @@
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "inverted_amp_analyze.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10000us 0 1us 
+.STEP LIN PARAM R1 10k 100k 10k 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\inverted_amp.net" 
+
+
+
+**** INCLUDING inverted_amp.net ****
+* source BB_BUCK
+R_R2         N00265 N00248  {R1} TC=0,0 
+R_R1         N00248 OUT  1k TC=0,0 
+V_V3         N00265 0 30Vdc
+V_V2         0 N00170 9Vdc
+V_V1         N00182 0 9Vdc
+X_U1         N00523 N00248 N00182 N00170 OUT AD8072jn/AD
+R_R3         0 N00523  1k TC=0,0 
+R_R4         0 N00523  {R1} TC=0,0 
+.PARAM  r1=1k
+
+**** RESUMING inverted_amp_analyze.cir ****
+.END
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         X_U1.dn1        
+          IS   10.000000E-15   10.000000E-15 
+          KF                  100.000000E-12 
+
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qn1        X_U1.qp1        X_U1.qn2        X_U1.qp2        
+               NPN             PNP             NPN             PNP             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF    1.000000E+03    1.000000E+03    1.000000E+03    1.000000E+03 
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.42            2.2          
+           D     .87             .52             .87             .52         
+
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1 =   10.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   -2.9854  (N00170)   -9.0000 (N00182)    9.0000 (N00248)     .0068     
+
+(N00265)   30.0000 (N00523)     .0036 (X_U1.3)     .0056 (X_U1.4)    -.7110     
+
+(X_U1.5)     .7222 (X_U1.8)     .0068 (X_U1.12)   -3.0100                       
+
+(X_U1.13)    6.4600                   (X_U1.14)   -6.1600                       
+
+(X_U1.17)   -2.9882                   (X_U1.19)   -2.3194                       
+
+(X_U1.20)   -3.6534                   (X_U1.23)   -2.9854                       
+
+(X_U1.30)     .5550                   (X_U1.31)    0.0000                       
+
+(X_U1.32)-20.85E-06                   (X_U1.33)     .5950                       
+
+(X_U1.34)    0.0000                   (X_U1.35)-97.92E-06                       
+
+(X_U1.70)    -.5183                   (X_U1.72)-135.4E-06                       
+
+(X_U1.73)-135.4E-06                   (X_U1.90)    9.0000                       
+
+(X_U1.91)   -9.0000                   (X_U1.98)    0.0000                       
+
+(X_U1.300)    -.6835                  (X_U1.311)    0.0000                      
+
+(X_U1.312)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -2.999E-03
+    V_V2        -9.994E-03
+    V_V1        -6.996E-03
+    X_U1.v1     -1.006E-05
+    X_U1.vl1    -5.017E-06
+    X_U1.v3      9.480E-12
+    X_U1.v4      3.160E-12
+    X_U1.vn1    -2.085E-05
+    X_U1.vn2     2.085E-05
+    X_U1.vn3    -9.792E-05
+    X_U1.vn4     9.792E-05
+    X_U1.vi1    -6.935E-13
+    X_U1.vi2     2.995E-03
+    X_U1.vo1    -2.995E-03
+    X_U1.vo2    -1.389E-03
+    X_U1.vo3     1.389E-03
+    X_U1.v5      1.697E-03
+    X_U1.v6      1.479E-03
+
+    TOTAL POWER DISSIPATION   2.45E-01  WATTS
+
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1 =   20.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   -1.4913  (N00170)   -9.0000 (N00182)    9.0000 (N00248)     .0064     
+
+(N00265)   30.0000 (N00523)     .0038 (X_U1.3)     .0058 (X_U1.4)    -.7108     
+
+(X_U1.5)     .7224 (X_U1.8)     .0064 (X_U1.12)   -1.4982                       
+
+(X_U1.13)    6.4600                   (X_U1.14)   -6.1600                       
+
+(X_U1.17)   -1.4927                   (X_U1.19)    -.8253                       
+
+(X_U1.20)   -2.1593                   (X_U1.23)   -1.4913                       
+
+(X_U1.30)     .5550                   (X_U1.31)    0.0000                       
+
+(X_U1.32)-20.85E-06                   (X_U1.33)     .5950                       
+
+(X_U1.34)    0.0000                   (X_U1.35)-97.92E-06                       
+
+(X_U1.70)    -.5002                   (X_U1.72)-67.42E-06                       
+
+(X_U1.73)-67.42E-06                   (X_U1.90)    9.0000                       
+
+(X_U1.91)   -9.0000                   (X_U1.98)    0.0000                       
+
+(X_U1.300)    -.6656                  (X_U1.311)    0.0000                      
+
+(X_U1.312)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -1.500E-03
+    V_V2        -8.495E-03
+    V_V1        -6.998E-03
+    X_U1.v1     -5.000E-06
+    X_U1.vl1    -2.497E-06
+    X_U1.v3      7.968E-12
+    X_U1.v4      4.672E-12
+    X_U1.vn1    -2.085E-05
+    X_U1.vn2     2.085E-05
+    X_U1.vn3    -9.792E-05
+    X_U1.vn4     9.792E-05
+    X_U1.vi1    -6.756E-13
+    X_U1.vi2     1.499E-03
+    X_U1.vo1    -1.499E-03
+    X_U1.vo2    -7.223E-04
+    X_U1.vo3     7.223E-04
+    X_U1.v5      1.612E-03
+    X_U1.v6      1.557E-03
+
+    TOTAL POWER DISSIPATION   1.87E-01  WATTS
+
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1 =   30.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    -.9932  (N00170)   -9.0000 (N00182)    9.0000 (N00248)     .0062     
+
+(N00265)   30.0000 (N00523)     .0039 (X_U1.3)     .0059 (X_U1.4)    -.7107     
+
+(X_U1.5)     .7224 (X_U1.8)     .0062 (X_U1.12)    -.9942                       
+
+(X_U1.13)    6.4600                   (X_U1.14)   -6.1600                       
+
+(X_U1.17)    -.9942                   (X_U1.19)    -.3272                       
+
+(X_U1.20)   -1.6612                   (X_U1.23)    -.9932                       
+
+(X_U1.30)     .5550                   (X_U1.31)    0.0000                       
+
+(X_U1.32)-20.85E-06                   (X_U1.33)     .5950                       
+
+(X_U1.34)    0.0000                   (X_U1.35)-97.92E-06                       
+
+(X_U1.70)    -.4895                   (X_U1.72)-44.74E-06                       
+
+(X_U1.73)-44.74E-06                   (X_U1.90)    9.0000                       
+
+(X_U1.91)   -9.0000                   (X_U1.98)    0.0000                       
+
+(X_U1.300)    -.6551                  (X_U1.311)    0.0000                      
+
+(X_U1.312)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -9.998E-04
+    V_V2        -7.996E-03
+    V_V1        -6.999E-03
+    X_U1.v1     -3.317E-06
+    X_U1.vl1    -1.657E-06
+    X_U1.v3      7.464E-12
+    X_U1.v4      5.176E-12
+    X_U1.vn1    -2.085E-05
+    X_U1.vn2     2.085E-05
+    X_U1.vn3    -9.792E-05
+    X_U1.vn4     9.792E-05
+    X_U1.vi1    -6.651E-13
+    X_U1.vi2     1.000E-03
+    X_U1.vo1    -1.000E-03
+    X_U1.vo2    -5.002E-04
+    X_U1.vo3     5.002E-04
+    X_U1.v5      1.584E-03
+    X_U1.v6      1.584E-03
+
+    TOTAL POWER DISSIPATION   1.67E-01  WATTS
+
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1 =   40.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    -.7442  (N00170)   -9.0000 (N00182)    9.0000 (N00248)     .0062     
+
+(N00265)   30.0000 (N00523)     .0039 (X_U1.3)     .0059 (X_U1.4)    -.7107     
+
+(X_U1.5)     .7225 (X_U1.8)     .0062 (X_U1.12)    -.7422                       
+
+(X_U1.13)    6.4600                   (X_U1.14)   -6.1600                       
+
+(X_U1.17)    -.7449                   (X_U1.19)    -.0782                       
+
+(X_U1.20)   -1.4122                   (X_U1.23)    -.7442                       
+
+(X_U1.30)     .5550                   (X_U1.31)    0.0000                       
+
+(X_U1.32)-20.85E-06                   (X_U1.33)     .5950                       
+
+(X_U1.34)    0.0000                   (X_U1.35)-97.92E-06                       
+
+(X_U1.70)    -.4820                   (X_U1.72)-33.40E-06                       
+
+(X_U1.73)-33.40E-06                   (X_U1.90)    9.0000                       
+
+(X_U1.91)   -9.0000                   (X_U1.98)    0.0000                       
+
+(X_U1.300)    -.6477                  (X_U1.311)    0.0000                      
+
+(X_U1.312)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -7.498E-04
+    V_V2        -7.746E-03
+    V_V1        -6.999E-03
+    X_U1.v1     -2.476E-06
+    X_U1.vl1    -1.237E-06
+    X_U1.v3      7.212E-12
+    X_U1.v4      5.428E-12
+    X_U1.vn1    -2.085E-05
+    X_U1.vn2     2.085E-05
+    X_U1.vn3    -9.792E-05
+    X_U1.vn4     9.792E-05
+    X_U1.vi1    -6.577E-13
+    X_U1.vi2     7.511E-04
+    X_U1.vo1    -7.511E-04
+    X_U1.vo2    -3.891E-04
+    X_U1.vo3     3.891E-04
+    X_U1.v5      1.571E-03
+    X_U1.v6      1.598E-03
+
+    TOTAL POWER DISSIPATION   1.57E-01  WATTS
+
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1 =   50.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    -.5947  (N00170)   -9.0000 (N00182)    9.0000 (N00248)     .0061     
+
+(N00265)   30.0000 (N00523)     .0039 (X_U1.3)     .0059 (X_U1.4)    -.7107     
+
+(X_U1.5)     .7225 (X_U1.8)     .0061 (X_U1.12)    -.5910                       
+
+(X_U1.13)    6.4600                   (X_U1.14)   -6.1600                       
+
+(X_U1.17)    -.5954                   (X_U1.19)     .0713                       
+
+(X_U1.20)   -1.2627                   (X_U1.23)    -.5947                       
+
+(X_U1.30)     .5550                   (X_U1.31)    0.0000                       
+
+(X_U1.32)-20.85E-06                   (X_U1.33)     .5950                       
+
+(X_U1.34)    0.0000                   (X_U1.35)-97.92E-06                       
+
+(X_U1.70)    -.4761                   (X_U1.72)-26.60E-06                       
+
+(X_U1.73)-26.60E-06                   (X_U1.90)    9.0000                       
+
+(X_U1.91)   -9.0000                   (X_U1.98)    0.0000                       
+
+(X_U1.300)    -.6420                  (X_U1.311)    0.0000                      
+
+(X_U1.312)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -5.999E-04
+    V_V2        -7.596E-03
+    V_V1        -7.000E-03
+    X_U1.v1     -1.971E-06
+    X_U1.vl1    -9.851E-07
+    X_U1.v3      7.061E-12
+    X_U1.v4      5.579E-12
+    X_U1.vn1    -2.085E-05
+    X_U1.vn2     2.085E-05
+    X_U1.vn3    -9.792E-05
+    X_U1.vn4     9.792E-05
+    X_U1.vi1    -6.520E-13
+    X_U1.vi2     6.015E-04
+    X_U1.vo1    -6.015E-04
+    X_U1.vo2    -3.225E-04
+    X_U1.vo3     3.225E-04
+    X_U1.v5      1.563E-03
+    X_U1.v6      1.606E-03
+
+    TOTAL POWER DISSIPATION   1.52E-01  WATTS
+
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1 =   60.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    -.4951  (N00170)   -9.0000 (N00182)    9.0000 (N00248)     .0061     
+
+(N00265)   30.0000 (N00523)     .0039 (X_U1.3)     .0059 (X_U1.4)    -.7107     
+
+(X_U1.5)     .7225 (X_U1.8)     .0061 (X_U1.12)    -.4902                       
+
+(X_U1.13)    6.4600                   (X_U1.14)   -6.1600                       
+
+(X_U1.17)    -.4957                   (X_U1.19)     .1709                       
+
+(X_U1.20)   -1.1631                   (X_U1.23)    -.4951                       
+
+(X_U1.30)     .5550                   (X_U1.31)    0.0000                       
+
+(X_U1.32)-20.85E-06                   (X_U1.33)     .5950                       
+
+(X_U1.34)    0.0000                   (X_U1.35)-97.92E-06                       
+
+(X_U1.70)    -.4712                   (X_U1.72)-22.06E-06                       
+
+(X_U1.73)-22.06E-06                   (X_U1.90)    9.0000                       
+
+(X_U1.91)   -9.0000                   (X_U1.98)    0.0000                       
+
+(X_U1.300)    -.6373                  (X_U1.311)    0.0000                      
+
+(X_U1.312)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -4.999E-04
+    V_V2        -7.496E-03
+    V_V1        -7.000E-03
+    X_U1.v1     -1.635E-06
+    X_U1.vl1    -8.171E-07
+    X_U1.v3      6.960E-12
+    X_U1.v4      5.680E-12
+    X_U1.vn1    -2.085E-05
+    X_U1.vn2     2.085E-05
+    X_U1.vn3    -9.792E-05
+    X_U1.vn4     9.792E-05
+    X_U1.vi1    -6.473E-13
+    X_U1.vi2     5.017E-04
+    X_U1.vo1    -5.017E-04
+    X_U1.vo2    -2.781E-04
+    X_U1.vo3     2.781E-04
+    X_U1.v5      1.557E-03
+    X_U1.v6      1.612E-03
+
+    TOTAL POWER DISSIPATION   1.48E-01  WATTS
+
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1 =   70.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    -.4240  (N00170)   -9.0000 (N00182)    9.0000 (N00248)     .0061     
+
+(N00265)   30.0000 (N00523)     .0039 (X_U1.3)     .0059 (X_U1.4)    -.7107     
+
+(X_U1.5)     .7225 (X_U1.8)     .0061 (X_U1.12)    -.4182                       
+
+(X_U1.13)    6.4600                   (X_U1.14)   -6.1600                       
+
+(X_U1.17)    -.4245                   (X_U1.19)     .2420                       
+
+(X_U1.20)   -1.0920                   (X_U1.23)    -.4240                       
+
+(X_U1.30)     .5550                   (X_U1.31)    0.0000                       
+
+(X_U1.32)-20.85E-06                   (X_U1.33)     .5950                       
+
+(X_U1.34)    0.0000                   (X_U1.35)-97.92E-06                       
+
+(X_U1.70)    -.4671                   (X_U1.72)-18.82E-06                       
+
+(X_U1.73)-18.82E-06                   (X_U1.90)    9.0000                       
+
+(X_U1.91)   -9.0000                   (X_U1.98)    0.0000                       
+
+(X_U1.300)    -.6333                  (X_U1.311)    0.0000                      
+
+(X_U1.312)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -4.285E-04
+    V_V2        -7.425E-03
+    V_V1        -7.000E-03
+    X_U1.v1     -1.395E-06
+    X_U1.vl1    -6.971E-07
+    X_U1.v3      6.888E-12
+    X_U1.v4      5.752E-12
+    X_U1.vn1    -2.085E-05
+    X_U1.vn2     2.085E-05
+    X_U1.vn3    -9.792E-05
+    X_U1.vn4     9.792E-05
+    X_U1.vi1    -6.433E-13
+    X_U1.vi2     4.305E-04
+    X_U1.vo1    -4.305E-04
+    X_U1.vo2    -2.463E-04
+    X_U1.vo3     2.463E-04
+    X_U1.v5      1.553E-03
+    X_U1.v6      1.616E-03
+
+    TOTAL POWER DISSIPATION   1.45E-01  WATTS
+
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1 =   80.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    -.3706  (N00170)   -9.0000 (N00182)    9.0000 (N00248)     .0061     
+
+(N00265)   30.0000 (N00523)     .0040 (X_U1.3)     .0059 (X_U1.4)    -.7107     
+
+(X_U1.5)     .7225 (X_U1.8)     .0061 (X_U1.12)    -.3642                       
+
+(X_U1.13)    6.4600                   (X_U1.14)   -6.1600                       
+
+(X_U1.17)    -.3710                   (X_U1.19)     .2954                       
+
+(X_U1.20)   -1.0386                   (X_U1.23)    -.3706                       
+
+(X_U1.30)     .5550                   (X_U1.31)    0.0000                       
+
+(X_U1.32)-20.85E-06                   (X_U1.33)     .5950                       
+
+(X_U1.34)    0.0000                   (X_U1.35)-97.92E-06                       
+
+(X_U1.70)    -.4635                   (X_U1.72)-16.39E-06                       
+
+(X_U1.73)-16.39E-06                   (X_U1.90)    9.0000                       
+
+(X_U1.91)   -9.0000                   (X_U1.98)    0.0000                       
+
+(X_U1.300)    -.6299                  (X_U1.311)    0.0000                      
+
+(X_U1.312)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -3.749E-04
+    V_V2        -7.371E-03
+    V_V1        -7.000E-03
+    X_U1.v1     -1.215E-06
+    X_U1.vl1    -6.071E-07
+    X_U1.v3      6.834E-12
+    X_U1.v4      5.806E-12
+    X_U1.vn1    -2.085E-05
+    X_U1.vn2     2.085E-05
+    X_U1.vn3    -9.792E-05
+    X_U1.vn4     9.792E-05
+    X_U1.vi1    -6.399E-13
+    X_U1.vi2     3.770E-04
+    X_U1.vo1    -3.770E-04
+    X_U1.vo2    -2.225E-04
+    X_U1.vo3     2.225E-04
+    X_U1.v5      1.551E-03
+    X_U1.v6      1.619E-03
+
+    TOTAL POWER DISSIPATION   1.43E-01  WATTS
+
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1 =   90.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    -.3291  (N00170)   -9.0000 (N00182)    9.0000 (N00248)     .0061     
+
+(N00265)   30.0000 (N00523)     .0040 (X_U1.3)     .0059 (X_U1.4)    -.7107     
+
+(X_U1.5)     .7225 (X_U1.8)     .0061 (X_U1.12)    -.3223                       
+
+(X_U1.13)    6.4600                   (X_U1.14)   -6.1600                       
+
+(X_U1.17)    -.3295                   (X_U1.19)     .3369                       
+
+(X_U1.20)    -.9971                   (X_U1.23)    -.3291                       
+
+(X_U1.30)     .5550                   (X_U1.31)    0.0000                       
+
+(X_U1.32)-20.85E-06                   (X_U1.33)     .5950                       
+
+(X_U1.34)    0.0000                   (X_U1.35)-97.92E-06                       
+
+(X_U1.70)    -.4604                   (X_U1.72)-14.50E-06                       
+
+(X_U1.73)-14.50E-06                   (X_U1.90)    9.0000                       
+
+(X_U1.91)   -9.0000                   (X_U1.98)    0.0000                       
+
+(X_U1.300)    -.6269                  (X_U1.311)    0.0000                      
+
+(X_U1.312)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -3.333E-04
+    V_V2        -7.330E-03
+    V_V1        -7.000E-03
+    X_U1.v1     -1.074E-06
+    X_U1.vl1    -5.371E-07
+    X_U1.v3      6.792E-12
+    X_U1.v4      5.848E-12
+    X_U1.vn1    -2.085E-05
+    X_U1.vn2     2.085E-05
+    X_U1.vn3    -9.792E-05
+    X_U1.vn4     9.792E-05
+    X_U1.vi1    -6.369E-13
+    X_U1.vi2     3.355E-04
+    X_U1.vo1    -3.355E-04
+    X_U1.vo2    -2.040E-04
+    X_U1.vo3     2.040E-04
+    X_U1.v5      1.548E-03
+    X_U1.v6      1.621E-03
+
+    TOTAL POWER DISSIPATION   1.41E-01  WATTS
+
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1 =  100.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    -.2959  (N00170)   -9.0000 (N00182)    9.0000 (N00248)     .0061     
+
+(N00265)   30.0000 (N00523)     .0040 (X_U1.3)     .0059 (X_U1.4)    -.7107     
+
+(X_U1.5)     .7225 (X_U1.8)     .0061 (X_U1.12)    -.2887                       
+
+(X_U1.13)    6.4600                   (X_U1.14)   -6.1600                       
+
+(X_U1.17)    -.2963                   (X_U1.19)     .3701                       
+
+(X_U1.20)    -.9639                   (X_U1.23)    -.2959                       
+
+(X_U1.30)     .5550                   (X_U1.31)    0.0000                       
+
+(X_U1.32)-20.85E-06                   (X_U1.33)     .5950                       
+
+(X_U1.34)    0.0000                   (X_U1.35)-97.92E-06                       
+
+(X_U1.70)    -.4575                   (X_U1.72)-12.99E-06                       
+
+(X_U1.73)-12.99E-06                   (X_U1.90)    9.0000                       
+
+(X_U1.91)   -9.0000                   (X_U1.98)    0.0000                       
+
+(X_U1.300)    -.6242                  (X_U1.311)    0.0000                      
+
+(X_U1.312)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -2.999E-04
+    V_V2        -7.296E-03
+    V_V1        -7.000E-03
+    X_U1.v1     -9.624E-07
+    X_U1.vl1    -4.811E-07
+    X_U1.v3      6.759E-12
+    X_U1.v4      5.881E-12
+    X_U1.vn1    -2.085E-05
+    X_U1.vn2     2.085E-05
+    X_U1.vn3    -9.792E-05
+    X_U1.vn4     9.792E-05
+    X_U1.vi1    -6.342E-13
+    X_U1.vi2     3.022E-04
+    X_U1.vo1    -3.022E-04
+    X_U1.vo2    -1.892E-04
+    X_U1.vo3     1.892E-04
+    X_U1.v5      1.547E-03
+    X_U1.v6      1.623E-03
+
+    TOTAL POWER DISSIPATION   1.40E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/07/16 21:59:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "inverted_amp-inverted_amp_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpice
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM R1 =  100.0000E+03
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        6.80
+

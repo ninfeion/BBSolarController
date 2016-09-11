@@ -1,0 +1,47 @@
+
+**** 09/05/16 19:51:56 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC3-fourier_analysis"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_anal
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "fourier_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN 100m 100ms 0 0.1ms 
+.FOUR 100 9 V([M_UN0001]) 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC3.net" 
+
+
+
+**** INCLUDING SCHEMATIC3.net ****
+* source BBAMP_BIASPOINT_ANALYZE
+X_U3         0 N00361 N00427 N00449 M_UN0001 AD8072jn/AD
+V_V1         N00427 0 15Vdc
+V_V2         0 N00449 15Vdc
+V_V3         N00403 0  AC 1
++SIN 0 5 100 0 0 0
+R_R1         N00361 OUT  10k  
+R_R2         N00403 N00361  1k  
+
+**** RESUMING fourier_analysis.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node OUT.
+

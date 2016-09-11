@@ -1,0 +1,175 @@
+
+**** 09/04/16 19:08:46 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dc_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dc_analyze.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10us 0 10ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BBCIRCUIT_SIMULATION
+R_R1         N01156 N00083  4k  
+V_V1         N00083 0 15Vdc
+C_C1         N00394 N00383  200p IC=0  
+X_Q1         N01147 N01160 N00394 BDL31/PLP
+C_C2         0 N00394  300p IC=0  
+R_R2         0 N01156  2k  
+R_R3         0 N00394  700  
+C_C3         N00383 N01147  0.033u IC=0  
+C_C4         0 N01160  0.033u IC=0  
+R_R4         0 N00383  1k  
+L_L1         N01147 N00083  1.3uH  
+
+**** RESUMING dc_analyze.cir ****
+.END
+
+WARNING(ORPSIM-15223): Library file C:\Cadence\SPB_16.6\tools\PSpice\Library\nom.lib has changed since index file nom.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Fri Aug 19 16:35:38 2011 to Mon Jun 08 12:20:00 2015.
+
+INFO(ORPSIM-15422): Making new index file nom.ind for library file nom.lib.
+
+Index has 33614 entries from 203 file(s).
+
+**** 09/04/16 19:08:46 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dc_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1.BDL31      
+               NPN             
+       LEVEL    1            
+          IS  979.100000E-15 
+          BF  399.9          
+          NF     .9879       
+         VAF   54.99         
+         IKF    5.58         
+         ISE   15.490000E-15 
+          NE    1.461        
+          BR  101            
+          NR     .9914       
+         VAR   11.9          
+         IKR     .39         
+         ISC   36.490000E-15 
+          NC    1.486        
+         ISS    0            
+          RB   33.6          
+         RBM    1.18         
+         IRB  320.300000E-06 
+          RE     .0917       
+          RC     .02         
+         CJE  449.300000E-12 
+         VJE     .9469       
+         MJE     .4101       
+         CJC  244.100000E-12 
+         VJC     .3643       
+         MJC     .32         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+         MJS     .333        
+          FC     .78         
+          TF  600.000000E-12 
+         XTF   59            
+         VTF    3            
+         ITF   11            
+          TR   15.000000E-09 
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 09/04/16 19:08:46 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dc_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00083)   15.0000 (N00383)   10.0000 (N00394)    5.0000 (N01147)   15.0000     
+
+(N01156)    5.0000 (N01160) 450.3E-18 (X_Q1.11)   15.0000                       
+
+(X_Q1.22) 450.3E-18                   (X_Q1.222) 450.3E-18                      
+
+(X_Q1.333)    5.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.500E+03
+
+    TOTAL POWER DISSIPATION   3.75E+04  WATTS
+
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  43.55E-09.
+         Time step =  856.1E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(X_Q1.333)               =    -50.09V  \    -49.45V
+    V(X_Q1.11)                =    -24.41V  \    -23.76V
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00083)   15.0000 (N00383)-5210.5000 (N00394)-5547.3000 (N01147)-5023.8000     
+
+(N01156)    5.0000 (N01160) -133.6900 (X_Q1.11)  -24.4070                       
+
+(X_Q1.22)  860.5800                   (X_Q1.222) 2385.5000                      
+
+(X_Q1.333)  -50.0920                  
+
+
+**** Interrupt ****

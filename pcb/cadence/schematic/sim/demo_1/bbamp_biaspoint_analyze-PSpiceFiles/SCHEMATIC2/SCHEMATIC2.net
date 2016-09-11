@@ -1,0 +1,6 @@
+* source BBAMP_BIASPOINT_ANALYZE
+V_V1         N00145 0 DC 2.7Vdc AC 1Vac 
+V_V2         N00160 0 10Vdc
+Q_Q1         OUT N00152 0 Q2N2222
+R_R1         N00145 N00152  100k  
+R_R2         OUT N00160  1k  

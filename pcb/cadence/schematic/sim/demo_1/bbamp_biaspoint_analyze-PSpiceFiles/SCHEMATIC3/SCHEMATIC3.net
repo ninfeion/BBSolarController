@@ -1,0 +1,8 @@
+* source BBAMP_BIASPOINT_ANALYZE
+X_U3         0 N00361 N00427 N00449 OUT AD8072jn/AD
+V_V1         N00427 0 15Vdc
+V_V2         0 N00449 15Vdc
+V_V3         N00403 0  AC 1
++SIN 0 5 100 0 0 0
+R_R1         N00361 OUT  10k  
+R_R2         N00403 N00361  1k  

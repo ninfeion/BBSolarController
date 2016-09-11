@@ -1,0 +1,213 @@
+
+**** 09/06/16 00:02:42 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefile
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "buck_analyze.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000us 0 1u 
+.STEP LIN PARAM DUTY 1us 20us 1us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC2.net" 
+
+
+
+**** INCLUDING SCHEMATIC2.net ****
+* source BBCIRCUIT_SIMULATION
+V_V2         N00264 N00164  
++PULSE 0 15 0 0.1us 0.1us {DUTY} 20us
+V_V1         N00347 0 400Vdc
+D_D1         0 N00164 MUR860 
+C_C1         0 OUT  100u  TC=0,0 
+R_R1         0 OUT  {RL} TC=0,0 
+L_L1         N00164 OUT  0.5m  
+X_M2         N00347 N00264 N00164 SH702/PF
+.PARAM  duty=1us rl=500
+
+**** RESUMING buck_analyze.cir ****
+.END
+
+WARNING(ORPSIM-15676): LAMBDA for MOSFET model X_M2.S1A2MOS is unusually large and might cause non-convergence
+
+**** 09/06/16 00:02:42 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefile
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MUR860          X_M2.S1A2DB     
+          IS  853.700000E-15   10.000000E-15 
+         ISR  217.500000E-09                 
+         IKF     .02156                      
+          BV                   65            
+          RS     .04135          .25         
+          TT  123.300000E-09                 
+         CJO  367.000000E-12  190.000000E-12 
+          VJ     .75             .7          
+           M     .4068           .3          
+
+
+**** 09/06/16 00:02:42 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefile
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M2.S1A2JF     
+               NJF             
+         VTO   -6.8          
+        BETA     .3          
+      LAMBDA    1            
+
+
+**** 09/06/16 00:02:42 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefile
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M2.S1A2MOS    
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    2.3          
+          KP   22.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA     .5          
+          RD     .14         
+          RS     .17         
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+WARNING(ORPSIM-15676): LAMBDA for MOSFET model X_M2.S1A2MOS is unusually large and might cause non-convergence
+
+WARNING(ORPSIM-15676): LAMBDA for MOSFET model X_M2.S1A2MOS is unusually large and might cause non-convergence
+
+**** 09/06/16 00:02:42 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefile
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM DUTY =    1.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)  334.2500  (N00164)  334.2500 (N00264)  334.2500 (N00347)  400.0000     
+
+(X_M2.11)  334.2500                   (X_M2.12)  334.2500                       
+
+(X_M2.13)  341.0500                   (X_M2.14)  334.2500                       
+
+(X_M2.16)  400.0000                   (X_M2.17)  400.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.137E-13
+    V_V1        -6.685E-01
+
+    TOTAL POWER DISSIPATION   2.67E+02  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  141.2E-06.
+         Time step =  569.2E-21, minimum allowable step size =  1.000E-18
+
+  These supply currents failed to converge:
+
+    I(V_V2)                   =   -69.32mA  \   -69.97mA
+
+  These devices failed to converge:
+    X_M2.DBODY X_M2.JFET 
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)  335.0500  (N00164)  333.3600 (N00264)  335.2700 (N00347)  400.0000     
+
+(X_M2.11)  335.7200                   (X_M2.12)  335.6800                       
+
+(X_M2.13)  340.1700                   (X_M2.14)  333.3800                       
+
+(X_M2.16)  399.3900                   (X_M2.17)  399.3800                   
+
+
+**** Interrupt ****

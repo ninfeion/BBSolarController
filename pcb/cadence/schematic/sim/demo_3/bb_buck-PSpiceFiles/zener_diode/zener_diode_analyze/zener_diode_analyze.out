@@ -1,0 +1,599 @@
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "zener_diode_analyze.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10000us 0 1us 
+.STEP LIN V_V1 -40 40 5 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\zener_diode.net" 
+
+
+
+**** INCLUDING zener_diode.net ****
+* source BB_BUCK
+V_V1         N00206 0 0Vdc
+D_D3         0 N00103 D1N4744A 
+D_D2         N00187 N00103 D1N4744A 
+R_R2         N00187 0  1k TC=0,0 
+R_R1         N00206 N00187  1k TC=0,0 
+
+**** RESUMING zener_diode_analyze.cir ****
+.END
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4744A        
+          IS    4.997600E-24 
+           N    1.6405       
+         ISR    2.247333E-06 
+          NR    2.89714      
+          BV   15.048        
+         IBV     .1296       
+          RS     .21797      
+          TT  605.000000E-09 
+         CJO  260.000000E-12 
+          VJ     .46328      
+           M     .2466       
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =  -40    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)    -.6393 (N00187)  -15.6190 (N00206)  -40.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         2.438E-02
+
+    TOTAL POWER DISSIPATION   9.75E-01  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =  -35    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)    -.5844 (N00187)  -15.5430 (N00206)  -35.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.946E-02
+
+    TOTAL POWER DISSIPATION   6.81E-01  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =  -30    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)    -.1781 (N00187)  -14.9900 (N00206)  -30.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.501E-02
+
+    TOTAL POWER DISSIPATION   4.50E-01  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =  -25    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)    -.0916 (N00187)  -12.4970 (N00206)  -25.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.250E-02
+
+    TOTAL POWER DISSIPATION   3.13E-01  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =  -20    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)    -.0887 (N00187)   -9.9976 (N00206)  -20.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.000E-02
+
+    TOTAL POWER DISSIPATION   2.00E-01  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =  -15    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)    -.0851 (N00187)   -7.4977 (N00206)  -15.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         7.502E-03
+
+    TOTAL POWER DISSIPATION   1.13E-01  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =  -10    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)    -.0802 (N00187)   -4.9979 (N00206)  -10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         5.002E-03
+
+    TOTAL POWER DISSIPATION   5.00E-02  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =   -5     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)    -.0726 (N00187)   -2.4982 (N00206)   -5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         2.502E-03
+
+    TOTAL POWER DISSIPATION   1.25E-02  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =    0     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)-7.310E-18 (N00187)    0.0000 (N00206)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =    5     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)    2.4256 (N00187)    2.4982 (N00206)    5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.502E-03
+
+    TOTAL POWER DISSIPATION   1.25E-02  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =   10    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)    4.9177 (N00187)    4.9979 (N00206)   10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.002E-03
+
+    TOTAL POWER DISSIPATION   5.00E-02  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =   15    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)    7.4127 (N00187)    7.4977 (N00206)   15.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -7.502E-03
+
+    TOTAL POWER DISSIPATION   1.13E-01  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =   20    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)    9.9089 (N00187)    9.9976 (N00206)   20.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.000E-02
+
+    TOTAL POWER DISSIPATION   2.00E-01  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =   25    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)   12.4060 (N00187)   12.4970 (N00206)   25.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.250E-02
+
+    TOTAL POWER DISSIPATION   3.13E-01  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =   30    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)   14.8120 (N00187)   14.9900 (N00206)   30.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.501E-02
+
+    TOTAL POWER DISSIPATION   4.50E-01  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =   35    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)   14.9580 (N00187)   15.5430 (N00206)   35.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.946E-02
+
+    TOTAL POWER DISSIPATION   6.81E-01  WATTS
+
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V1 =   40    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)   14.9800 (N00187)   15.6190 (N00206)   40.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.438E-02
+
+    TOTAL POWER DISSIPATION   9.75E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/08/16 11:54:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "zener_diode-zener_diode_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFi
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     V_V1 =   40    
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.23
+

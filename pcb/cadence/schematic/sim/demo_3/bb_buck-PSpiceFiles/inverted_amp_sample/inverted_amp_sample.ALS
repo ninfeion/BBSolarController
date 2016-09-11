@@ -1,0 +1,27 @@
+.ALIASES
+V_V4            V4(+=VCC -=0 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS3913@SOURCE.VDC.Normal(chips)
+V_V3            V3(+=0 -=VEE ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS3893@SOURCE.VDC.Normal(chips)
+R_R1            R1(1=0 2=N03441 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS3469@ANALOG.R.Normal(chips)
+V_V2            V2(+=N03407 -=N03423 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS3361@SOURCE.VPULSE.Normal(chips)
+V_V1            V1(+=N03413 -=0 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS3341@SOURCE.VDC.Normal(chips)
+R_R2            R2(1=N03441 2=OUT ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS3587@ANALOG.R.Normal(chips)
+D_D1            D1(1=0 2=N03423 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS3539@DIODE.D1N5818.Normal(chips)
+L_L1            L1(1=N03423 2=OUT ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS3507@ANALOG.L.Normal(chips)
+M_M1            M1(d=N03413 g=N03407 s=N03423 s=N03423 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS3317@PWRMOS.IRF150.Normal(chips)
+C_C1            C1(1=0 2=OUT ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS3453@ANALOG.C.Normal(chips)
+R_R12           R12(1=0 2=N06953 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS6915@ANALOG.R.Normal(chips)
+R_R9            R9(1=N06819 2=N06803 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS6669@ANALOG.R.Normal(chips)
+R_R10           R10(1=N03441 2=N06819 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS6689@ANALOG.R.Normal(chips)
+X_U2            U2(+=N06953 -=N06819 V+=VCC V-=VEE OUT=N06803 ) CN
++@BB_BUCK.inverted_amp_sample(sch_1):INS6635@ANLG_DEV.AD8072jn/AD.Normal(chips)
+R_R11           R11(1=0 2=N06953 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS6893@ANALOG.R.Normal(chips)
+R_R15           R15(1=0 2=N08444 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS8390@ANALOG.R.Normal(chips)
+R_R16           R16(1=0 2=N08444 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS8412@ANALOG.R.Normal(chips)
+R_R14           R14(1=OUT 2=N08360 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS8228@ANALOG.R.Normal(chips)
+R_R13           R13(1=N08360 2=N08344 ) CN @BB_BUCK.inverted_amp_sample(sch_1):INS8208@ANALOG.R.Normal(chips)
+X_U3            U3(+=N08444 -=N08360 V+=VCC V-=VEE OUT=N08344 ) CN
++@BB_BUCK.inverted_amp_sample(sch_1):INS8174@ANLG_DEV.AD8072jn/AD.Normal(chips)
+_    _(out=OUT)
+_    _(VCC=VCC)
+_    _(VEE=VEE)
+.ENDALIASES

@@ -1,0 +1,328 @@
+
+**** 09/05/16 19:29:55 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-noise_analyze"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_analyze
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "noise_analyze.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 1k 100meg
+.NOISE V[out] V_V1 20
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC2.net" 
+
+
+
+**** INCLUDING SCHEMATIC2.net ****
+* source BBAMP_BIASPOINT_ANALYZE
+V_V1         N00145 0 DC 2.7Vdc AC 1Vac 
+V_V2         N00160 0 10Vdc
+Q_Q1         OUT N00152 0 Q2N2222
+R_R1         N00145 N00152  100k  
+R_R2         OUT N00160  1k  
+
+**** RESUMING noise_analyze.cir ****
+.END
+
+**** 09/05/16 19:29:55 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-noise_analyze"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_analyze
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+       LEVEL    1            
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC    1            
+         CJE   22.010000E-12 
+         VJE     .75         
+         MJE     .377        
+         CJC    7.306000E-12 
+         VJC     .75         
+         MJC     .3416       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 09/05/16 19:29:55 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-noise_analyze"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_analyze
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  out)    6.4349  (N00145)    2.7000 (N00152)     .6772 (N00160)   10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.023E-05
+    V_V2        -3.565E-03
+
+    TOTAL POWER DISSIPATION   3.57E-02  WATTS
+
+
+**** 09/05/16 19:29:55 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-noise_analyze"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_analyze
+
+
+ ****     NOISE ANALYSIS                   TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+     FREQUENCY =  1.000E+03 HZ
+
+
+
+
+ **** TRANSISTOR SQUARED NOISE VOLTAGES (SQ V/HZ)
+
+
+
+
+          Q_Q1       
+
+ RB       5.329E-19
+
+ RC       3.058E-23
+
+ RE       0.000E+00
+
+ IBSN     2.084E-13
+
+ IC       1.047E-15
+
+ IBFN     0.000E+00
+
+ TOTAL    2.095E-13
+
+
+
+ **** RESISTOR SQUARED NOISE VOLTAGES (SQ V/HZ)
+
+
+
+
+          R_R1       R_R2       
+
+ TOTAL    5.329E-15  1.519E-17
+
+
+
+
+
+ **** TOTAL OUTPUT NOISE VOLTAGE         =  2.148E-13 SQ V/HZ
+
+                                         =  4.635E-07 V/RT HZ
+
+      TRANSFER FUNCTION VALUE:
+
+        V(out)/V_V1                    =  1.793E+00
+
+      EQUIVALENT INPUT NOISE AT V_V1 =  2.585E-07 V/RT HZ
+
+**** 09/05/16 19:29:55 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-noise_analyze"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_analyze
+
+
+ ****     NOISE ANALYSIS                   TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+     FREQUENCY =  1.000E+05 HZ
+
+
+
+
+ **** TRANSISTOR SQUARED NOISE VOLTAGES (SQ V/HZ)
+
+
+
+
+          Q_Q1       
+
+ RB       4.341E-19
+
+ RC       2.154E-21
+
+ RE       0.000E+00
+
+ IBSN     1.698E-13
+
+ IC       8.584E-16
+
+ IBFN     0.000E+00
+
+ TOTAL    1.706E-13
+
+
+
+ **** RESISTOR SQUARED NOISE VOLTAGES (SQ V/HZ)
+
+
+
+
+          R_R1       R_R2       
+
+ TOTAL    4.341E-15  1.246E-17
+
+
+
+
+
+ **** TOTAL OUTPUT NOISE VOLTAGE         =  1.750E-13 SQ V/HZ
+
+                                         =  4.183E-07 V/RT HZ
+
+      TRANSFER FUNCTION VALUE:
+
+        V(out)/V_V1                    =  1.618E+00
+
+      EQUIVALENT INPUT NOISE AT V_V1 =  2.585E-07 V/RT HZ
+
+**** 09/05/16 19:29:55 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-noise_analyze"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_analyze
+
+
+ ****     NOISE ANALYSIS                   TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+     FREQUENCY =  1.000E+07 HZ
+
+
+
+
+ **** TRANSISTOR SQUARED NOISE VOLTAGES (SQ V/HZ)
+
+
+
+
+          Q_Q1       
+
+ RB       2.336E-22
+
+ RC       1.148E-20
+
+ RE       0.000E+00
+
+ IBSN     9.136E-17
+
+ IC       3.253E-17
+
+ IBFN     0.000E+00
+
+ TOTAL    1.239E-16
+
+
+
+ **** RESISTOR SQUARED NOISE VOLTAGES (SQ V/HZ)
+
+
+
+
+          R_R1       R_R2       
+
+ TOTAL    2.336E-18  4.766E-19
+
+
+
+
+
+ **** TOTAL OUTPUT NOISE VOLTAGE         =  1.267E-16 SQ V/HZ
+
+                                         =  1.126E-08 V/RT HZ
+
+      TRANSFER FUNCTION VALUE:
+
+        V(out)/V_V1                    =  3.754E-02
+
+      EQUIVALENT INPUT NOISE AT V_V1 =  2.999E-07 V/RT HZ
+
+
+          JOB CONCLUDED
+
+**** 09/05/16 19:29:55 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-noise_analyze"  [ C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\demo_1\bbamp_biaspoint_analyze
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

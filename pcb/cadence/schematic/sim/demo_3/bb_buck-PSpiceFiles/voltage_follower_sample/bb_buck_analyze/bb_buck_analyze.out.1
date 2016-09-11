@@ -1,0 +1,461 @@
+
+**** 09/10/16 12:52:12 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "voltage_follower_sample-bb_buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bb_buck_analyze.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000us  0 1us 
+.STEP LIN PARAM DUTY 3us 3us 1us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\voltage_follower_sample.net" 
+
+
+
+**** INCLUDING voltage_follower_sample.net ****
+* source BB_BUCK
+M_M1         N00136 N00132 N00143 N00143 IRF150
+V_V1         N00136 0 70Vdc
+V_V2         N00132 N00143  
++PULSE 0 5 0 0.01us 0.01us {DUTY} 10us
+C_C1         0 OUT  470uF  TC=0,0 
+R_R1         0 N00181  2000 TC=0,0 
+L_L1         N00143 OUT  0.5mH  
+D_D1         0 N00143 D1N5818 
+R_R2         OUT N00181  0.1 TC=0,0 
+X_U1         N02079 AD_I+ VCC VEE AD_I+ AD8072jn/AD
+X_U2         N02066 AD_I- VCC VEE AD_I- AD8072jn/AD
+R_R3         N02079 OUT  450K TC=0,0 
+R_R4         N02079 0  50k TC=0,0 
+R_R5         N00181 N02066  450K TC=0,0 
+R_R6         N02066 0  50k TC=0,0 
+V_V3         0 VEE 15Vdc
+V_V4         VCC 0 -15Vdc
+D_D2         0 N04484 D1N4744A 
+D_D3         N02079 N04484 D1N4744A 
+D_D4         N02066 N04576 D1N4744A 
+D_D5         0 N04576 D1N4744A 
+C_C2         N02079 0  10u  
+C_C3         N02066 0  10u  
+C_C4         N02079 0  0.1u  
+C_C5         0 N02066  0.1u  
+.PARAM  duty=1us
+
+**** RESUMING bb_buck_analyze.cir ****
+.END
+
+**** 09/10/16 12:52:12 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "voltage_follower_sample-bb_buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N5818         D1N4744A        X_U1.dx         X_U1.dn1        
+          IS    2.835000E-06    4.997600E-24   10.000000E-15   10.000000E-15 
+           N                    1.6405                                       
+         ISR   26.460000E-06    2.247333E-06                                 
+          NR                    2.89714                                      
+         IKF     .3227                                                       
+          BV                   15.048                                        
+         IBV                     .1296                                       
+          RS     .04712          .21797                                      
+          TT                  605.000000E-09                                 
+         CJO  359.300000E-12  260.000000E-12                                 
+          VJ     .75             .46328                                      
+           M     .6513           .2466                                       
+         XTI    0                                                            
+          KF                                                  100.000000E-12 
+
+
+               X_U2.dx         X_U2.dn1        
+          IS   10.000000E-15   10.000000E-15 
+          KF                  100.000000E-12 
+
+
+**** 09/10/16 12:52:12 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "voltage_follower_sample-bb_buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qn1        X_U1.qp1        X_U1.qn2        X_U1.qp2        
+               NPN             PNP             NPN             PNP             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF    1.000000E+03    1.000000E+03    1.000000E+03    1.000000E+03 
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.42            2.2          
+           D     .87             .52             .87             .52         
+
+
+               X_U2.qn1        X_U2.qp1        X_U2.qn2        X_U2.qp2        
+               NPN             PNP             NPN             PNP             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF    1.000000E+03    1.000000E+03    1.000000E+03    1.000000E+03 
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.42            2.2          
+           D     .87             .52             .87             .52         
+
+
+**** 09/10/16 12:52:12 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "voltage_follower_sample-bb_buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in transient bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .0124  (  VCC)   -7.8681  (  VEE)   -7.8681  (AD_I+)   -7.1686      
+
+(AD_I-)   -7.1686  (N00132)     .0124 (N00136)   36.7180 (N00143)     .0124     
+
+(N00181)     .0124 (N02066)   -7.1146 (N02079)   -7.1146 (N04484)    -.0845     
+
+(N04576)    -.0845 (X_U1.3)   -7.1136 (X_U1.4)   -7.8710 (X_U1.5)   -7.1681     
+
+(X_U1.8)   -7.1686 (X_U2.3)   -7.1136 (X_U2.4)   -7.8710 (X_U2.5)   -7.1681     
+
+(X_U2.8)   -7.1686 (X_U1.12)   -7.7891                   (X_U1.13)   -9.2004    
+
+(X_U1.14)   -6.3784                   (X_U1.17)   -6.2255                       
+
+(X_U1.19)   -6.8193                   (X_U1.20)   -7.5190                       
+
+(X_U1.23)   -7.1686                   (X_U1.30)   -3.8360                       
+
+(X_U1.31)   -4.1271                   (X_U1.32)   -4.1271                       
+
+(X_U1.33)   -3.8150                   (X_U1.34)   -4.1271                       
+
+(X_U1.35)   -4.1271                   (X_U1.70)   -4.1271                       
+
+(X_U1.72)   -4.1271                   (X_U1.73)   -4.1271                       
+
+(X_U1.90)   -7.8681                   (X_U1.91)   -7.8681                       
+
+(X_U1.98)   -4.1271                   (X_U2.12)   -7.7891                       
+
+(X_U2.13)   -9.2004                   (X_U2.14)   -6.3784                       
+
+(X_U2.17)   -6.2255                   (X_U2.19)   -6.8193                       
+
+(X_U2.20)   -7.5190                   (X_U2.23)   -7.1686                       
+
+(X_U2.30)   -3.8360                   (X_U2.31)   -4.1271                       
+
+(X_U2.32)   -4.1271                   (X_U2.33)   -3.8150                       
+
+(X_U2.34)   -4.1271                   (X_U2.35)   -4.1271                       
+
+(X_U2.70)   -4.1271                   (X_U2.72)   -4.1271                       
+
+(X_U2.73)   -4.1271                   (X_U2.90)   -7.8681                       
+
+(X_U2.91)   -7.8681                   (X_U2.98)   -4.1271                       
+
+(X_U1.300)   -4.1271                  (X_U1.311)   -4.1271                      
+
+(X_U1.312)   -4.1271                  (X_U2.300)   -4.1271                      
+
+(X_U2.311)   -4.1271                  (X_U2.312)   -4.1271                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =    -7.897V  \    -7.169V
+    V(AD_I+)                  =    -7.897V  \    -7.169V
+    V(X_U1.32)                =    -7.868V  \    -4.127V
+    V(X_U1.98)                =    -7.868V  \    -4.127V
+    V(X_U1.70)                =    -7.868V  \    -4.127V
+    V(X_U1.72)                =    -7.868V  \    -4.127V
+    V(X_U1.73)                =    -7.868V  \    -4.127V
+    V(X_U1.12)                =    -7.977V  \    -7.789V
+    V(X_U1.30)                =    -7.577V  \    -3.836V
+    V(X_U1.31)                =    -7.868V  \    -4.127V
+    V(X_U1.33)                =    -7.556V  \    -3.815V
+    V(X_U1.34)                =    -7.868V  \    -4.127V
+    V(X_U1.35)                =    -7.868V  \    -4.127V
+    V(X_U1.17)                =    -7.868V  \    -6.226V
+    V(X_U1.300)               =    -7.868V  \    -4.127V
+    V(X_U1.311)               =    -7.868V  \    -4.127V
+    V(X_U1.312)               =    -7.868V  \    -4.127V
+    V(X_U1.23)                =    -7.897V  \    -7.169V
+    V(X_U1.19)                =    -7.548V  \    -6.819V
+    V(X_U1.20)                =    -8.247V  \    -7.519V
+    V(X_U2.8)                 =    -7.897V  \    -7.169V
+    V(AD_I-)                  =    -7.897V  \    -7.169V
+    V(X_U2.32)                =    -7.868V  \    -4.127V
+    V(X_U2.98)                =    -7.868V  \    -4.127V
+    V(X_U2.70)                =    -7.868V  \    -4.127V
+    V(X_U2.72)                =    -7.868V  \    -4.127V
+    V(X_U2.73)                =    -7.868V  \    -4.127V
+    V(X_U2.12)                =    -7.977V  \    -7.789V
+    V(X_U2.30)                =    -7.577V  \    -3.836V
+    V(X_U2.31)                =    -7.868V  \    -4.127V
+    V(X_U2.33)                =    -7.556V  \    -3.815V
+    V(X_U2.34)                =    -7.868V  \    -4.127V
+    V(X_U2.35)                =    -7.868V  \    -4.127V
+    V(X_U2.17)                =    -7.868V  \    -6.226V
+    V(X_U2.300)               =    -7.868V  \    -4.127V
+    V(X_U2.311)               =    -7.868V  \    -4.127V
+    V(X_U2.312)               =    -7.868V  \    -4.127V
+    V(X_U2.23)                =    -7.897V  \    -7.169V
+    V(X_U2.19)                =    -7.548V  \    -6.819V
+    V(X_U2.20)                =    -8.247V  \    -7.519V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =   -2.696MA  \  -465.26uA
+    I(X_U1.eref1)             =    4.867MA  \  -144.01MA
+    I(X_U2.eos)               =   -2.696MA  \  -465.26uA
+    I(X_U2.eref1)             =    4.867MA  \  -144.01MA
+    I(L_L1)                   =   -6.788uA  \    75.94uA
+    I(V_V1)                   =         0A  \   -82.72uA
+    I(V_V2)                   =         0A  \    70.25nA
+    I(V_V3)                   =   688.08KA  \     9.75GA
+    I(V_V4)                   =   -2.135MA  \    10.00GA
+    I(X_U1.v1)                =    1.636mA  \  -119.00uA
+    I(X_U1.v3)                =   -1.137nA  \   -4.974GA
+    I(X_U1.v4)                =   -1.544nA  \   -4.883GA
+    I(X_U1.vo1)               =    1.447MA  \    17.49MA
+    I(X_U1.vo2)               =   723.59KA  \   -17.49MA
+    I(X_U1.vo3)               =  -723.59KA  \    17.49MA
+    I(X_U1.v6)                =   186.50pA  \    52.46MA
+    I(X_U2.v1)                =    1.636mA  \  -119.03uA
+    I(X_U2.v3)                =   -1.137nA  \   -4.974GA
+    I(X_U2.v4)                =   -1.544nA  \   -4.883GA
+    I(X_U2.vo1)               =    1.447MA  \    17.49MA
+    I(X_U2.vo2)               =   723.59KA  \   -17.49MA
+    I(X_U2.vo3)               =  -723.59KA  \    17.49MA
+    I(X_U2.v6)                =   186.50pA  \    52.46MA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.d5   X_U1.d6   X_U2.d3   X_U2.d4   X_U2.d5   
+    X_U2.d6   X_U1.fo1  X_U1.fo2  X_U2.fo1  X_U2.fo2  X_U1.q3   X_U1.q4   
+    X_U2.q3   X_U2.q4   
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 0.001
+**** Param: TMAX = 1e-006
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm (from auto-convergence).
+
+WARNING(ORPSIM-16534): Using high values of ITL4 for Speed Level > 0 may increase total simulation job time.
+
+INTERNAL ERROR -- Divide by Zero, Divide
+
+ABORTING SIMULATION
+**** 09/10/16 12:52:12 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "voltage_follower_sample-bb_buck_analyze"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM DUTY =    3.0000E-06
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =          12
+  External (NCNODS)                 =          66
+  Total (NUMNOD)                    =          74
+
+Total device count (NUMEL)          =         145
+  Capacitors (C)                    =          11
+  Diodes (D)                        =          29
+  VCVS (E)                          =           4
+  CCCS (F)                          =          16
+  VCCS (G)                          =           6
+  Current Sources (I)               =           8
+  Inductors (L)                     =           1
+  MosFETs (M)                       =           1
+  BJTs (Q)                          =           8
+  Resistors (R)                     =          26
+  Voltage Sources (V)               =          34
+
+Number of subcircuits (X)           =           2
+
+Matrix statistics:
+  Matrix size (NSTOP)               =         113
+  Initial no. elements (NTTAR)      =         444
+  No. elements w/ fillin (NTTBR)    =         602
+  No. fillins (IFILL)               =         158
+  No. overflows (NTTOV)             =         519
+  No. LU operations (IOPS)          =         677
+  Percent sparsity (PERSPA)         =      95.285
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =         228
+  No. rejected time points (NUMRTP) =          70
+  No. iterations (NUMNIT)           =        4330
+
+Load Threads                        =           4
+
+Runtime statistics:                       Seconds      Iterations   Stopped At
+  Matrix load                       =         .55
+  Matrix solution                   =         .08              28
+  Readin                            =         .03
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  Default algorithm                 =        -.31           -1050
+  GMIN stepping                     =         .08            1050     100.00m
+  Supply stepping                   =         .03               0       52.47%
+  Quasi-tran                        =         .20               0        0.00%
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .08
+  Total job time (using Solver 1)   =      255.69
+

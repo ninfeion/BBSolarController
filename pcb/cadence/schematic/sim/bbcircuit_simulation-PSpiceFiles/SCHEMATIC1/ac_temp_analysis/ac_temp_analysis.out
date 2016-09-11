@@ -1,0 +1,424 @@
+
+**** 09/05/16 21:59:44 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac_temp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpice
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ac_temp_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.5ms 0 1u 
+.TEMP 27 40 50 60 80
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BBCIRCUIT_SIMULATION
+Q_Q2         N03163 N03140 N03192 Q2N2222
+V_V4         N03116 0 12Vdc
+V_V5         N03082 0 DC 0 AC 1V sin(0 10mv 10khz)
+C_C8         N03163 OUT  10u  TC=0,0 
+C_C9         N03075 N03140  10u  TC=0,0 
+C_C10         0 N03192  50u  TC=0,0 
+R_R1         0 OUT  5.1k TC=0,0 
+R_R2         0 N03192  100 TC=0,0 
+R_R3         0 N03140  24k TC=0,0 
+R_R4         N03082 N03075  100 TC=0,0 
+R_R5         N03163 N03116  5.1k TC=0,0 
+R_R6         N03140 N03116  300k TC=0,0 
+
+**** RESUMING ac_temp_analysis.cir ****
+.END
+
+**** 09/05/16 21:59:44 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac_temp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpice
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+       LEVEL    1            
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC    1            
+         CJE   22.010000E-12 
+         VJE     .75         
+         MJE     .377        
+         CJC    7.306000E-12 
+         VJC     .75         
+         MJC     .3416       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 09/05/16 21:59:44 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac_temp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    0.0000  (N03075)    0.0000 (N03082)    0.0000 (N03116)   12.0000     
+
+(N03140)     .7467 (N03163)    6.8127 (N03192)     .1024 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -1.055E-03
+    V_V5         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.27E-02  WATTS
+
+
+**** 09/05/16 21:59:44 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac_temp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpice
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   40.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** BJT MODEL PARAMETERS
+
+                   Q2N2222    
+
+         BF        2.727E+02  
+        ISE        5.797E-14  
+        VJE        7.272E-01  
+        CJE        2.231E-11  
+         RE        0.000E+00  
+         RB        1.000E+01  
+         BR        6.492E+00  
+        ISC        0.000E+00  
+        VJC        7.272E-01  
+        CJC        7.395E-12  
+         RC        1.000E+00  
+        RBM        1.000E+01  
+         IS        9.673E-14  
+        ISS        0.000E+00  
+        VJS        7.272E-01  
+        CJS        0.000E+00  
+      GAMMA        1.000E-11  
+        RCO        0.000E+00  
+         VO        1.000E+01  
+
+
+**** 09/05/16 21:59:44 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac_temp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   40.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    0.0000  (N03075)    0.0000 (N03082)    0.0000 (N03116)   12.0000     
+
+(N03140)     .7393 (N03163)    6.1618 (N03192)     .1151 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -1.182E-03
+    V_V5         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.42E-02  WATTS
+
+
+**** 09/05/16 21:59:44 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac_temp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpice
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   50.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** BJT MODEL PARAMETERS
+
+                   Q2N2222    
+
+         BF        2.859E+02  
+        ISE        1.574E-13  
+        VJE        7.095E-01  
+        CJE        2.253E-11  
+         RE        0.000E+00  
+         RB        1.000E+01  
+         BR        6.805E+00  
+        ISC        0.000E+00  
+        VJC        7.095E-01  
+        CJC        7.464E-12  
+         RC        1.000E+00  
+        RBM        1.000E+01  
+         IS        3.796E-13  
+        ISS        0.000E+00  
+        VJS        7.095E-01  
+        CJS        0.000E+00  
+      GAMMA        1.000E-11  
+        RCO        0.000E+00  
+         VO        1.000E+01  
+
+
+**** 09/05/16 21:59:44 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac_temp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   50.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    0.0000  (N03075)    0.0000 (N03082)    0.0000 (N03116)   12.0000     
+
+(N03140)     .7339 (N03163)    5.6447 (N03192)     .1253 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -1.284E-03
+    V_V5         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.54E-02  WATTS
+
+
+**** 09/05/16 21:59:44 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac_temp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpice
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   60.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** BJT MODEL PARAMETERS
+
+                   Q2N2222    
+
+         BF        2.992E+02  
+        ISE        4.028E-13  
+        VJE        6.917E-01  
+        CJE        2.276E-11  
+         RE        0.000E+00  
+         RB        1.000E+01  
+         BR        7.124E+00  
+        ISC        0.000E+00  
+        VJC        6.917E-01  
+        CJC        7.533E-12  
+         RC        1.000E+00  
+        RBM        1.000E+01  
+         IS        1.376E-12  
+        ISS        0.000E+00  
+        VJS        6.917E-01  
+        CJS        0.000E+00  
+      GAMMA        1.000E-11  
+        RCO        0.000E+00  
+         VO        1.000E+01  
+
+
+**** 09/05/16 21:59:44 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac_temp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   60.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    0.0000  (N03075)    0.0000 (N03082)    0.0000 (N03116)   12.0000     
+
+(N03140)     .7287 (N03163)    5.1144 (N03192)     .1357 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -1.388E-03
+    V_V5         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.67E-02  WATTS
+
+
+**** 09/05/16 21:59:44 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac_temp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpice
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   80.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** BJT MODEL PARAMETERS
+
+                   Q2N2222    
+
+         BF        3.266E+02  
+        ISE        2.254E-12  
+        VJE        6.557E-01  
+        CJE        2.323E-11  
+         RE        0.000E+00  
+         RB        1.000E+01  
+         BR        7.775E+00  
+        ISC        0.000E+00  
+        VJC        6.557E-01  
+        CJC        7.673E-12  
+         RC        1.000E+00  
+        RBM        1.000E+01  
+         IS        1.464E-11  
+        ISS        0.000E+00  
+        VJS        6.557E-01  
+        CJS        0.000E+00  
+      GAMMA        1.000E-11  
+        RCO        0.000E+00  
+         VO        1.000E+01  
+
+
+**** 09/05/16 21:59:44 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac_temp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpice
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   80.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    0.0000  (N03075)    0.0000 (N03082)    0.0000 (N03116)   12.0000     
+
+(N03140)     .7188 (N03163)    4.0175 (N03192)     .1573 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -1.603E-03
+    V_V5         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.92E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/05/16 21:59:44 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac_temp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpice
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .11
+

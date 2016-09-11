@@ -1,0 +1,6 @@
+* source BBCIRCUIT_SIMULATION
+R_R1         N01613 N01132  {Rs}  
+L_L1         N01613 N00976  1mH  
+C_C1         0 N00976  0.5u   
+V_V1         N01132 0 DC 0Vdc AC 1Vac 
+.PARAM  rs=0

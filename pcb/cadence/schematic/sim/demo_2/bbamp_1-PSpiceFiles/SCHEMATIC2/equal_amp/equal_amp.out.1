@@ -1,0 +1,3649 @@
+
+**** 09/05/16 20:57:23 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-equal_amp"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_1\demo_2\bbamp_1-pspicefiles\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "equal_amp.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 -15 15 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC2.net" 
+
+
+
+**** INCLUDING SCHEMATIC2.net ****
+* source BBAMP_1
+X_U1         N01121 OUT N01011 N01031 OUT AD8072jn/AD
+V_V2         0 N01031 -15Vdc
+V_V1         N01011 0 15Vdc
+V_V3         N01121 0 0Vdc
+
+**** RESUMING equal_amp.cir ****
+.END
+
+**** 09/05/16 20:57:23 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-equal_amp"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_1\demo_2\bbamp_1-pspicefiles\
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         X_U1.dn1        
+          IS   10.000000E-15   10.000000E-15 
+          KF                  100.000000E-12 
+
+
+**** 09/05/16 20:57:23 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-equal_amp"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_1\demo_2\bbamp_1-pspicefiles\
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qn1        X_U1.qp1        X_U1.qn2        X_U1.qp2        
+               NPN             PNP             NPN             PNP             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF    1.000000E+03    1.000000E+03    1.000000E+03    1.000000E+03 
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.42            2.2          
+           D     .87             .52             .87             .52         
+
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .7729  (N01011)     .7742 (N01031)     .7742 (N01121)    -.7742     
+
+(X_U1.3)    -.7741 (X_U1.4)     .1343 (X_U1.5)     .7742 (X_U1.8)     .7729     
+
+(X_U1.12)     .3979                   (X_U1.13)     .6431                       
+
+(X_U1.14)     .9208                   (X_U1.17)     .1498                       
+
+(X_U1.19)     .8073                   (X_U1.20)     .7384                       
+
+(X_U1.23)     .7729                   (X_U1.30)     .0686                       
+
+(X_U1.31)     .0400                   (X_U1.32)     .0400                       
+
+(X_U1.33)     .0707                   (X_U1.34)     .0400                       
+
+(X_U1.35)     .0400                   (X_U1.70)     .0400                       
+
+(X_U1.72)     .0400                   (X_U1.73)     .0400                       
+
+(X_U1.90)     .7742                   (X_U1.91)     .7742                       
+
+(X_U1.98)     .0400                   (X_U1.300)     .0401                      
+
+(X_U1.311)     .0400                  (X_U1.312)     .0400                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     1.507V  \   772.90mV
+    V(OUT)                    =     1.507V  \   772.90mV
+    V(X_U1.5)                 =    14.77KV  \   774.22mV
+    V(X_U1.4)                 =   134.98mV  \   134.29mV
+    V(X_U1.3)                 =  -772.25mV  \  -774.14mV
+    V(X_U1.32)                =   774.25mV  \    39.96mV
+    V(X_U1.98)                =   774.25mV  \    39.96mV
+    V(X_U1.70)                =   764.65mV  \    39.98mV
+    V(X_U1.72)                =   774.25mV  \    39.96mV
+    V(X_U1.73)                =   774.25mV  \    39.96mV
+    V(X_U1.12)                =     1.132V  \   397.89mV
+    V(X_U1.30)                =   802.89mV  \    68.61mV
+    V(X_U1.31)                =   774.25mV  \    39.96mV
+    V(X_U1.33)                =   804.96mV  \    70.68mV
+    V(X_U1.34)                =   774.25mV  \    39.96mV
+    V(X_U1.35)                =   774.25mV  \    39.96mV
+    V(X_U1.17)                =   884.06mV  \   149.77mV
+    V(X_U1.300)               =    -46.20V  \    40.12mV
+    V(X_U1.311)               =   774.25mV  \    39.96mV
+    V(X_U1.312)               =   774.25mV  \    39.96mV
+    V(X_U1.23)                =     1.507V  \   772.90mV
+    V(X_U1.19)                =     1.542V  \   807.27mV
+    V(X_U1.20)                =     1.473V  \   738.42mV
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =   866.48KA  \    10.00GA
+    I(X_U1.eref1)             =  -866.48KA  \    1.104mA
+    I(V_V2)                   =  -348.19mA  \    10.00GA
+    I(V_V1)                   =   347.19mA  \  -871.70uA
+    I(V_V3)                   =   866.48KA  \    10.00GA
+    I(X_U1.v1)                =  -149.95uA  \   278.26nA
+    I(X_U1.v4)                =   165.44uA  \   -6.040uA
+    I(X_U1.vi1)               =   -65.25pA  \ 212.33e-18A
+    I(X_U1.vi2)               =    65.03pA  \ -211.98e-18A
+    I(X_U1.vo1)               =  -734.00mA  \    2.391uA
+    I(X_U1.vo2)               =  -366.45mA  \   549.87uA
+    I(X_U1.vo3)               =   366.45mA  \  -549.87uA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+WARNING(ORPSIM-16534): Using high values of ITL4 for Speed Level > 0 may increase total simulation job time.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .7994  (N01011)     .8009 (N01031)     .8009 (N01121)    -.7476     
+
+(X_U1.3)    -.7474 (X_U1.4)     .1601 (X_U1.5)     .8009 (X_U1.8)     .7994     
+
+(X_U1.12)     .4285                   (X_U1.13)     .6653                       
+
+(X_U1.14)     .9526                   (X_U1.17)     .1730                       
+
+(X_U1.19)     .8350                   (X_U1.20)     .7637                       
+
+(X_U1.23)     .7994                   (X_U1.30)     .0724                       
+
+(X_U1.31)     .0428                   (X_U1.32)     .0428                       
+
+(X_U1.33)     .0745                   (X_U1.34)     .0428                       
+
+(X_U1.35)     .0428                   (X_U1.70)     .0428                       
+
+(X_U1.72)     .0428                   (X_U1.73)     .0428                       
+
+(X_U1.90)     .8009                   (X_U1.91)     .8009                       
+
+(X_U1.98)     .0428                   (X_U1.300)     .0429                      
+
+(X_U1.311)     .0428                  (X_U1.312)     .0428                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     1.558V  \   799.39mV
+    V(OUT)                    =     1.558V  \   799.39mV
+    V(X_U1.5)                 =    16.34KV  \   800.92mV
+    V(X_U1.4)                 =   160.82mV  \   160.11mV
+    V(X_U1.3)                 =  -745.55mV  \  -747.44mV
+    V(X_U1.32)                =   800.95mV  \    42.77mV
+    V(X_U1.98)                =   800.95mV  \    42.77mV
+    V(X_U1.70)                =   790.78mV  \    42.79mV
+    V(X_U1.72)                =   800.95mV  \    42.77mV
+    V(X_U1.73)                =   800.95mV  \    42.77mV
+    V(X_U1.12)                =     1.187V  \   428.54mV
+    V(X_U1.30)                =   830.58mV  \    72.40mV
+    V(X_U1.31)                =   800.95mV  \    42.77mV
+    V(X_U1.33)                =   832.72mV  \    74.54mV
+    V(X_U1.34)                =   800.95mV  \    42.77mV
+    V(X_U1.35)                =   800.95mV  \    42.77mV
+    V(X_U1.17)                =   931.21mV  \   173.03mV
+    V(X_U1.300)               =    -47.70V  \    42.92mV
+    V(X_U1.311)               =   800.95mV  \    42.77mV
+    V(X_U1.312)               =   800.95mV  \    42.77mV
+    V(X_U1.23)                =     1.558V  \   799.39mV
+    V(X_U1.19)                =     1.593V  \   834.95mV
+    V(X_U1.20)                =     1.522V  \   763.72mV
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =   612.41KA  \    10.00GA
+    I(X_U1.eref1)             =  -612.41KA  \    1.309mA
+    I(V_V2)                   =  -358.78mA  \    10.00GA
+    I(V_V1)                   =   357.74mA  \  -979.60uA
+    I(V_V3)                   =   612.41KA  \    10.00GA
+    I(X_U1.v1)                =  -158.86uA  \   330.39nA
+    I(X_U1.v4)                =   178.46uA  \   -6.303uA
+    I(X_U1.vi1)               =   -67.37pA  \ 208.38e-18A
+    I(X_U1.vi2)               =    67.15pA  \ -208.04e-18A
+    I(X_U1.vo1)               =  -757.88mA  \    2.346uA
+    I(X_U1.vo2)               =  -378.29mA  \   652.12uA
+    I(X_U1.vo3)               =   378.29mA  \  -652.12uA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .8278  (N01011)     .8296 (N01031)     .8296 (N01121)    -.7189     
+
+(X_U1.3)    -.7188 (X_U1.4)     .1878 (X_U1.5)     .8295 (X_U1.8)     .8278     
+
+(X_U1.12)     .4614                   (X_U1.13)     .6891                       
+
+(X_U1.14)     .9866                   (X_U1.17)     .1986                       
+
+(X_U1.19)     .8646                   (X_U1.20)     .7908                       
+
+(X_U1.23)     .8278                   (X_U1.30)     .0766                       
+
+(X_U1.31)     .0459                   (X_U1.32)     .0459                       
+
+(X_U1.33)     .0788                   (X_U1.34)     .0459                       
+
+(X_U1.35)     .0459                   (X_U1.70)     .0459                       
+
+(X_U1.72)     .0459                   (X_U1.73)     .0459                       
+
+(X_U1.90)     .8296                   (X_U1.91)     .8296                       
+
+(X_U1.98)     .0459                   (X_U1.300)     .0460                      
+
+(X_U1.311)     .0459                  (X_U1.312)     .0459                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     1.611V  \   827.77mV
+    V(OUT)                    =     1.611V  \   827.77mV
+    V(X_U1.5)                 =    18.14KV  \   829.53mV
+    V(X_U1.4)                 =   188.54mV  \   187.81mV
+    V(X_U1.3)                 =  -716.95mV  \  -718.84mV
+    V(X_U1.32)                =   829.55mV  \    45.88mV
+    V(X_U1.98)                =   829.55mV  \    45.88mV
+    V(X_U1.70)                =   818.77mV  \    45.90mV
+    V(X_U1.72)                =   829.55mV  \    45.88mV
+    V(X_U1.73)                =   829.55mV  \    45.88mV
+    V(X_U1.12)                =     1.245V  \   461.43mV
+    V(X_U1.30)                =   860.25mV  \    76.57mV
+    V(X_U1.31)                =   829.55mV  \    45.88mV
+    V(X_U1.33)                =   862.46mV  \    78.78mV
+    V(X_U1.34)                =   829.55mV  \    45.88mV
+    V(X_U1.35)                =   829.55mV  \    45.88mV
+    V(X_U1.17)                =   982.25mV  \   198.57mV
+    V(X_U1.300)               =    -49.31V  \    46.02mV
+    V(X_U1.311)               =   829.55mV  \    45.88mV
+    V(X_U1.312)               =   829.55mV  \    45.88mV
+    V(X_U1.23)                =     1.611V  \   827.77mV
+    V(X_U1.19)                =     1.648V  \   864.61mV
+    V(X_U1.20)                =     1.575V  \   790.83mV
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =   633.06KA  \    10.00GA
+    I(X_U1.eref1)             =  -633.06KA  \    1.537mA
+    I(V_V2)                   =  -370.03mA  \    10.00GA
+    I(V_V1)                   =   368.94mA  \   -1.097mA
+    I(V_V3)                   =   633.06KA  \    10.00GA
+    I(X_U1.v1)                =  -168.56uA  \   391.62nA
+    I(X_U1.v4)                =   192.94uA  \   -6.585uA
+    I(X_U1.vi1)               =   -69.63pA  \ 203.79e-18A
+    I(X_U1.vi2)               =    69.41pA  \ -203.47e-18A
+    I(X_U1.vo1)               =  -783.37mA  \    2.295uA
+    I(X_U1.vo2)               =  -390.92mA  \   764.26uA
+    I(X_U1.vo3)               =   390.92mA  \  -764.26uA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .8583  (N01011)     .8603 (N01031)     .8603 (N01121)    -.6882     
+
+(X_U1.3)    -.6881 (X_U1.4)     .2176 (X_U1.5)     .8603 (X_U1.8)     .8583     
+
+(X_U1.12)     .4968                   (X_U1.13)     .7146                       
+
+(X_U1.14)    1.0232                   (X_U1.17)     .2266                       
+
+(X_U1.19)     .8965                   (X_U1.20)     .8199                       
+
+(X_U1.23)     .8583                   (X_U1.30)     .0812                       
+
+(X_U1.31)     .0493                   (X_U1.32)     .0493                       
+
+(X_U1.33)     .0835                   (X_U1.34)     .0493                       
+
+(X_U1.35)     .0493                   (X_U1.70)     .0494                       
+
+(X_U1.72)     .0493                   (X_U1.73)     .0493                       
+
+(X_U1.90)     .8603                   (X_U1.91)     .8603                       
+
+(X_U1.98)     .0493                   (X_U1.300)     .0495                      
+
+(X_U1.311)     .0493                  (X_U1.312)     .0493                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     1.669V  \   858.25mV
+    V(OUT)                    =     1.669V  \   858.25mV
+    V(X_U1.5)                 =    20.23KV  \   860.26mV
+    V(X_U1.4)                 =   218.34mV  \   217.60mV
+    V(X_U1.3)                 =  -686.23mV  \  -688.11mV
+    V(X_U1.32)                =   860.28mV  \    49.34mV
+    V(X_U1.98)                =   860.28mV  \    49.34mV
+    V(X_U1.70)                =   848.82mV  \    49.37mV
+    V(X_U1.72)                =   860.28mV  \    49.34mV
+    V(X_U1.73)                =   860.28mV  \    49.34mV
+    V(X_U1.12)                =     1.308V  \   496.83mV
+    V(X_U1.30)                =   892.11mV  \    81.17mV
+    V(X_U1.31)                =   860.28mV  \    49.34mV
+    V(X_U1.33)                =   894.41mV  \    83.46mV
+    V(X_U1.34)                =   860.28mV  \    49.34mV
+    V(X_U1.35)                =   860.28mV  \    49.34mV
+    V(X_U1.17)                =     1.038V  \   226.56mV
+    V(X_U1.300)               =    -51.02V  \    49.48mV
+    V(X_U1.311)               =   860.28mV  \    49.34mV
+    V(X_U1.312)               =   860.28mV  \    49.34mV
+    V(X_U1.23)                =     1.669V  \   858.25mV
+    V(X_U1.19)                =     1.707V  \   896.45mV
+    V(X_U1.20)                =     1.631V  \   819.94mV
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =   393.08KA  \    10.00GA
+    I(X_U1.eref1)             =  -393.08KA  \    1.782mA
+    I(V_V2)                   =  -382.00mA  \    10.00GA
+    I(V_V1)                   =   380.85mA  \   -1.225mA
+    I(V_V3)                   =   393.08KA  \    10.00GA
+    I(X_U1.v1)                =  -179.13uA  \   460.77nA
+    I(X_U1.v4)                =   208.94uA  \   -6.883uA
+    I(X_U1.vi1)               =   -72.05pA  \ 198.49e-18A
+    I(X_U1.vi2)               =    71.83pA  \ -198.18e-18A
+    I(X_U1.vo1)               =  -810.62mA  \    2.235uA
+    I(X_U1.vo2)               =  -404.43mA  \   886.88uA
+    I(X_U1.vo3)               =   404.43mA  \  -886.88uA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .8911  (N01011)     .8934 (N01031)     .8934 (N01121)    -.6551     
+
+(X_U1.3)    -.6550 (X_U1.4)     .2497 (X_U1.5)     .8933 (X_U1.8)     .8911     
+
+(X_U1.12)     .5350                   (X_U1.13)     .7421                       
+
+(X_U1.14)    1.0625                   (X_U1.17)     .2572                       
+
+(X_U1.19)     .9307                   (X_U1.20)     .8513                       
+
+(X_U1.23)     .8911                   (X_U1.30)     .0863                       
+
+(X_U1.31)     .0532                   (X_U1.32)     .0532                       
+
+(X_U1.33)     .0886                   (X_U1.34)     .0532                       
+
+(X_U1.35)     .0532                   (X_U1.70)     .0532                       
+
+(X_U1.72)     .0532                   (X_U1.73)     .0532                       
+
+(X_U1.90)     .8934                   (X_U1.91)     .8934                       
+
+(X_U1.98)     .0532                   (X_U1.300)     .0533                      
+
+(X_U1.311)     .0532                  (X_U1.312)     .0532                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     1.731V  \   891.08mV
+    V(OUT)                    =     1.731V  \   891.08mV
+    V(X_U1.5)                 =    22.64KV  \   893.35mV
+    V(X_U1.4)                 =   250.48mV  \   249.71mV
+    V(X_U1.3)                 =  -653.14mV  \  -655.02mV
+    V(X_U1.32)                =   893.37mV  \    53.21mV
+    V(X_U1.98)                =   893.37mV  \    53.21mV
+    V(X_U1.70)                =   881.17mV  \    53.24mV
+    V(X_U1.72)                =   893.37mV  \    53.21mV
+    V(X_U1.73)                =   893.37mV  \    53.21mV
+    V(X_U1.12)                =     1.375V  \   535.04mV
+    V(X_U1.30)                =   926.43mV  \    86.26mV
+    V(X_U1.31)                =   893.37mV  \    53.21mV
+    V(X_U1.33)                =   928.81mV  \    88.65mV
+    V(X_U1.34)                =   893.37mV  \    53.21mV
+    V(X_U1.35)                =   893.37mV  \    53.21mV
+    V(X_U1.17)                =     1.097V  \   257.21mV
+    V(X_U1.300)               =    -52.86V  \    53.35mV
+    V(X_U1.311)               =   893.37mV  \    53.21mV
+    V(X_U1.312)               =   893.37mV  \    53.21mV
+    V(X_U1.23)                =     1.731V  \   891.08mV
+    V(X_U1.19)                =     1.771V  \   930.74mV
+    V(X_U1.20)                =     1.692V  \   851.29mV
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =   814.56KA  \    10.00GA
+    I(X_U1.eref1)             =  -814.56KA  \    2.051mA
+    I(V_V2)                   =  -394.76mA  \    10.00GA
+    I(V_V1)                   =   393.56mA  \   -1.364mA
+    I(V_V3)                   =   814.56KA  \    10.00GA
+    I(X_U1.v1)                =  -190.68uA  \   540.12nA
+    I(X_U1.v4)                =   226.56uA  \   -7.196uA
+    I(X_U1.vi1)               =   -74.64pA  \ 192.37e-18A
+    I(X_U1.vi2)               =    74.42pA  \ -192.08e-18A
+    I(X_U1.vo1)               =  -839.84mA  \    2.166uA
+    I(X_U1.vo2)               =  -418.90mA  \    1.021mA
+    I(X_U1.vo3)               =   418.90mA  \   -1.021mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .9265  (N01011)     .9291 (N01031)     .9291 (N01121)    -.6194     
+
+(X_U1.3)    -.6193 (X_U1.4)     .2844 (X_U1.5)     .9291 (X_U1.8)     .9265     
+
+(X_U1.12)     .5763                   (X_U1.13)     .7718                       
+
+(X_U1.14)    1.1050                   (X_U1.17)     .2908                       
+
+(X_U1.19)     .9678                   (X_U1.20)     .8851                       
+
+(X_U1.23)     .9265                   (X_U1.30)     .0919                       
+
+(X_U1.31)     .0576                   (X_U1.32)     .0576                       
+
+(X_U1.33)     .0944                   (X_U1.34)     .0576                       
+
+(X_U1.35)     .0576                   (X_U1.70)     .0576                       
+
+(X_U1.72)     .0576                   (X_U1.73)     .0576                       
+
+(X_U1.90)     .9291                   (X_U1.91)     .9291                       
+
+(X_U1.98)     .0576                   (X_U1.300)     .0577                      
+
+(X_U1.311)     .0576                  (X_U1.312)     .0576                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     1.798V  \   926.52mV
+    V(OUT)                    =     1.798V  \   926.52mV
+    V(X_U1.5)                 =    25.45KV  \   929.08mV
+    V(X_U1.4)                 =   285.22mV  \   284.43mV
+    V(X_U1.3)                 =  -617.41mV  \  -619.28mV
+    V(X_U1.32)                =   929.11mV  \    57.55mV
+    V(X_U1.98)                =   929.11mV  \    57.55mV
+    V(X_U1.70)                =   916.09mV  \    57.59mV
+    V(X_U1.72)                =   929.11mV  \    57.55mV
+    V(X_U1.73)                =   929.11mV  \    57.55mV
+    V(X_U1.12)                =     1.448V  \   576.28mV
+    V(X_U1.30)                =   963.49mV  \    91.93mV
+    V(X_U1.31)                =   929.11mV  \    57.55mV
+    V(X_U1.33)                =   965.96mV  \    94.40mV
+    V(X_U1.34)                =   929.11mV  \    57.55mV
+    V(X_U1.35)                =   929.11mV  \    57.55mV
+    V(X_U1.17)                =     1.162V  \   290.78mV
+    V(X_U1.300)               =    -54.83V  \    57.68mV
+    V(X_U1.311)               =   929.11mV  \    57.55mV
+    V(X_U1.312)               =   929.11mV  \    57.55mV
+    V(X_U1.23)                =     1.798V  \   926.52mV
+    V(X_U1.19)                =     1.839V  \   967.77mV
+    V(X_U1.20)                =     1.757V  \   885.14mV
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =   704.23KA  \    10.00GA
+    I(X_U1.eref1)             =  -704.23KA  \    2.340mA
+    I(V_V2)                   =  -408.40mA  \    10.00GA
+    I(V_V1)                   =   407.13mA  \   -1.515mA
+    I(V_V3)                   =   704.23KA  \    10.00GA
+    I(X_U1.v1)                =  -203.35uA  \   630.34nA
+    I(X_U1.v4)                =   247.09uA  \   -7.557uA
+    I(X_U1.vi1)               =   -77.43pA  \ 185.30e-18A
+    I(X_U1.vi2)               =    77.21pA  \ -185.04e-18A
+    I(X_U1.vo1)               =  -871.22mA  \    2.087uA
+    I(X_U1.vo2)               =  -434.44mA  \    1.167mA
+    I(X_U1.vo3)               =   434.44mA  \   -1.167mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .9649  (N01011)     .9678 (N01031)     .9678 (N01121)    -.5807     
+
+(X_U1.3)    -.5806 (X_U1.4)     .3221 (X_U1.5)     .9678 (X_U1.8)     .9649     
+
+(X_U1.12)     .6211                   (X_U1.13)     .8039                       
+
+(X_U1.14)    1.1511                   (X_U1.17)     .3276                       
+
+(X_U1.19)    1.0079                   (X_U1.20)     .9218                       
+
+(X_U1.23)     .9649                   (X_U1.30)     .0983                       
+
+(X_U1.31)     .0624                   (X_U1.32)     .0624                       
+
+(X_U1.33)     .1008                   (X_U1.34)     .0624                       
+
+(X_U1.35)     .0624                   (X_U1.70)     .0625                       
+
+(X_U1.72)     .0624                   (X_U1.73)     .0624                       
+
+(X_U1.90)     .9678                   (X_U1.91)     .9678                       
+
+(X_U1.98)     .0624                   (X_U1.300)     .0626                      
+
+(X_U1.311)     .0624                  (X_U1.312)     .0624                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     1.870V  \   964.92mV
+    V(OUT)                    =     1.870V  \   964.92mV
+    V(X_U1.5)                 =    28.74KV  \   967.80mV
+    V(X_U1.4)                 =   322.90mV  \   322.09mV
+    V(X_U1.3)                 =  -578.70mV  \  -580.57mV
+    V(X_U1.32)                =   967.83mV  \    62.45mV
+    V(X_U1.98)                =   967.83mV  \    62.45mV
+    V(X_U1.70)                =   953.92mV  \    62.49mV
+    V(X_U1.72)                =   967.83mV  \    62.45mV
+    V(X_U1.73)                =   967.83mV  \    62.45mV
+    V(X_U1.12)                =     1.527V  \   621.12mV
+    V(X_U1.30)                =     1.004V  \    98.26mV
+    V(X_U1.31)                =   967.83mV  \    62.45mV
+    V(X_U1.33)                =     1.006V  \   100.84mV
+    V(X_U1.34)                =   967.83mV  \    62.45mV
+    V(X_U1.35)                =   967.83mV  \    62.45mV
+    V(X_U1.17)                =     1.233V  \   327.58mV
+    V(X_U1.300)               =    -56.95V  \    62.57mV
+    V(X_U1.311)               =   967.83mV  \    62.45mV
+    V(X_U1.312)               =   967.83mV  \    62.45mV
+    V(X_U1.23)                =     1.870V  \   964.92mV
+    V(X_U1.19)                =     1.913V  \     1.008V
+    V(X_U1.20)                =     1.827V  \   921.82mV
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =   877.94KA  \    10.00GA
+    I(X_U1.eref1)             =  -877.94KA  \    2.662mA
+    I(V_V2)                   =  -422.99mA  \    10.00GA
+    I(V_V1)                   =   421.65mA  \   -1.679mA
+    I(V_V3)                   =   877.94KA  \    10.00GA
+    I(X_U1.v1)                =  -217.29uA  \   734.35nA
+    I(X_U1.v4)                =   269.17uA  \   -7.916uA
+    I(X_U1.vi1)               =   -80.43pA  \ 177.13e-18A
+    I(X_U1.vi2)               =    80.21pA  \ -176.89e-18A
+    I(X_U1.vo1)               =  -905.03mA  \    1.995uA
+    I(X_U1.vo2)               =  -451.19mA  \    1.326mA
+    I(X_U1.vo3)               =   451.19mA  \   -1.326mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    1.0067  (N01011)    1.0099 (N01031)    1.0099 (N01121)    -.5386     
+
+(X_U1.3)    -.5385 (X_U1.4)     .3631 (X_U1.5)    1.0099 (X_U1.8)    1.0067     
+
+(X_U1.12)     .6699                   (X_U1.13)     .8389                       
+
+(X_U1.14)    1.2011                   (X_U1.17)     .3680                       
+
+(X_U1.19)    1.0515                   (X_U1.20)     .9617                       
+
+(X_U1.23)    1.0067                   (X_U1.30)     .1054                       
+
+(X_U1.31)     .0680                   (X_U1.32)     .0680                       
+
+(X_U1.33)     .1081                   (X_U1.34)     .0680                       
+
+(X_U1.35)     .0680                   (X_U1.70)     .0680                       
+
+(X_U1.72)     .0680                   (X_U1.73)     .0680                       
+
+(X_U1.90)    1.0099                   (X_U1.91)    1.0099                       
+
+(X_U1.98)     .0680                   (X_U1.300)     .0681                      
+
+(X_U1.311)     .0680                  (X_U1.312)     .0680                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     1.949V  \     1.007V
+    V(OUT)                    =     1.949V  \     1.007V
+    V(X_U1.5)                 =    32.63KV  \     1.010V
+    V(X_U1.4)                 =   363.90mV  \   363.07mV
+    V(X_U1.3)                 =  -536.62mV  \  -538.48mV
+    V(X_U1.32)                =     1.010V  \    67.99mV
+    V(X_U1.98)                =     1.010V  \    67.99mV
+    V(X_U1.70)                =     0.995V  \    68.05mV
+    V(X_U1.72)                =     1.010V  \    67.99mV
+    V(X_U1.73)                =     1.010V  \    67.99mV
+    V(X_U1.12)                =     1.612V  \   669.85mV
+    V(X_U1.30)                =     1.047V  \   105.36mV
+    V(X_U1.31)                =     1.010V  \    67.99mV
+    V(X_U1.33)                =     1.050V  \   108.05mV
+    V(X_U1.34)                =     1.010V  \    67.99mV
+    V(X_U1.35)                =     1.010V  \    67.99mV
+    V(X_U1.17)                =     1.310V  \   367.98mV
+    V(X_U1.300)               =    -59.25V  \    68.12mV
+    V(X_U1.311)               =     1.010V  \    67.99mV
+    V(X_U1.312)               =     1.010V  \    67.99mV
+    V(X_U1.23)                =     1.949V  \     1.007V
+    V(X_U1.19)                =     1.993V  \     1.052V
+    V(X_U1.20)                =     1.904V  \   961.68mV
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.522MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.522MA  \    3.009mA
+    I(V_V2)                   =  -438.66mA  \    10.00GA
+    I(V_V1)                   =   437.24mA  \   -1.856mA
+    I(V_V3)                   =    1.522MA  \    10.00GA
+    I(X_U1.v1)                =  -232.66uA  \   853.41nA
+    I(X_U1.v4)                =   295.03uA  \   -8.330uA
+    I(X_U1.vi1)               =   -83.67pA  \ 167.68e-18A
+    I(X_U1.vi2)               =    83.45pA  \ -167.46e-18A
+    I(X_U1.vo1)               =  -941.55mA  \    1.888uA
+    I(X_U1.vo2)               =  -469.27mA  \    1.501mA
+    I(X_U1.vo3)               =   469.27mA  \   -1.501mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    1.0522  (N01011)    1.0558 (N01031)    1.0558 (N01121)    -.4927     
+
+(X_U1.3)    -.4926 (X_U1.4)     .4078 (X_U1.5)    1.0558 (X_U1.8)    1.0522     
+
+(X_U1.12)     .7231                   (X_U1.13)     .8770                       
+
+(X_U1.14)    1.2557                   (X_U1.17)     .4125                       
+
+(X_U1.19)    1.0991                   (X_U1.20)    1.0052                       
+
+(X_U1.23)    1.0522                   (X_U1.30)     .1134                       
+
+(X_U1.31)     .0743                   (X_U1.32)     .0743                       
+
+(X_U1.33)     .1162                   (X_U1.34)     .0743                       
+
+(X_U1.35)     .0743                   (X_U1.70)     .0744                       
+
+(X_U1.72)     .0743                   (X_U1.73)     .0743                       
+
+(X_U1.90)    1.0558                   (X_U1.91)    1.0558                       
+
+(X_U1.98)     .0743                   (X_U1.300)     .0744                      
+
+(X_U1.311)     .0743                  (X_U1.312)     .0743                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     2.034V  \     1.052V
+    V(OUT)                    =     2.034V  \     1.052V
+    V(X_U1.5)                 =    37.25KV  \     1.056V
+    V(X_U1.4)                 =   408.68mV  \   407.83mV
+    V(X_U1.3)                 =  -490.72mV  \  -492.57mV
+    V(X_U1.32)                =     1.056V  \    74.32mV
+    V(X_U1.98)                =     1.056V  \    74.32mV
+    V(X_U1.70)                =     1.040V  \    74.38mV
+    V(X_U1.72)                =     1.056V  \    74.32mV
+    V(X_U1.73)                =     1.056V  \    74.32mV
+    V(X_U1.12)                =     1.705V  \   723.13mV
+    V(X_U1.30)                =     1.095V  \   113.38mV
+    V(X_U1.31)                =     1.056V  \    74.32mV
+    V(X_U1.33)                =     1.098V  \   116.20mV
+    V(X_U1.34)                =     1.056V  \    74.32mV
+    V(X_U1.35)                =     1.056V  \    74.32mV
+    V(X_U1.17)                =     1.394V  \   412.45mV
+    V(X_U1.300)               =    -61.74V  \    74.43mV
+    V(X_U1.311)               =     1.056V  \    74.32mV
+    V(X_U1.312)               =     1.056V  \    74.32mV
+    V(X_U1.23)                =     2.034V  \     1.052V
+    V(X_U1.19)                =     2.081V  \     1.099V
+    V(X_U1.20)                =     1.987V  \     1.005V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =   951.91KA  \    10.00GA
+    I(X_U1.eref1)             =  -951.91KA  \    3.393mA
+    I(V_V2)                   =  -455.50mA  \    10.00GA
+    I(V_V1)                   =   453.99mA  \   -2.050mA
+    I(V_V3)                   =   951.91KA  \    10.00GA
+    I(X_U1.v1)                =  -249.68uA  \   990.41nA
+    I(X_U1.v4)                =   323.97uA  \   -8.768uA
+    I(X_U1.vi1)               =   -87.18pA  \ 156.71e-18A
+    I(X_U1.vi2)               =    86.96pA  \ -156.52e-18A
+    I(X_U1.vo1)               =  -981.12mA  \    1.765uA
+    I(X_U1.vo2)               =  -488.87mA  \    1.691mA
+    I(X_U1.vo3)               =   488.87mA  \   -1.691mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    1.1020  (N01011)    1.1061 (N01031)    1.1061 (N01121)    -.4424     
+
+(X_U1.3)    -.4423 (X_U1.4)     .4569 (X_U1.5)    1.1061 (X_U1.8)    1.1020     
+
+(X_U1.12)     .7816                   (X_U1.13)     .9188                       
+
+(X_U1.14)    1.3155                   (X_U1.17)     .4615                       
+
+(X_U1.19)    1.1512                   (X_U1.20)    1.0528                       
+
+(X_U1.23)    1.1020                   (X_U1.30)     .1225                       
+
+(X_U1.31)     .0816                   (X_U1.32)     .0816                       
+
+(X_U1.33)     .1254                   (X_U1.34)     .0816                       
+
+(X_U1.35)     .0816                   (X_U1.70)     .0816                       
+
+(X_U1.72)     .0816                   (X_U1.73)     .0816                       
+
+(X_U1.90)    1.1061                   (X_U1.91)    1.1061                       
+
+(X_U1.98)     .0816                   (X_U1.300)     .0817                      
+
+(X_U1.311)     .0816                  (X_U1.312)     .0816                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     2.127V  \     1.102V
+    V(OUT)                    =     2.127V  \     1.102V
+    V(X_U1.5)                 =    42.79KV  \     1.106V
+    V(X_U1.4)                 =   457.79mV  \   456.91mV
+    V(X_U1.3)                 =  -440.44mV  \  -442.29mV
+    V(X_U1.32)                =     1.106V  \    81.56mV
+    V(X_U1.98)                =     1.106V  \    81.56mV
+    V(X_U1.70)                =     1.089V  \    81.64mV
+    V(X_U1.72)                =     1.106V  \    81.56mV
+    V(X_U1.73)                =     1.106V  \    81.56mV
+    V(X_U1.12)                =     1.806V  \   781.55mV
+    V(X_U1.30)                =     1.147V  \   122.49mV
+    V(X_U1.31)                =     1.106V  \    81.56mV
+    V(X_U1.33)                =     1.150V  \   125.44mV
+    V(X_U1.34)                =     1.106V  \    81.56mV
+    V(X_U1.35)                =     1.106V  \    81.56mV
+    V(X_U1.17)                =     1.486V  \   461.53mV
+    V(X_U1.300)               =    -64.44V  \    81.67mV
+    V(X_U1.311)               =     1.106V  \    81.56mV
+    V(X_U1.312)               =     1.106V  \    81.56mV
+    V(X_U1.23)                =     2.127V  \     1.102V
+    V(X_U1.19)                =     2.176V  \     1.151V
+    V(X_U1.20)                =     2.077V  \     1.053V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =   828.12KA  \    10.00GA
+    I(X_U1.eref1)             =  -828.13KA  \    3.810mA
+    I(V_V2)                   =  -473.67mA  \    10.00GA
+    I(V_V1)                   =   472.06mA  \   -2.261mA
+    I(V_V3)                   =   828.12KA  \    10.00GA
+    I(X_U1.v1)                =  -268.58uA  \    1.148uA
+    I(X_U1.v3)                =  -879.30fA  \   147.20fA
+    I(X_U1.v4)                =   357.06uA  \   -9.247uA
+    I(X_U1.vi1)               =   -90.99pA  \ 143.94e-18A
+    I(X_U1.vi2)               =    90.79pA  \ -143.78e-18A
+    I(X_U1.vo1)               =    -1.024A  \    1.621uA
+    I(X_U1.vo2)               =  -510.17mA  \    1.900mA
+    I(X_U1.vo3)               =   510.17mA  \   -1.900mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    1.1569  (N01011)    1.1614 (N01031)    1.1614 (N01121)    -.3871     
+
+(X_U1.3)    -.3870 (X_U1.4)     .5110 (X_U1.5)    1.1614 (X_U1.8)    1.1569     
+
+(X_U1.12)     .8459                   (X_U1.13)     .9647                       
+
+(X_U1.14)    1.3813                   (X_U1.17)     .5159                       
+
+(X_U1.19)    1.2085                   (X_U1.20)    1.1052                       
+
+(X_U1.23)    1.1569                   (X_U1.30)     .1329                       
+
+(X_U1.31)     .0899                   (X_U1.32)     .0899                       
+
+(X_U1.33)     .1360                   (X_U1.34)     .0899                       
+
+(X_U1.35)     .0899                   (X_U1.70)     .0900                       
+
+(X_U1.72)     .0899                   (X_U1.73)     .0899                       
+
+(X_U1.90)    1.1614                   (X_U1.91)    1.1614                       
+
+(X_U1.98)     .0899                   (X_U1.300)     .0900                      
+
+(X_U1.311)     .0899                  (X_U1.312)     .0899                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     2.228V  \     1.157V
+    V(OUT)                    =     2.228V  \     1.157V
+    V(X_U1.5)                 =    49.47KV  \     1.161V
+    V(X_U1.4)                 =   511.86mV  \   510.96mV
+    V(X_U1.3)                 =  -385.14mV  \  -386.98mV
+    V(X_U1.32)                =     1.161V  \    89.93mV
+    V(X_U1.98)                =     1.161V  \    89.93mV
+    V(X_U1.70)                =     1.143V  \    90.01mV
+    V(X_U1.72)                =     1.161V  \    89.93mV
+    V(X_U1.73)                =     1.161V  \    89.93mV
+    V(X_U1.12)                =     1.917V  \   845.92mV
+    V(X_U1.30)                =     1.204V  \   132.90mV
+    V(X_U1.31)                =     1.161V  \    89.93mV
+    V(X_U1.33)                =     1.208V  \   135.99mV
+    V(X_U1.34)                =     1.161V  \    89.93mV
+    V(X_U1.35)                =     1.161V  \    89.93mV
+    V(X_U1.17)                =     1.587V  \   515.88mV
+    V(X_U1.300)               =    -67.39V  \    90.02mV
+    V(X_U1.311)               =     1.161V  \    89.93mV
+    V(X_U1.312)               =     1.161V  \    89.93mV
+    V(X_U1.23)                =     2.228V  \     1.157V
+    V(X_U1.19)                =     2.280V  \     1.209V
+    V(X_U1.20)                =     2.177V  \     1.105V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    4.284MA  \    10.00GA
+    I(X_U1.eref1)             =   -4.284MA  \    4.271mA
+    I(V_V2)                   =  -493.31mA  \    10.00GA
+    I(V_V1)                   =   491.59mA  \   -2.491mA
+    I(V_V3)                   =    4.284MA  \    10.00GA
+    I(X_U1.v1)                =  -289.65uA  \    1.332uA
+    I(X_U1.v3)                =  -946.95fA  \   128.73fA
+    I(X_U1.v4)                =   394.93uA  \    -9.77uA
+    I(X_U1.vi1)               =   -95.15pA  \ 129.03e-18A
+    I(X_U1.vi2)               =    94.96pA  \ -128.90e-18A
+    I(X_U1.vo1)               =    -1.071A  \    1.453uA
+    I(X_U1.vo2)               =  -533.40mA  \    2.130mA
+    I(X_U1.vo3)               =   533.40mA  \   -2.130mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    1.2175  (N01011)    1.2225 (N01031)    1.2225 (N01121)    -.3260     
+
+(X_U1.3)    -.3258 (X_U1.4)     .5708 (X_U1.5)    1.2225 (X_U1.8)    1.2175     
+
+(X_U1.12)     .9172                   (X_U1.13)    1.0155                       
+
+(X_U1.14)    1.4540                   (X_U1.17)     .5763                       
+
+(X_U1.19)    1.2718                   (X_U1.20)    1.1631                       
+
+(X_U1.23)    1.2175                   (X_U1.30)     .1449                       
+
+(X_U1.31)     .0996                   (X_U1.32)     .0996                       
+
+(X_U1.33)     .1481                   (X_U1.34)     .0996                       
+
+(X_U1.35)     .0996                   (X_U1.70)     .0997                       
+
+(X_U1.72)     .0996                   (X_U1.73)     .0996                       
+
+(X_U1.90)    1.2225                   (X_U1.91)    1.2225                       
+
+(X_U1.98)     .0996                   (X_U1.300)     .0997                      
+
+(X_U1.311)     .0996                  (X_U1.312)     .0996                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     2.340V  \     1.218V
+    V(OUT)                    =     2.340V  \     1.218V
+    V(X_U1.5)                 =    57.62KV  \     1.223V
+    V(X_U1.4)                 =   571.69mV  \   570.76mV
+    V(X_U1.3)                 =  -324.01mV  \  -325.85mV
+    V(X_U1.32)                =     1.223V  \    99.64mV
+    V(X_U1.98)                =     1.223V  \    99.64mV
+    V(X_U1.70)                =     1.203V  \    99.74mV
+    V(X_U1.72)                =     1.223V  \    99.64mV
+    V(X_U1.73)                =     1.223V  \    99.64mV
+    V(X_U1.12)                =     2.040V  \   917.15mV
+    V(X_U1.30)                =     1.268V  \   144.88mV
+    V(X_U1.31)                =     1.223V  \    99.64mV
+    V(X_U1.33)                =     1.271V  \   148.14mV
+    V(X_U1.34)                =     1.223V  \    99.64mV
+    V(X_U1.35)                =     1.223V  \    99.64mV
+    V(X_U1.17)                =     1.699V  \   576.31mV
+    V(X_U1.300)               =    -70.62V  \    99.72mV
+    V(X_U1.311)               =     1.223V  \    99.64mV
+    V(X_U1.312)               =     1.223V  \    99.64mV
+    V(X_U1.23)                =     2.340V  \     1.218V
+    V(X_U1.19)                =     2.395V  \     1.272V
+    V(X_U1.20)                =     2.286V  \     1.163V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =   907.79KA  \    10.00GA
+    I(X_U1.eref1)             =  -907.79KA  \    4.779mA
+    I(V_V2)                   =  -514.60mA  \    10.00GA
+    I(V_V1)                   =   512.76mA  \   -2.743mA
+    I(V_V3)                   =   907.79KA  \    10.00GA
+    I(X_U1.v1)                =  -313.22uA  \    1.546uA
+    I(X_U1.v3)                =   -1.024pA  \   108.15fA
+    I(X_U1.v4)                =   438.67uA  \   -10.34uA
+    I(X_U1.vi1)               =   -99.70pA  \ 111.55e-18A
+    I(X_U1.vi2)               =    99.53pA  \ -111.45e-18A
+    I(X_U1.vo1)               =    -1.123A  \    1.256uA
+    I(X_U1.vo2)               =  -558.85mA  \    2.384mA
+    I(X_U1.vo3)               =   558.85mA  \   -2.384mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    1.2849  (N01011)    1.2905 (N01031)    1.2905 (N01121)    -.2581     
+
+(X_U1.3)    -.2579 (X_U1.4)     .6373 (X_U1.5)    1.2904 (X_U1.8)    1.2849     
+
+(X_U1.12)     .9964                   (X_U1.13)    1.0720                       
+
+(X_U1.14)    1.5348                   (X_U1.17)     .6438                       
+
+(X_U1.19)    1.3422                   (X_U1.20)    1.2274                       
+
+(X_U1.23)    1.2849                   (X_U1.30)     .1588                       
+
+(X_U1.31)     .1110                   (X_U1.32)     .1110                       
+
+(X_U1.33)     .1622                   (X_U1.34)     .1110                       
+
+(X_U1.35)     .1110                   (X_U1.70)     .1111                       
+
+(X_U1.72)     .1110                   (X_U1.73)     .1110                       
+
+(X_U1.90)    1.2905                   (X_U1.91)    1.2905                       
+
+(X_U1.98)     .1110                   (X_U1.300)     .1111                      
+
+(X_U1.311)     .1110                  (X_U1.312)     .1110                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     2.464V  \     1.285V
+    V(OUT)                    =     2.464V  \     1.285V
+    V(X_U1.5)                 =    67.65KV  \     1.290V
+    V(X_U1.4)                 =   638.24mV  \   637.29mV
+    V(X_U1.3)                 =  -256.09mV  \  -257.92mV
+    V(X_U1.32)                =     1.291V  \   111.02mV
+    V(X_U1.98)                =     1.291V  \   111.02mV
+    V(X_U1.70)                =     1.269V  \   111.14mV
+    V(X_U1.72)                =     1.291V  \   111.02mV
+    V(X_U1.73)                =     1.291V  \   111.02mV
+    V(X_U1.12)                =     2.176V  \     0.996V
+    V(X_U1.30)                =     1.338V  \   158.77mV
+    V(X_U1.31)                =     1.291V  \   111.02mV
+    V(X_U1.33)                =     1.342V  \   162.21mV
+    V(X_U1.34)                =     1.291V  \   111.02mV
+    V(X_U1.35)                =     1.291V  \   111.02mV
+    V(X_U1.17)                =     1.823V  \   643.81mV
+    V(X_U1.300)               =    -74.17V  \   111.09mV
+    V(X_U1.311)               =     1.291V  \   111.02mV
+    V(X_U1.312)               =     1.291V  \   111.02mV
+    V(X_U1.23)                =     2.464V  \     1.285V
+    V(X_U1.19)                =     2.522V  \     1.342V
+    V(X_U1.20)                =     2.407V  \     1.227V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.270MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.270MA  \    5.342mA
+    I(V_V2)                   =  -537.75mA  \    10.00GA
+    I(V_V1)                   =   535.78mA  \   -3.019mA
+    I(V_V3)                   =    1.270MA  \    10.00GA
+    I(X_U1.v1)                =  -339.72uA  \    1.796uA
+    I(X_U1.v3)                =   -1.119pA  \    85.01fA
+    I(X_U1.v4)                =   489.49uA  \   -10.98uA
+    I(X_U1.vi1)               =  -104.70pA  \ 90.95e-18A
+    I(X_U1.vi2)               =   104.56pA  \ -90.89e-18A
+    I(X_U1.vo1)               =    -1.179A  \    1.025uA
+    I(X_U1.vo2)               =  -586.83mA  \    2.664mA
+    I(X_U1.vo3)               =   586.83mA  \   -2.664mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    1.3602  (N01011)    1.3664 (N01031)    1.3664 (N01121)    -.1822     
+
+(X_U1.3)    -.1820 (X_U1.4)     .7117 (X_U1.5)    1.3664 (X_U1.8)    1.3602     
+
+(X_U1.12)    1.0851                   (X_U1.13)    1.1350                       
+
+(X_U1.14)    1.6251                   (X_U1.17)     .7196                       
+
+(X_U1.19)    1.4208                   (X_U1.20)    1.2993                       
+
+(X_U1.23)    1.3602                   (X_U1.30)     .1750                       
+
+(X_U1.31)     .1245                   (X_U1.32)     .1245                       
+
+(X_U1.33)     .1787                   (X_U1.34)     .1245                       
+
+(X_U1.35)     .1245                   (X_U1.70)     .1246                       
+
+(X_U1.72)     .1245                   (X_U1.73)     .1245                       
+
+(X_U1.90)    1.3664                   (X_U1.91)    1.3664                       
+
+(X_U1.98)     .1245                   (X_U1.300)     .1245                      
+
+(X_U1.311)     .1245                  (X_U1.312)     .1245                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     2.602V  \     1.360V
+    V(OUT)                    =     2.602V  \     1.360V
+    V(X_U1.5)                 =    80.15KV  \     1.366V
+    V(X_U1.4)                 =   712.71mV  \   711.73mV
+    V(X_U1.3)                 =  -180.19mV  \  -182.00mV
+    V(X_U1.32)                =     1.366V  \   124.47mV
+    V(X_U1.98)                =     1.366V  \   124.47mV
+    V(X_U1.70)                =     1.343V  \   124.60mV
+    V(X_U1.72)                =     1.366V  \   124.47mV
+    V(X_U1.73)                =     1.366V  \   124.47mV
+    V(X_U1.12)                =     2.327V  \     1.085V
+    V(X_U1.30)                =     1.417V  \   175.02mV
+    V(X_U1.31)                =     1.366V  \   124.47mV
+    V(X_U1.33)                =     1.421V  \   178.67mV
+    V(X_U1.34)                =     1.366V  \   124.47mV
+    V(X_U1.35)                =     1.366V  \   124.47mV
+    V(X_U1.17)                =     1.962V  \   719.61mV
+    V(X_U1.300)               =    -78.09V  \   124.52mV
+    V(X_U1.311)               =     1.366V  \   124.47mV
+    V(X_U1.312)               =     1.366V  \   124.47mV
+    V(X_U1.23)                =     2.602V  \     1.360V
+    V(X_U1.19)                =     2.663V  \     1.421V
+    V(X_U1.20)                =     2.541V  \     1.299V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.337MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.337MA  \    5.965mA
+    I(V_V2)                   =  -563.00mA  \    10.00GA
+    I(V_V1)                   =   560.87mA  \   -3.323mA
+    I(V_V3)                   =    1.337MA  \    10.00GA
+    I(X_U1.v1)                =  -369.61uA  \    2.091uA
+    I(X_U1.v3)                =   -1.253pA  \    58.46fA
+    I(X_U1.v4)                =   548.83uA  \   -11.67uA
+    I(X_U1.vi1)               =  -110.23pA  \ 66.56e-18A
+    I(X_U1.vi2)               =   110.11pA  \ -66.52e-18A
+    I(X_U1.vo1)               =    -1.241A  \   749.77nA
+    I(X_U1.vo2)               =  -617.74mA  \    2.976mA
+    I(X_U1.vo3)               =   617.74mA  \   -2.976mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    1.4449  (N01011)    1.4518 (N01031)    1.4518 (N01121)    -.0968     
+
+(X_U1.3)    -.0966 (X_U1.4)     .7956 (X_U1.5)    1.4518 (X_U1.8)    1.4449     
+
+(X_U1.12)    1.1850                   (X_U1.13)    1.2060                       
+
+(X_U1.14)    1.7267                   (X_U1.17)     .8053                       
+
+(X_U1.19)    1.5094                   (X_U1.20)    1.3802                       
+
+(X_U1.23)    1.4449                   (X_U1.30)     .1942                       
+
+(X_U1.31)     .1405                   (X_U1.32)     .1405                       
+
+(X_U1.33)     .1981                   (X_U1.34)     .1405                       
+
+(X_U1.35)     .1405                   (X_U1.70)     .1407                       
+
+(X_U1.72)     .1405                   (X_U1.73)     .1405                       
+
+(X_U1.90)    1.4518                   (X_U1.91)    1.4518                       
+
+(X_U1.98)     .1405                   (X_U1.300)     .1405                      
+
+(X_U1.311)     .1405                  (X_U1.312)     .1405                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     2.756V  \     1.445V
+    V(OUT)                    =     2.756V  \     1.445V
+    V(X_U1.5)                 =    95.91KV  \     1.452V
+    V(X_U1.4)                 =   796.58mV  \   795.57mV
+    V(X_U1.3)                 =   -94.79mV  \   -96.59mV
+    V(X_U1.32)                =     1.452V  \   140.51mV
+    V(X_U1.98)                =     1.452V  \   140.51mV
+    V(X_U1.70)                =     1.426V  \   140.67mV
+    V(X_U1.72)                =     1.452V  \   140.51mV
+    V(X_U1.73)                =     1.452V  \   140.51mV
+    V(X_U1.12)                =     2.496V  \     1.185V
+    V(X_U1.30)                =     1.506V  \   194.23mV
+    V(X_U1.31)                =     1.452V  \   140.51mV
+    V(X_U1.33)                =     1.509V  \   198.10mV
+    V(X_U1.34)                =     1.452V  \   140.51mV
+    V(X_U1.35)                =     1.452V  \   140.51mV
+    V(X_U1.17)                =     2.117V  \   805.26mV
+    V(X_U1.300)               =    -82.44V  \   140.54mV
+    V(X_U1.311)               =     1.452V  \   140.51mV
+    V(X_U1.312)               =     1.452V  \   140.51mV
+    V(X_U1.23)                =     2.756V  \     1.445V
+    V(X_U1.19)                =     2.821V  \     1.509V
+    V(X_U1.20)                =     2.692V  \     1.380V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.412MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.412MA  \    6.663mA
+    I(V_V2)                   =  -590.62mA  \    10.00GA
+    I(V_V1)                   =   588.31mA  \   -3.659mA
+    I(V_V3)                   =    1.412MA  \    10.00GA
+    I(X_U1.v1)                =  -403.51uA  \    2.440uA
+    I(X_U1.v3)                =   -1.510pA  \    26.50fA
+    I(X_U1.v4)                =   618.81uA  \   -12.45uA
+    I(X_U1.vi1)               =  -116.36pA  \ 37.47e-18A
+    I(X_U1.vi2)               =   116.29pA  \ -37.46e-18A
+    I(X_U1.vo1)               =    -1.311A  \   422.12nA
+    I(X_U1.vo2)               =  -652.06mA  \    3.324mA
+    I(X_U1.vo3)               =   652.06mA  \   -3.324mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    1.5409  (N01011)    1.5486 (N01031)    1.5486 (N01121)    0.0000     
+
+(X_U1.3) 206.5E-06 (X_U1.4)     .8907 (X_U1.5)    1.5486 (X_U1.8)    1.5409     
+
+(X_U1.12)    1.2984                   (X_U1.13)    1.2864                       
+
+(X_U1.14)    1.8418                   (X_U1.17)     .9027                       
+
+(X_U1.19)    1.6097                   (X_U1.20)    1.4719                       
+
+(X_U1.23)    1.5409                   (X_U1.30)     .2172                       
+
+(X_U1.31)     .1599                   (X_U1.32)     .1599                       
+
+(X_U1.33)     .2213                   (X_U1.34)     .1599                       
+
+(X_U1.35)     .1599                   (X_U1.70)     .1601                       
+
+(X_U1.72)     .1599                   (X_U1.73)     .1599                       
+
+(X_U1.90)    1.5486                   (X_U1.91)    1.5486                       
+
+(X_U1.98)     .1599                   (X_U1.300)     .1599                      
+
+(X_U1.311)     .1599                  (X_U1.312)     .1599                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     2.930V  \     1.541V
+    V(OUT)                    =     2.930V  \     1.541V
+    V(X_U1.5)                 =   116.07KV  \     1.549V
+    V(X_U1.4)                 =   891.73mV  \   890.70mV
+    V(X_U1.3)                 =    2.000mV  \   206.48uV
+    V(X_U1.32)                =     1.549V  \   159.88mV
+    V(X_U1.98)                =     1.549V  \   159.88mV
+    V(X_U1.70)                =     1.520V  \   160.06mV
+    V(X_U1.72)                =     1.549V  \   159.88mV
+    V(X_U1.73)                =     1.549V  \   159.88mV
+    V(X_U1.12)                =     2.687V  \     1.298V
+    V(X_U1.30)                =     1.606V  \   217.18mV
+    V(X_U1.31)                =     1.549V  \   159.88mV
+    V(X_U1.33)                =     1.610V  \   221.31mV
+    V(X_U1.34)                =     1.549V  \   159.88mV
+    V(X_U1.35)                =     1.549V  \   159.88mV
+    V(X_U1.17)                =     2.291V  \   902.70mV
+    V(X_U1.300)               =    -87.30V  \   159.88mV
+    V(X_U1.311)               =     1.549V  \   159.88mV
+    V(X_U1.312)               =     1.549V  \   159.88mV
+    V(X_U1.23)                =     2.930V  \     1.541V
+    V(X_U1.19)                =     2.998V  \     1.610V
+    V(X_U1.20)                =     2.861V  \     1.472V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.246MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.246MA  \    7.444mA
+    I(V_V2)                   =  -620.94mA  \    10.00GA
+    I(V_V1)                   =   618.42mA  \   -4.031mA
+    I(V_V3)                   =    1.246MA  \    10.00GA
+    I(X_U1.v1)                =  -442.12uA  \    2.856uA
+    I(X_U1.v3)                =   -2.261pA  \   -17.93fA
+    I(X_U1.v4)                =   702.10uA  \   -13.32uA
+    I(X_U1.vi1)               =  -123.20pA  \ 2.550e-18A
+    I(X_U1.vi2)               =   123.19pA  \ -2.550e-18A
+    I(X_U1.vo1)               =    -1.388A  \    28.74nA
+    I(X_U1.vo2)               =  -690.38mA  \    3.714mA
+    I(X_U1.vo3)               =   690.38mA  \   -3.714mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    1.6507  (N01011)    1.6592 (N01031)    1.6592 (N01121)     .1106     
+
+(X_U1.3)     .1108 (X_U1.4)     .9995 (X_U1.5)    1.6592 (X_U1.8)    1.6507     
+
+(X_U1.12)    1.4281                   (X_U1.13)    1.3783                       
+
+(X_U1.14)    1.9734                   (X_U1.17)    1.0145                       
+
+(X_U1.19)    1.7243                   (X_U1.20)    1.5768                       
+
+(X_U1.23)    1.6507                   (X_U1.30)     .2449                       
+
+(X_U1.31)     .1835                   (X_U1.32)     .1835                       
+
+(X_U1.33)     .2494                   (X_U1.34)     .1835                       
+
+(X_U1.35)     .1835                   (X_U1.70)     .1838                       
+
+(X_U1.72)     .1835                   (X_U1.73)     .1835                       
+
+(X_U1.90)    1.6592                   (X_U1.91)    1.6592                       
+
+(X_U1.98)     .1835                   (X_U1.300)     .1835                      
+
+(X_U1.311)     .1835                  (X_U1.312)     .1835                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     3.126V  \     1.651V
+    V(OUT)                    =     3.126V  \     1.651V
+    V(X_U1.5)                 =   142.28KV  \     1.659V
+    V(X_U1.4)                 =     1.001V  \     1.000V
+    V(X_U1.3)                 =   112.62mV  \   110.84mV
+    V(X_U1.32)                =     1.659V  \   183.54mV
+    V(X_U1.98)                =     1.659V  \   183.54mV
+    V(X_U1.70)                =     1.628V  \   183.75mV
+    V(X_U1.72)                =     1.659V  \   183.54mV
+    V(X_U1.73)                =     1.659V  \   183.54mV
+    V(X_U1.12)                =     2.904V  \     1.428V
+    V(X_U1.30)                =     1.721V  \   244.93mV
+    V(X_U1.31)                =     1.659V  \   183.54mV
+    V(X_U1.33)                =     1.725V  \   249.35mV
+    V(X_U1.34)                =     1.659V  \   183.54mV
+    V(X_U1.35)                =     1.659V  \   183.54mV
+    V(X_U1.17)                =     2.490V  \     1.015V
+    V(X_U1.300)               =    -92.75V  \   183.51mV
+    V(X_U1.311)               =     1.659V  \   183.54mV
+    V(X_U1.312)               =     1.659V  \   183.54mV
+    V(X_U1.23)                =     3.126V  \     1.651V
+    V(X_U1.19)                =     3.200V  \     1.724V
+    V(X_U1.20)                =     3.053V  \     1.577V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.324MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.324MA  \    8.327mA
+    I(V_V2)                   =  -654.31mA  \    10.00GA
+    I(V_V1)                   =   651.55mA  \   -4.446mA
+    I(V_V3)                   =    1.324MA  \    10.00GA
+    I(X_U1.v1)                =  -486.34uA  \    3.357uA
+    I(X_U1.v3)                =   -5.506pA  \  -108.58fA
+    I(X_U1.v4)                =   802.02uA  \   -14.31uA
+    I(X_U1.vi1)               =  -130.87pA  \ -39.70e-18A
+    I(X_U1.vi2)               =   130.95pA  \ 39.71e-18A
+    I(X_U1.vo1)               =    -1.475A  \  -447.44nA
+    I(X_U1.vo2)               =  -733.41mA  \    4.155mA
+    I(X_U1.vo3)               =   733.41mA  \   -4.155mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    1.7773  (N01011)    1.7869 (N01031)    1.7869 (N01121)     .2383     
+
+(X_U1.3)     .2385 (X_U1.4)    1.1253 (X_U1.5)    1.7869 (X_U1.8)    1.7773     
+
+(X_U1.12)    1.5780                   (X_U1.13)    1.4843                       
+
+(X_U1.14)    2.1252                   (X_U1.17)    1.1438                       
+
+(X_U1.19)    1.8567                   (X_U1.20)    1.6977                       
+
+(X_U1.23)    1.7773                   (X_U1.30)     .2790                       
+
+(X_U1.31)     .2129                   (X_U1.32)     .2129                       
+
+(X_U1.33)     .2837                   (X_U1.34)     .2129                       
+
+(X_U1.35)     .2129                   (X_U1.70)     .2131                       
+
+(X_U1.72)     .2129                   (X_U1.73)     .2129                       
+
+(X_U1.90)    1.7869                   (X_U1.91)    1.7869                       
+
+(X_U1.98)     .2129                   (X_U1.300)     .2128                      
+
+(X_U1.311)     .2129                  (X_U1.312)     .2129                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     3.351V  \     1.777V
+    V(OUT)                    =     3.351V  \     1.777V
+    V(X_U1.5)                 =   176.96KV  \     1.787V
+    V(X_U1.3)                 =   240.25mV  \   238.49mV
+    V(X_U1.32)                =     1.787V  \   212.86mV
+    V(X_U1.98)                =     1.787V  \   212.86mV
+    V(X_U1.70)                =     1.753V  \   213.12mV
+    V(X_U1.72)                =     1.787V  \   212.86mV
+    V(X_U1.73)                =     1.787V  \   212.86mV
+    V(X_U1.12)                =     3.152V  \     1.578V
+    V(X_U1.30)                =     1.853V  \   278.98mV
+    V(X_U1.31)                =     1.787V  \   212.86mV
+    V(X_U1.33)                =     1.858V  \   283.74mV
+    V(X_U1.34)                =     1.787V  \   212.86mV
+    V(X_U1.35)                =     1.787V  \   212.86mV
+    V(X_U1.17)                =     2.718V  \     1.144V
+    V(X_U1.300)               =    -98.91V  \   212.80mV
+    V(X_U1.311)               =     1.787V  \   212.86mV
+    V(X_U1.312)               =     1.787V  \   212.86mV
+    V(X_U1.23)                =     3.351V  \     1.777V
+    V(X_U1.19)                =     3.431V  \     1.857V
+    V(X_U1.20)                =     3.272V  \     1.698V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.412MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.412MA  \    9.329mA
+    I(V_V2)                   =  -691.14mA  \    10.00GA
+    I(V_V1)                   =   688.10mA  \   -4.908mA
+    I(V_V3)                   =    1.412MA  \    10.00GA
+    I(X_U1.v1)                =  -537.25uA  \    3.966uA
+    I(X_U1.v3)                =   -24.81pA  \  -458.05fA
+    I(X_U1.v4)                =   923.23uA  \   -15.42uA
+    I(X_U1.vi1)               =  -139.53pA  \ -91.30e-18A
+    I(X_U1.vi2)               =   139.73pA  \ 91.37e-18A
+    I(X_U1.vo1)               =    -1.573A  \   -1.029uA
+    I(X_U1.vo2)               =  -782.05mA  \    4.655mA
+    I(X_U1.vo3)               =   782.05mA  \   -4.655mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    1.9251  (N01011)    1.9358 (N01031)    1.9358 (N01121)     .3872     
+
+(X_U1.3)     .3874 (X_U1.4)    1.2721 (X_U1.5)    1.9358 (X_U1.8)    1.9251     
+
+(X_U1.12)    1.7531                   (X_U1.13)    1.6080                       
+
+(X_U1.14)    2.3023                   (X_U1.17)    1.2952                       
+
+(X_U1.19)    2.0111                   (X_U1.20)    1.8389                       
+
+(X_U1.23)    1.9251                   (X_U1.30)     .3214                       
+
+(X_U1.31)     .2498                   (X_U1.32)     .2498                       
+
+(X_U1.33)     .3266                   (X_U1.34)     .2498                       
+
+(X_U1.35)     .2498                   (X_U1.70)     .2501                       
+
+(X_U1.72)     .2498                   (X_U1.73)     .2498                       
+
+(X_U1.90)    1.9358                   (X_U1.91)    1.9358                       
+
+(X_U1.98)     .2498                   (X_U1.300)     .2497                      
+
+(X_U1.311)     .2498                  (X_U1.312)     .2498                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     3.611V  \     1.925V
+    V(OUT)                    =     3.611V  \     1.925V
+    V(X_U1.5)                 =   223.80KV  \     1.936V
+    V(X_U1.3)                 =   389.16mV  \   387.42mV
+    V(X_U1.32)                =     1.936V  \   249.82mV
+    V(X_U1.98)                =     1.936V  \   249.82mV
+    V(X_U1.70)                =     1.898V  \   250.13mV
+    V(X_U1.72)                =     1.936V  \   249.82mV
+    V(X_U1.73)                =     1.936V  \   249.82mV
+    V(X_U1.12)                =     3.439V  \     1.753V
+    V(X_U1.30)                =     2.007V  \   321.45mV
+    V(X_U1.31)                =     1.936V  \   249.82mV
+    V(X_U1.33)                =     2.013V  \   326.61mV
+    V(X_U1.34)                =     1.936V  \   249.82mV
+    V(X_U1.35)                =     1.936V  \   249.82mV
+    V(X_U1.17)                =     2.981V  \     1.295V
+    V(X_U1.300)               =   -105.93V  \   249.71mV
+    V(X_U1.311)               =     1.936V  \   249.82mV
+    V(X_U1.312)               =     1.936V  \   249.82mV
+    V(X_U1.23)                =     3.611V  \     1.925V
+    V(X_U1.19)                =     3.697V  \     2.011V
+    V(X_U1.20)                =     3.525V  \     1.839V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.816MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.816MA  \    10.48mA
+    I(V_V2)                   =  -731.89mA  \    10.00GA
+    I(V_V1)                   =   728.51mA  \   -5.428mA
+    I(V_V3)                   =    1.816MA  \    10.00GA
+    I(X_U1.v1)                =  -596.21uA  \    4.713uA
+    I(X_U1.v3)                =  -182.30pA  \   -2.862pA
+    I(X_U1.v4)                =    1.072mA  \   -16.70uA
+    I(X_U1.vi1)               =  -149.38pA  \ -154.97e-18A
+    I(X_U1.vi2)               =   149.75pA  \ 155.16e-18A
+    I(X_U1.vo1)               =    -1.685A  \   -1.747uA
+    I(X_U1.vo2)               =  -837.44mA  \    5.227mA
+    I(X_U1.vo3)               =   837.44mA  \   -5.227mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    2.0998  (N01011)    2.1118 (N01031)    2.1118 (N01121)     .5632     
+
+(X_U1.3)     .5634 (X_U1.4)    1.4459 (X_U1.5)    2.1118 (X_U1.8)    2.0998     
+
+(X_U1.12)    1.9602                   (X_U1.13)    1.7542                       
+
+(X_U1.14)    2.5117                   (X_U1.17)    1.4747                       
+
+(X_U1.19)    2.1936                   (X_U1.20)    2.0058                       
+
+(X_U1.23)    2.0998                   (X_U1.30)     .3755                       
+
+(X_U1.31)     .2973                   (X_U1.32)     .2973                       
+
+(X_U1.33)     .3811                   (X_U1.34)     .2973                       
+
+(X_U1.35)     .2973                   (X_U1.70)     .2977                       
+
+(X_U1.72)     .2973                   (X_U1.73)     .2973                       
+
+(X_U1.90)    2.1118                   (X_U1.91)    2.1118                       
+
+(X_U1.98)     .2973                   (X_U1.300)     .2972                      
+
+(X_U1.311)     .2973                  (X_U1.312)     .2973                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     3.914V  \     2.100V
+    V(OUT)                    =     3.914V  \     2.100V
+    V(X_U1.5)                 =   288.59KV  \     2.112V
+    V(X_U1.3)                 =   565.15mV  \   563.44mV
+    V(X_U1.32)                =     2.112V  \   297.32mV
+    V(X_U1.98)                =     2.112V  \   297.32mV
+    V(X_U1.70)                =     2.069V  \   297.68mV
+    V(X_U1.72)                =     2.112V  \   297.32mV
+    V(X_U1.73)                =     2.112V  \   297.32mV
+    V(X_U1.12)                =     3.775V  \     1.960V
+    V(X_U1.30)                =     2.190V  \   375.46mV
+    V(X_U1.31)                =     2.112V  \   297.32mV
+    V(X_U1.33)                =     2.196V  \   381.09mV
+    V(X_U1.34)                =     2.112V  \   297.32mV
+    V(X_U1.35)                =     2.112V  \   297.32mV
+    V(X_U1.17)                =     3.289V  \     1.475V
+    V(X_U1.300)               =   -113.97V  \   297.15mV
+    V(X_U1.311)               =     2.112V  \   297.32mV
+    V(X_U1.312)               =     2.112V  \   297.32mV
+    V(X_U1.23)                =     3.914V  \     2.100V
+    V(X_U1.19)                =     4.008V  \     2.194V
+    V(X_U1.20)                =     3.820V  \     2.006V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.954MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.954MA  \    11.80mA
+    I(V_V2)                   =  -777.02mA  \    10.00GA
+    I(V_V1)                   =   773.23mA  \   -6.013mA
+    I(V_V3)                   =    1.954MA  \    10.00GA
+    I(X_U1.v1)                =  -664.91uA  \    5.641uA
+    I(X_U1.v3)                =   -2.049nA  \   -28.97pA
+    I(X_U1.v4)                =    1.257mA  \   -18.18uA
+    I(X_U1.vi1)               =  -160.67pA  \ -234.49e-18A
+    I(X_U1.vi2)               =   161.26pA  \ 234.92e-18A
+    I(X_U1.vo1)               =    -1.814A  \   -2.645uA
+    I(X_U1.vo2)               =  -901.01mA  \    5.886mA
+    I(X_U1.vo3)               =   901.01mA  \   -5.886mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    2.3095  (N01011)    2.3231 (N01031)    2.3231 (N01121)     .7744     
+
+(X_U1.3)     .7747 (X_U1.4)    1.6547 (X_U1.5)    2.3230 (X_U1.8)    2.3095     
+
+(X_U1.12)    2.2091                   (X_U1.13)    1.9297                       
+
+(X_U1.14)    2.7629                   (X_U1.17)    1.6906                       
+
+(X_U1.19)    2.4126                   (X_U1.20)    2.2060                       
+
+(X_U1.23)    2.3095                   (X_U1.30)     .4457                       
+
+(X_U1.31)     .3598                   (X_U1.32)     .3598                       
+
+(X_U1.33)     .4519                   (X_U1.34)     .3598                       
+
+(X_U1.35)     .3598                   (X_U1.70)     .3602                       
+
+(X_U1.72)     .3598                   (X_U1.73)     .3598                       
+
+(X_U1.90)    2.3231                   (X_U1.91)    2.3231                       
+
+(X_U1.98)     .3598                   (X_U1.300)     .3595                      
+
+(X_U1.311)     .3598                  (X_U1.312)     .3598                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     4.273V  \     2.310V
+    V(OUT)                    =     4.273V  \     2.310V
+    V(X_U1.5)                 =   380.74KV  \     2.323V
+    V(X_U1.3)                 =   776.35mV  \   774.66mV
+    V(X_U1.32)                =     2.323V  \   359.77mV
+    V(X_U1.98)                =     2.323V  \   359.77mV
+    V(X_U1.70)                =     2.275V  \   360.21mV
+    V(X_U1.72)                =     2.323V  \   359.77mV
+    V(X_U1.73)                =     2.323V  \   359.77mV
+    V(X_U1.12)                =     4.172V  \     2.209V
+    V(X_U1.30)                =     2.409V  \   445.72mV
+    V(X_U1.31)                =     2.323V  \   359.77mV
+    V(X_U1.33)                =     2.415V  \   451.92mV
+    V(X_U1.34)                =     2.323V  \   359.77mV
+    V(X_U1.35)                =     2.323V  \   359.77mV
+    V(X_U1.17)                =     3.654V  \     1.691V
+    V(X_U1.300)               =   -123.28V  \   359.53mV
+    V(X_U1.311)               =     2.323V  \   359.77mV
+    V(X_U1.312)               =     2.323V  \   359.77mV
+    V(X_U1.23)                =     4.273V  \     2.310V
+    V(X_U1.19)                =     4.376V  \     2.413V
+    V(X_U1.20)                =     4.169V  \     2.206V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.762MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.762MA  \    13.33mA
+    I(V_V2)                   =  -826.94mA  \    10.00GA
+    I(V_V1)                   =   822.65mA  \   -6.673mA
+    I(V_V3)                   =    1.762MA  \    10.00GA
+    I(X_U1.v1)                =  -745.45uA  \    6.810uA
+    I(X_U1.v3)                =   -37.83nA  \  -492.08pA
+    I(X_U1.v4)                =    1.490mA  \   -19.90uA
+    I(X_U1.vi1)               =  -173.71pA  \ -335.19e-18A
+    I(X_U1.vi2)               =   174.62pA  \ 336.07e-18A
+    I(X_U1.vo1)               =    -1.963A  \   -3.782uA
+    I(X_U1.vo2)               =  -974.61mA  \    6.653mA
+    I(X_U1.vo3)               =   974.61mA  \   -6.653mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    2.5659  (N01011)    2.5812 (N01031)    2.5812 (N01121)    1.0325     
+
+(X_U1.3)    1.0328 (X_U1.4)    1.9101 (X_U1.5)    2.5812 (X_U1.8)    2.5659     
+
+(X_U1.12)    2.5136                   (X_U1.13)    2.1441                       
+
+(X_U1.14)    3.0699                   (X_U1.17)    1.9551                       
+
+(X_U1.19)    2.6805                   (X_U1.20)    2.4509                       
+
+(X_U1.23)    2.5659                   (X_U1.30)     .5397                       
+
+(X_U1.31)     .4442                   (X_U1.32)     .4442                       
+
+(X_U1.33)     .5466                   (X_U1.34)     .4442                       
+
+(X_U1.35)     .4442                   (X_U1.70)     .4447                       
+
+(X_U1.72)     .4442                   (X_U1.73)     .4442                       
+
+(X_U1.90)    2.5812                   (X_U1.91)    2.5812                       
+
+(X_U1.98)     .4442                   (X_U1.300)     .4438                      
+
+(X_U1.311)     .4442                  (X_U1.312)     .4442                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     4.703V  \     2.566V
+    V(OUT)                    =     4.703V  \     2.566V
+    V(X_U1.5)                 =   516.14KV  \     2.581V
+    V(X_U1.3)                 =     1.035V  \     1.033V
+    V(X_U1.32)                =     2.581V  \   444.18mV
+    V(X_U1.98)                =     2.581V  \   444.18mV
+    V(X_U1.70)                =     2.527V  \   444.71mV
+    V(X_U1.72)                =     2.581V  \   444.18mV
+    V(X_U1.73)                =     2.581V  \   444.18mV
+    V(X_U1.12)                =     4.651V  \     2.514V
+    V(X_U1.30)                =     2.677V  \   539.69mV
+    V(X_U1.31)                =     2.581V  \   444.18mV
+    V(X_U1.33)                =     2.684V  \   546.57mV
+    V(X_U1.34)                =     2.581V  \   444.18mV
+    V(X_U1.35)                =     2.581V  \   444.18mV
+    V(X_U1.17)                =     4.092V  \     1.955V
+    V(X_U1.300)               =   -134.14V  \   443.85mV
+    V(X_U1.311)               =     2.581V  \   444.18mV
+    V(X_U1.312)               =     2.581V  \   444.18mV
+    V(X_U1.23)                =     4.703V  \     2.566V
+    V(X_U1.19)                =     4.818V  \     2.681V
+    V(X_U1.20)                =     4.588V  \     2.451V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.918MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.918MA  \    15.14mA
+    I(V_V2)                   =  -881.83mA  \    10.00GA
+    I(V_V1)                   =   876.92mA  \   -7.421mA
+    I(V_V3)                   =    1.918MA  \    10.00GA
+    I(X_U1.v1)                =  -840.51uA  \    8.305uA
+    I(X_U1.v3)                =   -1.338uA  \   -16.00nA
+    I(X_U1.v4)                =    1.791mA  \   -21.94uA
+    I(X_U1.vi1)               =  -188.90pA  \ -464.81e-18A
+    I(X_U1.vi2)               =   190.27pA  \ 466.49e-18A
+    I(X_U1.vo1)               =    -2.136A  \   -5.247uA
+    I(X_U1.vo2)               =    -1.061A  \    7.553mA
+    I(X_U1.vo3)               =     1.061A  \   -7.553mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    2.8865  (N01011)    2.9040 (N01031)    2.9040 (N01121)    1.3552     
+
+(X_U1.3)    1.3556 (X_U1.4)    2.2298 (X_U1.5)    2.9039 (X_U1.8)    2.8865     
+
+(X_U1.12)    2.8936                   (X_U1.13)    2.4122                       
+
+(X_U1.14)    3.4538                   (X_U1.17)    2.2867                       
+
+(X_U1.19)    3.0154                   (X_U1.20)    2.7572                       
+
+(X_U1.23)    2.8865                   (X_U1.30)     .6696                       
+
+(X_U1.31)     .5622                   (X_U1.32)     .5622                       
+
+(X_U1.33)     .6774                   (X_U1.34)     .5622                       
+
+(X_U1.35)     .5622                   (X_U1.70)     .5629                       
+
+(X_U1.72)     .5622                   (X_U1.73)     .5622                       
+
+(X_U1.90)    2.9040                   (X_U1.91)    2.9040                       
+
+(X_U1.98)     .5622                   (X_U1.300)     .5617                      
+
+(X_U1.311)     .5622                  (X_U1.312)     .5622                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     5.228V  \     2.887V
+    V(OUT)                    =     5.228V  \     2.887V
+    V(X_U1.5)                 =   723.02KV  \     2.904V
+    V(X_U1.3)                 =     1.357V  \     1.356V
+    V(X_U1.32)                =     2.904V  \   562.20mV
+    V(X_U1.98)                =     2.904V  \   562.20mV
+    V(X_U1.70)                =     2.843V  \   562.86mV
+    V(X_U1.72)                =     2.904V  \   562.20mV
+    V(X_U1.73)                =     2.904V  \   562.20mV
+    V(X_U1.12)                =     5.235V  \     2.894V
+    V(X_U1.30)                =     3.011V  \   669.65mV
+    V(X_U1.31)                =     2.904V  \   562.20mV
+    V(X_U1.33)                =     3.019V  \   677.39mV
+    V(X_U1.34)                =     2.904V  \   562.20mV
+    V(X_U1.35)                =     2.904V  \   562.20mV
+    V(X_U1.17)                =     4.628V  \     2.287V
+    V(X_U1.300)               =   -146.91V  \   561.74mV
+    V(X_U1.311)               =     2.904V  \   562.20mV
+    V(X_U1.312)               =     2.904V  \   562.20mV
+    V(X_U1.23)                =     5.228V  \     2.887V
+    V(X_U1.19)                =     5.357V  \     3.015V
+    V(X_U1.20)                =     5.099V  \     2.757V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    2.102MA  \    10.00GA
+    I(X_U1.eref1)             =   -2.102MA  \    17.27mA
+    I(V_V2)                   =  -941.41mA  \    10.00GA
+    I(V_V1)                   =   935.72mA  \   -8.263mA
+    I(V_V3)                   =    2.102MA  \    10.00GA
+    I(X_U1.v1)                =  -953.53uA  \    10.26uA
+    I(X_U1.v3)                =  -110.70uA  \   -1.209uA
+    I(X_U1.v4)                =    2.283mA  \   -25.50uA
+    I(X_U1.vi1)               =  -206.72pA  \ -634.91e-18A
+    I(X_U1.vi2)               =   208.78pA  \ 638.06e-18A
+    I(X_U1.vo1)               =    -2.341A  \   -7.172uA
+    I(X_U1.vo2)               =    -1.162A  \    8.619mA
+    I(X_U1.vo3)               =     1.162A  \   -8.619mA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.fo1  X_U1.fo2  X_U1.q1   
+    X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    3.2989  (N01011)    3.3189 (N01031)    3.3189 (N01121)    1.7701     
+
+(X_U1.3)    1.7705 (X_U1.4)    2.6413 (X_U1.5)    3.3189 (X_U1.8)    3.2989     
+
+(X_U1.12)    3.3487                   (X_U1.13)    2.7569                       
+
+(X_U1.14)    3.9473                   (X_U1.17)    2.7139                       
+
+(X_U1.19)    3.4463                   (X_U1.20)    3.1511                       
+
+(X_U1.23)    3.2989                   (X_U1.30)     .8572                       
+
+(X_U1.31)     .7344                   (X_U1.32)     .7344                       
+
+(X_U1.33)     .8660                   (X_U1.34)     .7344                       
+
+(X_U1.35)     .7344                   (X_U1.70)     .7352                       
+
+(X_U1.72)     .7344                   (X_U1.73)     .7344                       
+
+(X_U1.90)    3.3189                   (X_U1.91)    3.3189                       
+
+(X_U1.98)     .7344                   (X_U1.300)     .7337                      
+
+(X_U1.311)     .7344                  (X_U1.312)     .7344                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     5.884V  \     3.299V
+    V(OUT)                    =     5.884V  \     3.299V
+    V(X_U1.5)                 =    1.054MV  \     3.319V
+    V(X_U1.32)                =     3.319V  \   734.35mV
+    V(X_U1.98)                =     3.319V  \   734.35mV
+    V(X_U1.70)                =     3.249V  \   735.18mV
+    V(X_U1.72)                =     3.319V  \   734.35mV
+    V(X_U1.73)                =     3.319V  \   734.35mV
+    V(X_U1.12)                =     5.933V  \     3.349V
+    V(X_U1.30)                =     3.442V  \   857.15mV
+    V(X_U1.31)                =     3.319V  \   734.35mV
+    V(X_U1.33)                =     3.451V  \   866.00mV
+    V(X_U1.34)                =     3.319V  \   734.35mV
+    V(X_U1.35)                =     3.319V  \   734.35mV
+    V(X_U1.17)                =     3.320V  \     2.714V
+    V(X_U1.300)               =   -160.81V  \   733.73mV
+    V(X_U1.311)               =     3.319V  \   734.35mV
+    V(X_U1.312)               =     3.319V  \   734.35mV
+    V(X_U1.23)                =     5.884V  \     3.299V
+    V(X_U1.19)                =     6.031V  \     3.446V
+    V(X_U1.20)                =     5.736V  \     3.151V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    2.785MA  \    10.00GA
+    I(X_U1.eref1)             =   -2.785MA  \    19.83mA
+    I(V_V2)                   =    -1.012A  \    10.00GA
+    I(V_V1)                   =     1.006A  \   -9.120mA
+    I(V_V3)                   =    2.785MA  \    10.00GA
+    I(X_U1.v1)                =   -1.089mA  \    12.86uA
+    I(X_U1.v3)                =   -8.708mA  \   -86.28uA
+    I(X_U1.v4)                =    11.16mA  \  -112.81uA
+    I(X_U1.vi1)               =  -226.08pA  \ -863.40e-18A
+    I(X_U1.vi2)               =   229.14pA  \ 869.23e-18A
+    I(X_U1.vo1)               =    -2.565A  \    -9.76uA
+    I(X_U1.vo2)               =    -1.282A  \     9.89mA
+    I(X_U1.vo3)               =     1.282A  \    -9.89mA
+    I(X_U1.v5)                =    31.71pA  \    19.80mA
+    I(X_U1.v6)                =   -2.426pA  \  -447.16fA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.d5   X_U1.fo1  X_U1.fo2  
+    X_U1.q1   X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    3.8492  (N01011)    3.8723 (N01031)    3.8723 (N01121)    2.3234     
+
+(X_U1.3)    2.3239 (X_U1.4)    3.1907 (X_U1.5)    3.8722 (X_U1.8)    3.8492     
+
+(X_U1.12)    3.9109                   (X_U1.13)    3.2166                       
+
+(X_U1.14)    4.6054                   (X_U1.17)    3.2851                       
+
+(X_U1.19)    4.0211                   (X_U1.20)    3.6767                       
+
+(X_U1.23)    3.8492                   (X_U1.30)    1.1429                       
+
+(X_U1.31)     .9996                   (X_U1.32)     .9996                       
+
+(X_U1.33)    1.1532                   (X_U1.34)     .9996                       
+
+(X_U1.35)     .9996                   (X_U1.70)    1.0007                       
+
+(X_U1.72)     .9996                   (X_U1.73)     .9996                       
+
+(X_U1.90)    3.8723                   (X_U1.91)    3.8723                       
+
+(X_U1.98)     .9996                   (X_U1.300)     .9988                      
+
+(X_U1.311)     .9996                  (X_U1.312)     .9996                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     6.722V  \     3.849V
+    V(OUT)                    =     6.722V  \     3.849V
+    V(X_U1.5)                 =    1.617MV  \     3.872V
+    V(X_U1.32)                =     3.872V  \     1.000V
+    V(X_U1.98)                =     3.872V  \     1.000V
+    V(X_U1.70)                =     3.792V  \     1.001V
+    V(X_U1.72)                =     3.872V  \     1.000V
+    V(X_U1.73)                =     3.872V  \     1.000V
+    V(X_U1.12)                =     6.784V  \     3.911V
+    V(X_U1.30)                =     4.016V  \     1.143V
+    V(X_U1.31)                =     3.872V  \     1.000V
+    V(X_U1.33)                =     4.026V  \     1.153V
+    V(X_U1.34)                =     3.872V  \     1.000V
+    V(X_U1.35)                =     3.872V  \     1.000V
+    V(X_U1.17)                =     3.873V  \     3.285V
+    V(X_U1.300)               =   -178.50V  \     0.999V
+    V(X_U1.311)               =     3.872V  \     1.000V
+    V(X_U1.312)               =     3.872V  \     1.000V
+    V(X_U1.23)                =     6.722V  \     3.849V
+    V(X_U1.19)                =     6.894V  \     4.021V
+    V(X_U1.20)                =     6.549V  \     3.677V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.548MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.548MA  \    22.89mA
+    I(V_V2)                   =    -1.565A  \    10.00GA
+    I(V_V1)                   =     1.566A  \   -5.665mA
+    I(V_V3)                   =    1.548MA  \    10.00GA
+    I(X_U1.v1)                =   -1.254mA  \    16.44uA
+    I(X_U1.v3)                =  -511.04mA  \   -4.560mA
+    I(X_U1.v4)                =   505.12mA  \   -4.589mA
+    I(X_U1.vi1)               =  -250.60pA  \   -1.179fA
+    I(X_U1.vi2)               =   255.25pA  \    1.190fA
+    I(X_U1.vo1)               =    -2.850A  \   -13.35uA
+    I(X_U1.vo2)               =    -1.425A  \    11.42mA
+    I(X_U1.vo3)               =     1.425A  \   -11.42mA
+    I(X_U1.v5)                =    35.57pA  \    22.86mA
+    I(X_U1.v6)                =   -2.686pA  \  -401.66fA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.d5   X_U1.fo1  X_U1.fo2  
+    X_U1.q1   X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    4.6204  (N01011)    4.6470 (N01031)    4.6470 (N01121)    3.0980     
+
+(X_U1.3)    3.0986 (X_U1.4)    3.9607 (X_U1.5)    4.6470 (X_U1.8)    4.6204     
+
+(X_U1.12)    4.6935                   (X_U1.13)    3.8601                       
+
+(X_U1.14)    5.5269                   (X_U1.17)    4.0868                       
+
+(X_U1.19)    4.8267                   (X_U1.20)    4.4134                       
+
+(X_U1.23)    4.6204                   (X_U1.30)    1.6116                       
+
+(X_U1.31)    1.4397                   (X_U1.32)    1.4397                       
+
+(X_U1.33)    1.6240                   (X_U1.34)    1.4397                       
+
+(X_U1.35)    1.4397                   (X_U1.70)    1.4410                       
+
+(X_U1.72)    1.4397                   (X_U1.73)    1.4397                       
+
+(X_U1.90)    4.6470                   (X_U1.91)    4.6470                       
+
+(X_U1.98)    1.4397                   (X_U1.300)    1.4385                      
+
+(X_U1.311)    1.4397                  (X_U1.312)    1.4397                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     7.828V  \     4.620V
+    V(OUT)                    =     7.828V  \     4.620V
+    V(X_U1.5)                 =    2.644MV  \     4.647V
+    V(X_U1.32)                =     4.647V  \     1.440V
+    V(X_U1.98)                =     4.647V  \     1.440V
+    V(X_U1.70)                =     4.554V  \     1.441V
+    V(X_U1.72)                =     4.647V  \     1.440V
+    V(X_U1.73)                =     4.647V  \     1.440V
+    V(X_U1.12)                =     7.901V  \     4.694V
+    V(X_U1.30)                =     4.819V  \     1.612V
+    V(X_U1.31)                =     4.647V  \     1.440V
+    V(X_U1.33)                =     4.831V  \     1.624V
+    V(X_U1.34)                =     4.647V  \     1.440V
+    V(X_U1.35)                =     4.647V  \     1.440V
+    V(X_U1.17)                =     4.648V  \     4.087V
+    V(X_U1.300)               =   -198.92V  \     1.439V
+    V(X_U1.311)               =     4.647V  \     1.440V
+    V(X_U1.312)               =     4.647V  \     1.440V
+    V(X_U1.23)                =     7.828V  \     4.620V
+    V(X_U1.19)                =     8.034V  \     4.827V
+    V(X_U1.20)                =     7.621V  \     4.413V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    1.728MA  \    10.00GA
+    I(X_U1.eref1)             =   -1.728MA  \    26.51mA
+    I(V_V2)                   =    -1.101A  \    10.00GA
+    I(V_V1)                   =     1.096A  \   973.59mA
+    I(V_V3)                   =    1.728MA  \    10.00GA
+    I(X_U1.v1)                =   -1.459mA  \    21.51uA
+    I(X_U1.v3)                =   -53.57pA  \  -984.82mA
+    I(X_U1.v4)                =    32.76pA  \  -984.85mA
+    I(X_U1.vi1)               =  -278.75pA  \   -1.632fA
+    I(X_U1.vi2)               =   285.96pA  \    1.653fA
+    I(X_U1.vo1)               =    -3.181A  \   -18.50uA
+    I(X_U1.vo2)               =    -1.590A  \    13.23mA
+    I(X_U1.vo3)               =     1.590A  \   -13.23mA
+    I(X_U1.v5)                =    40.15pA  \    26.48mA
+    I(X_U1.v6)                =   -2.982pA  \  -336.56fA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.d5   X_U1.fo1  X_U1.fo2  
+    X_U1.q1   X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    5.7788  (N01011)    5.8094 (N01031)    5.8094 (N01121)    4.2602     
+
+(X_U1.3)    4.2610 (X_U1.4)    5.1173 (X_U1.5)    5.8093 (X_U1.8)    5.7788     
+
+(X_U1.12)    5.8675                   (X_U1.13)    4.8257                       
+
+(X_U1.14)    6.9093                   (X_U1.17)    5.2932                       
+
+(X_U1.19)    6.0367                   (X_U1.20)    5.5200                       
+
+(X_U1.23)    5.7788                   (X_U1.30)    2.4649                       
+
+(X_U1.31)    2.2499                   (X_U1.32)    2.2499                       
+
+(X_U1.33)    2.4804                   (X_U1.34)    2.2499                       
+
+(X_U1.35)    2.2499                   (X_U1.70)    2.2518                       
+
+(X_U1.72)    2.2499                   (X_U1.73)    2.2499                       
+
+(X_U1.90)    5.8094                   (X_U1.91)    5.8094                       
+
+(X_U1.98)    2.2499                   (X_U1.300)    2.2482                      
+
+(X_U1.311)    2.2499                  (X_U1.312)    2.2499                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     9.338V  \     5.779V
+    V(OUT)                    =     9.338V  \     5.779V
+    V(X_U1.5)                 =    4.697MV  \     5.809V
+    V(X_U1.32)                =     5.809V  \     2.250V
+    V(X_U1.98)                =     5.809V  \     2.250V
+    V(X_U1.70)                =     5.698V  \     2.252V
+    V(X_U1.72)                =     5.809V  \     2.250V
+    V(X_U1.73)                =     5.809V  \     2.250V
+    V(X_U1.12)                =     9.427V  \     5.868V
+    V(X_U1.30)                =     6.024V  \     2.465V
+    V(X_U1.31)                =     5.809V  \     2.250V
+    V(X_U1.33)                =     6.040V  \     2.480V
+    V(X_U1.34)                =     5.809V  \     2.250V
+    V(X_U1.35)                =     5.809V  \     2.250V
+    V(X_U1.17)                =     5.811V  \     5.293V
+    V(X_U1.300)               =   -220.04V  \     2.248V
+    V(X_U1.311)               =     5.809V  \     2.250V
+    V(X_U1.312)               =     5.809V  \     2.250V
+    V(X_U1.23)                =     9.338V  \     5.779V
+    V(X_U1.19)                =      9.60V  \     6.037V
+    V(X_U1.20)                =     9.080V  \     5.520V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    3.196MA  \    10.00GA
+    I(X_U1.eref1)             =   -3.196MA  \    30.48mA
+    I(V_V2)                   =    -1.085A  \    10.00GA
+    I(V_V1)                   =     1.079A  \    3.115KA
+    I(V_V3)                   =    3.196MA  \    10.00GA
+    I(X_U1.v1)                =   -1.736mA  \    29.00uA
+    I(X_U1.v3)                =   -75.16pA  \   -3.115KA
+    I(X_U1.v4)                =    42.82pA  \   -3.115KA
+    I(X_U1.vi1)               =  -307.68pA  \   -2.309fA
+    I(X_U1.vi2)               =   319.03pA  \    2.351fA
+    I(X_U1.vo1)               =    -3.529A  \   -26.25uA
+    I(X_U1.vo2)               =    -1.764A  \    15.21mA
+    I(X_U1.vo3)               =     1.764A  \   -15.21mA
+    I(X_U1.v5)                =    45.17pA  \    30.44mA
+    I(X_U1.v6)                =   -3.279pA  \  -236.80fA
+
+  These devices failed to converge:
+    X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.d5   X_U1.fo1  X_U1.fo2  
+    X_U1.q1   X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    7.6884  (N01011)    7.7217 (N01031)    7.7217 (N01121)    6.1773     
+
+(X_U1.3)    6.1784 (X_U1.4)    7.0222 (X_U1.5)    7.7216 (X_U1.8)    7.6884     
+
+(X_U1.12)    7.7989                   (X_U1.13)    6.4141                       
+
+(X_U1.14)    9.1836                   (X_U1.17)    7.2856                       
+
+(X_U1.19)    8.0313                   (X_U1.20)    7.3445                       
+
+(X_U1.23)    7.6884                   (X_U1.30)    4.2606                       
+
+(X_U1.31)    3.9749                   (X_U1.32)    3.9749                       
+
+(X_U1.33)    4.2812                   (X_U1.34)    3.9749                       
+
+(X_U1.35)    3.9749                   (X_U1.70)    3.9775                       
+
+(X_U1.72)    3.9749                   (X_U1.73)    3.9749                       
+
+(X_U1.90)    7.7217                   (X_U1.91)    7.7217                       
+
+(X_U1.98)    3.9749                   (X_U1.300)    3.9725                      
+
+(X_U1.311)    3.9749                  (X_U1.312)    3.9749                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     11.44V  \     7.688V
+    V(OUT)                    =     11.44V  \     7.688V
+    V(X_U1.5)                 =    9.250MV  \     7.722V
+    V(X_U1.32)                =     7.722V  \     3.975V
+    V(X_U1.98)                =     7.722V  \     3.975V
+    V(X_U1.70)                =     7.582V  \     3.978V
+    V(X_U1.72)                =     7.722V  \     3.975V
+    V(X_U1.73)                =     7.722V  \     3.975V
+    V(X_U1.12)                =     11.55V  \     7.799V
+    V(X_U1.30)                =     8.007V  \     4.261V
+    V(X_U1.31)                =     7.722V  \     3.975V
+    V(X_U1.33)                =     8.028V  \     4.281V
+    V(X_U1.34)                =     7.722V  \     3.975V
+    V(X_U1.35)                =     7.722V  \     3.975V
+    V(X_U1.17)                =     7.723V  \     7.286V
+    V(X_U1.300)               =   -229.94V  \     3.973V
+    V(X_U1.311)               =     7.722V  \     3.975V
+    V(X_U1.312)               =     7.722V  \     3.975V
+    V(X_U1.23)                =     11.44V  \     7.688V
+    V(X_U1.19)                =     11.78V  \     8.031V
+    V(X_U1.20)                =     11.09V  \     7.345V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    4.037MA  \    8.214GA
+    I(X_U1.eref1)             =   -4.037MA  \    33.15mA
+    I(V_V2)                   =  -906.58mA  \    10.00GA
+    I(V_V1)                   =   897.52mA  \    1.786GA
+    I(V_V3)                   =    4.037MA  \    8.214GA
+    I(X_U1.v1)                =   -2.190mA  \    40.20uA
+    I(X_U1.v3)                =  -109.75pA  \   -1.786GA
+    I(X_U1.v4)                =    52.86pA  \   -1.786GA
+    I(X_U1.vi1)               =  -321.26pA  \   -3.350fA
+    I(X_U1.vi2)               =   338.67pA  \    3.440fA
+    I(X_U1.vo1)               =    -3.714A  \   -38.24uA
+    I(X_U1.vo2)               =    -1.857A  \    16.54mA
+    I(X_U1.vo3)               =     1.857A  \   -16.54mA
+    I(X_U1.v5)                =    48.56pA  \    33.11mA
+    I(X_U1.v6)                =   -3.508pA  \   -67.88fA
+
+  These devices failed to converge:
+    X_U1.dl2  X_U1.dl4  X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.d5   
+    X_U1.fo1  X_U1.fo2  X_U1.q1   X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    7.9369  (N01011)    7.9701 (N01031)    7.9701 (N01121)    6.9074     
+
+(X_U1.3)    6.9085 (X_U1.4)    7.2698 (X_U1.5)    7.9701 (X_U1.8)    7.9369     
+
+(X_U1.12)    8.0498                   (X_U1.13)    6.6205                       
+
+(X_U1.14)    9.4791                   (X_U1.17)    7.5451                       
+
+(X_U1.19)    8.2908                   (X_U1.20)    7.5819                       
+
+(X_U1.23)    7.9369                   (X_U1.30)    4.5297                       
+
+(X_U1.31)    4.2349                   (X_U1.32)    4.2349                       
+
+(X_U1.33)    4.5510                   (X_U1.34)    4.2349                       
+
+(X_U1.35)    4.2349                   (X_U1.70)    4.2375                       
+
+(X_U1.72)    4.2349                   (X_U1.73)    4.2349                       
+
+(X_U1.90)    7.9701                   (X_U1.91)    7.9701                       
+
+(X_U1.98)    4.2349                   (X_U1.300)    4.2323                      
+
+(X_U1.311)    4.2349                  (X_U1.312)    4.2349                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     11.67V  \     7.937V
+    V(OUT)                    =     11.67V  \     7.937V
+    V(X_U1.5)                 =    10.06MV  \     7.970V
+    V(X_U1.32)                =     7.970V  \     4.235V
+    V(X_U1.98)                =     7.970V  \     4.235V
+    V(X_U1.70)                =     7.826V  \     4.238V
+    V(X_U1.72)                =     7.970V  \     4.235V
+    V(X_U1.73)                =     7.970V  \     4.235V
+    V(X_U1.12)                =     11.79V  \     8.050V
+    V(X_U1.30)                =     8.265V  \     4.530V
+    V(X_U1.31)                =     7.970V  \     4.235V
+    V(X_U1.33)                =     8.286V  \     4.551V
+    V(X_U1.34)                =     7.970V  \     4.235V
+    V(X_U1.35)                =     7.970V  \     4.235V
+    V(X_U1.17)                =     7.972V  \     7.545V
+    V(X_U1.300)               =   -228.96V  \     4.232V
+    V(X_U1.311)               =     7.970V  \     4.235V
+    V(X_U1.312)               =     7.970V  \     4.235V
+    V(X_U1.23)                =     11.67V  \     7.937V
+    V(X_U1.19)                =     12.03V  \     8.291V
+    V(X_U1.20)                =     11.32V  \     7.582V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    4.026MA  \     67.06A
+    I(X_U1.eref1)             =   -4.026MA  \    33.15mA
+    I(V_V2)                   =  -873.31mA  \    10.00GA
+    I(V_V1)                   =   863.97mA  \    10.00GA
+    I(V_V3)                   =    4.026MA  \     67.06A
+    I(X_U1.v1)                =   -2.254mA  \    41.48uA
+    I(X_U1.v3)                =  -113.84pA  \   -10.00GA
+    I(X_U1.v4)                =    53.25pA  \   -10.00GA
+    I(X_U1.vi1)               =  -319.98pA  \   -3.473fA
+    I(X_U1.vi2)               =   337.99pA  \    3.570fA
+    I(X_U1.vo1)               =    -3.702A  \   -39.66uA
+    I(X_U1.vo2)               =    -1.851A  \    16.53mA
+    I(X_U1.vo3)               =     1.851A  \   -16.53mA
+    I(X_U1.v5)                =    48.55pA  \    33.11mA
+    I(X_U1.v6)                =   -3.661pA  \   -44.40fA
+
+  These devices failed to converge:
+    X_U1.dl2  X_U1.dl4  X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.d5   
+    X_U1.fo1  X_U1.fo2  X_U1.q1   X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    7.9369  (N01011)    7.9701 (N01031)    7.9701 (N01121)    7.4388     
+
+(X_U1.3)    7.4398 (X_U1.4)    7.2698 (X_U1.5)    8.1401 (X_U1.8)    7.9369     
+
+(X_U1.12)    8.0498                   (X_U1.13)    6.6205                       
+
+(X_U1.14)    9.4791                   (X_U1.17)    7.5451                       
+
+(X_U1.19)    8.2908                   (X_U1.20)    7.5819                       
+
+(X_U1.23)    7.9369                   (X_U1.30)    4.5297                       
+
+(X_U1.31)    4.2349                   (X_U1.32)    4.2349                       
+
+(X_U1.33)    4.5510                   (X_U1.34)    4.2349                       
+
+(X_U1.35)    4.2349                   (X_U1.70)    4.2375                       
+
+(X_U1.72)    4.2349                   (X_U1.73)    4.2349                       
+
+(X_U1.90)    7.9701                   (X_U1.91)    7.9701                       
+
+(X_U1.98)    4.2349                   (X_U1.300)    4.2323                      
+
+(X_U1.311)    4.2349                  (X_U1.312)    4.2349                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     11.67V  \     7.937V
+    V(OUT)                    =     11.67V  \     7.937V
+    V(X_U1.32)                =     7.970V  \     4.235V
+    V(X_U1.98)                =     7.970V  \     4.235V
+    V(X_U1.70)                =     7.826V  \     4.238V
+    V(X_U1.72)                =     7.970V  \     4.235V
+    V(X_U1.73)                =     7.970V  \     4.235V
+    V(X_U1.12)                =     11.79V  \     8.050V
+    V(X_U1.30)                =     8.265V  \     4.530V
+    V(X_U1.31)                =     7.970V  \     4.235V
+    V(X_U1.33)                =     8.286V  \     4.551V
+    V(X_U1.34)                =     7.970V  \     4.235V
+    V(X_U1.35)                =     7.970V  \     4.235V
+    V(X_U1.17)                =     7.972V  \     7.545V
+    V(X_U1.300)               =   -228.96V  \     4.232V
+    V(X_U1.311)               =     7.970V  \     4.235V
+    V(X_U1.312)               =     7.970V  \     4.235V
+    V(X_U1.23)                =     11.67V  \     7.937V
+    V(X_U1.19)                =     12.03V  \     8.291V
+    V(X_U1.20)                =     11.32V  \     7.582V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    3.354MA  \    2.571uA
+    I(X_U1.eref1)             =   -3.354MA  \    33.15mA
+    I(V_V2)                   =  -873.36mA  \    10.00GA
+    I(V_V1)                   =   863.92mA  \    10.00GA
+    I(V_V3)                   =    3.354MA  \    2.571uA
+    I(X_U1.v1)                =   -2.254mA  \    41.48uA
+    I(X_U1.v3)                =  -113.84pA  \   -10.00GA
+    I(X_U1.v4)                =    53.25pA  \   -10.00GA
+    I(X_U1.vi1)               =  -319.98pA  \   -3.473fA
+    I(X_U1.vi2)               =   337.99pA  \    3.570fA
+    I(X_U1.vo1)               =    -3.702A  \   -39.66uA
+    I(X_U1.vo2)               =    -1.851A  \    16.53mA
+    I(X_U1.vo3)               =     1.851A  \   -16.53mA
+    I(X_U1.v5)                =    48.55pA  \    33.11mA
+    I(X_U1.v6)                =   -3.661pA  \   -44.40fA
+
+  These devices failed to converge:
+    X_U1.dl2  X_U1.dl4  X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.d5   
+    X_U1.fo1  X_U1.fo2  X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    7.9369  (N01011)    7.9701 (N01031)    7.9701 (N01121)    7.9701     
+
+(X_U1.3)    7.9712 (X_U1.4)    7.2883 (X_U1.5)    8.6529 (X_U1.8)    7.9369     
+
+(X_U1.12)    8.0498                   (X_U1.13)    6.6205                       
+
+(X_U1.14)    9.4791                   (X_U1.17)    7.5452                       
+
+(X_U1.19)    8.2908                   (X_U1.20)    7.5820                       
+
+(X_U1.23)    7.9369                   (X_U1.30)    4.5297                       
+
+(X_U1.31)    4.2349                   (X_U1.32)    4.2349                       
+
+(X_U1.33)    4.5510                   (X_U1.34)    4.2349                       
+
+(X_U1.35)    4.2349                   (X_U1.70)    4.2410                       
+
+(X_U1.72)    4.2349                   (X_U1.73)    4.2349                       
+
+(X_U1.90)    7.9701                   (X_U1.91)    7.9701                       
+
+(X_U1.98)    4.2349                   (X_U1.300)    4.2288                      
+
+(X_U1.311)    4.2349                  (X_U1.312)    4.2349                  
+
+
+  These voltages failed to converge:
+
+    V(X_U1.8)                 =     11.67V  \     7.937V
+    V(OUT)                    =     11.67V  \     7.937V
+    V(X_U1.32)                =     7.970V  \     4.235V
+    V(X_U1.98)                =     7.970V  \     4.235V
+    V(X_U1.70)                =     6.931V  \     4.241V
+    V(X_U1.72)                =     7.970V  \     4.235V
+    V(X_U1.73)                =     7.970V  \     4.235V
+    V(X_U1.12)                =     11.79V  \     8.050V
+    V(X_U1.30)                =     8.265V  \     4.530V
+    V(X_U1.31)                =     7.970V  \     4.235V
+    V(X_U1.33)                =     8.286V  \     4.551V
+    V(X_U1.34)                =     7.970V  \     4.235V
+    V(X_U1.35)                =     7.970V  \     4.235V
+    V(X_U1.17)                =     7.972V  \     7.545V
+    V(X_U1.300)               =   -228.97V  \     4.229V
+    V(X_U1.311)               =     7.970V  \     4.235V
+    V(X_U1.312)               =     7.970V  \     4.235V
+    V(X_U1.23)                =     11.67V  \     7.937V
+    V(X_U1.19)                =     12.03V  \     8.291V
+    V(X_U1.20)                =     11.32V  \     7.582V
+
+  These supply currents failed to converge:
+
+    I(X_U1.eos)               =    3.354MA  \    2.270uA
+    I(X_U1.eref1)             =   -3.354MA  \    33.15mA
+    I(V_V2)                   =  -872.23mA  \    10.00GA
+    I(V_V1)                   =   879.07mA  \    10.00GA
+    I(V_V3)                   =    3.354MA  \    2.270uA
+    I(X_U1.v1)                =   -16.24mA  \    96.57uA
+    I(X_U1.vl1)               =   -2.906pA  \    17.19fA
+    I(X_U1.v3)                =  -113.84pA  \   -10.00GA
+    I(X_U1.v4)                =    53.25pA  \   -10.00GA
+    I(X_U1.vi1)               =  -309.40pA  \   -8.154fA
+    I(X_U1.vi2)               =   352.75pA  \    8.706fA
+    I(X_U1.vo1)               =    -3.702A  \   -94.75uA
+    I(X_U1.vo2)               =    -1.851A  \    16.51mA
+    I(X_U1.vo3)               =     1.851A  \   -16.51mA
+    I(X_U1.v5)                =    48.55pA  \    33.11mA
+    I(X_U1.v6)                =   -3.661pA  \   -44.40fA
+
+  These devices failed to converge:
+    X_U1.dl2  X_U1.dl4  X_U1.d3   X_U1.d4   X_U1.dm1  X_U1.dm2  X_U1.d5   
+    X_U1.fo1  X_U1.fo2  X_U1.q1   X_U1.q3   X_U1.q4   
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****

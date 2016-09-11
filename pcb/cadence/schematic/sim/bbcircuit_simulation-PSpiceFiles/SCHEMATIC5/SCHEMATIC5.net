@@ -1,0 +1,5 @@
+* source BBCIRCUIT_SIMULATION
+V_V1         N00144 0  
++PULSE 0 5 0 0.4us 0.5us 10ms 20ms
+C_C1         N00144 N00173  10u   
+R_R1         0 N00173  200  

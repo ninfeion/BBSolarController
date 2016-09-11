@@ -1,0 +1,15 @@
+* source BBCIRCUIT_SIMULATION
+X_M1         VCC N00264 N00164 IRF840
+V_V2         N00264 N00164  
++PULSE 0 15 0 0.1us 0.1us {DUTY} 20us
+V_V1         VCC 0 100Vdc
+D_D1         0 N00164 MUR860 
+R_R1         0 OUT  {RL} TC=0,0 
+L_L1         N00164 OUT  0.5m  
+C_C1         0 OUT  100u  TC=0,0 
+X_U1         N03641 OUT_AD N03809 N03795 OUT_AD AD8072jn/AD
+R_R4         0 N03641  500k TC=0,0 
+R_R3         N03641 OUT  4500k TC=0,0 
+V_V4         0 N03795 15Vdc
+V_V3         N03809 0 5Vdc
+.PARAM  duty=2us rl=5000k

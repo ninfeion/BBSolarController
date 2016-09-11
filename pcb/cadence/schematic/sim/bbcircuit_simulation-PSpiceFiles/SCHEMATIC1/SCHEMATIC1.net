@@ -1,0 +1,13 @@
+* source BBCIRCUIT_SIMULATION
+Q_Q2         N03163 N03140 N03192 Q2N2222
+V_V4         N03116 0 12Vdc
+V_V5         N03082 0 DC 0 AC 1V sin(0 10mv 10khz)
+C_C8         N03163 OUT  10u  TC=0,0 
+C_C9         N03075 N03140  10u  TC=0,0 
+C_C10         0 N03192  50u  TC=0,0 
+R_R1         0 OUT  5.1k TC=0,0 
+R_R2         0 N03192  100 TC=0,0 
+R_R3         0 N03140  24k TC=0,0 
+R_R4         N03082 N03075  100 TC=0,0 
+R_R5         N03163 N03116  5.1k TC=0,0 
+R_R6         N03140 N03116  300k TC=0,0 

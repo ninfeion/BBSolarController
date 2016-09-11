@@ -1,0 +1,6 @@
+* source BB_BUCK
+V_V1         N00206 0 0Vdc
+D_D3         0 N00103 D1N4744A 
+D_D2         N00187 N00103 D1N4744A 
+R_R2         N00187 0  1k TC=0,0 
+R_R1         N00206 N00187  1k TC=0,0 
