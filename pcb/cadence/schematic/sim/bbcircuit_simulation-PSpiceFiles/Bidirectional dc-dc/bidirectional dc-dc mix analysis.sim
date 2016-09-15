@@ -1,32 +1,32 @@
 @OrCAD Simulation Server Version: 1.0
 
-@Settings: 2 1
+@Settings: 0 1
 @General:
-ProfileName= "pi_filter_ac_analysis" 
-ProfileFile= "pi_filter_ac_analysis.sim" 
-Connectivity= "pi_filter.net" 
-NetlistFile= "pi_filter_ac_analysis.cir" 
-DataFile= "pi_filter_ac_analysis.dat" 
-OutFile= "pi_filter_ac_analysis.out" 
+ProfileName= "bidirectional dc-dc mix analysis" 
+ProfileFile= "bidirectional dc-dc mix analysis.sim" 
+Connectivity= "Bidirectional dc-dc.net" 
+NetlistFile= "bidirectional dc-dc mix analysis.cir" 
+DataFile= "bidirectional dc-dc mix analysis.dat" 
+OutFile= "bidirectional dc-dc mix analysis.out" 
 Notes=
 @#$BEGINNOTES
 @#$ENDNOTES
 @End General
-@Analysis: 0 0
+@Analysis: 0 1
 +0 0 0 0 
-+0 "1000s" 
++0 "1000ns" 
 +1 "" 
 +2 "0" 
-+3 "1s" 
++3 "" 
 +4 "" 
 +5 "" 
 +6 "" 
 @End Analysis
-@Analysis: 1 1
-+0 0 0
-+0 "1000000" 
-+1 "1Hz" 
-+2 "5kHz" 
+@Analysis: 1 0
++2 0 0
++0 "" 
++1 "" 
++2 "" 
 +3 "" 
 +4 "" 
 +5 "" 
@@ -49,7 +49,7 @@ Notes=
 +2 "" 
 @End Analysis
 @Analysis: 4 0
-+0 0 1 0 0 0 2 0 0 0 1
++0 0 1 0 0 0 0 0 0 0 1
 +0 "" 
 +1 "" 
 +2 "" 
@@ -130,7 +130,7 @@ SaveFile 0 ""
 @End Analysis
 @Analysis: 17 0
 +0 "-1" 
-+1 "-1" 
++1 "" 
 +2 "-1" 
 +3 "-1" 
 +4 "1" 

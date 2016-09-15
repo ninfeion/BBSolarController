@@ -1,6 +1,6 @@
-** Profile: "pi_filter-pi_filter_ac_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\low_pass_analyze\low_pass_filter-pspicefiles\pi_filter\pi_filter_ac_analysis.sim ] 
+** Profile: "summing_amp-summing_amp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFiles\summing_amp\summing_amp_analysis.sim ] 
 
-** Creating circuit file "pi_filter_ac_analysis.cir" 
+** Creating circuit file "summing_amp_analysis.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
@@ -10,10 +10,10 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.AC LIN 1000000 1Hz 5kHz
+.TRAN  0 10000us 0 1us 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
-.INC "..\pi_filter.net" 
+.INC "..\summing_amp.net" 
 
 
 .END

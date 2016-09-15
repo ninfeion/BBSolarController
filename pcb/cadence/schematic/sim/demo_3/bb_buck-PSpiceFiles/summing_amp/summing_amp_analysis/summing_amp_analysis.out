@@ -1,0 +1,282 @@
+
+**** 09/13/16 16:04:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "summing_amp-summing_amp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceF
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "summing_amp_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10000us 0 1us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\summing_amp.net" 
+
+
+
+**** INCLUDING summing_amp.net ****
+* source BB_BUCK
+X_U3A         N21993 N20921 VCC VEE AD_I+ LM358/ON
+M_M3         N20475 N20725 N20425 N20425 IRF150
+M_M2         N20475 N20573 N20425 N20425 IRF150
+V_V5         N20573 N20425  
++PULSE 0 5 0 0.01us 0.01us {DUTY} 10us
+R_R2         OUT N20499  0.1 TC=0,0 
+L_L2         N20425 OUT  5mH  
+V_V1         N20475 0 70Vdc
+V_V3         0 VEE 0Vdc
+V_V4         VCC 0 6Vdc
+R_R1         0 N20499  50 TC=0,0 
+X_U4B         N22240 N20929 VCC VEE AD_I- LM358/ON
+M_M1         N20475 N20593 N20425 N20425 IRF150
+C_C1         0 OUT  4700uF  TC=0,0 
+V_V2         N20593 N20425  
++PULSE 0 5 0 0.01us 0.01us {DUTY} 10us
+V_V6         N20725 N20425  
++PULSE 0 5 0 0.01us 0.01us {DUTY} 10us
+D_D1         0 N20425 D1N5818 
+V_V7         1V_REF 0 1Vdc
+R_R7         N21993 1V_REF  10K TC=0,0 
+R_R8         N25845 N21993  100K TC=0,0 
+R_R10         N22240 1V_REF  10K TC=0,0 
+R_R13         N20921 0  100K TC=0,0 
+R_R14         N20929 0  100K TC=0,0 
+R_R15         AD_I+ N20921  10K TC=0,0 
+R_R16         AD_I- N20929  10K TC=0,0 
+R_R17         N20499 N22240  100K TC=0,0 
+V_V8         N25845 0 30Vdc
+.PARAM  duty=1us
+
+**** RESUMING summing_amp_analysis.cir ****
+.END
+
+**** 09/13/16 16:04:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "summing_amp-summing_amp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceF
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N5818         X_U3A.dx        X_U4B.dx        
+          IS    2.835000E-06  800.000000E-18  800.000000E-18 
+         ISR   26.460000E-06                                 
+         IKF     .3227                                       
+          RS     .04712                                      
+         CJO  359.300000E-12                                 
+          VJ     .75                                         
+           M     .6513                                       
+         XTI    0                                            
+
+
+**** 09/13/16 16:04:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "summing_amp-summing_amp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceF
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3A.qx        X_U4B.qx        
+               PNP             PNP             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF   32.03           32.03         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.2             2.2          
+           D     .52             .52         
+
+
+**** 09/13/16 16:04:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "summing_amp-summing_amp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceF
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 09/13/16 16:04:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "summing_amp-summing_amp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceF
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .0235  (  VCC)    6.0000  (  VEE)    0.0000  (AD_I+)    4.0000      
+
+(AD_I-)    1.0024  (1V_REF)    1.0000 (N20425)     .0235 (N20475)   70.0000     
+
+(N20499)     .0235 (N20573)     .0235 (N20593)     .0235 (N20725)     .0235     
+
+(N20921)    3.6367 (N20929)     .9116 (N21993)    3.6367 (N22240)     .9116     
+
+(N25845)   30.0000 (X_U3A.6)-83.47E-06                   (X_U3A.7)    4.0018    
+
+(X_U3A.8)    4.0018                   (X_U3A.9)    0.0000                       
+
+(X_U4B.6) 165.9E-06                   (X_U4B.7)    1.0029                       
+
+(X_U4B.8)    1.0029                   (X_U4B.9)    0.0000                       
+
+(X_U3A.10)    4.1876                  (X_U3A.11)     .0296                      
+
+(X_U3A.12)     .0295                  (X_U3A.13)    4.1837                      
+
+(X_U3A.14)    4.1837                  (X_U3A.53)    4.2000                      
+
+(X_U3A.54)     .8800                  (X_U3A.90)     .0363                      
+
+(X_U3A.91)   40.0000                  (X_U3A.92)  -40.0000                      
+
+(X_U3A.99)    3.0000                  (X_U4B.10)    1.4629                      
+
+(X_U4B.11)     .0299                  (X_U4B.12)     .0300                      
+
+(X_U4B.13)    1.4590                  (X_U4B.14)    1.4590                      
+
+(X_U4B.53)    4.2000                  (X_U4B.54)     .8800                      
+
+(X_U4B.90)     .0091                  (X_U4B.91)   40.0000                      
+
+(X_U4B.92)  -40.0000                  (X_U4B.99)    3.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V5         3.229E-20
+    V_V1        -4.724E-04
+    V_V3        -3.239E-04
+    V_V4        -3.241E-04
+    V_V2         0.000E+00
+    V_V6         0.000E+00
+    V_V7         2.548E-04
+    V_V8        -2.636E-04
+    X_U3A.vb    -8.347E-10
+    X_U3A.vc     2.008E-13
+    X_U3A.ve     3.121E-12
+    X_U3A.vlim   3.633E-05
+    X_U3A.vlp   -3.996E-11
+    X_U3A.vln   -4.004E-11
+    X_U4B.vb     1.659E-09
+    X_U4B.vc     3.198E-12
+    X_U4B.ve     1.232E-13
+    X_U4B.vlim   9.078E-06
+    X_U4B.vlp   -3.999E-11
+    X_U4B.vln   -4.001E-11
+
+    TOTAL POWER DISSIPATION   4.27E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/13/16 16:04:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "summing_amp-summing_amp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceF
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       14.34
+

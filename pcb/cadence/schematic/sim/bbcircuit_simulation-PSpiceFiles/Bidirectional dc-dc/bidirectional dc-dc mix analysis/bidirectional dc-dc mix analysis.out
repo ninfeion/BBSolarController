@@ -1,0 +1,203 @@
+
+**** 09/14/16 14:27:37 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "Bidirectional dc-dc-bidirectional dc-dc mix analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bidirectional dc-dc mix analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Bidirectional dc-dc.net" 
+
+
+
+**** INCLUDING "Bidirectional dc-dc.net" ****
+* source BBCIRCUIT_SIMULATION
+M_M1         N74928 N759731 N74964 N74964 IRF150
+M_M2         N74964 N760501 0 0 IRF150
+M_M3         N75020 N761271 N74984 N74984 IRF150
+M_M4         N74984 N761681 0 0 IRF150
+D_D1         N75152 N74928 MBR1045 
+C_C2         N74940 N74928  10u  TC=0,0 
+C_C1         0 N75232  10u  TC=0,0 
+C_C3         0 N74940  10u  TC=0,0 
+C_C4         N74988 N75020  10u  TC=0,0 
+C_C5         0 N74988  10u  TC=0,0 
+C_C6         0 N75020  10u  TC=0,0 
+R_R1         N75064 N75152  0.1 TC=0,0 
+R_R2         N75156 N75232  0.1 TC=0,0 
+R_R3         N75020 N75648  0.1 TC=0,0 
+R_R4         0 N75648  50 TC=0,0 
+L_L1         N75232 N74964  5mH  
+L_L2         N74964 N74980  5mH  
+V_V1         N759731 N74964  
++PULSE 0 5 0 0.01us 0.01us {DUTY1} 10us
+V_V2         N760501 0  
++PULSE 0 5 0 0.01us 0.01us {DUTY2} 10us
+V_V3         N761271 N74984  
++PULSE 0 5 0 0.01us 0.01us {DUTY3} 10us
+V_V4         N761681 0  
++PULSE 0 5 0 0.01us 0.01us {DUTY4} 10us
+V_V5         N75064 0 {SOLAR}
+V_V6         N75156 0 {BATTERY}
+L_L3         N74980 N74940  5mH  
+L_L4         N74984 N74988  5mH  
+Kn_K1         L_L3 L_L4     1
+.PARAM  solar=0 duty1=0 duty2=0 battery=0 duty3=0 duty4=0
+
+**** RESUMING "bidirectional dc-dc mix analysis.cir" ****
+.END
+
+**** 09/14/16 14:27:37 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "Bidirectional dc-dc-bidirectional dc-dc mix analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MBR1045         
+          IS  168.400000E-09 
+         ISR   10.370000E-06 
+         IKF    1.121        
+          RS    8.013000E-03 
+         CJO  888.900000E-12 
+          VJ     .75         
+           M     .4639       
+         XTI    0            
+
+
+**** 09/14/16 14:27:37 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "Bidirectional dc-dc-bidirectional dc-dc mix analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 09/14/16 14:27:37 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "Bidirectional dc-dc-bidirectional dc-dc mix analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N74928)-2.732E-18 (N74940)-613.8E-27 (N74964)-613.8E-27 (N74980)-613.8E-27     
+
+(N74984)    0.0000 (N74988)    0.0000 (N75020)    0.0000 (N75064)    0.0000     
+
+(N75152) 613.8E-27 (N75156)    0.0000 (N75232)-613.8E-27 (N75648)    0.0000     
+
+(N759731)-613.8E-27                   (N760501)    0.0000                       
+
+(N761271)    0.0000                   (N761681)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+    V_V3         0.000E+00
+    V_V4         0.000E+00
+    V_V5         6.138E-24
+    V_V6        -6.138E-24
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/14/16 14:27:37 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "Bidirectional dc-dc-bidirectional dc-dc mix analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

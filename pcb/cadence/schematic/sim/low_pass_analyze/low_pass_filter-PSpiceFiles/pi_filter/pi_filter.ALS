@@ -1,15 +1,6 @@
 .ALIASES
 V_V1            V1(+=N14183 -=0 ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS14163@SOURCE.VAC.Normal(chips)
-C_C28           C28(1=N14086 2=OUT ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS14305@ANALOG.C.Normal(chips)
-L_L5            L5(1=N14038 2=OUT ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS14346@ANALOG.L.Normal(chips)
-C_C30           C30(1=N14038 2=0 ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS14378@ANALOG.C.Normal(chips)
-R_R1            R1(1=N14086 2=OUT ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS14649@ANALOG.R.Normal(chips)
+C_C30           C30(1=N14038 2=N143881 ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS14378@ANALOG.C.Normal(chips)
 R_R2            R2(1=N14183 2=N14038 ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS15545@ANALOG.R.Normal(chips)
-L_L6            L6(1=0 2=N14086 ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS17008@ANALOG.L.Normal(chips)
-Q_Q1            Q1(c=N17680 b=N176100 e=0 ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS17598@ZETEX.BC547BP/ZTX.Normal(chips)
-R_R3            R3(1=N17680 2=N17700 ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS17658@ANALOG.R.Normal(chips)
-V_V3            V3(+=N17700 -=0 ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS17684@SOURCE.VDC.Normal(chips)
-R_R4            R4(1=N176100 2=N17645 ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS18141@ANALOG.R.Normal(chips)
-V_V4            V4(+=N17645 -=0 ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS18206@SOURCE.VDC.Normal(chips)
-_    _(out=OUT)
+R_R3            R3(1=0 2=N143881 ) CN @LOW_PASS_FILTER.pi_filter(sch_1):INS18531@ANALOG.R.Normal(chips)
 .ENDALIASES
