@@ -33,21 +33,28 @@
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
-    (Switch2x3
-      (FullPartName "Switch2x3.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
-      (DeviceIndex "0"))
     (DIODE
       (FullPartName "DIODE.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
       (DeviceIndex "0"))
     ("NPN BCE"
       (FullPartName "NPN BCE.Normal")
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    (TRAN_FBP1S4/SM
+      (FullPartName "TRAN_FBP1S4/SM.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-L
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (Switch2x3
+      (FullPartName "Switch2x3.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
       (DeviceIndex "0"))
     (20Pin_Header
       (FullPartName "20Pin_Header.Normal")
@@ -104,9 +111,6 @@
       (FullPartName "TPS54331.Normal")
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
       (DeviceIndex "0"))
-    (OFFPAGELEFT-L
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
     (STM32C8T6
       (FullPartName "STM32C8T6.Normal")
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
@@ -126,10 +130,6 @@
     ("DIODE ZENER"
       (FullPartName "DIODE ZENER.Normal")
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (AD8072
-      (FullPartName "AD8072.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\AMPLIFIER.OLB")
       (DeviceIndex "0")))
   (GlobalState
     (FileView
@@ -145,7 +145,8 @@
       (Path "Design Resources" "Library")
       (Path "Outputs")
       (Select "Design Resources"
-         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn"))
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn"
+         "Main Circuit" "dc-dc-converter-v2.0"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -155,24 +156,13 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 88 921 88 392")
-        (Scroll "250 130")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -4 -23 0 833 0 304")
+        (Scroll "0 0")
+        (Zoom "38")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSOLARCONTROLLER.DSN")
       (Schematic "Main Circuit")
-      (Page "adc-preconvert-v3.0"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 110 943 110 414")
-        (Scroll "-17 0")
-        (Zoom "50")
-        (Occurrence "/"))
-      (Path
-         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSOLARCONTROLLER.DSN")
-      (Schematic "Main Circuit")
-      (Page "arm-core")))
+      (Page "dc-dc-converter-v2.0")))
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_16.6\tools\capture\library")
   (MPSSessionName "N"))

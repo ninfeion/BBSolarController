@@ -1,5 +1,5 @@
 
-**** 09/14/16 14:15:43 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 09/18/16 00:14:05 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
  ** Profile: "Bidirectional dc-dc-bidirectional dc-dc mix analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
 
@@ -22,7 +22,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 1000ns 0 
+.TRAN  0 1000us 0 1us 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Bidirectional dc-dc.net" 
@@ -34,49 +34,43 @@
 M_M1         N74928 N759731 N74964 N74964 IRF150
 M_M2         N74964 N760501 0 0 IRF150
 M_M3         N75020 N761271 N74984 N74984 IRF150
-M_M4         N74984 N761681 N75008 N75008 IRF150
+M_M4         N74984 N761681 0 0 IRF150
 D_D1         N75152 N74928 MBR1045 
-C_C2         N74940 N74928  10u  TC=0,0 
-C_C1         0 N75232  10u  TC=0,0 
-C_C3         0 N74940  10u  TC=0,0 
-C_C4         N74988 N75020  10u  TC=0,0 
-C_C5         N75008 N74988  10u  TC=0,0 
-C_C6         N75008 N75020  10u  TC=0,0 
+C_C1         0 N75232  1000u  TC=0,0 
 R_R1         N75064 N75152  0.1 TC=0,0 
 R_R2         N75156 N75232  0.1 TC=0,0 
 R_R3         N75020 N75648  0.1 TC=0,0 
-R_R4         N75008 N75648  50 TC=0,0 
-L_L1         N75232 N74964  5mH  
-L_L2         N74964 N74980  5mH  
+R_R4         0 N75648  50 TC=0,0 
+L_L1         N75232 N74964  500mH  
 V_V1         N759731 N74964  
-+PULSE 0 5 0 0.01us 0.01us {DUTY1} 10us
++PULSE 0 5 {PHASE1} 0.01us 0.01us {DUTY1} 10us
 V_V2         N760501 0  
-+PULSE 0 5 0 0.01us 0.01us {DUTY2} 10us
++PULSE 5 0 {PHASE2} 0.01us 0.01us {DUTY2} 10us
 V_V3         N761271 N74984  
-+PULSE 0 5 0 0.01us 0.01us {DUTY3} 10us
-V_V4         N761681 N75008  
-+PULSE 0 5 0 0.01us 0.01us {DUTY4} 10us
++PULSE 0 5 {PHASE3} 0.01us 0.01us {DUTY3} 10us
+V_V4         N761681 0  
++PULSE 5 0 {PHASE4} 0.01us 0.01us {DUTY4} 10us
 V_V5         N75064 0 {SOLAR}
 V_V6         N75156 0 {BATTERY}
-L_L3         N74980 N74940  5mH  
-L_L4         N74984 N74988  5mH  
+L_L3         N80643 N74956  500mH  
+L_L4         N74984 N75000  500mH  
 Kn_K1         L_L3 L_L4     1
-.PARAM  solar=0 duty1=0 duty2=0 battery=0 duty3=0 duty4=0
+C_C7         0 N74940  10u  
+C_C8         N74956 0  10u  
+C_C13         N75020 N75000  10u  
+C_C14         N75000 0  10u  
+C_C15         N75020 0  1000u  
+L_L5         N74940 N80643  500mH  
+R_R5         N74956 N74940  50 TC=0,0 
+.PARAM  phase_diff=1us dead_area=0.1us phase1=0.2us phase2=0 phase3=1.2us
++  duty1=4us solar=17 battery=12 duty2=4.4us phase4=1us duty3=4us duty4=4.4us
 
 **** RESUMING "bidirectional dc-dc mix analysis.cir" ****
 .END
 
-ERROR(ORPSIM-15142): Node N75020 is floating
+ERROR(ORPSIM-15142): Node N80643 is floating
 
-ERROR(ORPSIM-15142): Node N761271 is floating
+ERROR(ORPSIM-15142): Node N74956 is floating
 
-ERROR(ORPSIM-15142): Node N74984 is floating
-
-ERROR(ORPSIM-15142): Node N761681 is floating
-
-ERROR(ORPSIM-15142): Node N75008 is floating
-
-ERROR(ORPSIM-15142): Node N74988 is floating
-
-ERROR(ORPSIM-15142): Node N75648 is floating
+ERROR(ORPSIM-15142): Node N74940 is floating
 

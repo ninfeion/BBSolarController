@@ -1,0 +1,237 @@
+
+**** 09/21/16 20:19:57 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "PWM-pwm-analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\pwm\p
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pwm-analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0ms 10ms 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\PWM.net" 
+
+
+
+**** INCLUDING PWM.net ****
+* source BBCIRCUIT_SIMULATION
+R_R2         N85097 0  1k TC=0,0 
+R_R1         N84702 0  1k TC=0,0 
+R_R4         N85320 0  1k TC=0,0 
+V_V1         N84702 0  
++PULSE 0 5 {PHASE2+0.01us} 0.0001us 0.0001us {DUTY1} {PERIOD}
+R_R3         N85205 0  1k TC=0,0 
+V_V2         N85097 0  
++PULSE 5 0 {PHASE2} 0.0001us 0.0001us {DUTY1+0.02us} {PERIOD}
+V_V4         N85320 0  
++PULSE 5 0 {PHASE4} 0.0001us 0.0001us {DUTY1+0.02us} {PERIOD}
+V_V3         N85205 0  
++PULSE 0 5 {PHASE4+0.01us} 0.0001us 0.0001us {DUTY1} {PERIOD}
+V_V8         N896451 0  
++PULSE 5 0 {PHASE2} 0.0001us 0.0001us {DUTY1+0.02us} {PERIOD}
+V_V7         N895751 N89489  
++PULSE 0 5 {PHASE2+0.01us} 0.0001us 0.0001us {DUTY1} {PERIOD}
+M_M1         N89477 N895751 N89489 N89489 IRF150
+M_M2         N89489 N896451 0 0 IRF150
+D_D1         N89489 N89477 D1N5818 
+D_D2         0 N89489 D1N5818 
+V_V9         N115476 0 {BATTERY}
+V_V10         N94874 0 {SOLAR}
+D_D3         N94490 N89477 D1N5818 
+R_R7         N94874 N94490  5 TC=0,0 
+V_V11         N95678 0 {SOLAR}
+V_V12         N95684 0 {BATTERY}
+R_R9         N95678 N95684  100 TC=0,0 
+C_C4         0 N115476  2000u  TC=0,0 
+L_L2         N109710 N103730  5m  
+C_C3         N103730 N89477  2000u  TC=0,0 
+C_C2         0 N103730  2000u  TC=0,0 
+L_L3         N104625 N104634  80m  
+Kn_K1         L_L2 L_L3     1
+M_M3         N104696 N1047141 N104625 N104625 IRF150
+V_V13         N1047141 N104625  
++PULSE 0 5 {PHASE4+0.01us} 0.0001us 0.0001us {DUTY1} {PERIOD}
+D_D4         N104625 N104696 D1N5818 
+M_M4         N104625 N1048661 0 0 IRF150
+V_V14         N1048661 0  
++PULSE 5 0 {PHASE4} 0.0001us 0.0001us {DUTY1+0.02us} {PERIOD}
+D_D5         0 N104625 D1N5818 
+C_C15         N104634 N104696  1000u  TC=0,0 
+C_C14         0 N104634  1000u  TC=0,0 
+C_C16         0 N104696  1000u  TC=0,0 
+R_R10         0 N104696  50 TC=0,0 
+C_C22         N89489 N89477  1n  TC=0,0 
+L_L4         N89489 N109710  1n  
+C_C23         0 N89489  1n  TC=0,0 
+L_L6         N115476 N89489  1m  
+.PARAM  phase_diff=1us period=1us dead_area=0.1us phase1=0.1us phase2=0us l1=1m
++  phase3=1.1us duty1=0.8us solar=24 battery=12 duty2=5.2us phase4=0.0us
++  duty3=4us duty4=4.2us
+
+**** RESUMING pwm-analysis.cir ****
+.END
+
+**** 09/21/16 20:19:57 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "PWM-pwm-analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\pwm\p
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N5818         
+          IS    2.835000E-06 
+         ISR   26.460000E-06 
+         IKF     .3227       
+          RS     .04712      
+         CJO  359.300000E-12 
+          VJ     .75         
+           M     .6513       
+         XTI    0            
+
+
+**** 09/21/16 20:19:57 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "PWM-pwm-analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\pwm\p
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 09/21/16 20:19:57 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "PWM-pwm-analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\pwm\p
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N84702)    0.0000 (N85097)    5.0000 (N85205)    0.0000 (N85320)    5.0000     
+
+(N89477)   23.9100 (N89489)   12.0000 (N94490)   23.9990 (N94874)   24.0000     
+
+(N95678)   24.0000 (N95684)   12.0000 (N103730)   12.0000                       
+
+(N104625)-238.6E-24                   (N104634)-238.6E-24                       
+
+(N104696) 62.38E-21                   (N109710)   12.0000                       
+
+(N115476)   12.0000                   (N895751)   12.0000                       
+
+(N896451)    5.0000                   (N1047141)-238.6E-24                      
+
+(N1048661)    5.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -5.000E-03
+    V_V4        -5.000E-03
+    V_V3         0.000E+00
+    V_V8         0.000E+00
+    V_V7         0.000E+00
+    V_V9        -7.166E+00
+    V_V10       -1.963E-04
+    V_V11       -1.200E-01
+    V_V12        1.200E-01
+    V_V13        0.000E+00
+    V_V14        0.000E+00
+
+    TOTAL POWER DISSIPATION   8.75E+01  WATTS
+
+**** Param: RUNFOR = 100ms
+**** Param: RUNFOR = 100ms
+
+          JOB ABORTED
+
+**** 09/21/16 20:19:57 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "PWM-pwm-analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\pwm\p
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =      599.86
+

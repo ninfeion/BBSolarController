@@ -1,0 +1,92 @@
+
+**** 09/21/16 20:16:33 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "PWM-pwm-analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\pwm\p
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pwm-analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0ms 10ms 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\PWM.net" 
+
+
+
+**** INCLUDING PWM.net ****
+* source BBCIRCUIT_SIMULATION
+R_R2         N85097 0  1k TC=0,0 
+R_R1         N84702 0  1k TC=0,0 
+R_R4         N85320 0  1k TC=0,0 
+V_V1         N84702 0  
++PULSE 0 5 {PHASE2+0.01us} 0.0001us 0.0001us {DUTY1} {PERIOD}
+R_R3         N85205 0  1k TC=0,0 
+V_V2         N85097 0  
++PULSE 5 0 {PHASE2} 0.0001us 0.0001us {DUTY1+0.02us} {PERIOD}
+V_V4         N85320 0  
++PULSE 5 0 {PHASE4} 0.0001us 0.0001us {DUTY1+0.02us} {PERIOD}
+V_V3         N85205 0  
++PULSE 0 5 {PHASE4+0.01us} 0.0001us 0.0001us {DUTY1} {PERIOD}
+V_V8         N896451 0  
++PULSE 5 0 {PHASE2} 0.0001us 0.0001us {DUTY1+0.02us} {PERIOD}
+V_V7         N895751 N89489  
++PULSE 0 5 {PHASE2+0.01us} 0.0001us 0.0001us {DUTY1} {PERIOD}
+M_M1         N89477 N895751 N89489 N89489 IRF150
+M_M2         N89489 N896451 0 0 IRF150
+D_D1         N89489 N89477 D1N5818 
+D_D2         0 N89489 D1N5818 
+V_V9         N115476 0 {BATTERY}
+V_V10         N94874 0 {SOLAR}
+D_D3         N94490 N89477 D1N5818 
+R_R7         N94874 N94490  5 TC=0,0 
+V_V11         N95678 0 {SOLAR}
+V_V12         N95684 0 {BATTERY}
+R_R9         N95678 N95684  100 TC=0,0 
+C_C4         0 N115476  2000u  TC=0,0 
+L_L2         N109710 N103730  5m  
+C_C3         N103730 N89477  2000u  TC=0,0 
+C_C2         0 N103730  2000u  TC=0,0 
+L_L3         N104625 0  80m  
+Kn_K1         L_L2 L_L3     1
+M_M3         N104696 N1047141 N104700 N104700 IRF150
+V_V13         N1047141 N104700  
++PULSE 0 5 {PHASE4+0.01us} 0.0001us 0.0001us {DUTY1} {PERIOD}
+D_D4         N104700 N104696 D1N5818 
+M_M4         N104700 N1048661 0 0 IRF150
+V_V14         N1048661 0  
++PULSE 5 0 {PHASE4} 0.0001us 0.0001us {DUTY1+0.02us} {PERIOD}
+D_D5         0 N104700 D1N5818 
+C_C15         N105521 N104696  1000u  TC=0,0 
+C_C14         0 N105521  1000u  TC=0,0 
+C_C16         0 N104696  1000u  TC=0,0 
+R_R10         0 N104696  50 TC=0,0 
+C_C22         N89489 N89477  1n  TC=0,0 
+L_L4         N89489 N109710  1n  
+C_C23         0 N89489  1n  TC=0,0 
+L_L6         N115476 N89489  1m  
+R_R11         0 N104625  50 TC=0,0 
+.PARAM  phase_diff=1us period=1us dead_area=0.1us phase1=0.1us phase2=0us l1=1m
++  phase3=1.1us duty1=0.8us solar=24 battery=12 duty2=5.2us phase4=0.0us
++  duty3=4us duty4=4.2us
+
+**** RESUMING pwm-analysis.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N105521 is floating
+

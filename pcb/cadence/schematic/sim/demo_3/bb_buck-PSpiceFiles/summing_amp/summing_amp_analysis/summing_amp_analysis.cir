@@ -1,4 +1,4 @@
-** Profile: "summing_amp-summing_amp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-PSpiceFiles\summing_amp\summing_amp_analysis.sim ] 
+** Profile: "summing_amp-summing_amp_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-pspicefiles\summing_amp\summing_amp_analysis.sim ] 
 
 ** Creating circuit file "summing_amp_analysis.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -10,7 +10,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 10000us 0 1us 
+.TRAN  0 50ms 0 1us 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\summing_amp.net" 

@@ -1,5 +1,5 @@
-
-**** 09/08/16 11:08:35 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+**** 09/20/16 23:00:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
  ** Profile: "inverted_amp_sample-inverted_amp_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-
 
@@ -43,22 +43,12 @@ D_D1         0 N03423 D1N5818
 L_L1         N03423 OUT  0.5mH  
 M_M1         N03413 N03407 N03423 N03423 IRF150
 C_C1         0 OUT  470uF  TC=0,0 
-R_R12         0 N06953  {R1} TC=0,0 
-R_R9         N06819 N06803  10k TC=0,0 
-R_R10         N03441 N06819  {R1} TC=0,0 
-X_U2         N06953 N06819 VCC VEE N06803 AD8072jn/AD
-R_R11         0 N06953  1k TC=0,0 
-R_R15         0 N08444  1k TC=0,0 
-R_R16         0 N08444  {R1} TC=0,0 
-R_R14         OUT N08360  {R1} TC=0,0 
-R_R13         N08360 N08344  10k TC=0,0 
-X_U3         N08444 N08360 VCC VEE N08344 AD8072jn/AD
 .PARAM  r1=100k duty=1us
 
 **** RESUMING inverted_amp_sample.cir ****
 .END
 
-**** 09/08/16 11:08:35 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 09/20/16 23:00:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
  ** Profile: "inverted_amp_sample-inverted_amp_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-
 
@@ -71,87 +61,18 @@ X_U3         N08444 N08360 VCC VEE N08344 AD8072jn/AD
 
 
 
-               D1N5818         X_U2.dx         X_U2.dn1        X_U3.dx         
-          IS    2.835000E-06   10.000000E-15   10.000000E-15   10.000000E-15 
-         ISR   26.460000E-06                                                 
-         IKF     .3227                                                       
-          RS     .04712                                                      
-         CJO  359.300000E-12                                                 
-          VJ     .75                                                         
-           M     .6513                                                       
-         XTI    0                                                            
-          KF                                  100.000000E-12                 
-
-
-               X_U3.dn1        
-          IS   10.000000E-15 
-          KF  100.000000E-12 
+               D1N5818         
+          IS    2.835000E-06 
+         ISR   26.460000E-06 
+         IKF     .3227       
+          RS     .04712      
+         CJO  359.300000E-12 
+          VJ     .75         
+           M     .6513       
+         XTI    0            
 
 
-**** 09/08/16 11:08:35 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
-
- ** Profile: "inverted_amp_sample-inverted_amp_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-
-
-
- ****     BJT MODEL PARAMETERS
-
-
-******************************************************************************
-
-
-
-
-               X_U2.qn1        X_U2.qp1        X_U2.qn2        X_U2.qp2        
-               NPN             PNP             NPN             PNP             
-       LEVEL    1               1               1               1            
-          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
-          BF    1.000000E+03    1.000000E+03    1.000000E+03    1.000000E+03 
-          NF    1               1               1               1            
-          BR    1               1               1               1            
-          NR    1               1               1               1            
-         ISS    0               0               0               0            
-          RE    0               0               0               0            
-          RC    0               0               0               0            
-         CJE    0               0               0               0            
-         VJE     .75             .75             .75             .75         
-         CJC    0               0               0               0            
-         VJC     .75             .75             .75             .75         
-         MJC     .33             .33             .33             .33         
-        XCJC    1               1               1               1            
-         CJS    0               0               0               0            
-         VJS     .75             .75             .75             .75         
-          KF    0               0               0               0            
-          AF    1               1               1               1            
-          CN    2.42            2.2             2.42            2.2          
-           D     .87             .52             .87             .52         
-
-
-               X_U3.qn1        X_U3.qp1        X_U3.qn2        X_U3.qp2        
-               NPN             PNP             NPN             PNP             
-       LEVEL    1               1               1               1            
-          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
-          BF    1.000000E+03    1.000000E+03    1.000000E+03    1.000000E+03 
-          NF    1               1               1               1            
-          BR    1               1               1               1            
-          NR    1               1               1               1            
-         ISS    0               0               0               0            
-          RE    0               0               0               0            
-          RC    0               0               0               0            
-         CJE    0               0               0               0            
-         VJE     .75             .75             .75             .75         
-         CJC    0               0               0               0            
-         VJC     .75             .75             .75             .75         
-         MJC     .33             .33             .33             .33         
-        XCJC    1               1               1               1            
-         CJS    0               0               0               0            
-         VJS     .75             .75             .75             .75         
-          KF    0               0               0               0            
-          AF    1               1               1               1            
-          CN    2.42            2.2             2.42            2.2          
-           D     .87             .52             .87             .52         
-
-
-**** 09/08/16 11:08:35 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 09/20/16 23:00:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
  ** Profile: "inverted_amp_sample-inverted_amp_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-
 
@@ -204,7 +125,7 @@ X_U3         N08444 N08360 VCC VEE N08344 AD8072jn/AD
        XPART    0            
 
 
-**** 09/08/16 11:08:35 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 09/20/16 23:00:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
  ** Profile: "inverted_amp_sample-inverted_amp_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-
 
@@ -223,57 +144,7 @@ X_U3         N08444 N08360 VCC VEE N08344 AD8072jn/AD
 
 (  OUT)     .0077  (  VCC)   15.0000  (  VEE)  -15.0000  (N03407)     .0077     
 
-(N03413)   70.0000 (N03423)     .0077 (N03441)     .0077 (N06803)    -.0235     
-
-(N06819)     .0059 (N06953)     .0040 (N08344)    -.0235 (N08360)     .0059     
-
-(N08444)     .0040 (X_U2.3)     .0059 (X_U2.4)    -.7107 (X_U2.5)     .7225     
-
-(X_U2.8)     .0059 (X_U3.3)     .0059 (X_U3.4)    -.7107 (X_U3.5)     .7225     
-
-(X_U3.8)     .0059 (X_U2.12)    -.0127                   (X_U2.13)   12.4600    
-
-(X_U2.14)  -12.1600                   (X_U2.17)    -.0236                       
-
-(X_U2.19)     .6425                   (X_U2.20)    -.6915                       
-
-(X_U2.23)    -.0235                   (X_U2.30)     .5550                       
-
-(X_U2.31)    0.0000                   (X_U2.32)-20.85E-06                       
-
-(X_U2.33)     .5950                   (X_U2.34)    0.0000                       
-
-(X_U2.35)-97.92E-06                   (X_U2.70)    -.3767                       
-
-(X_U2.72)-572.0E-09                   (X_U2.73)-572.0E-09                       
-
-(X_U2.90)   15.0000                   (X_U2.91)  -15.0000                       
-
-(X_U2.98)    0.0000                   (X_U3.12)    -.0127                       
-
-(X_U3.13)   12.4600                   (X_U3.14)  -12.1600                       
-
-(X_U3.17)    -.0236                   (X_U3.19)     .6425                       
-
-(X_U3.20)    -.6915                   (X_U3.23)    -.0235                       
-
-(X_U3.30)     .5550                   (X_U3.31)    0.0000                       
-
-(X_U3.32)-20.85E-06                   (X_U3.33)     .5950                       
-
-(X_U3.34)    0.0000                   (X_U3.35)-97.92E-06                       
-
-(X_U3.70)    -.3767                   (X_U3.72)-572.0E-09                       
-
-(X_U3.73)-572.0E-09                   (X_U3.90)   15.0000                       
-
-(X_U3.91)  -15.0000                   (X_U3.98)    0.0000                       
-
-(X_U2.300)    -.5046                  (X_U2.311)    0.0000                      
-
-(X_U2.312)    0.0000                  (X_U3.300)    -.5046                      
-
-(X_U3.311)    0.0000                  (X_U3.312)    0.0000                  
+(N03413)   70.0000 (N03423)     .0077 (N03441)     .0077 
 
 
 
@@ -281,48 +152,18 @@ X_U3         N08444 N08360 VCC VEE N08344 AD8072jn/AD
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V4        -1.400E-02
-    V_V3        -1.399E-02
-    V_V2         5.954E-18
+    V_V4         0.000E+00
+    V_V3         0.000E+00
+    V_V2         8.882E-16
     V_V1        -1.575E-04
-    X_U2.v1     -4.237E-08
-    X_U2.vl1    -2.118E-08
-    X_U2.v3      1.248E-11
-    X_U2.v4      1.216E-11
-    X_U2.vn1    -2.085E-05
-    X_U2.vn2     2.085E-05
-    X_U2.vn3    -9.792E-05
-    X_U2.vn4     9.792E-05
-    X_U2.vi1    -5.146E-13
-    X_U2.vi2     2.966E-06
-    X_U2.vo1    -2.966E-06
-    X_U2.vo2    -5.590E-05
-    X_U2.vo3     5.590E-05
-    X_U2.v5      1.531E-03
-    X_U2.v6      1.640E-03
-    X_U3.v1     -4.237E-08
-    X_U3.vl1    -2.119E-08
-    X_U3.v3      1.248E-11
-    X_U3.v4      1.216E-11
-    X_U3.vn1    -2.085E-05
-    X_U3.vn2     2.085E-05
-    X_U3.vn3    -9.792E-05
-    X_U3.vn4     9.792E-05
-    X_U3.vi1    -5.146E-13
-    X_U3.vi2     2.966E-06
-    X_U3.vo1    -2.966E-06
-    X_U3.vo2    -5.590E-05
-    X_U3.vo3     5.590E-05
-    X_U3.v5      1.531E-03
-    X_U3.v6      1.640E-03
 
-    TOTAL POWER DISSIPATION   4.35E-01  WATTS
+    TOTAL POWER DISSIPATION   1.10E-02  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 09/08/16 11:08:35 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 09/20/16 23:00:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
  ** Profile: "inverted_amp_sample-inverted_amp_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck-
 
@@ -336,5 +177,5 @@ X_U3         N08444 N08360 VCC VEE N08344 AD8072jn/AD
 
 
 
-  Total job time (using Solver 1)   =      227.95
+  Total job time (using Solver 1)   =       14.56
 

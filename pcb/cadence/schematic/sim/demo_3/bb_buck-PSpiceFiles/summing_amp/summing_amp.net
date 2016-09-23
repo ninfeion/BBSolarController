@@ -20,12 +20,11 @@ V_V6         N20725 N20425
 D_D1         0 N20425 D1N5818 
 V_V7         1V_REF 0 1Vdc
 R_R7         N21993 1V_REF  10K TC=0,0 
-R_R8         N25845 N21993  100K TC=0,0 
+R_R8         OUT N21993  100K TC=0,0 
 R_R10         N22240 1V_REF  10K TC=0,0 
 R_R13         N20921 0  100K TC=0,0 
 R_R14         N20929 0  100K TC=0,0 
 R_R15         AD_I+ N20921  10K TC=0,0 
 R_R16         AD_I- N20929  10K TC=0,0 
 R_R17         N20499 N22240  100K TC=0,0 
-V_V8         N25845 0 30Vdc
 .PARAM  duty=1us

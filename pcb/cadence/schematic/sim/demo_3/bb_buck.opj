@@ -46,12 +46,12 @@
          ".\bb_buck-pspicefiles\voltage_follower_sample\voltage_follower_low_support.sim"
         (DisplayName "voltage_follower_sample-voltage_follower_low_support")
         (Type "PSpice Profile"))
-      (ActiveProfile
-         ".\bb_buck-pspicefiles\summing_amp\summing_amp_analysis.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\bb_buck-pspicefiles\summing_amp\summing_amp_analysis.sim"
         (DisplayName "summing_amp-summing_amp_analysis")
-        (Type "PSpice Profile")))
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\bb_buck-pspicefiles\inverted_amp\inverted_amp_analyze.sim"))
     (Folder "Model Libraries"
       (Sort User))
     (Folder "Stimulus Files"
@@ -137,13 +137,13 @@
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
-         "summing_amp")
-      (Path "Design Resources"
-         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
          "inverted_amp")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
          "inverted_amp_sample")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
+         "summing_amp")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
          "voltage_follower_sample")
@@ -152,7 +152,10 @@
          "zener_diode")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles"))
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
+         "inverted_amp" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -162,12 +165,12 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 0 1125 0 304")
-        (Scroll "-165 83")
-        (Zoom "78")
+        (Placement "44 0 1 -1 -1 -4 -23 0 833 0 304")
+        (Scroll "0 70")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\DEMO_3\BB_BUCK.DSN")
-      (Schematic "summing_amp")
+      (Schematic "inverted_amp")
       (Page "PAGE1")))
   (MPSSessionName "N"))

@@ -1,7 +1,7 @@
 
-**** 09/14/16 14:27:02 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 09/21/16 18:55:00 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
- ** Profile: "KKK-KKK_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpiceFiles\KKK\K
+ ** Profile: "KKK-KKK_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\kkk\k
 
 
  ****     CIRCUIT DESCRIPTION
@@ -22,7 +22,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 1000ms 0 
+.TRAN  0 10ms 0 1ms 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\KKK.net" 
@@ -35,16 +35,19 @@ R_R2         N81040 0  40 TC=0,0
 V_V2         N81188 0  
 +SIN 0 20 60 0 0 0
 L_L3         N81036 0  1  
-L_L4         N81040 0  0.065  
+L_L4         N81040 0  20  
 Kn_K1         L_L3 L_L4     1
 R_R1         N81188 N81036  0.1 TC=0,0 
+R_R3         N85167 0  1k TC=0,0 
+V_V1         N85167 0  
++PULSE 0 5 0.01us 0.0001us 0.0001us 0.8us 1us
 
 **** RESUMING KKK_analysis.cir ****
 .END
 
-**** 09/14/16 14:27:02 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 09/21/16 18:55:00 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
- ** Profile: "KKK-KKK_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpiceFiles\KKK\K
+ ** Profile: "KKK-KKK_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\kkk\k
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -57,7 +60,7 @@ R_R1         N81188 N81036  0.1 TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N81036)    0.0000 (N81040)    0.0000 (N81188)    0.0000 
+(N81036)    0.0000 (N81040)    0.0000 (N81188)    0.0000 (N85167)    0.0000 
 
 
 
@@ -66,16 +69,126 @@ R_R1         N81188 N81036  0.1 TC=0,0
     NAME         CURRENT
 
     V_V2         0.000E+00
+    V_V1         0.000E+00
 
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+Convergence problem in transient analysis at Time =  8.332E-03
+         Time step =  3.906E-15, minimum allowable step size =  10.00E-15
+
+  These voltages failed to converge:
+
+    V(N81040)                 =   519.66uV  \   121.06uV
+    V(N81036)                 =  -130.05uV  \  -125.59uV
+
+  These supply currents failed to converge:
+
+    I(L_L4)                   =   -12.99uA  \   -3.027uA
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N81036)-130.0E-06 (N81040) 519.7E-06 (N81188)     .0100 (N85167)    5.0000 
+
+Resuming Simulation with the following settings
+ITL4 = 1000
+ABSTOL = 1.41e-009
+VNTOL = 4.47e-005
+
+Convergence problem in transient analysis at Time =  8.360E-03
+         Time step =  4.882E-15, minimum allowable step size =  10.00E-15
+
+  These voltages failed to converge:
+
+    V(N81040)                 =  -901.36mV  \  -900.32mV
+    V(N85167)                 =    14.67mV  \         0V
+
+  These supply currents failed to converge:
+
+    I(L_L3)                   =   232.34uA  \   348.84uA
+    I(L_L4)                   =    22.53mA  \    22.51mA
+    I(V_V2)                   =  -232.34uA  \  -348.84uA
+    I(V_V1)                   =   -14.67uA  \         0A
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N81036)    -.2012 (N81040)    -.9014 (N81188)    -.2011 (N85167)     .0147 
+
+Resuming Simulation with the following settings
+ITL4 = 1000
+ABSTOL = 2e-006
+
+Convergence problem in transient analysis at Time =  8.360E-03
+         Time step =  4.882E-15, minimum allowable step size =  10.00E-15
+
+  These voltages failed to converge:
+
+    V(N81040)                 =  -901.36mV  \  -900.32mV
+    V(N85167)                 =    14.67mV  \         0V
+
+  These supply currents failed to converge:
+
+    I(L_L3)                   =   232.34uA  \   348.84uA
+    I(L_L4)                   =    22.53mA  \    22.51mA
+    I(V_V2)                   =  -232.34uA  \  -348.84uA
+    I(V_V1)                   =   -14.67uA  \         0A
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N81036)    -.2012 (N81040)    -.9014 (N81188)    -.2011 (N85167)     .0147 
+
+Resuming Simulation with the following settings
+ABSTOL = 0.001
+
+Convergence problem in transient analysis at Time =  8.360E-03
+         Time step =  4.882E-15, minimum allowable step size =  10.00E-15
+
+  These voltages failed to converge:
+
+    V(N81040)                 =  -901.36mV  \  -900.32mV
+    V(N85167)                 =    14.67mV  \         0V
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N81036)    -.2012 (N81040)    -.9014 (N81188)    -.2011 (N85167)     .0147 
+
+Resuming Simulation with the following settings
+RELTOL = 0.0086
 
 
 
           JOB CONCLUDED
+ AutoConverge Simulator Options
+ ITL1 = 150
+ ITL2 = 20
+ ITL4 = 10
+ RELTOL = 0.00859871
+ ABSTOL = 0.001
+ VNTOL = 4.46684e-005
+ PIVTOL = 1e-013
 
-**** 09/14/16 14:27:02 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 09/21/16 18:55:00 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
- ** Profile: "KKK-KKK_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpiceFiles\KKK\K
+ ** Profile: "KKK-KKK_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\kkk\k
 
 
  ****     JOB STATISTICS SUMMARY
@@ -85,5 +198,5 @@ R_R1         N81188 N81036  0.1 TC=0,0
 
 
 
-  Total job time (using Solver 1)   =         .02
+  Total job time (using Solver 1)   =        3.64
 
