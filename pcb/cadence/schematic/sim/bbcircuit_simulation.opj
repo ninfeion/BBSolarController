@@ -43,6 +43,9 @@
     (File ".\bbcircuit_simulation-pspicefiles\kkk\kkk.net"
       (Type "Report"))
     (File ".\bbcircuit_simulation-pspicefiles\pwm\pwm.net"
+      (Type "Report"))
+    (File
+       ".\bbcircuit_simulation-pspicefiles\three_phase_dcdc\three_phase_dcdc.net"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
@@ -86,7 +89,12 @@
          ".\bbcircuit_simulation-pspicefiles\pwm\pwm-analysis.sim"
         (DisplayName "PWM-pwm-analysis")
         (Type "PSpice Profile"))
-      (ActiveProfile ".\bbcircuit_simulation-pspicefiles\pwm\pwm-analysis.sim"))
+      (ActiveProfile
+         ".\bbcircuit_simulation-pspicefiles\three_phase_dcdc\three-phase-analysis.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bbcircuit_simulation-pspicefiles\three_phase_dcdc\three-phase-analysis.sim"
+        (DisplayName "THREE_PHASE_DCDC-three-phase-analysis")
+        (Type "PSpice Profile")))
     (Folder "Model Libraries"
       (Sort User))
     (Folder "Stimulus Files"
@@ -220,13 +228,16 @@
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
-         "PWM")
+         "THREE_PHASE_DCDC")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
          "Bidirectional dc-dc")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
          "KKK")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
+         "PWM")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
          "SCHEMATIC1")
@@ -242,9 +253,6 @@
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
          "SCHEMATIC5")
-      (Path "Design Resources"
-         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
-         "THREE_PHASE_DCDC")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
@@ -260,22 +268,12 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 0 1125 0 304")
-        (Scroll "-26 0")
-        (Zoom "41")
+        (Placement "44 0 1 -1 -1 -4 -23 132 965 132 436")
+        (Scroll "0 0")
+        (Zoom "34")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\BBCIRCUIT_SIMULATION.DSN")
-      (Schematic "PWM")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 22 1147 22 326")
-        (Scroll "-187 0")
-        (Zoom "56"))
-      (Path
-         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\BBCIRCUIT_SIMULATION.DSN")
-      (Schematic "Bidirectional dc-dc")
+      (Schematic "THREE_PHASE_DCDC")
       (Page "PAGE1")))
   (MPSSessionName "N"))

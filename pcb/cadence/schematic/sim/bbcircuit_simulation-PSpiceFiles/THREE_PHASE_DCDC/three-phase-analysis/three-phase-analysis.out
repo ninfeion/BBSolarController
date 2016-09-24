@@ -1,0 +1,531 @@
+
+**** 09/24/16 22:25:18 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "THREE_PHASE_DCDC-three-phase-analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulat
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "three-phase-analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 1ms 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\THREE_PHASE_DCDC.net" 
+
+
+
+**** INCLUDING THREE_PHASE_DCDC.net ****
+* source BBCIRCUIT_SIMULATION
+C_C5         0 N303632  470u  TC=0,0 
+V_V18         N3039821 0  
++PULSE 5 0 {PHASE2} 0.01us 0.01us {DUTY1+0.02us} {PERIOD}
+C_C6         N303632 N303760  470u  TC=0,0 
+D_D2         0 N304090 D1N5818 
+L_L6         N305072 N304090  4.7u  
+C_C3         N303542 N303760  470u  TC=0,0 
+V_V16         N3058701 0  
++PULSE 5 0 {PHASE2} 0.01us 0.01us {DUTY1+0.02us} {PERIOD}
+L_L10         N304082 N303632  10m  
+C_C2         0 N303542  470u  TC=0,0 
+V_V9         N305072 0 {BATTERY}
+V_V17         N3037821 N303756  
++PULSE 0 5 {PHASE2+0.01us} 0.01us 0.01us {DUTY1} {PERIOD}
+L_L9         N303756 N303542  10m  
+C_C18         N304822 N304176  100u  TC=0,0 
+M_M8         N303756 N3039821 0 0 IRF150
+V_V15         N3055181 N304082  
++PULSE 0 5 {PHASE2+0.01us} 0.01us 0.01us {DUTY1} {PERIOD}
+M_M6         N304082 N3058701 0 0 IRF150
+D_D7         0 N304082 D1N5818 
+D_D6         N304082 N303760 D1N5818 
+V_V8         N3054121 0  
++PULSE 5 0 {PHASE2} 0.01us 0.01us {DUTY1+0.02us} {PERIOD}
+M_M2         N304090 N3054121 0 0 IRF150
+V_V13         N3041941 N304120  
++PULSE 0 5 {PHASE4+0.01us} 0.01us 0.01us {DUTY1} {PERIOD}
+V_V14         N3043301 0  
++PULSE 5 0 {PHASE4} 0.01us 0.01us {DUTY1+0.02us} {PERIOD}
+C_C16         0 N304176  100u  TC=0,0 
+M_M7         N303760 N3037821 N303756 N303756 IRF150
+D_D1         N304090 N303760 D1N5818 
+L_L3         N304120 N312527  100m  
+R_R10         0 N304176  25 TC=0,0 
+C_C17         0 N304822  100u  TC=0,0 
+L_L1         N305072 N304082  4.7u  
+D_D3         N304784 N303760 D1N5818 
+V_V7         N3053521 N304090  
++PULSE 0 5 {PHASE2+0.01us} 0.01us 0.01us {DUTY1} {PERIOD}
+D_D5         0 N304120 D1N5818 
+M_M5         N303760 N3055181 N304082 N304082 IRF150
+L_L5         N305072 N303756  4.7u  
+D_D8         N303756 N303760 D1N5818 
+M_M4         N304120 N3043301 0 0 IRF150
+C_C4         0 N305072  470u  TC=0,0 
+L_L2         N304090 N303666  10m  
+M_M3         N304176 N3041941 N304120 N304120 IRF150
+V_V10         N304788 0 {SOLAR}
+C_C9         N303666 N303760  470u  TC=0,0 
+M_M1         N303760 N3053521 N304090 N304090 IRF150
+D_D4         N304120 N304176 D1N5818 
+C_C8         0 N303666  470u  TC=0,0 
+D_D9         0 N303756 D1N5818 
+R_R7         N304788 N304784  5 TC=0,0 
+V_V19         N3078341 N307816  
++PULSE 0 5 {PHASE4+0.01us} 0.01us 0.01us {DUTY1} {PERIOD}
+M_M9         N304176 N3078341 N307816 N307816 IRF150
+M_M10         N307816 N3084671 0 0 IRF150
+V_V20         N3084671 0  
++PULSE 5 0 {PHASE4} 0.01us 0.01us {DUTY1+0.02us} {PERIOD}
+Kn_K1         L_L9 L_L3     1
+C_C28         0 N312542  100u  TC=0,0 
+C_C29         N312542 N304176  100u  TC=0,0 
+C_C31         N312527 N304176  100u  TC=0,0 
+C_C30         0 N312527  100u  TC=0,0 
+L_L11         N307816 N312542  100m  
+L_L12         N314239 N304822  100m  
+M_M11         N304176 N3142531 N314239 N314239 IRF150
+V_V21         N3142531 N314239  
++PULSE 0 5 {PHASE4+0.01us} 0.01us 0.01us {DUTY1} {PERIOD}
+V_V22         N3145311 0  
++PULSE 5 0 {PHASE4} 0.01us 0.01us {DUTY1+0.02us} {PERIOD}
+M_M12         N314239 N3145311 0 0 IRF150
+D_D10         0 N307816 D1N5818 
+D_D11         0 N314239 D1N5818 
+D_D12         N307816 N304176 D1N5818 
+D_D13         N314239 N304176 D1N5818 
+Kn_K2         L_L10 L_L11     1
+Kn_K3         L_L2 L_L12     1
+.PARAM  phase_diff=1us period=1us dead_area=0.1us phase1=0.1us phase2=0 l1=1m
++  phase3=1.1us duty1=0.7us solar=24 battery=12 duty2=5.2us phase4=0.04us
++  duty3=4us duty4=4.2us
+
+**** RESUMING three-phase-analysis.cir ****
+.END
+
+**** 09/24/16 22:25:18 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "THREE_PHASE_DCDC-three-phase-analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulat
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N5818         
+          IS    2.835000E-06 
+         ISR   26.460000E-06 
+         IKF     .3227       
+          RS     .04712      
+         CJO  359.300000E-12 
+          VJ     .75         
+           M     .6513       
+         XTI    0            
+
+
+**** 09/24/16 22:25:18 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "THREE_PHASE_DCDC-three-phase-analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulat
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 09/24/16 22:25:18 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "THREE_PHASE_DCDC-three-phase-analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulat
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N303542)   12.0000                   (N303632)   12.0000                       
+
+(N303666)   12.0000                   (N303756)   12.0000                       
+
+(N303760)   23.8720                   (N304082)   12.0000                       
+
+(N304090)   12.0000                   (N304120) 381.9E-24                       
+
+(N304176)-203.7E-21                   (N304784)   23.9970                       
+
+(N304788)   24.0000                   (N304822) 381.9E-24                       
+
+(N305072)   12.0000                   (N307816) 381.9E-24                       
+
+(N312527) 381.9E-24                   (N312542) 381.9E-24                       
+
+(N314239) 381.9E-24                   (N3037821)   12.0000                      
+
+(N3039821)    5.0000                  (N3041941) 381.9E-24                      
+
+(N3043301)    5.0000                  (N3053521)   12.0000                      
+
+(N3054121)    5.0000                  (N3055181)   12.0000                      
+
+(N3058701)    5.0000                  (N3078341) 381.9E-24                      
+
+(N3084671)    5.0000                  (N3142531) 381.9E-24                      
+
+(N3145311)    5.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V18        0.000E+00
+    V_V16        0.000E+00
+    V_V9        -2.150E+01
+    V_V17       -3.916E-16
+    V_V15       -3.347E-16
+    V_V8         0.000E+00
+    V_V13        0.000E+00
+    V_V14        0.000E+00
+    V_V7        -6.641E-16
+    V_V10       -5.878E-04
+    V_V19        0.000E+00
+    V_V20        0.000E+00
+    V_V21        0.000E+00
+    V_V22        0.000E+00
+
+    TOTAL POWER DISSIPATION   2.58E+02  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  97.23E-12.
+         Time step =  880.5E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N3037821)               =     12.02V  \     12.00V
+    V(N303756)                =     12.02V  \     12.00V
+    V(N3041941)               =  -649.81mV  \   526.48nV
+    V(N304120)                =  -649.81mV  \   526.48nV
+    V(N3078341)               =  -108.16mV  \   526.25nV
+    V(N307816)                =  -108.16mV  \   526.25nV
+    V(N314239)                =  -108.05mV  \   526.56nV
+    V(N3142531)               =  -108.05mV  \   526.56nV
+
+  These supply currents failed to converge:
+
+    I(L_L10)                  =   -678.00A  \   139.71uA
+    I(L_L9)                   =   -4.513KA  \   140.10uA
+    I(L_L3)                   =    1.427KA  \   -44.30uA
+    I(L_L2)                   =   -677.35A  \   140.73uA
+    I(L_L11)                  =    214.40A  \   -44.18uA
+    I(L_L12)                  =    214.20A  \   -44.50uA
+    I(V_V18)                  =  -354.75mA  \    3.724mA
+    I(V_V16)                  =   -73.37mA  \    3.724mA
+    I(V_V17)                  =   -18.83mA  \   -1.798nA
+    I(V_V15)                  =   -18.83mA  \   -1.812nA
+    I(V_V8)                   =   -73.37mA  \    3.724mA
+    I(V_V13)                  =   -76.37mA  \   -5.555nA
+    I(V_V14)                  =   -92.25nA  \    7.002nA
+    I(V_V7)                   =   -18.83mA  \   -1.792nA
+    I(V_V19)                  =    18.20nA  \   -5.552nA
+    I(V_V20)                  =    -9.74nA  \    6.999nA
+    I(V_V21)                  =    5.810nA  \   -5.555nA
+    I(V_V22)                  =    -9.72nA  \    7.003nA
+
+  These devices failed to converge:
+    M_M8      M_M6      M_M2      M_M7      M_M5      M_M3      M_M1      
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N303542)   12.0000                   (N303632)   12.0000                       
+
+(N303666)   12.0000                   (N303756)   12.0220                       
+
+(N303760)   23.8720                   (N304082)   12.0000                       
+
+(N304090)   12.0000                   (N304120)    -.6498                       
+
+(N304176)-4.110E-12                   (N304784)   23.9970                       
+
+(N304788)   24.0000                   (N304822)-15.71E-12                       
+
+(N305072)   12.0000                   (N307816)    -.1082                       
+
+(N312527) 27.00E-12                   (N312542)-15.71E-12                       
+
+(N314239)    -.1081                   (N3037821)   12.0220                      
+
+(N3039821)    4.9514                  (N3041941)    -.6498                      
+
+(N3043301)    5.0000                  (N3053521)   12.0000                      
+
+(N3054121)    4.9514                  (N3055181)   12.0000                      
+
+(N3058701)    4.9514                  (N3078341)    -.1082                      
+
+(N3084671)    5.0000                  (N3142531)    -.1081                      
+
+(N3145311)    5.0000                  
+
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 0.01
+**** Param: TMAX = 0.001
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 1
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 3
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+Convergence problem in transient analysis at Time =  104.2E-12
+         Time step =  440.3E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N3041941)               =   -79.95uV  \   504.64nV
+    V(N304120)                =   -79.95uV  \   504.64nV
+    V(N314239)                =    10.18uV  \   504.96nV
+    V(N3142531)               =    10.18uV  \   504.96nV
+
+  These supply currents failed to converge:
+
+    I(L_L10)                  =         0A  \   110.63uA
+    I(L_L9)                   =  -504.26mA  \   109.61uA
+    I(L_L3)                   =   159.46mA  \   -34.66uA
+    I(L_L2)                   =    60.78mA  \   112.00uA
+    I(L_L11)                  = 509.05e-18A  \   -34.98uA
+    I(L_L12)                  =   -19.22mA  \   -35.42uA
+    I(V_V17)                  =   -1.738nA  \   -1.714nA
+    I(V_V13)                  =   -5.344nA  \   -5.353nA
+    I(V_V7)                   =   -1.704nA  \   -1.707nA
+
+  These devices failed to converge:
+    D_D7      D_D10     D_D12     M_M6      M_M5      M_M9      M_M10     
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N303542)   12.0000                   (N303632)   12.0000                       
+
+(N303666)   12.0000                   (N303756)   12.0000                       
+
+(N303760)   23.8720                   (N304082)   12.0000                       
+
+(N304090)   12.0000                   (N304120)-79.95E-06                       
+
+(N304176)-2.164E-12                   (N304784)   23.9970                       
+
+(N304788)   24.0000                   (N304822)-22.37E-12                       
+
+(N305072)   12.0000                   (N307816) 487.1E-09                       
+
+(N312527)-22.37E-12                   (N312542)-22.37E-12                       
+
+(N314239) 10.18E-06                   (N3037821)   12.0000                      
+
+(N3039821)    4.9479                  (N3041941)-79.95E-06                      
+
+(N3043301)    5.0000                  (N3053521)   12.0000                      
+
+(N3054121)    4.9479                  (N3055181)   12.0000                      
+
+(N3058701)    4.9479                  (N3078341) 487.1E-09                      
+
+(N3084671)    5.0000                  (N3142531) 10.18E-06                      
+
+(N3145311)    5.0000                  
+
+Resuming Simulation with the following settings
+ITL4 = 354
+ABSTOL = 1.41e-009
+VNTOL = 4.47e-005
+
+Convergence problem in transient analysis at Time =  104.2E-12
+         Time step =  440.3E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N3041941)               =   -79.95uV  \   504.64nV
+    V(N304120)                =   -79.95uV  \   504.64nV
+
+  These supply currents failed to converge:
+
+    I(L_L10)                  =         0A  \   110.63uA
+    I(L_L9)                   =  -504.26mA  \   109.61uA
+    I(L_L3)                   =   159.46mA  \   -34.66uA
+    I(L_L2)                   =    60.78mA  \   112.00uA
+    I(L_L11)                  = 509.05e-18A  \   -34.98uA
+    I(L_L12)                  =   -19.22mA  \   -35.42uA
+
+  These devices failed to converge:
+    D_D7      D_D10     D_D12     M_M6      M_M5      M_M9      M_M10     
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N303542)   12.0000                   (N303632)   12.0000                       
+
+(N303666)   12.0000                   (N303756)   12.0000                       
+
+(N303760)   23.8720                   (N304082)   12.0000                       
+
+(N304090)   12.0000                   (N304120)-79.95E-06                       
+
+(N304176)-2.164E-12                   (N304784)   23.9970                       
+
+(N304788)   24.0000                   (N304822)-22.37E-12                       
+
+(N305072)   12.0000                   (N307816) 487.1E-09                       
+
+(N312527)-22.37E-12                   (N312542)-22.37E-12                       
+
+(N314239) 10.18E-06                   (N3037821)   12.0000                      
+
+(N3039821)    4.9479                  (N3041941)-79.95E-06                      
+
+(N3043301)    5.0000                  (N3053521)   12.0000                      
+
+(N3054121)    4.9479                  (N3055181)   12.0000                      
+
+(N3058701)    4.9479                  (N3078341) 487.1E-09                      
+
+(N3084671)    5.0000                  (N3142531) 10.18E-06                      
+
+(N3145311)    5.0000                  
+
+Resuming Simulation with the following settings
+ITL4 = 1000
+ABSTOL = 2e-006
+VNTOL = 0.001
+
+
+
+          JOB CONCLUDED
+ AutoConverge Simulator Options
+ ITL1 = 150
+ ITL2 = 20
+ ITL4 = 100
+ RELTOL = 0.001
+ ABSTOL = 1.99526e-006
+ VNTOL = 0.001
+ PIVTOL = 1e-013
+
+**** 09/24/16 22:25:18 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "THREE_PHASE_DCDC-three-phase-analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulat
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =      199.68
+

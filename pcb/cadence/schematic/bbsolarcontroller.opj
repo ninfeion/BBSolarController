@@ -33,6 +33,22 @@
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (SW_TC_SPST
+      (FullPartName "SW_TC_SPST.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (SW_PB_SPST
+      (FullPartName "SW_PB_SPST.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (LCD12864
+      (FullPartName "LCD12864.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
+      (DeviceIndex "0"))
     (DIODE
       (FullPartName "DIODE.Normal")
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
@@ -114,22 +130,6 @@
     (STM32C8T6
       (FullPartName "STM32C8T6.Normal")
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
-      (DeviceIndex "0"))
-    (1N5255
-      (FullPartName "1N5255.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
-      (DeviceIndex "0"))
-    (1N4744A
-      (FullPartName "1N4744A.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
-      (DeviceIndex "0"))
-    (CAP
-      (FullPartName "CAP.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    ("DIODE ZENER"
-      (FullPartName "DIODE ZENER.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
       (DeviceIndex "0")))
   (GlobalState
     (FileView
@@ -139,30 +139,27 @@
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn"
          "Main Circuit")
-      (Path "Design Resources"
-         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn"
-         "reserved")
       (Path "Design Resources" "Library")
       (Path "Outputs")
       (Select "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn"
-         "Main Circuit" "dc-dc-converter-v2.0"))
+         "Main Circuit" "adc-preconvert-v3.0"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -4 -23 0 200 0 231"))
+        (Placement "44 0 1 -1 -1 -4 -23 0 200 0 231"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 0 833 0 304")
-        (Scroll "0 0")
-        (Zoom "38")
+        (Placement "44 2 3 -1 -1 -4 -23 0 833 0 304")
+        (Scroll "-83 -1")
+        (Zoom "56")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSOLARCONTROLLER.DSN")
       (Schematic "Main Circuit")
-      (Page "dc-dc-converter-v2.0")))
+      (Page "adc-preconvert-v3.0")))
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_16.6\tools\capture\library")
   (MPSSessionName "N"))

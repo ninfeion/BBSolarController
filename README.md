@@ -3,6 +3,12 @@
 	+ pcb/ Contains project printed circuit board design related files.
 
 		+ pcb/cadence
+		
+			+ pcb/cadence/schematic 
+			
+				+ pcb/cadence/schematic/sim/ PSPICE files.
+			
+			+ pcb/cadence/board
 	 
 	+ fpga-part/ Contains FPGA related design files.
 
