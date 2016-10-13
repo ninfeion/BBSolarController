@@ -1,0 +1,267 @@
+
+**** 10/13/16 22:06:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Voltage_sample_diff_BJT-voltage_sample_diff_bjt_type"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "voltage_sample_diff_bjt_type.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000us 0 
+.STEP LIN PARAM BAT 15 30 4 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Voltage_sample_diff_BJT.net" 
+
+
+
+**** INCLUDING Voltage_sample_diff_BJT.net ****
+* source BBCIRCUIT_SIMULATION
+Q_Q8         N02717 N02995 0 Q2N1893
+Q_Q1         N02727 N02683 0 Q2SA1213/ZTX 
+R_R2         N02717 N02533  100k TC=0,0 
+R_R7         0 N02995  9.1k TC=0,0 
+V_V1         N02533 0 {BAT}
+R_R4         0 N03001  20k TC=0,0 
+Q_Q6         N02819 N02819 N03001 Q2N1893
+Q_Q4         N02727 N02717 N03011 Q2N1893
+Q_Q2         N02669 N02669 N02533 Q2SA1213/ZTX 
+R_R5         0 N03005  18k TC=0,0 
+R_R6         0 N03011  9.1k TC=0,0 
+Q_Q3         N02819 N02727 N02683 Q2SA1213/ZTX 
+R_R8         0 N03001  1900k TC=0,0 
+Q_Q7         N02669 N02717 N02995 Q2N1893
+R_R3         N02669 N02683  9.1k TC=0,0 
+Q_Q5         N02727 N02819 N03005 Q2N1893
+R_load         0 N02533  {LOAD} TC=0,0 
+.PARAM  load=2 bat=24
+
+**** RESUMING voltage_sample_diff_bjt_type.cir ****
+.END
+
+**** 10/13/16 22:06:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Voltage_sample_diff_BJT-voltage_sample_diff_bjt_type"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N1893         Q2SA1213/ZTX    
+               NPN             PNP             
+       LEVEL    1               1            
+          IS    2.079000E-15  260.000000E-15 
+          BF  167.2           210            
+          NF    1                .999        
+         VAF  100              27            
+         IKF    1.088           7            
+         ISE   24.360000E-15  120.000000E-15 
+          NE    1.357           1.43         
+          BR    1.502          70            
+          NR    1                .982        
+         VAR                   14            
+         IKR     .3028           .6          
+         ISC  264.600000E-15    1.204000E-12 
+          NC    1.545           1.4474       
+          NK     .8271                       
+         ISS    0               0            
+          RB                     .3          
+          RE    0                .065        
+          RC     .9069           .04         
+         CJE   58.120000E-12  410.000000E-12 
+         VJE     .5              .75         
+         MJE     .441                        
+         CJC   45.290000E-12  140.000000E-12 
+         VJC     .5              .305        
+         MJC     .31             .35         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          TF  738.100000E-12  650.000000E-12 
+         XTF   24.93                         
+         VTF   10                            
+         ITF    2.376                        
+          TR    1.000000E-06   12.000000E-09 
+         XTB    1.5                          
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 10/13/16 22:06:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Voltage_sample_diff_BJT-voltage_sample_diff_bjt_type"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =   15    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N02533)   15.0000 (N02669)   14.4330 (N02683)    7.3603 (N02717)    1.2681     
+
+(N02727)    6.7148 (N02819)    7.3482 (N02995)     .6436 (N03001)    6.6811     
+
+(N03005)    6.6728 (N03011)     .6429 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -7.501E+00
+
+    TOTAL POWER DISSIPATION   1.13E+02  WATTS
+
+
+**** 10/13/16 22:06:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Voltage_sample_diff_BJT-voltage_sample_diff_bjt_type"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =   19    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N02533)   19.0000 (N02669)   18.4270 (N02683)    9.3926 (N02717)    1.2745     
+
+(N02727)    8.7410 (N02819)    9.3803 (N02995)     .6503 (N03001)    8.7063     
+
+(N03005)    8.6982 (N03011)     .6495 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -9.501E+00
+
+    TOTAL POWER DISSIPATION   1.81E+02  WATTS
+
+
+**** 10/13/16 22:06:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Voltage_sample_diff_BJT-voltage_sample_diff_bjt_type"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =   23    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N02533)   23.0000 (N02669)   22.4220 (N02683)   11.4250 (N02717)    1.2794     
+
+(N02727)   10.7690 (N02819)   11.4130 (N02995)     .6557 (N03001)   10.7340     
+
+(N03005)   10.7260 (N03011)     .6547 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.150E+01
+
+    TOTAL POWER DISSIPATION   2.65E+02  WATTS
+
+
+**** 10/13/16 22:06:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Voltage_sample_diff_BJT-voltage_sample_diff_bjt_type"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =   27    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N02533)   27.0000 (N02669)   26.4180 (N02683)   13.4590 (N02717)    1.2834     
+
+(N02727)   12.7980 (N02819)   13.4460 (N02995)     .6601 (N03001)   12.7620     
+
+(N03005)   12.7540 (N03011)     .6590 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.350E+01
+
+    TOTAL POWER DISSIPATION   3.65E+02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/13/16 22:06:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Voltage_sample_diff_BJT-voltage_sample_diff_bjt_type"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bb
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM BAT =   27    
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .19
+

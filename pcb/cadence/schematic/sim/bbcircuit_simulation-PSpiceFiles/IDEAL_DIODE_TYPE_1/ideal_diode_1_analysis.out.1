@@ -1,0 +1,58 @@
+
+**** 10/13/16 15:11:25 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "IDEAL_DIODE_TYPE_1-ideal_diode_1_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_sim
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ideal_diode_1_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 500us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\IDEAL_DIODE_TYPE_1.net" 
+
+
+
+**** INCLUDING IDEAL_DIODE_TYPE_1.net ****
+* source BBCIRCUIT_SIMULATION
+R_R1         ISOLATE N01369  200 TC=0,0 
+R_R3         N00352 N01369  200 TC=0,0 
+V_V3         N341332 N00562 0Vdc
+V_V6         N01369 0 48Vdc
+R_R6         N01369 BASE  2k TC=0,0 
+V_V2         N00562 N339696 0Vdc
+D_D1         N339770 N339696 D1N5819 
+X_M1         N339696 ISOLATE N339770 IRF1404
+V_V5         N342332 0  
++PULSE 0 36 0 0.001us 0.001us 10us 25us
+V_V7         N342321 0 12Vdc
+D_D2         N341278 N339770 D1N5819 
+D_D3         N341336 N341332 D1N5819 
+R_R7         N00562 N342321  1 TC=0,0 
+R_R4         N342332 N339770  1 TC=0,0 
+Q_Q3         N00352 BASE N341336 BC847_1 
+Q_Q4         ISOLATE BASE N341278 BC847_2 
+
+**** RESUMING ideal_diode_1_analysis.cir ****
+.END
+
+
+ERROR(ORPSIM-15113): Model BC847_2 used by Q_Q4 is undefined
+

@@ -1,6 +1,6 @@
-** Profile: "IDEAL_DIODE_TYPE_1-ideal_diode_1_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\ideal_diode_type_1\ideal_diode_1_analysis.sim ] 
+** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpiceFiles\Advanced_Current_AD\advanced_current_sample.sim ] 
 
-** Creating circuit file "ideal_diode_1_analysis.cir" 
+** Creating circuit file "advanced_current_sample.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
@@ -11,10 +11,11 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 500us 0 
+.TRAN  0 100us 0 
+.STEP LIN PARAM LOAD 1 5 1 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
-.INC "..\IDEAL_DIODE_TYPE_1.net" 
+.INC "..\Advanced_Current_AD.net" 
 
 
 .END

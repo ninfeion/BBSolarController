@@ -1,6 +1,6 @@
-** Profile: "IDEAL_DIODE_TYPE_1-ideal_diode_1_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\ideal_diode_type_1\ideal_diode_1_analysis.sim ] 
+** Profile: "Voltage_sample_diff_BJT-voltage_sample_diff_bjt_type"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpiceFiles\Voltage_sample_diff_BJT\voltage_sample_diff_bjt_type.sim ] 
 
-** Creating circuit file "ideal_diode_1_analysis.cir" 
+** Creating circuit file "voltage_sample_diff_bjt_type.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
@@ -11,10 +11,11 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 500us 0 
+.TRAN  0 1000us 0 
+.STEP LIN PARAM BAT 15 30 4 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
-.INC "..\IDEAL_DIODE_TYPE_1.net" 
+.INC "..\Voltage_sample_diff_BJT.net" 
 
 
 .END
