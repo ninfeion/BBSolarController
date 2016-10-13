@@ -1,0 +1,259 @@
+
+**** 10/01/16 11:52:34 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER-N_MOS_DRIVER_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulatio
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "N_MOS_DRIVER_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 800us 0 1us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\MOSFET_DRIVER.net" 
+
+
+
+**** INCLUDING MOSFET_DRIVER.net ****
+* source BBCIRCUIT_SIMULATION
+V_V1         N321229 0  
++PULSE 0 10 0 0.001us 0.001us 0.5us 1us
+M_M1         N324891 N321277 0 0 IRF150
+V_V10         N321508 0 24
+R_R62         N321277 N321201  50 TC=0,0 
+Q_Q3         N322983 N322646 0 Q2N2222A/ZTX 
+V_V11         N322646 0  
++PULSE 0 3.3 0 0.01us 0.01us 0.5us 1us
+V_V12         N322641 0 17
+R_R64         N322983 N322641  20 TC=0,0 
+R_R61         N324891 N321508  200 TC=0,0 
+D_D3         N321201 N321229 D1N5818 
+R_R67         N326097 N326093  200 TC=0,0 
+M_M2         N326097 N326067 0 0 IRF150
+V_V14         N326093 0 24
+V_V13         N326067 0  
++PULSE 0 5 0 0.001us 0.001us 50us 100us
+Q_Q5         N321205 N321229 N321201 BC547BP/ZTX 
+R_R68         N321229 N321205  200 TC=0,0 
+V_V15         N321205 N321508 10
+
+**** RESUMING N_MOS_DRIVER_analysis.cir ****
+.END
+
+**** 10/01/16 11:52:34 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER-N_MOS_DRIVER_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulatio
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N5818         
+          IS    2.835000E-06 
+         ISR   26.460000E-06 
+         IKF     .3227       
+          RS     .04712      
+         CJO  359.300000E-12 
+          VJ     .75         
+           M     .6513       
+         XTI    0            
+
+
+**** 10/01/16 11:52:34 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER-N_MOS_DRIVER_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulatio
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222A/ZTX    BC547BP/ZTX     
+               NPN             NPN             
+       LEVEL    1               1            
+          IS   30.611000E-15   18.000000E-15 
+          BF  220             400            
+          NF    1.00124          .9955       
+         VAF  104              80            
+         IKF     .52             .14         
+         ISE    7.500000E-15   50.000000E-15 
+          NE    1.41            1.46         
+          BR    4              35.5          
+          NR    1.005           1.005        
+         VAR   28              12.5          
+         IKR     .24             .03         
+         ISC   10.652500E-12  172.000000E-15 
+          NC    1.3728          1.27         
+         ISS    0               0            
+          RB     .13             .56         
+          RE     .22             .6          
+          RC     .12             .25         
+         CJE   27.010000E-12   13.000000E-12 
+         VJE     .75             .75         
+         CJC    9.120000E-12    4.000000E-12 
+         VJC     .4089           .54         
+         MJC     .3508           .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          TF  325.000000E-12  640.000000E-12 
+          TR  100.000000E-09   50.720000E-09 
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 10/01/16 11:52:34 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER-N_MOS_DRIVER_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulatio
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 10/01/16 11:52:34 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER-N_MOS_DRIVER_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulatio
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N321201) 77.94E-09                   (N321205)   34.0000                       
+
+(N321229)    0.0000                   (N321277) 77.94E-09                       
+
+(N321508)   24.0000                   (N322641)   17.0000                       
+
+(N322646)    0.0000                   (N322983)   17.0000                       
+
+(N324891)   23.9890                   (N326067)    0.0000                       
+
+(N326093)   24.0000                   (N326097)   23.9890                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.700E-01
+    V_V10       -1.701E-01
+    V_V11        1.491E-11
+    V_V12       -3.472E-11
+    V_V14       -5.398E-05
+    V_V13        0.000E+00
+    V_V15       -1.700E-01
+
+    TOTAL POWER DISSIPATION   5.78E+00  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  97.50E-06.
+         Time step =  357.8E-21, minimum allowable step size =  1.000E-18
+
+  These devices failed to converge:
+    M_M2      Q_Q3      
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N321201)    -.4808                   (N321205)   34.0000                       
+
+(N321229)    0.0000                   (N321277)    6.3468                       
+
+(N321508)   24.0000                   (N322641)   17.0000                       
+
+(N322646)    3.3000                   (N322983)    1.6968                       
+
+(N324891)     .0063                   (N326067)    0.0000                       
+
+(N326093)   24.0000                   (N326097)   23.9890                   
+
+
+**** Interrupt ****

@@ -1,0 +1,3 @@
+ lib=C:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\diode.lib, offset=459201, size=174
+ lib=C:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\zetex.lib, offset=100538, size=387
+ lib=C:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\irf.lib, offset=199451, size=1688

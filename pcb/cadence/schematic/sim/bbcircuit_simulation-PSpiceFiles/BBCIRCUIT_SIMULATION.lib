@@ -1,0 +1,135 @@
+* PSpice Model Editor - Version 17.2.0
+*$
+*May 23, 2002
+.SUBCKT Si2311DS 4 1 2
+M1  3 1 2 2 PMOS W=398702u L=0.50u  
+M2  2 1 2 4 NMOS W=398702u L=0.55u 
+R1  4 3     RTEMP 8E-3
+CGS 1 2     400E-12
+DBD 4 2     DBD
+*******************************************************************
+.MODEL  PMOS       PMOS (  LEVEL  = 3               TOX    = 1.7E-8
++ RS     = 15E-3           RD     = 0               NSUB   = 1E16   
++ KP     = 2.35E-5         UO     = 400             
++ VMAX   = 0               XJ     = 5E-7            KAPPA  = 20E-3
++ ETA    = 1E-4            TPG    = -1  
++ IS     = 0               LD     = 0                
++ CGSO   = 0               CGDO   = 0               CGBO   = 0 
++ NFS    = 0.8E12          DELTA  = 0.1)
+*******************************************************************
+.MODEL  NMOS       NMOS (  LEVEL  = 3               TOX    = 1.7E-8
++NSUB    = 2E17            NFS    = 10E11           TPG    = -1)   
+*******************************************************************
+.MODEL DBD D (CJO=330E-12 VJ=0.38  M=0.37
++RS=0.1 FC=0.5 IS=1E-12 TT=4.5E-8 N=1 BV=8.2)
+*******************************************************************
+.MODEL RTEMP RES (TC1=6.5E-3 TC2=5.5E-6)
+*******************************************************************
+.ENDS
+*$
+.model BC557A   PNP(Is=1.02f Xti=3 Eg=1.11 Vaf=73.79 Bf=174.7 Ise=10.73f
++               Ne=1.644 Ikf=.1023 Nk=.5033 Xtb=1.5 Br=4.432 Isc=14.74f
++               Nc=1.296 Ikr=2.237 Rc=1.039 Cjc=9.81p Mjc=.332 Vjc=.4865 Fc=.5
++               Cje=30p Mje=.3333 Vje=.5 Tr=10n Tf=830.3p Itf=.8981 Xtf=10.32
++               Vtf=10)
+*		PHILIPS		pid=bc556a	case=TO92
+*		91-08-09 dsq
+*$
+.SUBCKT BSP613P_L1 drain gate source 
+.PARAM  Rs=12m    Rg=5   Rd=2m     Ls=3n      Ld=3n       Lg=3n
+.PARAM  act=5.04
+X1  d1 g s Tj P_60nvar PARAMS: a={act} 
+Rg    g1     g    {Rg}   
+Lg    gate   g1   {Lg}
+Gs    s1     s    VALUE={V(s1,s)/(Rs*(1+(limit(V(Tj),-200,999)-25)*0.004))}
+Ls    source s1   {Ls}
+Rda1  d1     d2   {Rd}
+Ld    drain  d2   {Ld}
+E1    Tj     w      VALUE={TEMP}
+R1    w      0      1u
+.ENDS
+*$
+*Feb. 28, 2005
+*Doc. ID: 76814, S-50232, Rev. B
+.SUBCKT Si2302ADS 4 1 2
+M1  3 1 2 2 NMOS W=259996u L=0.25u 
+M2  2 1 2 4 PMOS W=259996u L=0.80u
+R1  4 3     RTEMP 9E-3
+CGS 1 2     200E-12
+DBD 2 4     DBD
+************************************************************** 
+.MODEL  NMOS       NMOS  (LEVEL  = 3           TOX    = 3E-8
++ RS     = 22E-3          RD     = 0           NSUB   = 1.95E17  
++ KP     = 2.3E-5         UO     = 650             
++ VMAX   = 0              XJ     = 5E-7        KAPPA  = 5E-2
++ ETA    = 1E-4           TPG    = 1  
++ IS     = 0              LD     = 0               
++ CGSO   = 0              CGDO   = 0           CGBO   = 0 
++ NFS    = 0.8E12         DELTA  = 0.1)
+*************************************************************** 
+.MODEL  PMOS       PMOS  (LEVEL  = 3           TOX    = 3E-8
++NSUB    = 1.6E17         TPG    = -1)   
+*************************************************************** 
+.MODEL DBD D (CJO=90E-12 VJ=0.38 M=0.20
++RS=0.1 FC=0.5 IS=1E-12 TT=5E-8 N=1 BV=20.3)
+*************************************************************** 
+.MODEL RTEMP RES (TC1=10E-3 TC2=5.5E-6)
+*************************************************************** 
+.ENDS
+*$
+*Feb. 28, 2005
+*Doc. ID: 75214, S-50232, Rev. B
+.SUBCKT Si2302DS 4 1 2
+M1  3 1 2 2 NMOS W=220682u L=0.50u 
+M2  2 1 2 4 PMOS W=220682u L=1.25u  
+R1  4 3     RTEMP 50E-3
+CGS 1 2     150E-12
+DBD 2 4     DBD
+**************************************************************
+.MODEL  NMOS       NMOS  (LEVEL  = 3          TOX    = 1.7E-8
++ RS     = 14E-3          RD     = 0          NSUB   = 3.4E17  
++ KP     = 1E-4           UO     = 650             
++ VMAX   = 0              XJ     = 5E-7       KAPPA  = 50E-3
++ ETA    = 1E-4           TPG    = 1  
++ IS     = 0              LD     = 0                           
++ CGSO   = 0              CGDO   = 0          CGBO   = 0 
++ NFS    = 0.8E12         DELTA  = 0.1)
+**************************************************************
+.MODEL  PMOS       PMOS (LEVEL   = 3          TOX    = 1.7E-8
++NSUB    = 2.5E16         TPG    = -1)   
+**************************************************************
+.MODEL DBD D (CJO=210E-12     VJ=0.38    M=0.32
++RS=0.1  FC=0.5  IS=1E-12  TT=4E-8  N=1  BV=21)
+**************************************************************
+.MODEL RTEMP RES (TC1=6E-3   TC2=5.5E-6)
+**************************************************************
+.ENDS
+*$
+*Feb. 28, 2005
+*Doc. ID: 75222, S-50232, Rev. B
+.SUBCKT Si2305DS 4 1 2
+M1  3 1 2 2 PMOS W=382620u L=0.50u 
+M2  2 1 2 4 NMOS W=382620u L=0.90u  
+R1  4 3     RTEMP 190E-4
+CGS 1 2     640E-12
+DBD 4 2     DBD
+**************************************************************************
+.MODEL  PMOS       PMOS (  LEVEL  = 3               TOX    = 1.7E-8
++ RS     = 100E-4          RD     = 0               NSUB   = 0.38E16   
++ kp     = 2.5E-5          UO     = 400             
++ VMAX   = 0               XJ     = 0.5E-6          KAPPA  = 3E-3
++ ETA    = 1E-4            TPG    = -1  
++ IS     = 0               LD     = 0                            
++ CGSO   = 0               CGDO   = 0               CGBO   = 0 
++ NFS    = 0.8E12          DELTA  = 0.1)
+*************************************************************************
+.MODEL  NMOS       NMOS (  LEVEL  = 3               TOX    = 1.7E-8
++NSUB    = 18E16           NFS    =  10E11          TPG    = -1)   
+*************************************************************************
+.MODEL DBD D (CJO=380E-12 VJ=0.38    M=0.34
++RS=0.1 FC=0.5 IS=1E-12 TT=10E-8 N=1 BV=30)
+*************************************************************************
+.MODEL RTEMP RES (TC1=3.5E-3   TC2=5.5E-6)
+*************************************************************************
+.ENDS
+*$

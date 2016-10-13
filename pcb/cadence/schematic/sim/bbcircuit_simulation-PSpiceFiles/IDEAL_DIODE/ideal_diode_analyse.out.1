@@ -1,0 +1,59 @@
+
+**** 10/12/16 19:20:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "IDEAL_DIODE-ideal_diode_analyse"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-ps
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ideal_diode_analyse.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\IDEAL_DIODE.net" 
+
+
+
+**** INCLUDING IDEAL_DIODE.net ****
+* source BBCIRCUIT_SIMULATION
+D_D4         N331830 VTEST_H D1N4148_1 
+R_R2         N331702 VDR  {RC} TC=0,0 
+R_R4         N331826 N331702  {RB} TC=0,0 
+R_R1         N331698 VDR  {RC} TC=0,0 
+R_R3         N331702 N331814  {RB} TC=0,0 
+D_D3         N331866 N331698 D1N4744A 
+D_D1         N331866 VTEST_H D1N4148_1 
+D_D2         N331834 N331922 D1N4148_1 
+V_V1         VDR 0 48Vdc
+V_V2         VTEST_H 0 24Vdc
+V_V3         VTEST_L 0 26Vdc
+X_M5         N331922 N331698 VTEST_H IRLR8503
+R_R5         N333899 N331922  2 TC=0,0 
+Q_Q6         N331702 N331826 N331834 Q2N2222A/ZTX 
+Q_Q7         N331698 N331814 N331830 Q2N2222A/ZTX 
+V_V4         N333899 0  
++PULSE 0 30 0 0.001us 0.001us 50us _00us
+-----------------------------------$
+ERROR -- Expecting keyword STIMULUS, saw _00us.
+
+.PARAM  rc=100 rb=51k
+
+**** RESUMING ideal_diode_analyse.cir ****
+.END
+

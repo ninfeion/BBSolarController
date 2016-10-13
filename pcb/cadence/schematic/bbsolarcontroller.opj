@@ -25,14 +25,67 @@
     (Annotate_type "Default")
     (width_pages "100")
     (width_start "80")
-    (width_End "80"))
+    (width_End "80")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File
+       "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSOLARCONTROLLER.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File
+       "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSOLARCONTROLLER.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "FALSE"))
   (Folder "Outputs"
     (File ".\fpga_export\ep4ce6e144.v"
       (Type "Report"))
     (File ".\fpga_export\ep4ce6e144.tcl"
+      (Type "Report"))
+    (File ".\bbsolarcontroller.bom"
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (PORTLEFT-L
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (1N4744A
+      (FullPartName "1N4744A.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (1N4148
+      (FullPartName "1N4148.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\EDIODE.OLB")
+      (DeviceIndex "0"))
+    (IRF1404
+      (FullPartName "IRF1404.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
+      (DeviceIndex "0"))
+    (SI2302DS
+      (FullPartName "SI2302DS.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SILICONIX.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (BCR116S/INF
+      (FullPartName "BCR116S/INF.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\INFINEON.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-R
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
     (LED
       (FullPartName "LED.Normal")
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
@@ -68,10 +121,6 @@
       (FullPartName "Switch2x3.Normal")
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
       (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
     (20Pin_Header
       (FullPartName "20Pin_Header.Normal")
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
@@ -101,35 +150,6 @@
       (DeviceIndex "0"))
     (GND_SIGNAL
       (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (TPS76801
-      (FullPartName "TPS76801.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
-      (DeviceIndex "0"))
-    (TPS79301
-      (FullPartName "TPS79301.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
-      (DeviceIndex "0"))
-    (C
-      (FullPartName "C.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    ("DIODE SCHOTTKY"
-      (FullPartName "DIODE SCHOTTKY.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    ("INDUCTOR IRON"
-      (FullPartName "INDUCTOR IRON.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (TPS54331
-      (FullPartName "TPS54331.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
-      (DeviceIndex "0"))
-    (STM32C8T6
-      (FullPartName "STM32C8T6.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\BBFLIGHT.OLB")
       (DeviceIndex "0")))
   (GlobalState
     (FileView
@@ -139,11 +159,17 @@
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn"
          "Main Circuit")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn"
+         "Ideal Diode Module")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn"
+         "reserved")
       (Path "Design Resources" "Library")
       (Path "Outputs")
       (Select "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsolarcontroller.dsn"
-         "Main Circuit" "adc-preconvert-v3.0"))
+         "Main Circuit" "dc-dc-converter"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -153,13 +179,24 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -4 -23 0 833 0 304")
-        (Scroll "-83 -1")
-        (Zoom "56")
+        (Placement "44 0 1 -1 -1 -4 -23 88 952 88 356")
+        (Scroll "0 209")
+        (Zoom "102")
+        (Occurrence "/Diode_ideal_D1"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSOLARCONTROLLER.DSN")
+      (Schematic "Ideal Diode Module")
+      (Page "main"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 110 974 110 378")
+        (Scroll "-12 0")
+        (Zoom "51")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSOLARCONTROLLER.DSN")
       (Schematic "Main Circuit")
-      (Page "adc-preconvert-v3.0")))
+      (Page "dc-dc-converter")))
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_16.6\tools\capture\library")
-  (MPSSessionName "N"))
+  (MPSSessionName "Ninfeion"))

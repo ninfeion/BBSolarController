@@ -140,6 +140,9 @@
          "inverted_amp")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
+         "current_sample")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
          "inverted_amp_sample")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
@@ -155,12 +158,12 @@
       (Path "PSpice Resources" "Simulation Profiles")
       (Select "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\demo_3\bb_buck.dsn"
-         "inverted_amp" "PAGE1"))
+         "current_sample" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -4 -23 0 200 0 277"))
+        (Placement "44 0 1 -1 -1 -4 -23 0 200 0 277"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
@@ -172,5 +175,25 @@
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\DEMO_3\BB_BUCK.DSN")
       (Schematic "inverted_amp")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 0 1125 0 304")
+        (Scroll "278 655")
+        (Zoom "156"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\DEMO_3\BB_BUCK.DSN")
+      (Schematic "summing_amp")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -23 44 1169 44 348")
+        (Scroll "-128 0")
+        (Zoom "100"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\DEMO_3\BB_BUCK.DSN")
+      (Schematic "current_sample")
       (Page "PAGE1")))
   (MPSSessionName "N"))

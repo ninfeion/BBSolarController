@@ -1,0 +1,84 @@
+
+**** 10/07/16 13:39:12 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_2-MOSFET_DRIVER_VERSION2"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simula
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "MOSFET_DRIVER_VERSION2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\MOSFET_DRIVER_2.net" 
+
+
+
+**** INCLUDING MOSFET_DRIVER_2.net ****
+* source BBCIRCUIT_SIMULATION
+Q_Q5         N321488 N322144 GND_POWER BC547A 
+R_R8         GND_POWER N322939  50 TC=0,0 
+R_R4         N322130 N322012  10 TC=0,0 
+R_R7         N322943 N322963  50 TC=0,0 
+V_V2         V_H GND_POWER 35Vdc
+V_V1         V_L GND_POWER 3.3Vdc
+Q_Q4         N322012 N321678 GND_POWER BC547A 
+Q_Q3         N322012 N321581 V_H BC557A 
+M_M1         N322943 N322130 N322939 N322939 IRF150
+Q_Q1         N321678 N321488 N321618 BC557A 
+R_R6         GND_POWER N322144  1k TC=0,0 
+V_V3         N322963 GND_POWER 24Vdc
+R_R5         N322144 N322130  1 TC=0,0 
+R_R2         GND_POWER N321488  1k TC=0,0 
+R_R1         N321488 V_L  1 TC=0,0 
+R_R3         N321618 N321656  10 TC=0,0 
+Q_Q2         N321581 N321488 N321618 BC547A 
+V_V11         N321656 GND_POWER  
++PULSE 0 3.3 0 0.01us 0.01us 0.5us 1us
+
+**** RESUMING MOSFET_DRIVER_VERSION2.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N321488 is floating
+
+ERROR(ORPSIM-15142): Node N322144 is floating
+
+ERROR(ORPSIM-15142): Node GND_POWER is floating
+
+ERROR(ORPSIM-15142): Node N322939 is floating
+
+ERROR(ORPSIM-15142): Node N322130 is floating
+
+ERROR(ORPSIM-15142): Node N322012 is floating
+
+ERROR(ORPSIM-15142): Node N322943 is floating
+
+ERROR(ORPSIM-15142): Node N322963 is floating
+
+ERROR(ORPSIM-15142): Node V_H is floating
+
+ERROR(ORPSIM-15142): Node V_L is floating
+
+ERROR(ORPSIM-15142): Node N321678 is floating
+
+ERROR(ORPSIM-15142): Node N321581 is floating
+
+ERROR(ORPSIM-15142): Node N321618 is floating
+
+ERROR(ORPSIM-15142): Node N321656 is floating
+

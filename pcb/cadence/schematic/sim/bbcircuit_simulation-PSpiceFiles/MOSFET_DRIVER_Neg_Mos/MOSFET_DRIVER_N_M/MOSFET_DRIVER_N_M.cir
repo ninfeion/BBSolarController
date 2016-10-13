@@ -1,0 +1,20 @@
+** Profile: "MOSFET_DRIVER_Neg_Mos-MOSFET_DRIVER_N_M"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpiceFiles\MOSFET_DRIVER_Neg_Mos\MOSFET_DRIVER_N_M.sim ] 
+
+** Creating circuit file "MOSFET_DRIVER_N_M.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\MOSFET_DRIVER_Neg_Mos.net" 
+
+
+.END

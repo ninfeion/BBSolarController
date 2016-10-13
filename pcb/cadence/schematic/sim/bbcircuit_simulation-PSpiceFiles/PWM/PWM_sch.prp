@@ -674,37 +674,37 @@
             ("pspice_path"	"V_V1")
             ("level"	"0")
             ("model_params"
-                ("BiasValue Power"
-                    ("value"	"0W")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("PW"
-                    ("value"	"{DUTY1}")
-                    ("pspice_param"	"PW")
-                )
-                ("TR"
-                    ("value"	"0.0001us")
-                    ("pspice_param"	"TR")
-                )
-                ("V2"
-                    ("value"	"5")
-                    ("pspice_param"	"V2")
-                )
-                ("V1"
-                    ("value"	"0")
-                    ("pspice_param"	"V1")
-                )
-                ("TD"
-                    ("value"	"{PHASE2+0.01us}")
-                    ("pspice_param"	"TD")
+                ("PER"
+                    ("value"	"{PERIOD}")
+                    ("pspice_param"	"PER")
                 )
                 ("TF"
                     ("value"	"0.0001us")
                     ("pspice_param"	"TF")
                 )
-                ("PER"
-                    ("value"	"{PERIOD}")
-                    ("pspice_param"	"PER")
+                ("TD"
+                    ("value"	"{PHASE2+0.01us}")
+                    ("pspice_param"	"TD")
+                )
+                ("V1"
+                    ("value"	"0")
+                    ("pspice_param"	"V1")
+                )
+                ("V2"
+                    ("value"	"5")
+                    ("pspice_param"	"V2")
+                )
+                ("TR"
+                    ("value"	"0.0001us")
+                    ("pspice_param"	"TR")
+                )
+                ("PW"
+                    ("value"	"{DUTY1}")
+                    ("pspice_param"	"PW")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("AC"
                     ("value"	"")
@@ -774,37 +774,37 @@
             ("pspice_path"	"V_V2")
             ("level"	"0")
             ("model_params"
-                ("BiasValue Power"
-                    ("value"	"-25.00mW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("PW"
-                    ("value"	"{DUTY1+0.02us}")
-                    ("pspice_param"	"PW")
-                )
-                ("TR"
-                    ("value"	"0.0001us")
-                    ("pspice_param"	"TR")
-                )
-                ("V1"
-                    ("value"	"5")
-                    ("pspice_param"	"V1")
-                )
-                ("TD"
-                    ("value"	"{PHASE2}")
-                    ("pspice_param"	"TD")
-                )
-                ("V2"
-                    ("value"	"0")
-                    ("pspice_param"	"V2")
+                ("PER"
+                    ("value"	"{PERIOD}")
+                    ("pspice_param"	"PER")
                 )
                 ("TF"
                     ("value"	"0.0001us")
                     ("pspice_param"	"TF")
                 )
-                ("PER"
-                    ("value"	"{PERIOD}")
-                    ("pspice_param"	"PER")
+                ("V2"
+                    ("value"	"0")
+                    ("pspice_param"	"V2")
+                )
+                ("TD"
+                    ("value"	"{PHASE2}")
+                    ("pspice_param"	"TD")
+                )
+                ("V1"
+                    ("value"	"5")
+                    ("pspice_param"	"V1")
+                )
+                ("TR"
+                    ("value"	"0.0001us")
+                    ("pspice_param"	"TR")
+                )
+                ("PW"
+                    ("value"	"{DUTY1+0.02us}")
+                    ("pspice_param"	"PW")
+                )
+                ("BiasValue Power"
+                    ("value"	"-25.00mW")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("AC"
                     ("value"	"")
@@ -821,37 +821,37 @@
             ("pspice_path"	"V_V4")
             ("level"	"0")
             ("model_params"
-                ("PER"
-                    ("value"	"{PERIOD}")
-                    ("pspice_param"	"PER")
-                )
-                ("TF"
-                    ("value"	"0.0001us")
-                    ("pspice_param"	"TF")
-                )
-                ("V2"
-                    ("value"	"0")
-                    ("pspice_param"	"V2")
-                )
-                ("V1"
-                    ("value"	"5")
-                    ("pspice_param"	"V1")
-                )
-                ("TD"
-                    ("value"	"{PHASE4}")
-                    ("pspice_param"	"TD")
-                )
-                ("TR"
-                    ("value"	"0.0001us")
-                    ("pspice_param"	"TR")
+                ("BiasValue Power"
+                    ("value"	"-25.00mW")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("PW"
                     ("value"	"{DUTY1+0.02us}")
                     ("pspice_param"	"PW")
                 )
-                ("BiasValue Power"
-                    ("value"	"-25.00mW")
-                    ("pspice_param"	"BiasValue Power")
+                ("TR"
+                    ("value"	"0.0001us")
+                    ("pspice_param"	"TR")
+                )
+                ("TD"
+                    ("value"	"{PHASE4}")
+                    ("pspice_param"	"TD")
+                )
+                ("V1"
+                    ("value"	"5")
+                    ("pspice_param"	"V1")
+                )
+                ("V2"
+                    ("value"	"0")
+                    ("pspice_param"	"V2")
+                )
+                ("TF"
+                    ("value"	"0.0001us")
+                    ("pspice_param"	"TF")
+                )
+                ("PER"
+                    ("value"	"{PERIOD}")
+                    ("pspice_param"	"PER")
                 )
                 ("AC"
                     ("value"	"")
@@ -868,37 +868,37 @@
             ("pspice_path"	"V_V3")
             ("level"	"0")
             ("model_params"
-                ("BiasValue Power"
-                    ("value"	"0W")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("PW"
-                    ("value"	"{DUTY1}")
-                    ("pspice_param"	"PW")
-                )
-                ("TR"
-                    ("value"	"0.0001us")
-                    ("pspice_param"	"TR")
-                )
-                ("TD"
-                    ("value"	"{PHASE4+0.01us}")
-                    ("pspice_param"	"TD")
-                )
-                ("V1"
-                    ("value"	"0")
-                    ("pspice_param"	"V1")
-                )
-                ("V2"
-                    ("value"	"5")
-                    ("pspice_param"	"V2")
+                ("PER"
+                    ("value"	"{PERIOD}")
+                    ("pspice_param"	"PER")
                 )
                 ("TF"
                     ("value"	"0.0001us")
                     ("pspice_param"	"TF")
                 )
-                ("PER"
-                    ("value"	"{PERIOD}")
-                    ("pspice_param"	"PER")
+                ("V2"
+                    ("value"	"5")
+                    ("pspice_param"	"V2")
+                )
+                ("V1"
+                    ("value"	"0")
+                    ("pspice_param"	"V1")
+                )
+                ("TD"
+                    ("value"	"{PHASE4+0.01us}")
+                    ("pspice_param"	"TD")
+                )
+                ("TR"
+                    ("value"	"0.0001us")
+                    ("pspice_param"	"TR")
+                )
+                ("PW"
+                    ("value"	"{DUTY1}")
+                    ("pspice_param"	"PW")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("AC"
                     ("value"	"")
@@ -915,37 +915,37 @@
             ("pspice_path"	"V_V8")
             ("level"	"0")
             ("model_params"
-                ("PW"
-                    ("value"	"{DUTY1+0.02us}")
-                    ("pspice_param"	"PW")
-                )
-                ("TR"
-                    ("value"	"0.0001us")
-                    ("pspice_param"	"TR")
-                )
-                ("V2"
-                    ("value"	"0")
-                    ("pspice_param"	"V2")
-                )
-                ("V1"
-                    ("value"	"5")
-                    ("pspice_param"	"V1")
-                )
-                ("TD"
-                    ("value"	"{PHASE2}")
-                    ("pspice_param"	"TD")
-                )
-                ("TF"
-                    ("value"	"0.0001us")
-                    ("pspice_param"	"TF")
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("PER"
                     ("value"	"{PERIOD}")
                     ("pspice_param"	"PER")
                 )
-                ("BiasValue Power"
-                    ("value"	"0W")
-                    ("pspice_param"	"BiasValue Power")
+                ("TF"
+                    ("value"	"0.0001us")
+                    ("pspice_param"	"TF")
+                )
+                ("TD"
+                    ("value"	"{PHASE2}")
+                    ("pspice_param"	"TD")
+                )
+                ("V1"
+                    ("value"	"5")
+                    ("pspice_param"	"V1")
+                )
+                ("V2"
+                    ("value"	"0")
+                    ("pspice_param"	"V2")
+                )
+                ("TR"
+                    ("value"	"0.0001us")
+                    ("pspice_param"	"TR")
+                )
+                ("PW"
+                    ("value"	"{DUTY1+0.02us}")
+                    ("pspice_param"	"PW")
                 )
                 ("AC"
                     ("value"	"")
@@ -962,37 +962,37 @@
             ("pspice_path"	"V_V7")
             ("level"	"0")
             ("model_params"
-                ("BiasValue Power"
-                    ("value"	"-6.311e-30W")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("PW"
-                    ("value"	"{DUTY1}")
-                    ("pspice_param"	"PW")
-                )
-                ("TR"
-                    ("value"	"0.0001us")
-                    ("pspice_param"	"TR")
-                )
-                ("V2"
-                    ("value"	"5")
-                    ("pspice_param"	"V2")
-                )
-                ("V1"
-                    ("value"	"0")
-                    ("pspice_param"	"V1")
-                )
-                ("TD"
-                    ("value"	"{PHASE2+0.01us}")
-                    ("pspice_param"	"TD")
+                ("PER"
+                    ("value"	"{PERIOD}")
+                    ("pspice_param"	"PER")
                 )
                 ("TF"
                     ("value"	"0.0001us")
                     ("pspice_param"	"TF")
                 )
-                ("PER"
-                    ("value"	"{PERIOD}")
-                    ("pspice_param"	"PER")
+                ("TD"
+                    ("value"	"{PHASE2+0.01us}")
+                    ("pspice_param"	"TD")
+                )
+                ("V1"
+                    ("value"	"0")
+                    ("pspice_param"	"V1")
+                )
+                ("V2"
+                    ("value"	"5")
+                    ("pspice_param"	"V2")
+                )
+                ("TR"
+                    ("value"	"0.0001us")
+                    ("pspice_param"	"TR")
+                )
+                ("PW"
+                    ("value"	"{DUTY1}")
+                    ("pspice_param"	"PW")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("AC"
                     ("value"	"")
@@ -1567,13 +1567,13 @@
             ("pspice_path"	"Kn_K1")
             ("level"	"0")
             ("model_params"
-                ("L1"
-                    ("value"	"L2")
-                    ("pspice_param"	"L1")
-                )
                 ("L2"
                     ("value"	"L3")
                     ("pspice_param"	"L2")
+                )
+                ("L1"
+                    ("value"	"L2")
+                    ("pspice_param"	"L1")
                 )
                 ("COUPLING"
                     ("value"	"1")
@@ -1613,37 +1613,37 @@
             ("pspice_path"	"V_V13")
             ("level"	"0")
             ("model_params"
-                ("PER"
-                    ("value"	"{PERIOD}")
-                    ("pspice_param"	"PER")
-                )
-                ("TF"
-                    ("value"	"0.0001us")
-                    ("pspice_param"	"TF")
-                )
-                ("TD"
-                    ("value"	"{PHASE4+0.01us}")
-                    ("pspice_param"	"TD")
-                )
-                ("V1"
-                    ("value"	"0")
-                    ("pspice_param"	"V1")
-                )
-                ("V2"
-                    ("value"	"5")
-                    ("pspice_param"	"V2")
-                )
-                ("TR"
-                    ("value"	"0.0001us")
-                    ("pspice_param"	"TR")
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("PW"
                     ("value"	"{DUTY1}")
                     ("pspice_param"	"PW")
                 )
-                ("BiasValue Power"
-                    ("value"	"0W")
-                    ("pspice_param"	"BiasValue Power")
+                ("TR"
+                    ("value"	"0.0001us")
+                    ("pspice_param"	"TR")
+                )
+                ("V2"
+                    ("value"	"5")
+                    ("pspice_param"	"V2")
+                )
+                ("V1"
+                    ("value"	"0")
+                    ("pspice_param"	"V1")
+                )
+                ("TD"
+                    ("value"	"{PHASE4+0.01us}")
+                    ("pspice_param"	"TD")
+                )
+                ("TF"
+                    ("value"	"0.0001us")
+                    ("pspice_param"	"TF")
+                )
+                ("PER"
+                    ("value"	"{PERIOD}")
+                    ("pspice_param"	"PER")
                 )
                 ("AC"
                     ("value"	"")
@@ -1690,37 +1690,37 @@
             ("pspice_path"	"V_V14")
             ("level"	"0")
             ("model_params"
-                ("PW"
-                    ("value"	"{DUTY1+0.02us}")
-                    ("pspice_param"	"PW")
-                )
-                ("TR"
-                    ("value"	"0.0001us")
-                    ("pspice_param"	"TR")
-                )
-                ("V2"
-                    ("value"	"0")
-                    ("pspice_param"	"V2")
-                )
-                ("V1"
-                    ("value"	"5")
-                    ("pspice_param"	"V1")
-                )
-                ("TD"
-                    ("value"	"{PHASE4}")
-                    ("pspice_param"	"TD")
-                )
-                ("TF"
-                    ("value"	"0.0001us")
-                    ("pspice_param"	"TF")
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("PER"
                     ("value"	"{PERIOD}")
                     ("pspice_param"	"PER")
                 )
-                ("BiasValue Power"
-                    ("value"	"0W")
-                    ("pspice_param"	"BiasValue Power")
+                ("TF"
+                    ("value"	"0.0001us")
+                    ("pspice_param"	"TF")
+                )
+                ("TD"
+                    ("value"	"{PHASE4}")
+                    ("pspice_param"	"TD")
+                )
+                ("V1"
+                    ("value"	"5")
+                    ("pspice_param"	"V1")
+                )
+                ("V2"
+                    ("value"	"0")
+                    ("pspice_param"	"V2")
+                )
+                ("TR"
+                    ("value"	"0.0001us")
+                    ("pspice_param"	"TR")
+                )
+                ("PW"
+                    ("value"	"{DUTY1+0.02us}")
+                    ("pspice_param"	"PW")
                 )
                 ("AC"
                     ("value"	"")
@@ -1757,7 +1757,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"1000u")
+                    ("value"	"100u")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -1824,7 +1824,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"1000u")
+                    ("value"	"100u")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -1891,7 +1891,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"1000u")
+                    ("value"	"100u")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -2078,7 +2078,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"1n")
+                    ("value"	"0.3u")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -2206,7 +2206,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"56.84fW")
+                    ("value"	"99.48fW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("TC2"
@@ -2260,57 +2260,57 @@
                     ("value"	"1us")
                     ("pspice_param"	"phase_diff")
                 )
-                ("period"
-                    ("value"	"1us")
-                    ("pspice_param"	"period")
-                )
-                ("dead_area"
-                    ("value"	"0.1us")
-                    ("pspice_param"	"dead_area")
-                )
-                ("phase1"
-                    ("value"	"0.1us")
-                    ("pspice_param"	"phase1")
-                )
-                ("phase2"
-                    ("value"	"0us")
-                    ("pspice_param"	"phase2")
-                )
-                ("l1"
-                    ("value"	"1m")
-                    ("pspice_param"	"l1")
-                )
-                ("phase3"
-                    ("value"	"1.1us")
-                    ("pspice_param"	"phase3")
-                )
-                ("duty1"
-                    ("value"	"0.8us")
-                    ("pspice_param"	"duty1")
-                )
-                ("solar"
-                    ("value"	"24")
-                    ("pspice_param"	"solar")
-                )
-                ("battery"
-                    ("value"	"12")
-                    ("pspice_param"	"battery")
-                )
-                ("duty2"
-                    ("value"	"5.2us")
-                    ("pspice_param"	"duty2")
+                ("duty3"
+                    ("value"	"4us")
+                    ("pspice_param"	"duty3")
                 )
                 ("phase4"
                     ("value"	"0.0us")
                     ("pspice_param"	"phase4")
                 )
-                ("duty3"
-                    ("value"	"4us")
-                    ("pspice_param"	"duty3")
+                ("duty2"
+                    ("value"	"5.2us")
+                    ("pspice_param"	"duty2")
+                )
+                ("period"
+                    ("value"	"1us")
+                    ("pspice_param"	"period")
+                )
+                ("duty1"
+                    ("value"	"0.8us")
+                    ("pspice_param"	"duty1")
+                )
+                ("battery"
+                    ("value"	"12")
+                    ("pspice_param"	"battery")
+                )
+                ("solar"
+                    ("value"	"24")
+                    ("pspice_param"	"solar")
+                )
+                ("dead_area"
+                    ("value"	"0.1us")
+                    ("pspice_param"	"dead_area")
                 )
                 ("duty4"
                     ("value"	"4.2us")
                     ("pspice_param"	"duty4")
+                )
+                ("phase2"
+                    ("value"	"0us")
+                    ("pspice_param"	"phase2")
+                )
+                ("phase3"
+                    ("value"	"1.1us")
+                    ("pspice_param"	"phase3")
+                )
+                ("l1"
+                    ("value"	"1m")
+                    ("pspice_param"	"l1")
+                )
+                ("phase1"
+                    ("value"	"0.1us")
+                    ("pspice_param"	"phase1")
                 )
             )
         )

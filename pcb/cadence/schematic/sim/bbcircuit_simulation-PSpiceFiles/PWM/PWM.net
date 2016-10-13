@@ -40,14 +40,14 @@ M_M4         N104625 N1048661 0 0 IRF150
 V_V14         N1048661 0  
 +PULSE 5 0 {PHASE4} 0.0001us 0.0001us {DUTY1+0.02us} {PERIOD}
 D_D5         0 N104625 D1N5818 
-C_C15         N104634 N104696  1000u  TC=0,0 
-C_C14         0 N104634  1000u  TC=0,0 
-C_C16         0 N104696  1000u  TC=0,0 
+C_C15         N104634 N104696  100u  TC=0,0 
+C_C14         0 N104634  100u  TC=0,0 
+C_C16         0 N104696  100u  TC=0,0 
 R_R10         0 N104696  50 TC=0,0 
 C_C22         N89489 N89477  1n  TC=0,0 
-L_L4         N89489 N109710  1n  
+L_L4         N89489 N109710  0.3u  
 C_C23         0 N89489  1n  TC=0,0 
 L_L6         N115476 N89489  1m  
-.PARAM  phase_diff=1us period=1us dead_area=0.1us phase1=0.1us phase2=0us l1=1m
-+  phase3=1.1us duty1=0.8us solar=24 battery=12 duty2=5.2us phase4=0.0us
-+  duty3=4us duty4=4.2us
+.PARAM  phase_diff=1us duty3=4us phase4=0.0us duty2=5.2us period=1us
++  duty1=0.8us battery=12 solar=24 dead_area=0.1us duty4=4.2us phase2=0us
++  phase3=1.1us l1=1m phase1=0.1us

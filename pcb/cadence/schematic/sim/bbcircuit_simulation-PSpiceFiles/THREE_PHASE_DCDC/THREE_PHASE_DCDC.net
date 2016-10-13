@@ -8,12 +8,12 @@ L_L6         N305072 N304090  4.7u
 C_C3         N303542 N303760  470u  TC=0,0 
 V_V16         N3058701 0  
 +PULSE 5 0 {PHASE2} 0.01us 0.01us {DUTY1+0.02us} {PERIOD}
-L_L10         N304082 N303632  10m  
+L_L10         N304082 N303632  4.7u  
 C_C2         0 N303542  470u  TC=0,0 
 V_V9         N305072 0 {BATTERY}
 V_V17         N3037821 N303756  
 +PULSE 0 5 {PHASE2+0.01us} 0.01us 0.01us {DUTY1} {PERIOD}
-L_L9         N303756 N303542  10m  
+L_L9         N303756 N303542  4.7u  
 C_C18         N304822 N304176  100u  TC=0,0 
 M_M8         N303756 N3039821 0 0 IRF150
 V_V15         N3055181 N304082  
@@ -31,8 +31,8 @@ V_V14         N3043301 0
 C_C16         0 N304176  100u  TC=0,0 
 M_M7         N303760 N3037821 N303756 N303756 IRF150
 D_D1         N304090 N303760 D1N5818 
-L_L3         N304120 N312527  100m  
-R_R10         0 N304176  25 TC=0,0 
+L_L3         N304120 N312527  470u  
+R_R10         0 N304176  50 TC=0,0 
 C_C17         0 N304822  100u  TC=0,0 
 L_L1         N305072 N304082  4.7u  
 D_D3         N304784 N303760 D1N5818 
@@ -44,7 +44,7 @@ L_L5         N305072 N303756  4.7u
 D_D8         N303756 N303760 D1N5818 
 M_M4         N304120 N3043301 0 0 IRF150
 C_C4         0 N305072  470u  TC=0,0 
-L_L2         N304090 N303666  10m  
+L_L2         N304090 N303666  4.7u  
 M_M3         N304176 N3041941 N304120 N304120 IRF150
 V_V10         N304788 0 {SOLAR}
 C_C9         N303666 N303760  470u  TC=0,0 
@@ -64,8 +64,8 @@ C_C28         0 N312542  100u  TC=0,0
 C_C29         N312542 N304176  100u  TC=0,0 
 C_C31         N312527 N304176  100u  TC=0,0 
 C_C30         0 N312527  100u  TC=0,0 
-L_L11         N307816 N312542  100m  
-L_L12         N314239 N304822  100m  
+L_L11         N307816 N312542  470u  
+L_L12         N314239 N304822  470u  
 M_M11         N304176 N3142531 N314239 N314239 IRF150
 V_V21         N3142531 N314239  
 +PULSE 0 5 {PHASE4+0.01us} 0.01us 0.01us {DUTY1} {PERIOD}
@@ -78,6 +78,6 @@ D_D12         N307816 N304176 D1N5818
 D_D13         N314239 N304176 D1N5818 
 Kn_K2         L_L10 L_L11     1
 Kn_K3         L_L2 L_L12     1
-.PARAM  phase_diff=1us period=1us dead_area=0.1us phase1=0.1us phase2=0 l1=1m
-+  phase3=1.1us duty1=0.7us solar=24 battery=12 duty2=5.2us phase4=0.04us
+.PARAM  phase_diff=1us period=1us dead_area=0.1us phase1=0.1us l1=1m phase2=0
++  solar=24 duty1=0.7us phase3=1.1us phase4=0.04us duty2=5.2us battery=12
 +  duty3=4us duty4=4.2us

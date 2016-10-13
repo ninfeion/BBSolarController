@@ -1,0 +1,168 @@
+("Si2311DS"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("SYMBOL_NAME"	"pmos")
+        ("MODEL_TYPE"	"518")
+    )
+    ("model_params"
+        ("level_0"
+        )
+    )
+    ("device_pre_smoke"
+        ("TERM_ID"	"D")
+        ("TERM_IG"	"G")
+        ("NODE_VD"	"D")
+        ("NODE_VG"	"G")
+        ("NODE_VS"	"S")
+        ("DERATE_TYPE"	"PMOS")
+    )
+    ("device_max_ops"
+        ("IG"	"100n")
+        ("ID"	"3")
+        ("VDS"	"8")
+        ("VGSF"	"8")
+        ("VGSR"	"8")
+        ("PDM"	"0.71")
+        ("TJ"	"150")
+    )
+)
+("bc557a"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("SYMBOL_NAME"	"pnp")
+        ("MODEL_TYPE"	"7")
+    )
+    ("model_params"
+        ("level_0")
+    )
+    ("device_pre_smoke"
+        ("TERM_IC"	"C")
+        ("TERM_IB"	"B")
+        ("NODE_VC"	"C")
+        ("NODE_VB"	"B")
+        ("NODE_VE"	"E")
+        ("DERATE_TYPE"	"PNP")
+    )
+    ("device_max_ops"
+        ("IC"	"100m")
+        ("VCB"	"50")
+        ("VCE"	"45")
+        ("VEB"	"5")
+        ("PDM"	"1.5")
+        ("TJ"	"150")
+        ("RJC"	"83.3")
+        ("RCA"	"116.7")
+        ("SBINT"	"14m")
+    )
+)
+("bsp613p_l1"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("SYMBOL_NAME"	"pmos")
+        ("MODEL_TYPE"	"518")
+    )
+    ("model_params"
+        ("level_0")
+    )
+    ("device_pre_smoke"
+        ("TERM_ID"	"DRAIN")
+        ("TERM_IG"	"GATE")
+        ("NODE_VD"	"DRAIN")
+        ("NODE_VG"	"GATE")
+        ("NODE_VS"	"SOURCE")
+        ("DERATE_TYPE"	"PMOS")
+    )
+    ("device_max_ops"
+        ("IG"	"100n")
+        ("ID"	"2.9")
+        ("VDS"	"60")
+        ("VGSF"	"20")
+        ("VGSR"	"20")
+        ("PDM"	"1.8")
+        ("TJ"	"150")
+        ("RJC"	"19")
+        ("RCA"	"81")
+    )
+)
+("si2302ads"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("SYMBOL_NAME"	"nmos")
+        ("MODEL_TYPE"	"514")
+    )
+    ("model_params"
+        ("level_0")
+    )
+    ("device_pre_smoke"
+        ("TERM_ID"	"D")
+        ("TERM_IG"	"G")
+        ("NODE_VD"	"D")
+        ("NODE_VG"	"G")
+        ("NODE_VS"	"S")
+        ("DERATE_TYPE"	"NMOS")
+    )
+    ("device_max_ops"
+        ("IG"	"100n")
+        ("ID"	"2.1")
+        ("VDS"	"20")
+        ("VGSF"	"8")
+        ("VGSR"	"8")
+        ("PDM"	"0.7")
+        ("TJ"	"150")
+    )
+)
+("si2302ds"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("SYMBOL_NAME"	"nmos")
+        ("MODEL_TYPE"	"514")
+    )
+    ("model_params"
+        ("level_0")
+    )
+    ("device_pre_smoke"
+        ("TERM_ID"	"D")
+        ("TERM_IG"	"G")
+        ("NODE_VD"	"D")
+        ("NODE_VG"	"G")
+        ("NODE_VS"	"S")
+        ("DERATE_TYPE"	"NMOS")
+    )
+    ("device_max_ops"
+        ("IG"	"100n")
+        ("ID"	"2.8")
+        ("VDS"	"20")
+        ("VGSF"	"8")
+        ("VGSR"	"8")
+        ("PDM"	"1.25")
+        ("TJ"	"150")
+    )
+)
+("si2305ds"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("SYMBOL_NAME"	"pmos")
+        ("MODEL_TYPE"	"518")
+    )
+    ("model_params"
+        ("level_0"
+        )
+    )
+    ("device_pre_smoke"
+        ("TERM_ID"	"D")
+        ("TERM_IG"	"G")
+        ("NODE_VD"	"D")
+        ("NODE_VG"	"G")
+        ("NODE_VS"	"S")
+        ("DERATE_TYPE"	"PMOS")
+    )
+    ("device_max_ops"
+        ("IG"	"100n")
+        ("ID"	"3.5")
+        ("VDS"	"8")
+        ("VGSF"	"8")
+        ("VGSR"	"8")
+        ("PDM"	"1.25")
+        ("TJ"	"150")
+    )
+)

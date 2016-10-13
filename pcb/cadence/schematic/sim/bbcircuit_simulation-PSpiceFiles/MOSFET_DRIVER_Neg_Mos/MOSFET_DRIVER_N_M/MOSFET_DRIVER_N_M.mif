@@ -1,0 +1,5 @@
+ lib=c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\bbcircuit_simulation.lib, offset=1282, size=377
+ lib=C:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\ebipolar.lib, offset=6715, size=384
+ lib=C:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\irf.lib, offset=219379, size=1605
+ lib=C:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\irf.lib, offset=244845, size=1729
+ lib=C:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\irf.lib, offset=199451, size=1688

@@ -1,0 +1,292 @@
+
+**** 10/10/16 21:33:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_Neg_Mos-MOSFET_DRIVER_N_M"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simul
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "MOSFET_DRIVER_N_M.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\MOSFET_DRIVER_Neg_Mos.net" 
+
+
+
+**** INCLUDING MOSFET_DRIVER_Neg_Mos.net ****
+* source BBCIRCUIT_SIMULATION
+R_RL2         0 N345063  50 TC=0,0 
+R_RL1         N330321 N330169  50 TC=0,0 
+V_V11         N330579 0  
++PULSE 0 3.3 0 0.01us 0.01us 5us 10us
+R_R9         N333684 N330579  0.47 TC=0,0 
+V_V1         V_L 0 3.3Vdc
+V_V2         V_H 0 48Vdc
+V_V3         N330169 0 24Vdc
+R_R10         V_H N333688  470 TC=0,0 
+Q_Q5         N333688 N333684 0 BC547A 
+Q_Q3         N330273 N333688 0 BC557A 
+Q_Q6         V_H N333688 N330273 BC547A 
+R_R11         N346343 N343452  0.47 TC=0,0 
+R_R12         N346343 N346375  0.47 TC=0,0 
+R_R13         N348722 N346343  0.47 TC=0,0 
+X_M5         N346375 N330273 0 IRF3205
+X_M6         N343452 N330273 V_H IRF4905
+X_M7         N330321 N348722 N345063 IRF1404
+.PARAM  r11=4.7k
+
+**** RESUMING MOSFET_DRIVER_N_M.cir ****
+.END
+
+**** 10/10/16 21:33:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_Neg_Mos-MOSFET_DRIVER_N_M"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simul
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M5.MD         X_M5.MD1        X_M5.MD2        X_M5.MD3        
+          IS   38.397900E-09    0             100.000000E-12  100.000000E-12 
+           N    1.48671        50                .433451         .433451     
+          BV   55                                                            
+         IBV  250.000000E-06                                                 
+          RS    4.454280E-03                    3.000000E-06                 
+          TT  100.000000E-06                                                 
+         CJO    3.679390E-09    4.941170E-09                                 
+          VJ    1.02405          .598326                                     
+           M     .469188         .650772                                     
+          FC                   10.000000E-09                                 
+          EG    1                                                            
+         XTI    2.99617                                                      
+
+
+               X_M6.MD         X_M6.MD1        X_M6.MD2        X_M6.MD3        
+          IS   12.901400E-09    0             100.000000E-12  100.000000E-12 
+           N    1.46717        50                .4              .4          
+          BV   55                                                            
+         IBV  250.000000E-06                                                 
+          RS    2.977950E-03                    3.000000E-06                 
+         CJO    3.569680E-09    4.837720E-09                                 
+          VJ    1.17553          .625334                                     
+           M     .500933         .543532                                     
+          FC                   10.000000E-09                                 
+          EG    1.2                                                          
+         XTI    4                                                            
+
+
+               X_M7.MD         X_M7.MD1        X_M7.MD2        X_M7.MD3        
+          IS  189.845000E-12    0             100.000000E-12  100.000000E-12 
+           N    1.20398        50                .4              .4          
+          BV   40                                                            
+         IBV  250.000000E-06                                                 
+          RS    2.187420E-03                    3.000000E-06                 
+          TT   20.001400E-06                                                 
+         CJO    5.422370E-09    3.138130E-09                                 
+          VJ    2.67939          .970446                                     
+           M     .566441         .823421                                     
+          FC     .1            10.000000E-09                                 
+          EG    1.2                                                          
+         XTI    1.85712                                                      
+
+
+**** 10/10/16 21:33:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_Neg_Mos-MOSFET_DRIVER_N_M"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simul
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC557A          BC547A          
+               PNP             NPN             
+       LEVEL    1               1            
+          IS    1.020000E-15    7.049000E-15 
+          BF  174.7           253            
+          NF    1               1            
+         VAF   73.79          127.9          
+         IKF     .1023           .07705      
+         ISE   10.730000E-15   96.260000E-15 
+          NE    1.644           1.556        
+          BR    4.432           1            
+          NR    1               1            
+         IKR    2.237           3.321        
+         ISC   14.740000E-15  130.800000E-15 
+          NC    1.296           1.602        
+          NK     .5033           .5305       
+         ISS    0               0            
+          RE    0               0            
+          RC    1.039            .8766       
+         CJE   30.000000E-12   11.500000E-12 
+         VJE     .5              .5          
+         MJE     .3333           .6715       
+         CJC    9.810000E-12    5.250000E-12 
+         VJC     .4865           .5697       
+         MJC     .332            .3147       
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          TF  830.300000E-12  409.500000E-12 
+         XTF   10.32           40.12         
+         VTF   10              10            
+         ITF     .8981          1.994        
+          TR   10.000000E-09   10.000000E-09 
+         XTB    1.5             1.5          
+          KF    0               0            
+          AF    1               1            
+          CN    2.2             2.42         
+           D     .52             .87         
+
+
+**** 10/10/16 21:33:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_Neg_Mos-MOSFET_DRIVER_N_M"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simul
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M5.MM         X_M6.MM         X_M7.MM         
+               NMOS            PMOS            NMOS            
+       LEVEL    1               1               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    3.73234        -3.53713         3.74133      
+          KP   95.6501         23.3701        514.947        
+       GAMMA    0               0               0            
+         PHI     .6              .6              .6          
+      LAMBDA    0               5.493830E-03    2.509860E-03 
+          IS    0               0               0            
+          JS    0               0               0            
+          PB     .8              .8              .8          
+        PBSW     .8              .8              .8          
+          CJ    0               0               0            
+        CJSW    0               0               0            
+        CGSO   36.421300E-06   28.443900E-06   71.795200E-06 
+        CGDO  370.824000E-09   10.000000E-12   16.057800E-09 
+        CGBO    0               0               0            
+         TOX    0               0               0            
+          XJ    0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1            
+         VFB    0               0               0            
+        LETA    0               0               0            
+        WETA    0               0               0            
+          U0    0               0               0            
+        TEMP    0               0               0            
+         VDD    5               5               5            
+       XPART    0               0               0            
+
+
+**** 10/10/16 21:33:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_Neg_Mos-MOSFET_DRIVER_N_M"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simul
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  V_H)   48.0000  (  V_L)    3.3000  (X_M5.4)    0.0000 (X_M5.5)    -.3015     
+
+(X_M5.6)    -.3014 (X_M5.7)   47.7330 (X_M5.8) 120.2E-09 (X_M5.9) 125.3E-09     
+
+(X_M6.4)    0.0000 (X_M6.5)  -47.7330 (X_M6.6)  -47.7330 (X_M6.7)   47.7330     
+
+(X_M6.8)   48.0000 (X_M6.9) 20.65E-06 (X_M7.4)    0.0000 (X_M7.5)   23.9990     
+
+(X_M7.6)   23.9990 (X_M7.7) 10.39E-06 (X_M7.8)     .0012 (X_M7.9)   23.9990     
+
+(N330169)   24.0000                   (N330273)   47.7330                       
+
+(N330321)   23.9990                   (N330579)    0.0000                       
+
+(N333684) 22.62E-12                   (N333688)   48.0000                       
+
+(N343452) 20.65E-06                   (N345063)     .0012                       
+
+(N346343) 10.39E-06                   (N346375) 127.5E-09                       
+
+(N348722) 10.39E-06                   (X_M5.10)  -47.7330                       
+
+(X_M5.11)    -.3014                   (X_M6.10)  -47.7330                       
+
+(X_M6.11)  -47.7330                   (X_M7.10)   23.9990                       
+
+(X_M7.11)   23.9990                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V11        4.814E-11
+    V_V1         0.000E+00
+    V_V2        -2.183E-05
+    V_V3        -2.400E-05
+    X_M5.VFI2   -3.015E-13
+    X_M5.VFI1    0.000E+00
+    X_M6.VFI2   -4.773E-11
+    X_M6.VFI1    0.000E+00
+    X_M7.VFI2    2.400E-11
+    X_M7.VFI1    0.000E+00
+
+    TOTAL POWER DISSIPATION   1.62E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/10/16 21:33:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_Neg_Mos-MOSFET_DRIVER_N_M"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simul
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.64
+

@@ -1,0 +1,220 @@
+
+**** 10/08/16 17:22:56 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_2-MOSFET_DRIVER_VERSION2"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simula
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "MOSFET_DRIVER_VERSION2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\MOSFET_DRIVER_2.net" 
+
+
+
+**** INCLUDING MOSFET_DRIVER_2.net ****
+* source BBCIRCUIT_SIMULATION
+Q_Q5         N321488 N322144 0 BC547A 
+R_R8         0 N322939  50 TC=0,0 
+R_R4         N322130 N322012  10 TC=0,0 
+R_R7         N322943 N322963  50 TC=0,0 
+V_V2         V_H 0 35Vdc
+V_V1         V_L 0 3.3Vdc
+Q_Q4         N322012 N321678 0 BC547A 
+Q_Q3         N322012 N321581 V_H BC557A 
+M_M1         N322943 N322130 N322939 N322939 IRF150
+Q_Q1         N321678 N321488 N321618 BC557A 
+R_R6         0 N322144  500 TC=0,0 
+V_V3         N322963 0 24Vdc
+R_R5         N322144 N322130  1 TC=0,0 
+R_R2         0 N321488  500 TC=0,0 
+R_R1         N321488 V_L  1 TC=0,0 
+R_R3         N321618 N321656  10 TC=0,0 
+Q_Q2         N321581 N321488 N321618 BC547A 
+V_V11         N321656 0  
++PULSE 0 3.3 0 0.01us 0.01us 5us 10us
+
+**** RESUMING MOSFET_DRIVER_VERSION2.cir ****
+.END
+
+**** 10/08/16 17:22:56 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_2-MOSFET_DRIVER_VERSION2"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simula
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC547A          BC557A          
+               NPN             PNP             
+       LEVEL    1               1            
+          IS    7.049000E-15    1.020000E-15 
+          BF  253             174.7          
+          NF    1               1            
+         VAF  127.9            73.79         
+         IKF     .07705          .1023       
+         ISE   96.260000E-15   10.730000E-15 
+          NE    1.556           1.644        
+          BR    1               4.432        
+          NR    1               1            
+         IKR    3.321           2.237        
+         ISC  130.800000E-15   14.740000E-15 
+          NC    1.602           1.296        
+          NK     .5305           .5033       
+         ISS    0               0            
+          RE    0               0            
+          RC     .8766          1.039        
+         CJE   11.500000E-12   30.000000E-12 
+         VJE     .5              .5          
+         MJE     .6715           .3333       
+         CJC    5.250000E-12    9.810000E-12 
+         VJC     .5697           .4865       
+         MJC     .3147           .332        
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          TF  409.500000E-12  830.300000E-12 
+         XTF   40.12           10.32         
+         VTF   10              10            
+         ITF    1.994            .8981       
+          TR   10.000000E-09   10.000000E-09 
+         XTB    1.5             1.5          
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 10/08/16 17:22:56 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_2-MOSFET_DRIVER_VERSION2"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simula
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 10/08/16 17:22:56 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_2-MOSFET_DRIVER_VERSION2"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simula
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  V_H)   35.0000  (  V_L)    3.3000  (N321488)    1.6113                       
+
+(N321581)   34.0380                   (N321618)     .8215                       
+
+(N321656)    0.0000                   (N321678)     .2085                       
+
+(N322012)   16.2170                   (N322130)    2.3575                       
+
+(N322144)     .9715                   (N322939)     .0027                       
+
+(N322943)   23.9970                   (N322963)   24.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.468E+00
+    V_V1        -1.689E+00
+    V_V3        -5.399E-05
+    V_V11        8.215E-02
+
+    TOTAL POWER DISSIPATION   5.69E+01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/08/16 17:22:56 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_2-MOSFET_DRIVER_VERSION2"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simula
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .50
+

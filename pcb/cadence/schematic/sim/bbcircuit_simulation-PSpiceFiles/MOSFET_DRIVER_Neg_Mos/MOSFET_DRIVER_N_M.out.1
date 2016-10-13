@@ -1,0 +1,60 @@
+
+**** 10/10/16 20:20:45 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_Neg_Mos-MOSFET_DRIVER_N_M"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simul
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "MOSFET_DRIVER_N_M.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\MOSFET_DRIVER_Neg_Mos.net" 
+
+
+
+**** INCLUDING MOSFET_DRIVER_Neg_Mos.net ****
+* source BBCIRCUIT_SIMULATION
+R_RL2         0 N345063  50 TC=0,0 
+R_RL1         N330321 N330169  50 TC=0,0 
+V_V11         N330579 0  
++PULSE 0 3.3 0 0.01us 0.01us 5us 10us
+R_R9         N333684 N330579  0.47 TC=0,0 
+V_V1         V_L 0 3.3Vdc
+V_V2         V_H 0 48Vdc
+V_V3         N330169 0 24Vdc
+X_M2         N346375 N330273 0 Si2302DS
+R_R10         V_H N333688  470 TC=0,0 
+Q_Q5         N333688 N333684 0 BC547A 
+Q_Q3         N330273 N333688 0 BC557A 
+Q_Q6         V_H N333688 N330273 BC547A 
+M_M1         N330321 N346421 N345063 N345063 IRF150
+R_R11         N346343 N343452  4.7 TC=0,0 
+R_R12         N346343 N346375  4.7 TC=0,0 
+X_M3         N343452 N330273 V_H Si2305DS
+.PARAM  r11=4.7k
+
+**** RESUMING MOSFET_DRIVER_N_M.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N346421.
+
+ERROR(ORPSIM-15142): Node N346421 is floating
+

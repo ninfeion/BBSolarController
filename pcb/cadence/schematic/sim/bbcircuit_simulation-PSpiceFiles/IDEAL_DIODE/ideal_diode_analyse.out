@@ -1,0 +1,251 @@
+
+**** 10/12/16 20:46:23 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "IDEAL_DIODE-ideal_diode_analyse"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-ps
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ideal_diode_analyse.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\IDEAL_DIODE.net" 
+
+
+
+**** INCLUDING IDEAL_DIODE.net ****
+* source BBCIRCUIT_SIMULATION
+D_D4         N331830 VTEST_H D1N4148_1 
+R_R2         N331702 VDR  {RC} TC=0,0 
+R_R4         N331826 N331702  {RB} TC=0,0 
+R_R1         N331698 VDR  {RC} TC=0,0 
+R_R3         N331702 N331814  {RB} TC=0,0 
+D_D2         N331834 N331922 D1N4148_1 
+V_V1         VDR 0 48Vdc
+V_V2         VTEST_H 0 24Vdc
+V_V3         VTEST_L 0 26Vdc
+R_R5         N333899 N331922  2 TC=0,0 
+Q_Q6         N331702 N331826 N331834 Q2N2222A/ZTX 
+Q_Q7         N331698 N331814 N331830 Q2N2222A/ZTX 
+V_V4         N333899 0  
++PULSE 0 30 0 0.001us 0.001us 50us 100us
+X_M1         N331922 N331698 VTEST_H IRF1404
+D_D1         N338407 VTEST_H D1N4148_1 
+D_D3         N338407 N331698 D1N4744A 
+.PARAM  rc=100 rb=1k
+
+**** RESUMING ideal_diode_analyse.cir ****
+.END
+
+**** 10/12/16 20:46:23 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "IDEAL_DIODE-ideal_diode_analyse"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-ps
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148_1       D1N4744A        X_M1.MD         X_M1.MD1        
+          IS    2.682000E-09    4.997600E-24  189.845000E-12    0            
+           N    1.836           1.6405          1.20398        50            
+         ISR    1.565000E-09    2.247333E-06                                 
+          NR                    2.89714                                      
+         IKF     .04417                                                      
+          BV  100              15.048          40                            
+         IBV  100.000000E-06     .1296        250.000000E-06                 
+          RS     .5664           .21797         2.187420E-03                 
+          TT   11.540000E-09  605.000000E-09   20.001400E-06                 
+         CJO    4.000000E-12  260.000000E-12    5.422370E-09    3.138130E-09 
+          VJ     .5              .46328         2.67939          .970446     
+           M     .3333           .2466           .566441         .823421     
+          FC                                     .1            10.000000E-09 
+          EG                                    1.2                          
+         XTI                                    1.85712                      
+
+
+               X_M1.MD2        X_M1.MD3        
+          IS  100.000000E-12  100.000000E-12 
+           N     .4              .4          
+          RS    3.000000E-06                 
+
+
+**** 10/12/16 20:46:23 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "IDEAL_DIODE-ideal_diode_analyse"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-ps
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222A/ZTX    
+               NPN             
+       LEVEL    1            
+          IS   30.611000E-15 
+          BF  220            
+          NF    1.00124      
+         VAF  104            
+         IKF     .52         
+         ISE    7.500000E-15 
+          NE    1.41         
+          BR    4            
+          NR    1.005        
+         VAR   28            
+         IKR     .24         
+         ISC   10.652500E-12 
+          NC    1.3728       
+         ISS    0            
+          RB     .13         
+          RE     .22         
+          RC     .12         
+         CJE   27.010000E-12 
+         VJE     .75         
+         CJC    9.120000E-12 
+         VJC     .4089       
+         MJC     .3508       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  325.000000E-12 
+          TR  100.000000E-09 
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 10/12/16 20:46:23 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "IDEAL_DIODE-ideal_diode_analyse"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-ps
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M1.MM         
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    3.74133      
+          KP  514.947        
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.509860E-03 
+          IS    0            
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO   71.795200E-06 
+        CGDO   16.057800E-09 
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 10/12/16 20:46:23 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "IDEAL_DIODE-ideal_diode_analyse"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-ps
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDR)   48.0000  (X_M1.4)    0.0000 (X_M1.5)    -.2525 (X_M1.6)    -.2525     
+
+(X_M1.7)   28.1440 (X_M1.8)   23.9670 (X_M1.9)   23.9170 (N331698)   28.1440    
+
+(N331702)   27.1020                   (N331814)   25.8340                       
+
+(N331826)   25.7540                   (N331830)   25.0180                       
+
+(N331834)   24.9340                   (N331922)   23.9090                       
+
+(N333899)    0.0000                   (N338407)   24.3360                       
+
+(VTEST_H)   24.0000                   (VTEST_L)   26.0000                       
+
+(X_M1.10)   -4.2265                   (X_M1.11)    -.2525                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.075E-01
+    V_V2        -1.155E+01
+    V_V3         0.000E+00
+    V_V4         1.195E+01
+    X_M1.VFI2   -2.525E-13
+    X_M1.VFI1    0.000E+00
+
+    TOTAL POWER DISSIPATION   2.97E+02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/12/16 20:46:23 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "IDEAL_DIODE-ideal_diode_analyse"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-ps
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .12
+

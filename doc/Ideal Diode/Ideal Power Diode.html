@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0067)http://jiggerjuice.info/electronics/projects/power/ideal-diode.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  
+  <title>Ideal Power Diode</title>
+  <meta content="Ken Sarkies" name="author">
+  
+  <meta name="GENERATOR" content="OpenOffice.org 2.0  (Unix)">
+  <meta name="AUTHOR" content="Cathy ">
+  <meta name="CREATED" content="19951121;17410000">
+  <meta name="CHANGEDBY" content="Ken Sarkies">
+  <meta name="CHANGED" content="20070402;12164100">
+  <style>
+	<!--
+		@page { size: 8.5in 11in; margin: 0.79in }
+		P { margin-top: 0.16in; margin-bottom: 0in }
+		P.western { font-family: "Arial", sans-serif; font-size: 12pt }
+		H2 { margin-top: 0.17in; margin-bottom: 0.04in }
+		H2.western { font-family: "Arial", sans-serif; font-size: 14pt; font-style: normal }
+		H2.cjk { font-family: "HG Mincho Light J"; font-size: 14pt; font-style: italic }
+		H2.ctl { font-family: "DejaVu LGC Sans"; font-size: 14pt; font-style: italic }
+		H3 { margin-top: 0.16in; margin-bottom: 0in }
+		H3.western { font-family: "Arial", sans-serif; font-size: 12pt; font-style: italic }
+		H3.cjk { font-family: "DejaVu LGC Sans"; font-size: 12pt }
+		H3.ctl { font-family: "DejaVu LGC Sans"; font-size: 12pt; font-weight: medium }
+		H1 { margin-top: 0.17in; margin-bottom: 0.04in; background: transparent; page-break-before: auto }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
+		H1.cjk { font-size: 16pt }
+		H1.ctl { font-family: "DejaVu LGC Sans"; font-size: 13pt }</style>
+</head>
+<body>
+<table style="width: 100%; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="background-color: rgb(51, 102, 255); text-align: center; vertical-align: top;">
+      <h1 style="font-family: arial;"><b><b><b><b>"Ideal" Power Diode</b></b><br>
+      </b></b></h1>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+      <p style="font-family: Helvetica,Arial,sans-serif;">There is no
+such thing as an ideal diode of course, but the following circuits can
+provide a much closer approximation to diode ideality in ways that suit
+the reverse current blocking requirements of certain power circuits.<br>
+      </p>
+      <p style="font-family: Helvetica,Arial,sans-serif;"><a href="http://jiggerjuice.info/electronics/projects/power/ideal-diode.html#type1">Ideal Diode Type 1</a></p>
+      <p style="font-family: Helvetica,Arial,sans-serif;"><a href="http://jiggerjuice.info/electronics/projects/power/ideal-diode.html#type2">Ideal Diode Type 2</a></p>
+      <p style="font-family: Helvetica,Arial,sans-serif;"><a href="http://jiggerjuice.info/electronics/projects/power/ideal-diode.html#type3">Ideal Diode Type 3</a></p>
+      <p style="font-family: Helvetica,Arial,sans-serif;"></p>
+      <p style="font-family: Helvetica,Arial,sans-serif;">One
+application in mind is a battery charger. When charging from a source
+that can drop below the battery voltage, there is a danger of the
+battery discharging back through the charger and possibly damaging the
+latter. As such a diode is usually inserted between the charger and
+battery to block this reverse current flow. An ideal diode circuit may
+be valuable in high power applications to reduce power and voltage
+losses
+and heat dissipation demands.<br>
+      </p>
+      <p style="font-family: Helvetica,Arial,sans-serif;">Care needs to
+be taken when considering its use in
+non-synchronous switch mode power supplies to replace a catch diode.
+The MOSFET takes a certain amount of time to turn on and off, and this
+may result in destructive shoot through currents if other MOSFETs in
+the circuit have turned on. In these cases it is preferable to make use
+of a synchronous mode circuit in which the controller inserts delays to
+avoid the situation.<br>
+      </p>
+      <p style="font-family: Helvetica,Arial,sans-serif;">Ideal Diode
+controller ICs are available from some manufacturers, for example
+Linear Technology and Maxim produce a small range of these that work
+with or incorporate a power MOSFET, sensing the voltage across the
+MOSFET and turning it off when the voltage reverses. They can be
+somewhat expensive but can provide a range of additional safety
+features.<br>
+      </p>
+      <h2 style="font-family: Helvetica,Arial,sans-serif;"><a name="type1"></a>Ideal Diode Type 1</h2>
+      <p style="font-family: Helvetica,Arial,sans-serif;">The following
+circuit only needs readily available BJTs and a handful of resistors,
+as well as the power MOSFET. It requires a supply to the BJTs that will
+allow the MOSFET gate-source voltage to be raised to a level to allow
+full turn-on of the MOSFET. I
+haven't yet seen this particular circuit in the literature but it may
+well exist. There are several forms of this circuit:
+this one places the MOSFET on the negative terminal of the battery.
+Other similar circuits are described below.<br>
+      </p>
+      <br>
+      <p style="font-family: Helvetica,Arial,sans-serif; text-align: center;"><img style="width: 738px; height: 460px;" alt="" src="./Ideal Power Diode_files/idealdiode-layout.png">
+      <img style="width: 392px; height: 459px;" alt="" src="./Ideal Power Diode_files/idealdiode-equivalent.png"><br>
+      </p>
+      <p style="font-family: Helvetica,Arial,sans-serif; text-align: left;">The
+circuit can be adapted easily enough to other topologies. To switch the
+positive supply line the circuit can either use a P-type MOSFET and PNP
+BJTs, or use the same circuit as above in conjuction with an auxiliary
+low power supply, such as a charge pump, to allow the BJTs to pull the
+MOSFET gate above its turn-on voltage.<br>
+      </p>
+      <h3 style="font-family: Helvetica,Arial,sans-serif;">How it Works</h3>
+      <p style="font-family: Helvetica,Arial,sans-serif;">The MOSFET Q1
+is N-type in this circuit and operates in reverse mode, that is, it
+conducts when the drain-source voltage is negative. This voltage is
+intended to be less than the forward voltage of the body diode so the
+gate has control over its operation. If the current through the MOSFET
+is too high, the drain-source voltage may rise to the point where the
+body diode turns on, which defeats the main purpose of the circuit.
+Therefore a MOSFET with a suitably low on-resistance needs to be chosen
+to match the expected current load. The Schottky diode protects the
+MOSFET from large body diode currents during turn-on transients.<br>
+      </p>
+      <p style="font-family: Helvetica,Arial,sans-serif;">The circuit
+takes advantage of the strong dependence of BJT collector current on
+the base-emitter voltage. Q3 clearly controls the gate voltage while
+the purpose of Q2 is to cancel the base-emitter voltage of Q3 and so
+measure the voltage difference across the MOSFET. If the
+voltage across the MOSFET is positive, the emitter of Q2 rises above
+ground, causing Q2 to turn off and Q3 to turn on. This pulls down the
+collector of Q3 to turn off the MOSFET. Note that the base voltage of
+Q3 can rise quite high, pushing it into saturation. However this
+doesn't
+appear to affect the circuit operation greatly.</p>
+      <p style="font-family: Helvetica,Arial,sans-serif;">When the
+voltage across the MOSFET goes negative, the emitter of Q2 is pulled
+below ground and Q3 starts to turn off. The MOSFET gate voltage rises
+until the MOSFET starts to turn on. The gate voltage settles at a point
+which is just above the turn-on voltage. This will increase with drain
+current to keep the voltage drop across the MOSFET at a level that
+activates the BJTs.<br>
+      </p>
+      <p style="font-family: Helvetica,Arial,sans-serif;">The circuit
+doesn't appear to be particularly sensitive (within limits) to the
+choice of Q2, even if a different but similar transistor type is used.
+High gain BJTs will result in a smaller voltage across the MOSFET in
+the on-state (and hence lower power loss). As such it was found that
+Sziklai and Darlington pairs could be made to work, although the higher
+base-emitter voltage of the latter caused the circuit behaviour to be
+degraded. To reduce the adverse effects of turn-on transients, high
+speed
+switching BJTs should be used (such as the 2N2222 used here).</p>
+      <p style="font-family: Helvetica,Arial,sans-serif;">It is
+possible to improve the on-state drain-source voltage of the MOSFET by
+amplifying the gate signal with an operational amplifier between Q3 and
+the MOSFET gate. A high speed operational amplifier with low output
+impedance needs to be chosen, and this introduces difficulties with
+instability particulary at higher gains.<br>
+      </p>
+      <h3 style="font-family: Helvetica,Arial,sans-serif;">SPICE
+Analysis</h3>
+      <p style="font-family: Helvetica,Arial,sans-serif;">The following
+SPICE simulation was setup to study the behaviour of the circuit using
+a pulsed voltage source:</p>
+      <p style="font-family: Helvetica,Arial,sans-serif; text-align: center;"><img style="width: 654px; height: 460px;" alt="" src="./Ideal Power Diode_files/idealdiode.png"><br>
+      </p>
+      <p style="font-family: Helvetica,Arial,sans-serif;">The IRF1404
+is a low voltage, logic-level, low on-resistance MOSFET capable of
+supporting over
+160A of drain current. A time-dependent voltage source (sinusoidal or
+pulse) is used to push the drain voltage of the MOSFET below ground.
+The 2N2222 transistors are high speed NPN switching BJTs. Vp2 and Vp3
+are zero
+voltage sources used to measure currents. The resistance values shown
+are appropriate for the MOSFET to ensure that its gate charges and
+discharges quickly.</p>
+      <p style="font-family: Helvetica,Arial,sans-serif;">The first
+plot shows the voltages at the drain, gate and BJT bases for a pulsed
+voltage source. The first transient occurs when circuit starts to turn
+on the MOSFET. During the turn-on phase the Schottky diode conducts for
+a
+brief period until the MOSFET has turned on, thus limiting the
+transient peak voltage. The second transient at the end of the pulse is
+much shorter, but results in a heavy drain current flow for a short
+period as
+shown in the second plot below. The impact of this current spike can be
+reduced by using faster BJTs.<br>
+      </p>
+      <br>
+      <p style="font-family: Helvetica,Arial,sans-serif; text-align: center;"><a href="./Ideal Power Diode_files/idealdiode-pulse-voltage.png"><img alt="" src="./Ideal Power Diode_files/idealdiode-pulse-voltage.png" style="border: 0px solid ; width: 600px; height: 376px;"></a><br>
+      </p>
+      <br>
+      <p style="font-family: Helvetica,Arial,sans-serif; text-align: center;"><a href="./Ideal Power Diode_files/idealdiode-pulse-current.png"><img alt="" src="./Ideal Power Diode_files/idealdiode-pulse-current.png" style="border: 0px solid ; width: 600px; height: 381px;"></a><br>
+      </p>
+      <p style="font-family: Helvetica,Arial,sans-serif;">Finally the
+drain
+current flow with a sinusoidal voltage source shows that the
+transitions behave reasonably well:</p>
+      <p style="font-family: Helvetica,Arial,sans-serif; text-align: center;"><a href="./Ideal Power Diode_files/idealdiode-sinusoid-current.png"><img alt="" src="./Ideal Power Diode_files/idealdiode-sinusoid-current.png" style="border: 0px solid ; width: 600px; height: 373px;"></a><br>
+      </p>
+      <h3 style="font-family: Helvetica,Arial,sans-serif;">Measurements<br>
+      </h3>
+      <p><span style="font-family: Helvetica,Arial,sans-serif;">Some
+static measurements were made to check the efficiency of the circuit.
+The following plot shows the variation of the on-state current and
+drain-source voltage when the MOSFET is on. The MOSFET used was an
+IRL1104 and the BJTs were 2SC1815, neither of which are particularly
+high performers. The voltage drop is relatively high
+for this low current, so a higher gain BJT or Sziklai configuration
+should be used, along with a better MOSFET.<br>
+      </span></p>
+      <p style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;"><img style="width: 640px; height: 400px;" alt="" src="./Ideal Power Diode_files/idealdiode-experimental.png"></span><br>
+      </p>
+      <div style="text-align: left;">
+      <p style="font-family: Helvetica,Arial,sans-serif;">A second
+circuit was tested with
+2N3904 BJTs and an IRF1404 MOSFET, and provided with a "battery"
+voltage of 12.8V and a source voltage of -11.7V. The results showed a
+much lower drain-source voltage in the on-state. The following table
+gives some of the measurements, although they tended to vary strongly
+as the circuit began to warm.</p>
+      <br>
+      <table style="text-align: left; width: 30%; margin-left: auto; margin-right: auto; font-family: Helvetica,Arial,sans-serif;" border="1" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Load W</td>
+            <td style="vertical-align: top; font-weight: bold;">Current
+A </td>
+            <td style="vertical-align: top; font-weight: bold;">VGS </td>
+            <td style="vertical-align: top; font-weight: bold;">VDS mV </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">47 </td>
+            <td style="vertical-align: top;">0.20 </td>
+            <td style="vertical-align: top;">4.23 </td>
+            <td style="vertical-align: top;">-18.2 </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">33 </td>
+            <td style="vertical-align: top;">0.34 </td>
+            <td style="vertical-align: top;">4.45 </td>
+            <td style="vertical-align: top;">-13.4 </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">20 </td>
+            <td style="vertical-align: top;">0.58 </td>
+            <td style="vertical-align: top;">4.83 </td>
+            <td style="vertical-align: top;">-9.8 </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">12.5 </td>
+            <td style="vertical-align: top;">0.91 </td>
+            <td style="vertical-align: top;">6.20 </td>
+            <td style="vertical-align: top;">-5.6 </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span style="font-family: Helvetica,Arial,sans-serif;">Measurements
+made
+with a Schottky diode across the MOSFET gave
+consistently higher VDS.</span></p>
+      </div>
+      <h2><span style="font-family: Helvetica,Arial,sans-serif;"><a name="type2"></a>Ideal Diode Type 2</span><br>
+      </h2>
+      <p><span style="font-family: Helvetica,Arial,sans-serif;">A
+circuit offering the same functionality as the above is given in
+reference 1. This circuit uses a PNP-NPN pair of BJTs in a
+configuration whose operation is somewhat less transparent than the one
+described above. The circuit below, based on this configuration, was
+tested with SPICE simulation. The connection between the BJTs is such
+that the PNP's base-emitter voltage cancels that of the NPN. When the
+MOSFET drain-source voltage drops below zero the PNP turns on and
+forces the NPN to turn off since its base-emitter voltage is tied to
+that of the PNP's collector-emitter voltage. This turns off the MOSFET.<br>
+      </span></p>
+      <p style="text-align: center;"><img style="width: 661px; height: 552px;" alt="" src="./Ideal Power Diode_files/idealdiode-2.png"><br>
+      <span style="font-family: Helvetica,Arial,sans-serif;"></span></p>
+      <p><span style="font-family: Helvetica,Arial,sans-serif;">This
+circuit amplifies the voltage across the MOSFET in a cascade pair of
+BJTs, thus giving higher current gain than the circuit described above.
+Nevertheless the SPICE simulations show that the
+behaviour of the circuit is almost identical to that of the circuit we
+presented earlier, with a very similar on-state voltage across the
+MOSFET despite the high gain. In addition a significant amount of
+oscillation
+occurred when the MOSFET turned on. This may indicate that this circuit
+is less stable than the earlier one. A
+possible cause of this oscillation may be due to the high gain, which
+did occur in our circuit when additional gain was added (although the
+Sziklai and Darlington
+configurations did not show oscillations). A 100pF capacitor placed
+across the base resistor Rp seemed to resolve the problem, at least as
+far as simulation showed.<br>
+      </span></p>
+      <h2><span style="font-family: Helvetica,Arial,sans-serif;"><a name="type3"></a>Ideal Diode Type 3</span><br>
+      </h2>
+      <p><span style="font-family: Helvetica,Arial,sans-serif;">This is
+essentially the same circuit form as that used for type 1 but
+by making use of p-type MOSFET and BJTs it can be placed in a different
+part of a power circuit. The circuit used for Spice simulations is as
+follows:</span></p>
+      <br>
+      <div style="text-align: center;"><img src="./Ideal Power Diode_files/idealdiode-type2.png" alt="" style="width: 661px; height: 458px;"><br>
+      <div style="text-align: left; font-family: Helvetica,Arial,sans-serif;">
+      <p>The IRF5305 is a p-type MOSFET
+with an on-resistance of about 20 milliohms. The circuit works in a
+similar way to the first one described above. It measures the voltage
+across the MOSFET and amplifies it to produce a gate-source voltage
+that is pulled down to ground to turn on the MOSFET. This type of
+circuit is useful at the output of a battery charger to prevent the
+battery discharging back through the power circuits.</p>
+      </div>
+      </div>
+      <p style="font-family: Helvetica,Arial,sans-serif;"> </p>
+      <h2 style="font-family: Helvetica,Arial,sans-serif;"><a name="references"></a>References</h2>
+      <ol style="font-family: Helvetica,Arial,sans-serif;">
+        <li>"A Zero Volt Diode" Wilf Ritger <a href="http://www.solarbotics.net/library/circuits/misc_switching.html">http://www.solarbotics.net/library/circuits/misc_switching.html</a>.</li>
+      </ol>
+      <p style="font-family: Helvetica,Arial,sans-serif; text-align: left;"> </p>
+      <span style="font-family: Helvetica,Arial,sans-serif;"><span style="text-decoration: underline;"> </span> </span><span style="font-family: Helvetica,Arial,sans-serif;"> </span> </td>
+    </tr>
+  </tbody>
+</table>
+<font style="font-family: arial;" size="-2"><br>
+First created 14 August 2010</font><br>
+<font style="font-family: arial;" size="-2">Last Modified 12 October
+2010</font><font style="font-family: arial;" size="-2"><br>
+</font><small style="font-family: Arial;"><small>©
+Ken
+Sarkies 2010<br>
+<br>
+</small></small>
+
+
+</body></html>
