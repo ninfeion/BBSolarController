@@ -1,0 +1,105 @@
+
+**** 10/16/16 19:52:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "advanced_current_sample.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Advanced_Current_AD.net" 
+
+
+
+**** INCLUDING Advanced_Current_AD.net ****
+* source BBCIRCUIT_SIMULATION
+R_R1         N00240 N00244  0.01 TC=0,0 
+Q_Q1         N00219 N00334 N00244 Q2SA1213/ZTX 
+Q_Q3         N00231 N09140 N00334 Q2SA1213/ZTX 
+Q_Q4         N00219 N00523 N00397 Q2N1893
+Q_Q5         N09140 N00231 N00393 Q2N1893
+Q_Q6         N00231 N00231 N00389 Q2N1893
+Q_Q8         N00523 N00513 0 Q2N1893
+R_R2         N00523 N00240  100k TC=0,0 
+R_R4         0 N00389  20k TC=0,0 
+R_R5         0 N00393  18k TC=0,0 
+R_R6         0 N00397  4.7k TC=0,0 
+R_R7         0 N00513  4.7k TC=0,0 
+R_load         0 N00244  {LOAD} TC=0,0 
+R_R8         0 N00389  1900k TC=0,0 
+Q_Q7         N00284 N00523 N00513 Q2N1893
+Q_Q2         N00284 N00318 N00240 Q2SA1213/ZTX 
+R_R9         N00334 N00318  2k TC=0,0 
+V_V4         N09140 N00219 0Vdc
+V_V7         N00240 0 12Vdc
+R_R10         N11648 N11674  0.01 TC=0,0 
+R_load1         0 N11674  {LOAD} TC=0,0 
+V_V9         N00284 N00318 0Vdc
+R_R13         N15592 N11648  100k TC=0,0 
+R_R14         N15615 N11648  100k TC=0,0 
+R_R19         0 N15888  1k TC=0,0 
+R_R20         0 N15892  1k TC=0,0 
+Q_Q14         N16810 N15892 N16698 Q2SA1213/ZTX 
+R_R23         VEE_AMP N16806  47k TC=0,0 
+R_R24         VEE_AMP N16810  47k TC=0,0 
+Q_Q13         N16806 N15888 N16698 Q2SA1213/ZTX 
+R_R25         0 N16810  1000k TC=0,0 
+Q_Q15         N31624 N15592 N15673 Q2N1893
+Q_Q16         N31639 N15615 N15673 Q2N1893
+Q_Q17         N15615 N31639 N15892 Q2N1893
+Q_Q18         N15592 N31624 N15888 Q2N1893
+V_V10         VCC_AMP 0 5Vdc
+V_V11         0 VEE_AMP 0Vdc
+R_R29         VCC_AMP N16698  47k TC=0,0 
+R_R33         N15673 0  20k TC=0,0 
+R_R34         0 N16806  1000k TC=0,0 
+I_I1         0 N11648 DC 0Adc AC 0Aac
++SIN 3 2 50 0 0 0
+Q_Q21         N31639 N33651 N36381 Q2SA1213/ZTX 
+Q_Q22         N31624 N33651 N36457 Q2SA1213/ZTX 
+Q_Q23         N33651 N33651 N11648 Q2SA1213/ZTX 
+R_R35         N33651 0  19k TC=0,0 
+R_R37         N11648 N36381  8.8k TC=0,0 
+R_R39         N36067 N36121  19k TC=0,0 
+R_R38         N35981 N360010  8.8k TC=0,0 
+Q_Q24         N36067 N36067 N35981 Q2SA1213/ZTX 
+Q_Q25         N36085 N36067 N360010 Q2SA1213/ZTX 
+R_R40         N11648 N36457  8.8k TC=0,0 
+.PARAM  load=2 bat=24
+
+**** RESUMING advanced_current_sample.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N36121.
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N36085.
+
+ERROR(ORPSIM-15142): Node N36067 is floating
+
+ERROR(ORPSIM-15142): Node N36121 is floating
+
+ERROR(ORPSIM-15142): Node N35981 is floating
+
+ERROR(ORPSIM-15142): Node N360010 is floating
+
+ERROR(ORPSIM-15142): Node N36085 is floating
+

@@ -675,6 +675,7 @@
                 )
             )
         )
+        ("VSIN")
         ("Param")
     )
     ("instances"
@@ -684,7 +685,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"963.0uW")
+                    ("value"	"942.7uW")
                     ("pspice_param"	"BiasValue Power")
                 )
             )
@@ -695,7 +696,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"11.02mW")
+                    ("value"	"4.023mW")
                     ("pspice_param"	"BiasValue Power")
                 )
             )
@@ -706,7 +707,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"11.02mW")
+                    ("value"	"4.023mW")
                     ("pspice_param"	"BiasValue Power")
                 )
             )
@@ -769,7 +770,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"23.16nW")
+                    ("value"	"1.451W")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -877,7 +878,7 @@
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
-                    ("value"	"-33.07mW")
+                    ("value"	"-19.98mW")
                     ("pspice_param"	"BiasValue Power")
                 )
             )
@@ -918,12 +919,12 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"50")
+                    ("value"	"2")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"12.01uW")
+                    ("value"	"29.03W")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -971,7 +972,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"963.0uW")
+                    ("value"	"943.9uW")
                     ("pspice_param"	"BiasValue Power")
                 )
             )
@@ -982,7 +983,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"11.02mW")
+                    ("value"	"4.023mW")
                     ("pspice_param"	"BiasValue Power")
                 )
             )
@@ -1154,7 +1155,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"272.4nW")
+                    ("value"	"7.911mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("AREA"
@@ -1177,7 +1178,7 @@
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
-                    ("value"	"-17.67uW")
+                    ("value"	"123.9uW")
                     ("pspice_param"	"BiasValue Power")
                 )
             )
@@ -1193,7 +1194,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"780.1nW")
+                    ("value"	"40.54uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -1246,7 +1247,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"7.870uW")
+                    ("value"	"404.9uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -1299,7 +1300,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"780.2nW")
+                    ("value"	"36.25uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -1352,7 +1353,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"8.313uW")
+                    ("value"	"26.79uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -1405,7 +1406,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"8.313uW")
+                    ("value"	"25.67uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -1458,7 +1459,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"824.2nW")
+                    ("value"	"2.666uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -1511,7 +1512,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"824.2nW")
+                    ("value"	"2.554uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -1564,7 +1565,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"7.871uW")
+                    ("value"	"362.0uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -1604,6 +1605,49 @@
                 ("POWER"	"0.25")
                 ("SLOPE"	"0.005")
                 ("MAX_TEMP"	"200.0")
+            )
+        )
+        ("V8"
+            ("device_name"	"VSIN")
+            ("pspice_path"	"V_V8")
+            ("level"	"0")
+            ("model_params"
+                ("AC"
+                    ("value"	"0")
+                    ("pspice_param"	"AC")
+                )
+                ("BiasValue Power"
+                    ("value"	"-30.48W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("VAMPL"
+                    ("value"	"4")
+                    ("pspice_param"	"VAMPL")
+                )
+                ("VOFF"
+                    ("value"	"4")
+                    ("pspice_param"	"VOFF")
+                )
+                ("FREQ"
+                    ("value"	"100000")
+                    ("pspice_param"	"FREQ")
+                )
+                ("DC"
+                    ("value"	"")
+                    ("pspice_param"	"DC")
+                )
+                ("TD"
+                    ("value"	"0")
+                    ("pspice_param"	"TD")
+                )
+                ("DF"
+                    ("value"	"0")
+                    ("pspice_param"	"DF")
+                )
+                ("PHASE"
+                    ("value"	"0")
+                    ("pspice_param"	"PHASE")
+                )
             )
         )
         ("PARAM"

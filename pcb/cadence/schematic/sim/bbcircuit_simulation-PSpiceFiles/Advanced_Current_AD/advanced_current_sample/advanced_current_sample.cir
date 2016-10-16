@@ -1,4 +1,4 @@
-** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PSpiceFiles\Advanced_Current_AD\advanced_current_sample.sim ] 
+** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-pspicefiles\advanced_current_ad\advanced_current_sample.sim ] 
 
 ** Creating circuit file "advanced_current_sample.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -11,8 +11,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 100us 0 
-.STEP LIN PARAM LOAD 1 5 1 
+.TRAN  0 1000ms 0 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Advanced_Current_AD.net" 

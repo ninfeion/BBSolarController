@@ -14,7 +14,7 @@ Notes=
 @End General
 @Analysis: 0 1
 +0 0 0 0 
-+0 "100us" 
++0 "1000ms" 
 +1 "" 
 +2 "0" 
 +3 "" 
@@ -61,14 +61,14 @@ Notes=
 LoadFile 0 "" 
 SaveFile 0 "" 
 @End Analysis
-@Analysis: 5 1
+@Analysis: 5 0
 +0 2
 +0 "" 
-+1 "LOAD" 
++1 "BAT" 
 +2 "" 
 +3 "" 
-+4 "1" 
-+5 "5" 
++4 "8" 
++5 "12" 
 +6 "1" 
 +7 "" 
 @End Analysis
@@ -130,7 +130,7 @@ SaveFile 0 ""
 @End Analysis
 @Analysis: 17 0
 +0 "-1" 
-+1 "" 
++1 "-1" 
 +2 "-1" 
 +3 "-1" 
 +4 "1" 

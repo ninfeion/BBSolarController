@@ -6,11 +6,11 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\Users\N\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 50ms 0 1us 
+.TRAN  0 1000us 0 1us 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\summing_amp.net" 

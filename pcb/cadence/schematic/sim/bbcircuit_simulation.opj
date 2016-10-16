@@ -161,15 +161,49 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
-    (PARAM
-      (FullPartName "PARAM.Normal")
+    (LM358
+      (FullPartName "LM358.Normal")
       (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (BC557A
+      (FullPartName "BC557A.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\EBIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (ISIN
+      (FullPartName "ISIN.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
     (VDC
       (FullPartName "VDC.Normal")
       (LibraryName
          "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
       (DeviceIndex "0"))
     (0
       (LibraryName
@@ -185,25 +219,10 @@
       (LibraryName
          "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ZETEX.OLB")
       (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (C
-      (FullPartName "C.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
     (BC847
       (FullPartName "BC847.Normal")
       (LibraryName
          "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\INFINEON_S_AFBJT.OLB")
-      (DeviceIndex "0"))
-    (VSIN
-      (FullPartName "VSIN.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
     (C_elect
       (FullPartName "C_elect.Normal")
@@ -250,10 +269,6 @@
       (LibraryName
          "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
       (DeviceIndex "0"))
-    (VCC_BAR
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
     (IRF4905
       (FullPartName "IRF4905.Normal")
       (LibraryName
@@ -268,21 +283,6 @@
       (FullPartName "IRF1010E.Normal")
       (LibraryName
          "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
-      (DeviceIndex "0"))
-    (IRF130
-      (FullPartName "IRF130.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
-      (DeviceIndex "0"))
-    (SI5515DC
-      (FullPartName "SI5515DC.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SILICONIX.OLB")
-      (DeviceIndex "0"))
-    (SI4505DY
-      (FullPartName "SI4505DY.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SILICONIX.OLB")
       (DeviceIndex "0")))
   (LastUsedLibraryBrowseDirectory
      "C:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice")
@@ -294,6 +294,9 @@
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
          "Advanced_Current_AD")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
+         "Bidirectional dc-dc")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
          "IDEAL_DIODE")
@@ -326,15 +329,11 @@
          "THREE_PHASE_DCDC")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
-         "Voltage_sample_diff_BJT")
-      (Path "Outputs")
-      (Path "PSpice Resources")
-      (Path "PSpice Resources" "Model Libraries")
-      (Path "PSpice Resources" "Simulation Profiles"))
+         "Voltage_sample_diff_BJT"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -4 -23 0 200 0 280"))
+        (Placement "44 0 1 -1 -1 -4 -23 0 200 0 280"))
       (Tab 0)))
   (MPSSessionName "Ninfeion"))

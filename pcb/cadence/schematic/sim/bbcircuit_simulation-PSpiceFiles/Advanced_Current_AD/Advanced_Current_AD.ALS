@@ -1,27 +1,72 @@
 .ALIASES
 R_R1            R1(1=N00240 2=N00244 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS26@ANALOG.R.Normal(chips)
-Q_Q1            Q1(C=N00219 B=N00330 E=N00244 ) CN
+Q_Q1            Q1(C=N00219 B=N00334 E=N00244 ) CN
 +@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS53@ZETEX.Q2SA1213/ZTX.Normal(chips)
-Q_Q3            Q3(C=N00231 B=N00219 E=N00330 ) CN
+Q_Q3            Q3(C=N00231 B=N09140 E=N00334 ) CN
 +@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS89@ZETEX.Q2SA1213/ZTX.Normal(chips)
 Q_Q4            Q4(c=N00219 b=N00523 e=N00397 ) CN
 +@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS129@PWRBJT.Q2N1893.Normal(chips)
-Q_Q5            Q5(c=N00219 b=N00231 e=N00393 ) CN
+Q_Q5            Q5(c=N09140 b=N00231 e=N00393 ) CN
 +@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS147@PWRBJT.Q2N1893.Normal(chips)
 Q_Q6            Q6(c=N00231 b=N00231 e=N00389 ) CN
 +@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS165@PWRBJT.Q2N1893.Normal(chips)
-Q_Q8            Q8(c=N00523 b=N00487 e=0 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS201@PWRBJT.Q2N1893.Normal(chips)
+Q_Q8            Q8(c=N00523 b=N00513 e=0 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS201@PWRBJT.Q2N1893.Normal(chips)
 R_R2            R2(1=N00523 2=N00240 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS248@ANALOG.R.Normal(chips)
-R_R3            R3(1=N00284 2=N00330 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS288@ANALOG.R.Normal(chips)
 R_R4            R4(1=0 2=N00389 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS401@ANALOG.R.Normal(chips)
 R_R5            R5(1=0 2=N00393 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS419@ANALOG.R.Normal(chips)
 R_R6            R6(1=0 2=N00397 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS435@ANALOG.R.Normal(chips)
-R_R7            R7(1=0 2=N00487 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS491@ANALOG.R.Normal(chips)
+R_R7            R7(1=0 2=N00513 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS491@ANALOG.R.Normal(chips)
 R_load          load(1=0 2=N00244 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS933@ANALOG.R.Normal(chips)
-V_V1            V1(+=N00240 -=0 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS1085@SOURCE.VDC.Normal(chips)
 R_R8            R8(1=0 2=N00389 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS1181@ANALOG.R.Normal(chips)
-Q_Q7            Q7(c=N00284 b=N00523 e=N00487 ) CN
+Q_Q7            Q7(c=N00284 b=N00523 e=N00513 ) CN
 +@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS1322@PWRBJT.Q2N1893.Normal(chips)
-Q_Q2            Q2(C=N00284 B=N00284 E=N00240 ) CN
+Q_Q2            Q2(C=N00284 B=N00318 E=N00240 ) CN
 +@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS1374@ZETEX.Q2SA1213/ZTX.Normal(chips)
+R_R9            R9(1=N00334 2=N00318 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS4616@ANALOG.R.Normal(chips)
+V_V4            V4(+=N09140 -=N00219 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS5194@SOURCE.VDC.Normal(chips)
+V_V7            V7(+=N00240 -=0 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS9645@SOURCE.VDC.Normal(chips)
+R_R10           R10(1=N11648 2=N11674 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS11624@ANALOG.R.Normal(chips)
+R_load1          load1(1=0 2=N11674 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS11872@ANALOG.R.Normal(chips)
+V_V9            V9(+=N00284 -=N00318 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS14544@SOURCE.VDC.Normal(chips)
+R_R13           R13(1=N15592 2=N11648 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS15168@ANALOG.R.Normal(chips)
+R_R14           R14(1=N15615 2=N11648 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS15184@ANALOG.R.Normal(chips)
+R_R19           R19(1=0 2=N15673 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS16402@ANALOG.R.Normal(chips)
+R_R20           R20(1=0 2=N15892 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS16420@ANALOG.R.Normal(chips)
+Q_Q14           Q14(C=N16810 B=N16810 E=N16698 ) CN
++@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS16778@ZETEX.Q2SA1213/ZTX.Normal(chips)
+R_R23           R23(1=VEE_AMP 2=N16806 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS16828@ANALOG.R.Normal(chips)
+R_R24           R24(1=VEE_AMP 2=N16810 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS16844@ANALOG.R.Normal(chips)
+Q_Q13           Q13(C=N16806 B=N16806 E=N16698 ) CN
++@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS16752@ZETEX.Q2SA1213/ZTX.Normal(chips)
+R_R25           R25(1=0 2=N16810 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS17332@ANALOG.R.Normal(chips)
+Q_Q15           Q15(c=N31628 b=N15592 e=N15673 ) CN
++@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS20136@PWRBJT.Q2N1893.Normal(chips)
+Q_Q16           Q16(c=N31643 b=N15615 e=N15673 ) CN
++@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS20190@PWRBJT.Q2N1893.Normal(chips)
+Q_Q17           Q17(c=N15615 b=N31643 e=N15892 ) CN
++@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS20596@PWRBJT.Q2N1893.Normal(chips)
+Q_Q18           Q18(c=N15592 b=N31628 e=N15673 ) CN
++@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS20632@PWRBJT.Q2N1893.Normal(chips)
+V_V10           V10(+=VCC_AMP -=0 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS20908@SOURCE.VDC.Normal(chips)
+V_V11           V11(+=0 -=VEE_AMP ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS20924@SOURCE.VDC.Normal(chips)
+R_R29           R29(1=VCC_AMP 2=N16698 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS21533@ANALOG.R.Normal(chips)
+R_R33           R33(1=N15673 2=0 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS24173@ANALOG.R.Normal(chips)
+I_I1            I1(+=0 -=N11648 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS24547@SOURCE.ISIN.Normal(chips)
+Q_Q21           Q21(C=N31643 B=N33651 E=N36381 ) CN
++@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS33514@ZETEX.Q2SA1213/ZTX.Normal(chips)
+Q_Q22           Q22(C=N31628 B=N33651 E=N36457 ) CN
++@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS33560@ZETEX.Q2SA1213/ZTX.Normal(chips)
+Q_Q23           Q23(C=N33651 B=N33651 E=VCC_AMP ) CN
++@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS33684@ZETEX.Q2SA1213/ZTX.Normal(chips)
+R_R35           R35(1=N33651 2=0 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS33816@ANALOG.R.Normal(chips)
+R_R37           R37(1=VCC_AMP 2=N36381 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS35588@ANALOG.R.Normal(chips)
+R_R40           R40(1=VCC_AMP 2=N36457 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS36433@ANALOG.R.Normal(chips)
+X_U1A           U1A(+=N39284 -=N39254 V+=VCC_AMP V-=VEE_AMP OUT=N39551 ) CN
++@BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS38988@OPAMP.LM358.Normal(chips)
+R_R41           R41(1=N39284 2=N15673 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS39214@ANALOG.R.Normal(chips)
+R_R42           R42(1=N39254 2=N15892 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS39234@ANALOG.R.Normal(chips)
+R_R43           R43(1=N39551 2=N39254 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS39324@ANALOG.R.Normal(chips)
+R_R44           R44(1=0 2=N39284 ) CN @BBCIRCUIT_SIMULATION.Advanced_Current_AD(sch_1):INS39344@ANALOG.R.Normal(chips)
+_    _(VCC_AMP=VCC_AMP)
+_    _(VEE_AMP=VEE_AMP)
 .ENDALIASES
