@@ -1,0 +1,132 @@
+* AD8210 MACROMODEL
+* Description: Current Sense Amplifier
+* Generic Desc: G=20, BiDir
+* Developed by: KF, PB 
+* Revision History: 	11/2008 - Rev.1
+*			08/2012 - Rev.2 Updated to New Header Style
+*			06/2016 - Rev.3 New model
+* Copyright 2016 by Analog Devices, Inc.
+*
+* Refer to http://www.analog.com/Analog_Root/static/techSupport/designTools/spiceModels/license/spice_general.html for License Statement. Use of this model 
+* indicates your acceptance of the terms and provisions in the License Statement.
+*
+* BEGIN Notes:
+*
+* Not Modeled: 
+*	Temperature
+*	PSRR
+* Parameters modeled include: 
+*	Offset Voltage
+*	Bias Current
+*	DC Transfer Characteristic
+*	CMRR
+*	Gain vs. Frequency
+*	CMRR vs. Frequency
+*	Wideband Spectral Noise
+*	Slew Rate	
+*	Pulse Response
+*	Common-Mode Step Response
+* END Notes
+*
+************************
+.SUBCKT AD8210 VIN- GND REF2 VOUT VS REF1 VIN+
+
+R15 7 VIN- 2000
+R12 7 VIN+ 2000
+R11 34 7 800
+R10 7 34 800
+D21 VS 34 DIODE
+D24 36 37 DIODE
+V14 0 38 dc 2.35
+D26 38 2 DIODE
+D25 2 VIN- DIODE
+V12 0 36 dc 2.35
+D23 37 VIN+ DIODE
+RRef2 5 REF2 32000
+RRef1 5 REF1 32000
+R6 7 0 10000000
+R5 VIN- 0 10000000
+Lcm 18 33 0.0024
+D19 29 6 DIODE
+D13 28 29 DIODE
+D18 25 20 DIODE
+D17 20 27 DIODE
+D16 27 26 DIODE
+D15 26 12 DIODE
+D14 12 28 DIODE
+D12 8 25 DIODE
+D6 9 8 DIODE
+D5 10 9 DIODE
+D4 11 10 DIODE
+D3 6 11 DIODE
+R14 0 20 1
+GI11 0 20 VIN+ 0 1
+V13 V85 22 dc 1.5
+D10 20 22 DIODE
+V7 21 VNEG4 dc 1.5
+D9 21 20 DIODE
+R13 0 6 1
+GI10 0 6 VIN- 0 1
+V4 19 VNEG4 dc 1.5
+D8 19 6 DIODE
+V2 V85 17 dc 1.5
+D7 6 17 DIODE
+EV8 Vsl+in 0 20 0 1
+EV6 Vsl-in 0 6 0 1
+Vos 3 Vsl-in dc 0.0018
+R7 Vo1 0 1000000000
+R4 1 5 1484000
+R3 Vsl+out 1 75000
+R2 33 Vo1 1500000
+Rcm 3 18 75000.55
+GI1 0 Vo1 1 33 1
+
+** Spectral Noise
+
+V11 15 0 dc 0
+Rn 16 15 0.0166 
+Vn 16 0 dc 0
+Hn 32 Vo1 Vn 932
+
+** Clamps
+
+V10 0 30 dc 100
+D20 30 14 DIODE
+V19 0 24 dc -100
+D11 14 24 DIODE
+V5 VS 13 dc 0.89
+D1 VOUT 13 DIODE
+V1 23 GND dc 0.845
+D2 23 VOUT DIODE
+
+** Gain and Slew Rate
+
+Rg2 VOUT 0 454.5
+Cg2 VOUT 0 3e-010
+GIg2 0 VOUT 14 0 0.0022
+GIsl 0 31 VALUE={LIMIT(1*V(32,31),0.048,-0.048)}
+Cg1 0 14 4.64e-007
+Rsl 31 0 1000000000  
+Rg1 0 14 1000000
+GIg1 0 14 31 VOUT 1
+Csl 31 0 1.5e-008
+
+** Power Supplies
+
+EV20 REF2x 0 REF2 0 1
+EV18 REF1x 0 REF1 0 1
+V16 0 VNEG4 dc 4
+V15 V85 0 dc 67
+I4 VS GND dc 0.002
+
+** Common-Mode Step Response
+
+R1 Vsl+out 0 1000000000  
+C1 Vsl+out 0 1e-012
+GI2 0 Vsl+out VALUE={LIMIT(1*V(Vsl+in,Vsl+out),0.00065,-0.00065)}
+
+.model DIODE D(Is=1E-14)
+
+.ENDS AD8210
+
+

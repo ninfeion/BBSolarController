@@ -61,15 +61,15 @@ Notes=
 LoadFile 0 "" 
 SaveFile 0 "" 
 @End Analysis
-@Analysis: 5 0
+@Analysis: 5 1
 +0 2
 +0 "" 
 +1 "BAT" 
 +2 "" 
 +3 "" 
-+4 "8" 
-+5 "12" 
-+6 "1" 
++4 "-10" 
++5 "10" 
++6 "2" 
 +7 "" 
 @End Analysis
 @Analysis: 6 0

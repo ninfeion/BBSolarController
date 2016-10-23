@@ -1,0 +1,8 @@
+STATUS: PSpice Schematics to Capture translator (17.2.0.d001)
+STATUS:  
+STATUS: Translator started at Sunday, October 16, 2016 23:42:16
+STATUS: C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\sch2cap -f "C:\Users\Ninfeion\Downloads\AD8210.lib" -o "C:\Ninfeion_Git\BBSolarController\AD8210.olb" -i C:\Cadence\SPB_Data\.\cdssetup\OrCAD_PSpice/17.2.0/PSpice.ini
+INFO(ORSCH-1029): Using existing library 'C:\Cadence\Cadence_SPB_17.2-2016\tools\Capture\Library\PSpice\modeled.etc'.
+INFO(ORSCH-1031): Created new library 'C:\Ninfeion_Git\BBSolarController\AD8210.olb'.
+STATUS: Translator stopped at Sunday, October 16, 2016 23:42:17
+STATUS: 0 Error messages, 0 Warning messages

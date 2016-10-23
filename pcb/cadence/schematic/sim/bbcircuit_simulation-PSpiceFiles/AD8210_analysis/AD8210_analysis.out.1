@@ -1,0 +1,46 @@
+
+**** 10/16/16 23:53:51 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "AD8210_analysis-AD8210_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-PS
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AD8210_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\AD8210_analysis.net" 
+
+
+
+**** INCLUDING AD8210_analysis.net ****
+* source BBCIRCUIT_SIMULATION
+R_R2         N00569 0  1000k TC=0,0 
+X_U1         0 N00087 N00087 N00569 N00105 N00105 N00302 AD8210 
+R_R1         N00302 0  0.01 TC=0,0 
+I_I1         0 N00302 DC 0Adc AC 0Aac
++SIN 10 5 100 0 0 0
+V_V1         N00105 N00087 5Vdc
+
+**** RESUMING AD8210_analysis.cir ****
+.END
+
+ERROR(ORPSIM-15108): Subcircuit AD8210 used by X_U1 is undefined
+

@@ -60,6 +60,11 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
     (LM358/ON
       (FullPartName "LM358/ON.Normal")
       (LibraryName
@@ -148,14 +153,14 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -4 -23 0 200 0 277"))
+        (Placement "44 0 1 -1 -1 -4 -23 0 200 0 277"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 66 930 66 334")
-        (Scroll "409 740")
-        (Zoom "144")
+        (Placement "44 0 1 -1 -1 -4 -23 110 1224 110 492")
+        (Scroll "-290 0")
+        (Zoom "51")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\DEMO_3\BB_BUCK.DSN")

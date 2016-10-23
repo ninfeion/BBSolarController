@@ -8,7 +8,7 @@ R_R2         N20743 N20499  0.1 TC=0,0
 L_L2         N20425 OUT  5mH  
 V_V1         N20475 0 70Vdc
 V_V3         0 VEE 0Vdc
-V_V4         VCC 0 6Vdc
+V_V4         N209910 0 6Vdc
 R_R1         0 N20499  2 TC=0,0 
 X_U4B         N22240 N20929 VCC VEE AD_I- LM358/ON
 M_M1         N20475 N20593 N20425 N20425 IRF150
@@ -28,5 +28,7 @@ R_R15         AD_I+ N20921  10K TC=0,0
 R_R16         AD_I- N20929  10K TC=0,0 
 R_R17         N20499 N22240  100K TC=0,0 
 V_V8         N20743 0  AC 0
-+SIN 4 4 100000 0 0 0
++SIN 10 10 1000 0 0 0
+V_V9         VCC N209910  AC 0
++SIN 0 1 10000 0 0 0
 .PARAM  duty=1us

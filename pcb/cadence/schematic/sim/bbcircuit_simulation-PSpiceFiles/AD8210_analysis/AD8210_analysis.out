@@ -1,0 +1,169 @@
+
+**** 10/17/16 22:00:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "AD8210_analysis-AD8210_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-ps
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AD8210_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Ninfeion_Git\BBSolarController\AD8210_PSPICE_LIB\AD8210.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\AD8210_analysis.net" 
+
+
+
+**** INCLUDING AD8210_analysis.net ****
+* source BBCIRCUIT_SIMULATION
+R_R2         N00569 0  1000k TC=0,0 
+X_U1         N00520 0 N02223 N00569 N00105 N00105 N00302 AD8210 
+R_R1         N00302 N00520  0.01 TC=0,0 
+V_V1         N00105 0 5Vdc
+R_RLOAD         N00520 N00333  {LOAD} TC=0,0 
+R_R4         N00302 N00520  0.01 TC=0,0 
+V_V3         N02223 0 0
+I_I1         N00302 N00333 DC 0Adc AC 0Aac
++SIN 0 5 1000 0 0 0
+.PARAM  load=2 bat=24
+
+**** RESUMING AD8210_analysis.cir ****
+.END
+
+**** 10/17/16 22:00:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "AD8210_analysis-AD8210_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-ps
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.DIODE      
+          IS   10.000000E-15 
+
+
+**** 10/17/16 22:00:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "AD8210_analysis-AD8210_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-ps
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00105)    5.0000 (N00302)    4.5253 (N00333)    4.5253 (N00520)    4.5253     
+
+(N00569)    2.4640 (N02223)    0.0000 (X_U1.1)    4.4289 (X_U1.2)    1.0877     
+
+(X_U1.3)    4.5271 (X_U1.5)    2.5206 (X_U1.6)    4.5253 (X_U1.7)    4.5258     
+
+(X_U1.8)    4.5253 (X_U1.9)    4.5253 (X_U1.10)    4.5253                       
+
+(X_U1.11)    4.5253                   (X_U1.12)    4.5253                       
+
+(X_U1.13)    4.1100                   (X_U1.14)    2.4654                       
+
+(X_U1.15)    0.0000                   (X_U1.16)    0.0000                       
+
+(X_U1.17)   65.5000                   (X_U1.18)    4.4289                       
+
+(X_U1.19)   -2.5000                   (X_U1.20)    4.5253                       
+
+(X_U1.21)   -2.5000                   (X_U1.22)   65.5000                       
+
+(X_U1.23)     .8450                   (X_U1.24)  100.0000                       
+
+(X_U1.25)    4.5253                   (X_U1.26)    4.5253                       
+
+(X_U1.27)    4.5253                   (X_U1.28)    4.5253                       
+
+(X_U1.29)    4.5253                   (X_U1.30) -100.0000                       
+
+(X_U1.31)    2.4640                   (X_U1.32)    2.4640                       
+
+(X_U1.33)    4.4289                   (X_U1.34)    4.5261                       
+
+(X_U1.36)   -2.3500                   (X_U1.37)    1.0877                       
+
+(X_U1.38)   -2.3500                   (X_U1.V85)   67.0000                      
+
+(X_U1.Vo1)    2.4640                  (X_U1.REF1x)    5.0000                    
+
+(X_U1.REF2x)    0.0000                (X_U1.VNEG4)   -4.0000                    
+
+(X_U1.Vsl+in)    4.5253               (X_U1.Vsl-in)    4.5253                   
+
+(X_U1.Vsl+out)    4.5253              
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.078E-03
+    V_V3         7.877E-05
+    X_U1.V14    -3.448E-12
+    X_U1.V12    -3.448E-12
+    X_U1.V13     6.098E-11
+    X_U1.V7      7.035E-12
+    X_U1.V4      7.035E-12
+    X_U1.V2      6.098E-11
+    X_U1.Vos    -1.310E-06
+    X_U1.V11     0.000E+00
+    X_U1.Vn      0.000E+00
+    X_U1.V10    -1.025E-10
+    X_U1.V19     9.754E-11
+    X_U1.V5      1.656E-12
+    X_U1.V1      1.629E-12
+    X_U1.V16    -1.407E-11
+    X_U1.V15    -1.220E-10
+
+    TOTAL POWER DISSIPATION   1.04E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/17/16 22:00:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "AD8210_analysis-AD8210_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation-ps
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

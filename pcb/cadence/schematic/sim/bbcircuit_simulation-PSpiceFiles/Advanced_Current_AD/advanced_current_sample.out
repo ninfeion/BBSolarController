@@ -1,5 +1,5 @@
-
-**** 10/16/16 20:51:05 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
 
@@ -20,10 +20,12 @@
 * Local Libraries :
 .LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
 * From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Ninfeion_Git\BBSolarController\AD8210_PSPICE_LIB\AD8210.lib" 
 .lib "nom.lib" 
 
 *Analysis directives: 
 .TRAN  0 1000ms 0 
+.STEP LIN PARAM BAT -10 10 2 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Advanced_Current_AD.net" 
@@ -50,7 +52,7 @@ Q_Q7         N00284 N00523 N00513 Q2N1893
 Q_Q2         N00284 N00318 N00240 Q2SA1213/ZTX 
 R_R9         N00334 N00318  2k TC=0,0 
 V_V4         N09140 N00219 0Vdc
-V_V7         N00240 0 0Vdc
+V_V7         N00240 0 {BAT}
 R_R10         N11648 N11674  0.01 TC=0,0 
 R_load1         0 N11674  {LOAD} TC=0,0 
 V_V9         N00284 N00318 0Vdc
@@ -72,7 +74,7 @@ V_V11         0 VEE_AMP 0Vdc
 R_R29         VCC_AMP N16698  47k TC=0,0 
 R_R33         N15673 0  25k TC=0,0 
 I_I1         0 N11648 DC 0Adc AC 0Aac
-+SIN 3 2 50 0 0 0
++SIN 0 0 50 0 0 0
 Q_Q21         N31643 N33651 N36381 Q2SA1213/ZTX 
 Q_Q22         N31628 N33651 N36457 Q2SA1213/ZTX 
 Q_Q23         N33651 N33651 VCC_AMP Q2SA1213/ZTX 
@@ -84,12 +86,13 @@ R_R41         N39284 N15673  470 TC=0,0
 R_R42         N39254 N15892  470 TC=0,0 
 R_R43         N39551 N39254  47000 TC=0,0 
 R_R44         0 N39284  47000 TC=0,0 
+R_R45         N00240 N00244  0.01 TC=0,0 
 .PARAM  load=2 bat=24
 
 **** RESUMING advanced_current_sample.cir ****
 .END
 
-**** 10/16/16 20:51:05 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
 
@@ -113,7 +116,7 @@ R_R44         0 N39284  47000 TC=0,0
          CJO   10.000000E-12 
 
 
-**** 10/16/16 20:51:05 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
 
@@ -193,7 +196,7 @@ R_R44         0 N39284  47000 TC=0,0
            D     .52         
 
 
-**** 10/16/16 20:51:05 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
 
@@ -234,12 +237,14 @@ R_R44         0 N39284  47000 TC=0,0
         IOFF   -1.000000E-06 
 
 
-**** 10/16/16 20:51:05 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =  -10    
 
 
 ******************************************************************************
@@ -249,37 +254,37 @@ R_R44         0 N39284  47000 TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00219) 3.852E-12 (N00231) 2.066E-12 (N00240)    0.0000 (N00244)-563.3E-27     
+(N00219)    -.9501 (N00231)    -.9351 (N00240)  -10.0000 (N00244)   -9.9751     
 
-(N00284)-3.905E-12 (N00318)-3.905E-12 (N00334)-3.905E-12 (N00389) 72.82E-21     
+(N00284)    -.9544 (N00318)    -.9544 (N00334)    -.9544 (N00389)-19.14E-09     
 
-(N00393) 101.0E-21 (N00397) 20.43E-21 (N00513)-17.30E-21 (N00523) 3.379E-18     
+(N00393)-17.70E-09 (N00397)-8.049E-09 (N00513)    -.1777 (N00523)    -.7982     
 
-(N09140) 3.852E-12 (N11648)    6.0298 (N11674)    5.9998 (N15592)     .6240     
+(N09140)    -.9501 (N11648) 849.6E-09 (N11674) 845.4E-09 (N15592)     .0207     
 
-(N15615)     .6240 (N15673)     .0385 (N15892)     .0323 (N16698)    4.0990     
+(N15615)     .0215 (N15673)     .0070 (N15892)     .0078 (N16698)    4.0990     
 
-(N16806)    3.6536 (N16810)    3.6437 (N31628)     .6585 (N31643)     .6523     
+(N16806)    3.6536 (N16810)    3.6437 (N31628)     .6161 (N31643)     .6169     
 
-(N33651)    4.4663 (N36381)    4.9264 (N36457)    4.9264 (N39254)     .0388     
+(N33651)    4.4663 (N36381)    4.9263 (N36457)    4.9263 (N39254)     .0085     
 
-(N39284)     .0382 (N39551)     .6815 (VCC_AMP)    5.0000                       
+(N39284)     .0070 (N39551)     .0693 (VCC_AMP)    5.0000                       
 
-(VEE_AMP)    0.0000                   (X_U1A.x_lm358.6) 342.6E-06               
+(VEE_AMP)    0.0000                   (X_U1A.x_lm358.6)     .0169               
 
-(X_U1A.x_lm358.7)     .6822           (X_U1A.x_lm358.8)     .6822               
+(X_U1A.x_lm358.7)    -.1046           (X_U1A.x_lm358.8)    -.1046               
 
-(X_U1A.x_lm358.9)    0.0000           (X_U1A.x_lm358.a)    5.0000               
+(X_U1A.x_lm358.9)    0.0000           (X_U1A.x_lm358.a)     .0035               
 
-(X_U1A.x_lm358.b)-13.68E-06           (X_U1A.x_lm358.10)     .6466              
+(X_U1A.x_lm358.b)     .0035           (X_U1A.x_lm358.10)     .6159              
 
-(X_U1A.x_lm358.11)     .0399          (X_U1A.x_lm358.12)     .0405              
+(X_U1A.x_lm358.11)     .0394          (X_U1A.x_lm358.12)     .0409              
 
-(X_U1A.x_lm358.13)     .6327          (X_U1A.x_lm358.14)     .6325              
+(X_U1A.x_lm358.13)     .6021          (X_U1A.x_lm358.14)     .6016              
 
 (X_U1A.x_lm358.53)    3.5000          (X_U1A.x_lm358.54)     .8220              
 
-(X_U1A.x_lm358.90)     .0137          (X_U1A.x_lm358.91)   40.0000              
+(X_U1A.x_lm358.90)   -3.4786          (X_U1A.x_lm358.91)   40.0000              
 
 (X_U1A.x_lm358.92)  -40.0000          (X_U1A.x_lm358.99)    2.5000          
 
@@ -289,35 +294,757 @@ R_R44         0 N39284  47000 TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V4        -1.006E-22
-    V_V7        -9.654E-24
-    V_V9        -4.634E-24
-    V_V10       -8.652E-04
-    V_V11       -5.812E-04
-    X_U1A.x_lm358.vb   3.426E-09
-    X_U1A.x_lm358.vc   2.819E-12
-    X_U1A.x_lm358.ve  -2.330E-13
-    X_U1A.x_lm358.vlim   1.368E-05
-    X_U1A.x_lm358.vlp  -3.999E-11
-    X_U1A.x_lm358.vln  -4.002E-11
+    V_V4         1.663E-12
+    V_V7         4.988E+00
+    V_V9        -9.770E-14
+    V_V10       -8.515E-04
+    V_V11       -5.799E-04
+    X_U1A.x_lm358.vb   1.691E-07
+    X_U1A.x_lm358.vc   3.431E-12
+    X_U1A.x_lm358.ve  -3.480E-03
+    X_U1A.x_lm358.vlim  -3.479E-03
+    X_U1A.x_lm358.vlp  -4.348E-11
+    X_U1A.x_lm358.vln  -3.653E-11
 
-    TOTAL POWER DISSIPATION   4.33E-03  WATTS
+    TOTAL POWER DISSIPATION   4.99E+01  WATTS
 
-
-
-          JOB CONCLUDED
 
-**** 10/16/16 20:51:05 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
 
 
- ****     JOB STATISTICS SUMMARY
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =   -8     
 
 
 ******************************************************************************
 
 
 
-  Total job time (using Solver 1)   =         .08
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00219)    -.8924 (N00231)    -.8782 (N00240)   -8.0000 (N00244)   -7.9801     
+
+(N00284)    -.8976 (N00318)    -.8976 (N00334)    -.8976 (N00389)-18.01E-09     
+
+(N00393)-16.66E-09 (N00397)-6.340E-09 (N00513)    -.1402 (N00523)    -.7545     
+
+(N09140)    -.8924 (N11648) 849.6E-09 (N11674) 845.4E-09 (N15592)     .0207     
+
+(N15615)     .0215 (N15673)     .0070 (N15892)     .0078 (N16698)    4.0990     
+
+(N16806)    3.6536 (N16810)    3.6437 (N31628)     .6161 (N31643)     .6169     
+
+(N33651)    4.4663 (N36381)    4.9263 (N36457)    4.9263 (N39254)     .0085     
+
+(N39284)     .0070 (N39551)     .0693 (VCC_AMP)    5.0000                       
+
+(VEE_AMP)    0.0000                   (X_U1A.x_lm358.6)     .0169               
+
+(X_U1A.x_lm358.7)    -.1046           (X_U1A.x_lm358.8)    -.1046               
+
+(X_U1A.x_lm358.9)    0.0000           (X_U1A.x_lm358.a)     .0035               
+
+(X_U1A.x_lm358.b)     .0035           (X_U1A.x_lm358.10)     .6159              
+
+(X_U1A.x_lm358.11)     .0394          (X_U1A.x_lm358.12)     .0409              
+
+(X_U1A.x_lm358.13)     .6021          (X_U1A.x_lm358.14)     .6016              
+
+(X_U1A.x_lm358.53)    3.5000          (X_U1A.x_lm358.54)     .8220              
+
+(X_U1A.x_lm358.90)   -3.4786          (X_U1A.x_lm358.91)   40.0000              
+
+(X_U1A.x_lm358.92)  -40.0000          (X_U1A.x_lm358.99)    2.5000          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         1.563E-12
+    V_V7         3.990E+00
+    V_V9        -1.426E-13
+    V_V10       -8.515E-04
+    V_V11       -5.799E-04
+    X_U1A.x_lm358.vb   1.691E-07
+    X_U1A.x_lm358.vc   3.431E-12
+    X_U1A.x_lm358.ve  -3.480E-03
+    X_U1A.x_lm358.vlim  -3.479E-03
+    X_U1A.x_lm358.vlp  -4.348E-11
+    X_U1A.x_lm358.vln  -3.653E-11
+
+    TOTAL POWER DISSIPATION   3.19E+01  WATTS
+
+
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =   -6     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00219)    -.8286 (N00231)    -.8154 (N00240)   -6.0000 (N00244)   -5.9850     
+
+(N00284)    -.8350 (N00318)    -.8350 (N00334)    -.8350 (N00389)-16.76E-09     
+
+(N00393)-15.50E-09 (N00397)-5.026E-09 (N00513)    -.1026 (N00523)    -.7088     
+
+(N09140)    -.8286 (N11648) 849.6E-09 (N11674) 845.4E-09 (N15592)     .0207     
+
+(N15615)     .0215 (N15673)     .0070 (N15892)     .0078 (N16698)    4.0990     
+
+(N16806)    3.6536 (N16810)    3.6437 (N31628)     .6161 (N31643)     .6169     
+
+(N33651)    4.4663 (N36381)    4.9263 (N36457)    4.9263 (N39254)     .0085     
+
+(N39284)     .0070 (N39551)     .0693 (VCC_AMP)    5.0000                       
+
+(VEE_AMP)    0.0000                   (X_U1A.x_lm358.6)     .0169               
+
+(X_U1A.x_lm358.7)    -.1046           (X_U1A.x_lm358.8)    -.1046               
+
+(X_U1A.x_lm358.9)    0.0000           (X_U1A.x_lm358.a)     .0035               
+
+(X_U1A.x_lm358.b)     .0035           (X_U1A.x_lm358.10)     .6159              
+
+(X_U1A.x_lm358.11)     .0394          (X_U1A.x_lm358.12)     .0409              
+
+(X_U1A.x_lm358.13)     .6021          (X_U1A.x_lm358.14)     .6016              
+
+(X_U1A.x_lm358.53)    3.5000          (X_U1A.x_lm358.54)     .8220              
+
+(X_U1A.x_lm358.90)   -3.4786          (X_U1A.x_lm358.91)   40.0000              
+
+(X_U1A.x_lm358.92)  -40.0000          (X_U1A.x_lm358.99)    2.5000          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         1.435E-12
+    V_V7         2.993E+00
+    V_V9        -2.049E-13
+    V_V10       -8.515E-04
+    V_V11       -5.799E-04
+    X_U1A.x_lm358.vb   1.691E-07
+    X_U1A.x_lm358.vc   3.431E-12
+    X_U1A.x_lm358.ve  -3.480E-03
+    X_U1A.x_lm358.vlim  -3.479E-03
+    X_U1A.x_lm358.vlp  -4.348E-11
+    X_U1A.x_lm358.vln  -3.653E-11
+
+    TOTAL POWER DISSIPATION   1.80E+01  WATTS
+
+
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =   -4     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00219)    -.7528 (N00231)    -.7408 (N00240)   -4.0000 (N00244)   -3.9900     
+
+(N00284)    -.7608 (N00318)    -.7608 (N00334)    -.7608 (N00389)-15.27E-09     
+
+(N00393)-14.13E-09 (N00397)-4.030E-09 (N00513)    -.0651 (N00523)    -.6593     
+
+(N09140)    -.7528 (N11648) 849.6E-09 (N11674) 845.4E-09 (N15592)     .0207     
+
+(N15615)     .0215 (N15673)     .0070 (N15892)     .0078 (N16698)    4.0990     
+
+(N16806)    3.6536 (N16810)    3.6437 (N31628)     .6161 (N31643)     .6169     
+
+(N33651)    4.4663 (N36381)    4.9263 (N36457)    4.9263 (N39254)     .0085     
+
+(N39284)     .0070 (N39551)     .0693 (VCC_AMP)    5.0000                       
+
+(VEE_AMP)    0.0000                   (X_U1A.x_lm358.6)     .0169               
+
+(X_U1A.x_lm358.7)    -.1046           (X_U1A.x_lm358.8)    -.1046               
+
+(X_U1A.x_lm358.9)    0.0000           (X_U1A.x_lm358.a)     .0035               
+
+(X_U1A.x_lm358.b)     .0035           (X_U1A.x_lm358.10)     .6159              
+
+(X_U1A.x_lm358.11)     .0394          (X_U1A.x_lm358.12)     .0409              
+
+(X_U1A.x_lm358.13)     .6021          (X_U1A.x_lm358.14)     .6016              
+
+(X_U1A.x_lm358.53)    3.5000          (X_U1A.x_lm358.54)     .8220              
+
+(X_U1A.x_lm358.90)   -3.4786          (X_U1A.x_lm358.91)   40.0000              
+
+(X_U1A.x_lm358.92)  -40.0000          (X_U1A.x_lm358.99)    2.5000          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         1.286E-12
+    V_V7         1.995E+00
+    V_V9        -2.777E-13
+    V_V10       -8.515E-04
+    V_V11       -5.799E-04
+    X_U1A.x_lm358.vb   1.691E-07
+    X_U1A.x_lm358.vc   3.431E-12
+    X_U1A.x_lm358.ve  -3.480E-03
+    X_U1A.x_lm358.vlim  -3.479E-03
+    X_U1A.x_lm358.vlp  -4.348E-11
+    X_U1A.x_lm358.vln  -3.653E-11
+
+    TOTAL POWER DISSIPATION   7.99E+00  WATTS
+
+
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =   -2     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00219)    -.6417 (N00231)    -.6315 (N00240)   -2.0000 (N00244)   -1.9950     
+
+(N00284)    -.6515 (N00318)    -.6515 (N00334)    -.6515 (N00389)-13.10E-09     
+
+(N00393)-12.11E-09 (N00397)-3.197E-09 (N00513)    -.0276 (N00523)    -.5991     
+
+(N09140)    -.6417 (N11648) 849.6E-09 (N11674) 845.4E-09 (N15592)     .0207     
+
+(N15615)     .0215 (N15673)     .0070 (N15892)     .0078 (N16698)    4.0990     
+
+(N16806)    3.6536 (N16810)    3.6437 (N31628)     .6161 (N31643)     .6169     
+
+(N33651)    4.4663 (N36381)    4.9263 (N36457)    4.9263 (N39254)     .0085     
+
+(N39284)     .0070 (N39551)     .0693 (VCC_AMP)    5.0000                       
+
+(VEE_AMP)    0.0000                   (X_U1A.x_lm358.6)     .0169               
+
+(X_U1A.x_lm358.7)    -.1046           (X_U1A.x_lm358.8)    -.1046               
+
+(X_U1A.x_lm358.9)    0.0000           (X_U1A.x_lm358.a)     .0035               
+
+(X_U1A.x_lm358.b)     .0035           (X_U1A.x_lm358.10)     .6159              
+
+(X_U1A.x_lm358.11)     .0394          (X_U1A.x_lm358.12)     .0409              
+
+(X_U1A.x_lm358.13)     .6021          (X_U1A.x_lm358.14)     .6016              
+
+(X_U1A.x_lm358.53)    3.5000          (X_U1A.x_lm358.54)     .8220              
+
+(X_U1A.x_lm358.90)   -3.4786          (X_U1A.x_lm358.91)   40.0000              
+
+(X_U1A.x_lm358.92)  -40.0000          (X_U1A.x_lm358.99)    2.5000          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         1.076E-12
+    V_V7         9.975E-01
+    V_V9        -3.644E-13
+    V_V10       -8.515E-04
+    V_V11       -5.799E-04
+    X_U1A.x_lm358.vb   1.691E-07
+    X_U1A.x_lm358.vc   3.431E-12
+    X_U1A.x_lm358.ve  -3.480E-03
+    X_U1A.x_lm358.vlim  -3.479E-03
+    X_U1A.x_lm358.vlp  -4.348E-11
+    X_U1A.x_lm358.vln  -3.653E-11
+
+    TOTAL POWER DISSIPATION   2.00E+00  WATTS
+
+
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =    0     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00219)-2.093E-12 (N00231)-1.861E-12 (N00240)    0.0000 (N00244) 73.53E-27     
+
+(N00284)-2.408E-12 (N00318)-2.408E-12 (N00334)-2.408E-12 (N00389)-277.5E-21     
+
+(N00393)-64.16E-21 (N00397)-9.802E-21 (N00513) 58.91E-21 (N00523)-2.162E-18     
+
+(N09140)-2.093E-12 (N11648) 849.6E-09 (N11674) 845.4E-09 (N15592)     .0207     
+
+(N15615)     .0215 (N15673)     .0070 (N15892)     .0078 (N16698)    4.0990     
+
+(N16806)    3.6536 (N16810)    3.6437 (N31628)     .6161 (N31643)     .6169     
+
+(N33651)    4.4663 (N36381)    4.9263 (N36457)    4.9263 (N39254)     .0085     
+
+(N39284)     .0070 (N39551)     .0693 (VCC_AMP)    5.0000                       
+
+(VEE_AMP)    0.0000                   (X_U1A.x_lm358.6)     .0169               
+
+(X_U1A.x_lm358.7)    -.1046           (X_U1A.x_lm358.8)    -.1046               
+
+(X_U1A.x_lm358.9)    0.0000           (X_U1A.x_lm358.a)     .0035               
+
+(X_U1A.x_lm358.b)     .0035           (X_U1A.x_lm358.10)     .6159              
+
+(X_U1A.x_lm358.11)     .0394          (X_U1A.x_lm358.12)     .0409              
+
+(X_U1A.x_lm358.13)     .6021          (X_U1A.x_lm358.14)     .6016              
+
+(X_U1A.x_lm358.53)    3.5000          (X_U1A.x_lm358.54)     .8220              
+
+(X_U1A.x_lm358.90)   -3.4786          (X_U1A.x_lm358.91)   40.0000              
+
+(X_U1A.x_lm358.92)  -40.0000          (X_U1A.x_lm358.99)    2.5000          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         1.044E-23
+    V_V7         6.816E-24
+    V_V9        -9.607E-24
+    V_V10       -8.515E-04
+    V_V11       -5.799E-04
+    X_U1A.x_lm358.vb   1.691E-07
+    X_U1A.x_lm358.vc   3.431E-12
+    X_U1A.x_lm358.ve  -3.480E-03
+    X_U1A.x_lm358.vlim  -3.479E-03
+    X_U1A.x_lm358.vlp  -4.348E-11
+    X_U1A.x_lm358.vln  -3.653E-11
+
+    TOTAL POWER DISSIPATION   7.12E-03  WATTS
+
+
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =    2     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00219)    1.0587 (N00231)     .6014 (N00240)    2.0000 (N00244)    1.9950     
+
+(N00284)    1.4847 (N00318)    1.4847 (N00334)    1.4799 (N00389)     .0579     
+
+(N00393)     .0563 (N00397)     .5439 (N00513)     .5439 (N00523)    1.1832     
+
+(N09140)    1.0587 (N11648) 849.6E-09 (N11674) 845.4E-09 (N15592)     .0207     
+
+(N15615)     .0215 (N15673)     .0070 (N15892)     .0078 (N16698)    4.0990     
+
+(N16806)    3.6536 (N16810)    3.6437 (N31628)     .6161 (N31643)     .6169     
+
+(N33651)    4.4663 (N36381)    4.9263 (N36457)    4.9263 (N39254)     .0085     
+
+(N39284)     .0070 (N39551)     .0693 (VCC_AMP)    5.0000                       
+
+(VEE_AMP)    0.0000                   (X_U1A.x_lm358.6)     .0169               
+
+(X_U1A.x_lm358.7)    -.1046           (X_U1A.x_lm358.8)    -.1046               
+
+(X_U1A.x_lm358.9)    0.0000           (X_U1A.x_lm358.a)     .0035               
+
+(X_U1A.x_lm358.b)     .0035           (X_U1A.x_lm358.10)     .6159              
+
+(X_U1A.x_lm358.11)     .0394          (X_U1A.x_lm358.12)     .0409              
+
+(X_U1A.x_lm358.13)     .6021          (X_U1A.x_lm358.14)     .6016              
+
+(X_U1A.x_lm358.53)    3.5000          (X_U1A.x_lm358.54)     .8220              
+
+(X_U1A.x_lm358.90)   -3.4786          (X_U1A.x_lm358.91)   40.0000              
+
+(X_U1A.x_lm358.92)  -40.0000          (X_U1A.x_lm358.99)    2.5000          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -2.949E-06
+    V_V7        -9.977E-01
+    V_V9         1.704E-06
+    V_V10       -8.515E-04
+    V_V11       -5.799E-04
+    X_U1A.x_lm358.vb   1.691E-07
+    X_U1A.x_lm358.vc   3.431E-12
+    X_U1A.x_lm358.ve  -3.480E-03
+    X_U1A.x_lm358.vlim  -3.479E-03
+    X_U1A.x_lm358.vlp  -4.348E-11
+    X_U1A.x_lm358.vln  -3.653E-11
+
+    TOTAL POWER DISSIPATION   2.00E+00  WATTS
+
+
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =    4     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00219)    3.0372 (N00231)     .6649 (N00240)    4.0000 (N00244)    3.9900     
+
+(N00284)    3.4817 (N00318)    3.4817 (N00334)    3.4720 (N00389)     .1056     
+
+(N00393)     .1041 (N00397)     .5968 (N00513)     .5968 (N00523)    1.2381     
+
+(N09140)    3.0372 (N11648) 849.6E-09 (N11674) 845.4E-09 (N15592)     .0207     
+
+(N15615)     .0215 (N15673)     .0070 (N15892)     .0078 (N16698)    4.0990     
+
+(N16806)    3.6536 (N16810)    3.6437 (N31628)     .6161 (N31643)     .6169     
+
+(N33651)    4.4663 (N36381)    4.9263 (N36457)    4.9263 (N39254)     .0085     
+
+(N39284)     .0070 (N39551)     .0693 (VCC_AMP)    5.0000                       
+
+(VEE_AMP)    0.0000                   (X_U1A.x_lm358.6)     .0169               
+
+(X_U1A.x_lm358.7)    -.1046           (X_U1A.x_lm358.8)    -.1046               
+
+(X_U1A.x_lm358.9)    0.0000           (X_U1A.x_lm358.a)     .0035               
+
+(X_U1A.x_lm358.b)     .0035           (X_U1A.x_lm358.10)     .6159              
+
+(X_U1A.x_lm358.11)     .0394          (X_U1A.x_lm358.12)     .0409              
+
+(X_U1A.x_lm358.13)     .6021          (X_U1A.x_lm358.14)     .6016              
+
+(X_U1A.x_lm358.53)    3.5000          (X_U1A.x_lm358.54)     .8220              
+
+(X_U1A.x_lm358.90)   -3.4786          (X_U1A.x_lm358.91)   40.0000              
+
+(X_U1A.x_lm358.92)  -40.0000          (X_U1A.x_lm358.99)    2.5000          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -5.500E-06
+    V_V7        -1.995E+00
+    V_V9         4.062E-06
+    V_V10       -8.515E-04
+    V_V11       -5.799E-04
+    X_U1A.x_lm358.vb   1.691E-07
+    X_U1A.x_lm358.vc   3.431E-12
+    X_U1A.x_lm358.ve  -3.480E-03
+    X_U1A.x_lm358.vlim  -3.479E-03
+    X_U1A.x_lm358.vlp  -4.348E-11
+    X_U1A.x_lm358.vln  -3.653E-11
+
+    TOTAL POWER DISSIPATION   7.99E+00  WATTS
+
+
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =    6     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00219)    5.0232 (N00231)     .7221 (N00240)    6.0000 (N00244)    5.9850     
+
+(N00284)    5.4804 (N00318)    5.4804 (N00334)    5.4658 (N00389)     .1531     
+
+(N00393)     .1519 (N00397)     .6135 (N00513)     .6134 (N00523)    1.2551     
+
+(N09140)    5.0232 (N11648) 849.6E-09 (N11674) 845.4E-09 (N15592)     .0207     
+
+(N15615)     .0215 (N15673)     .0070 (N15892)     .0078 (N16698)    4.0990     
+
+(N16806)    3.6536 (N16810)    3.6437 (N31628)     .6161 (N31643)     .6169     
+
+(N33651)    4.4663 (N36381)    4.9263 (N36457)    4.9263 (N39254)     .0085     
+
+(N39284)     .0070 (N39551)     .0693 (VCC_AMP)    5.0000                       
+
+(VEE_AMP)    0.0000                   (X_U1A.x_lm358.6)     .0169               
+
+(X_U1A.x_lm358.7)    -.1046           (X_U1A.x_lm358.8)    -.1046               
+
+(X_U1A.x_lm358.9)    0.0000           (X_U1A.x_lm358.a)     .0035               
+
+(X_U1A.x_lm358.b)     .0035           (X_U1A.x_lm358.10)     .6159              
+
+(X_U1A.x_lm358.11)     .0394          (X_U1A.x_lm358.12)     .0409              
+
+(X_U1A.x_lm358.13)     .6021          (X_U1A.x_lm358.14)     .6016              
+
+(X_U1A.x_lm358.53)    3.5000          (X_U1A.x_lm358.54)     .8220              
+
+(X_U1A.x_lm358.90)   -3.4786          (X_U1A.x_lm358.91)   40.0000              
+
+(X_U1A.x_lm358.92)  -40.0000          (X_U1A.x_lm358.99)    2.5000          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -8.065E-06
+    V_V7        -2.993E+00
+    V_V9         6.483E-06
+    V_V10       -8.515E-04
+    V_V11       -5.799E-04
+    X_U1A.x_lm358.vb   1.691E-07
+    X_U1A.x_lm358.vc   3.431E-12
+    X_U1A.x_lm358.ve  -3.480E-03
+    X_U1A.x_lm358.vlim  -3.479E-03
+    X_U1A.x_lm358.vlp  -4.348E-11
+    X_U1A.x_lm358.vln  -3.653E-11
+
+    TOTAL POWER DISSIPATION   1.80E+01  WATTS
+
+
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =    8     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00219)    7.0120 (N00231)     .7768 (N00240)    8.0000 (N00244)    7.9800     
+
+(N00284)    7.4795 (N00318)    7.4795 (N00334)    7.4600 (N00389)     .2008     
+
+(N00393)     .2000 (N00397)     .6237 (N00513)     .6235 (N00523)    1.2652     
+
+(N09140)    7.0120 (N11648) 849.6E-09 (N11674) 845.4E-09 (N15592)     .0207     
+
+(N15615)     .0215 (N15673)     .0070 (N15892)     .0078 (N16698)    4.0990     
+
+(N16806)    3.6536 (N16810)    3.6437 (N31628)     .6161 (N31643)     .6169     
+
+(N33651)    4.4663 (N36381)    4.9263 (N36457)    4.9263 (N39254)     .0085     
+
+(N39284)     .0070 (N39551)     .0693 (VCC_AMP)    5.0000                       
+
+(VEE_AMP)    0.0000                   (X_U1A.x_lm358.6)     .0169               
+
+(X_U1A.x_lm358.7)    -.1046           (X_U1A.x_lm358.8)    -.1046               
+
+(X_U1A.x_lm358.9)    0.0000           (X_U1A.x_lm358.a)     .0035               
+
+(X_U1A.x_lm358.b)     .0035           (X_U1A.x_lm358.10)     .6159              
+
+(X_U1A.x_lm358.11)     .0394          (X_U1A.x_lm358.12)     .0409              
+
+(X_U1A.x_lm358.13)     .6021          (X_U1A.x_lm358.14)     .6016              
+
+(X_U1A.x_lm358.53)    3.5000          (X_U1A.x_lm358.54)     .8220              
+
+(X_U1A.x_lm358.90)   -3.4786          (X_U1A.x_lm358.91)   40.0000              
+
+(X_U1A.x_lm358.92)  -40.0000          (X_U1A.x_lm358.99)    2.5000          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -1.065E-05
+    V_V7        -3.990E+00
+    V_V9         8.920E-06
+    V_V10       -8.515E-04
+    V_V11       -5.799E-04
+    X_U1A.x_lm358.vb   1.691E-07
+    X_U1A.x_lm358.vc   3.431E-12
+    X_U1A.x_lm358.ve  -3.480E-03
+    X_U1A.x_lm358.vlim  -3.479E-03
+    X_U1A.x_lm358.vlp  -4.348E-11
+    X_U1A.x_lm358.vln  -3.653E-11
+
+    TOTAL POWER DISSIPATION   3.19E+01  WATTS
+
+
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM BAT =   10    
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00219)    9.0023 (N00231)     .8303 (N00240)   10.0000 (N00244)    9.9751     
+
+(N00284)    9.4787 (N00318)    9.4787 (N00334)    9.4542 (N00389)     .2487     
+
+(N00393)     .2482 (N00397)     .6310 (N00513)     .6307 (N00523)    1.2723     
+
+(N09140)    9.0023 (N11648) 849.6E-09 (N11674) 845.4E-09 (N15592)     .0207     
+
+(N15615)     .0215 (N15673)     .0070 (N15892)     .0078 (N16698)    4.0990     
+
+(N16806)    3.6536 (N16810)    3.6437 (N31628)     .6161 (N31643)     .6169     
+
+(N33651)    4.4663 (N36381)    4.9263 (N36457)    4.9263 (N39254)     .0085     
+
+(N39284)     .0070 (N39551)     .0693 (VCC_AMP)    5.0000                       
+
+(VEE_AMP)    0.0000                   (X_U1A.x_lm358.6)     .0169               
+
+(X_U1A.x_lm358.7)    -.1046           (X_U1A.x_lm358.8)    -.1046               
+
+(X_U1A.x_lm358.9)    0.0000           (X_U1A.x_lm358.a)     .0035               
+
+(X_U1A.x_lm358.b)     .0035           (X_U1A.x_lm358.10)     .6159              
+
+(X_U1A.x_lm358.11)     .0394          (X_U1A.x_lm358.12)     .0409              
+
+(X_U1A.x_lm358.13)     .6021          (X_U1A.x_lm358.14)     .6016              
+
+(X_U1A.x_lm358.53)    3.5000          (X_U1A.x_lm358.54)     .8220              
+
+(X_U1A.x_lm358.90)   -3.4786          (X_U1A.x_lm358.91)   40.0000              
+
+(X_U1A.x_lm358.92)  -40.0000          (X_U1A.x_lm358.99)    2.5000          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -1.326E-05
+    V_V7        -4.988E+00
+    V_V9         1.137E-05
+    V_V10       -8.515E-04
+    V_V11       -5.799E-04
+    X_U1A.x_lm358.vb   1.691E-07
+    X_U1A.x_lm358.vc   3.431E-12
+    X_U1A.x_lm358.ve  -3.480E-03
+    X_U1A.x_lm358.vlim  -3.479E-03
+    X_U1A.x_lm358.vlp  -4.348E-11
+    X_U1A.x_lm358.vln  -3.653E-11
+
+    TOTAL POWER DISSIPATION   4.99E+01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/17/16 11:57:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Advanced_Current_AD-advanced_current_sample"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM BAT =   10    
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .48
 

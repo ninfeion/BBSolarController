@@ -8,10 +8,12 @@
 * Local Libraries :
 .LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
 * From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Ninfeion_Git\BBSolarController\AD8210_PSPICE_LIB\AD8210.lib" 
 .lib "nom.lib" 
 
 *Analysis directives: 
 .TRAN  0 1000ms 0 
+.STEP LIN PARAM BAT -10 10 2 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Advanced_Current_AD.net" 

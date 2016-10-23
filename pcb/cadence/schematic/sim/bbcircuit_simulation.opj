@@ -68,6 +68,12 @@
       (Type "Report"))
     (File
        ".\bbcircuit_simulation-pspicefiles\voltage_sample_diff_bjt\voltage_sample_diff_bjt.net"
+      (Type "Report"))
+    (File
+       ".\bbcircuit_simulation-pspicefiles\ad8210_analysis\ad8210_analysis.net"
+      (Type "Report"))
+    (File
+       ".\bbcircuit_simulation-pspicefiles\mosfet_driver_highself\mosfet_driver_highself.net"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
@@ -147,8 +153,16 @@
          ".\bbcircuit_simulation-pspicefiles\voltage_sample_diff_bjt\voltage_sample_diff_bjt_type.sim"
         (DisplayName "Voltage_sample_diff_BJT-voltage_sample_diff_bjt_type")
         (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bbcircuit_simulation-pspicefiles\ad8210_analysis\ad8210_analysis.sim"
+        (DisplayName "AD8210_analysis-AD8210_analysis")
+        (Type "PSpice Profile"))
       (ActiveProfile
-         ".\bbcircuit_simulation-pspicefiles\advanced_current_ad\advanced_current_sample.sim"))
+         ".\bbcircuit_simulation-pspicefiles\mosfet_driver_highself\mosfet_highself_driver_analysis.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\bbcircuit_simulation-pspicefiles\mosfet_driver_highself\mosfet_highself_driver_analysis.sim"
+        (DisplayName "MOSFET_DRIVER_HIGHSELF-mosfet_highself_driver_analysis")
+        (Type "PSpice Profile")))
     (Folder "Model Libraries"
       (Sort User)
       (File ".\bbcircuit_simulation-pspicefiles\bbcircuit_simulation.lib"
@@ -161,6 +175,45 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (AD780
+      (FullPartName "AD780.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\AD780_PSPICE_LIB\AD780.OLB")
+      (DeviceIndex "0"))
+    (ISIN
+      (FullPartName "ISIN.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (AD8210
+      (FullPartName "AD8210.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\AD8210_PSPICE_LIB\AD8210.OLB")
+      (DeviceIndex "0"))
     (LM358
       (FullPartName "LM358.Normal")
       (LibraryName
@@ -171,41 +224,12 @@
       (LibraryName
          "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\EBIPOLAR.OLB")
       (DeviceIndex "0"))
-    (ISIN
-      (FullPartName "ISIN.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
-    (VDC
-      (FullPartName "VDC.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
     (VCC_BAR
       (LibraryName
          "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (C
-      (FullPartName "C.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
     (VSIN
       (FullPartName "VSIN.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
-    (PARAM
-      (FullPartName "PARAM.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
-      (DeviceIndex "0"))
-    (0
       (LibraryName
          "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
@@ -273,24 +297,20 @@
       (FullPartName "IRF4905.Normal")
       (LibraryName
          "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
-      (DeviceIndex "0"))
-    (IRF3205
-      (FullPartName "IRF3205.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
-      (DeviceIndex "0"))
-    (IRF1010E
-      (FullPartName "IRF1010E.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
       (DeviceIndex "0")))
   (LastUsedLibraryBrowseDirectory
-     "C:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice")
+     "C:\Ninfeion_Git\BBSolarController\AD780_PSPICE_LIB")
   (GlobalState
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
+         "MOSFET_DRIVER_HIGHSELF")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
+         "AD8210_analysis")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
          "Advanced_Current_AD")
@@ -329,11 +349,23 @@
          "THREE_PHASE_DCDC")
       (Path "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\bbcircuit_simulation.dsn"
-         "Voltage_sample_diff_BJT"))
+         "Voltage_sample_diff_BJT")
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 0 200 0 280"))
-      (Tab 0)))
+        (Placement "44 2 3 -1 -1 -4 -23 0 200 0 280"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 132 952 132 514")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\SIM\BBCIRCUIT_SIMULATION.DSN")
+      (Schematic "MOSFET_DRIVER_HIGHSELF")
+      (Page "PAGE1")))
   (MPSSessionName "Ninfeion"))

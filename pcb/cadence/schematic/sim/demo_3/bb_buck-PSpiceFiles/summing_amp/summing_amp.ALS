@@ -8,7 +8,7 @@ R_R2            R2(1=N20743 2=N20499 ) CN @BB_BUCK.summing_amp(sch_1):INS20649@A
 L_L2            L2(1=N20425 2=OUT ) CN @BB_BUCK.summing_amp(sch_1):INS20749@ANALOG.L.Normal(chips)
 V_V1            V1(+=N20475 -=0 ) CN @BB_BUCK.summing_amp(sch_1):INS20403@SOURCE.VDC.Normal(chips)
 V_V3            V3(+=0 -=VEE ) CN @BB_BUCK.summing_amp(sch_1):INS20959@SOURCE.VDC.Normal(chips)
-V_V4            V4(+=VCC -=0 ) CN @BB_BUCK.summing_amp(sch_1):INS20981@SOURCE.VDC.Normal(chips)
+V_V4            V4(+=N209910 -=0 ) CN @BB_BUCK.summing_amp(sch_1):INS20981@SOURCE.VDC.Normal(chips)
 R_R1            R1(1=0 2=N20499 ) CN @BB_BUCK.summing_amp(sch_1):INS20527@ANALOG.R.Normal(chips)
 X_U4B           U4B(+=N22240 -=N20929 V+=VCC V-=VEE OUT=AD_I- ) CN
 +@BB_BUCK.summing_amp(sch_1):INS21119@ON_AMP.LM358/ON.Normal(chips)
@@ -27,6 +27,7 @@ R_R15           R15(1=AD_I+ 2=N20921 ) CN @BB_BUCK.summing_amp(sch_1):INS23021@A
 R_R16           R16(1=AD_I- 2=N20929 ) CN @BB_BUCK.summing_amp(sch_1):INS23060@ANALOG.R.Normal(chips)
 R_R17           R17(1=N20499 2=N22240 ) CN @BB_BUCK.summing_amp(sch_1):INS25742@ANALOG.R.Normal(chips)
 V_V8            V8(+=N20743 -=0 ) CN @BB_BUCK.summing_amp(sch_1):INS29223@SOURCE.VSIN.Normal(chips)
+V_V9            V9(+=VCC -=N209910 ) CN @BB_BUCK.summing_amp(sch_1):INS36452@SOURCE.VSIN.Normal(chips)
 _    _(1V_REF=1V_REF)
 _    _(AD_I+=AD_I+)
 _    _(AD_I-=AD_I-)

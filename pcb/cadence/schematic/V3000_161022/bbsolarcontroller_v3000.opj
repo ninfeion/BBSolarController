@@ -1,0 +1,161 @@
+(ExpressProject "bbsolarcontroller_v3000"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "..\bbsccomponent.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\bbsolarcontroller_v3000.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    ("TEST POINT"
+      (FullPartName "TEST POINT.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSCCOMPONENT.OLB")
+      (DeviceIndex "0"))
+    (MT48LC16M16A2TG-75
+      (FullPartName "MT48LC16M16A2TG-75.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSCCOMPONENT.OLB")
+      (DeviceIndex "0"))
+    (SOUNDER
+      (FullPartName "SOUNDER.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSCCOMPONENT.OLB")
+      (DeviceIndex "0"))
+    (4_8_SEG
+      (FullPartName "4_8_SEG.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSCCOMPONENT.OLB")
+      (DeviceIndex "0"))
+    (R-PACK
+      (FullPartName "R-PACK.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (1N4744A
+      (FullPartName "1N4744A.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-L
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    ("CAP NP"
+      (FullPartName "CAP NP.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (INDUCTOR
+      (FullPartName "INDUCTOR.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-R
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (IR2110S
+      (FullPartName "IR2110S.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\BBSCCOMPONENT.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Ninfeion_Git\BBSolarController\pcb\cadence\schematic\V3000_161022\bbsolarcontroller_v3000.dsn")
+      (Path "Design Resources"
+         "C:\Ninfeion_Git\BBSolarController\pcb\cadence\schematic\V3000_161022\bbsolarcontroller_v3000.dsn"
+         "Main Circuit")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "C:\Ninfeion_Git\BBSolarController\pcb\cadence\schematic\bbsccomponent.olb"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 0 200 0 355"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 66 886 66 448")
+        (Scroll "0 0")
+        (Zoom "57")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
+      (Schematic "Main Circuit")
+      (Page "chip-power-support"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 88 908 88 470")
+        (Scroll "0 0")
+        (Zoom "67")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
+      (Schematic "Main Circuit")
+      (Page "dc-dc-converter"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 110 930 110 492")
+        (Scroll "0 0")
+        (Zoom "49")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
+      (Schematic "Main Circuit")
+      (Page "adc-part"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 132 952 132 514")
+        (Scroll "0 0")
+        (Zoom "54")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
+      (Schematic "Main Circuit")
+      (Page "arm-core"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 154 974 154 536")
+        (Scroll "0 0")
+        (Zoom "89")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
+      (Schematic "Main Circuit")
+      (Page "mosfet-driver"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -23 176 996 176 558")
+        (Scroll "-38 -2")
+        (Zoom "38")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
+      (Schematic "Main Circuit")
+      (Page "fpga-core"))))

@@ -1106,7 +1106,7 @@
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"0Vdc")
+                    ("value"	"{BAT}")
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
@@ -1846,21 +1846,21 @@
                     ("value"	"0Aac")
                     ("pspice_param"	"AC")
                 )
-                ("BiasValue Power"
-                    ("value"	"-18.09W")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("IOFF"
-                    ("value"	"3")
-                    ("pspice_param"	"IOFF")
-                )
-                ("IAMPL"
-                    ("value"	"2")
-                    ("pspice_param"	"IAMPL")
-                )
                 ("FREQ"
                     ("value"	"50")
                     ("pspice_param"	"FREQ")
+                )
+                ("IAMPL"
+                    ("value"	"0")
+                    ("pspice_param"	"IAMPL")
+                )
+                ("IOFF"
+                    ("value"	"0")
+                    ("pspice_param"	"IOFF")
+                )
+                ("BiasValue Power"
+                    ("value"	"-18.09W")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("PHASE"
                     ("value"	"0")
@@ -2262,6 +2262,59 @@
                 )
                 ("BiasValue Power"
                     ("value"	"30.97nW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("TC2"
+                    ("value"	"0")
+                    ("pspice_param"	"TC2")
+                )
+                ("TC1"
+                    ("value"	"0")
+                    ("pspice_param"	"TC1")
+                )
+                ("POWER"
+                    ("value"	"RMAX")
+                    ("pspice_param"	"POWER")
+                )
+                ("MAX_TEMP"
+                    ("value"	"RTMAX")
+                    ("pspice_param"	"MAX_TEMP")
+                )
+                ("SLOPE"
+                    ("value"	"RSMAX")
+                    ("pspice_param"	"SLOPE")
+                )
+                ("VOLTAGE"
+                    ("value"	"RVMAX")
+                    ("pspice_param"	"VOLTAGE")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+                ("DIST"
+                    ("value"	"FLAT")
+                    ("pspice_param"	"DIST")
+                )
+            )
+            ("smoke_vars"
+                ("POWER"	"0.25")
+                ("SLOPE"	"0.005")
+                ("MAX_TEMP"	"200.0")
+            )
+        )
+        ("R45"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R45")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"0.01")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("TC2"

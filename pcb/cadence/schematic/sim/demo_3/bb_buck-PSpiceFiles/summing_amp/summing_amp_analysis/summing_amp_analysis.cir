@@ -7,10 +7,12 @@
 * Profile Libraries :
 * Local Libraries :
 * From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Ninfeion_Git\BBSolarController\AD780_PSPICE_LIB\ad780.lib" 
+.lib "C:\Ninfeion_Git\BBSolarController\AD8210_PSPICE_LIB\AD8210.lib" 
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 1000us 0 1us 
+.TRAN  0 10ms 0 1us 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\summing_amp.net" 

@@ -1,0 +1,243 @@
+
+**** 10/22/16 20:34:28 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_HIGHSELF-mosfet_highself_driver_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "mosfet_highself_driver_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../bbcircuit_simulation-pspicefiles/bbcircuit_simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Ninfeion_Git\BBSolarController\AD780_PSPICE_LIB\ad780.lib" 
+.lib "C:\Ninfeion_Git\BBSolarController\AD8210_PSPICE_LIB\AD8210.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\MOSFET_DRIVER_HIGHSELF.net" 
+
+
+
+**** INCLUDING MOSFET_DRIVER_HIGHSELF.net ****
+* source BBCIRCUIT_SIMULATION
+V_V2         V_H 0 24Vdc
+Q_Q5         N330967 N331257 0 BC547A 
+Q_Q3         0 N330967 N331015 BC557A 
+M_M1         N331021 N331169 N331191 N331191 IRF150
+R_R4         N331169 N331015  4.7 TC=0,0 
+C_C1         0 N330881  10n  TC=0,0 
+V_V11         N331245 0  
++PULSE 0 3.3 0 0.01us 0.01us 5us 10us
+Q_Q4         N330881 N330967 N331015 BC547A 
+R_R8         0 N331191  50 TC=0,0 
+D_D2         V_H N330881 D1N5819 
+R_R9         N331257 N331245  47 TC=0,0 
+R_R11         N330881 N330967  470 TC=0,0 
+V_V1         V_L 0 3.3Vdc
+V_V3         N330895 0 24Vdc
+R_R7         N331021 N330895  50 TC=0,0 
+.PARAM  r11=4.7k
+
+**** RESUMING mosfet_highself_driver_analysis.cir ****
+.END
+
+**** 10/22/16 20:34:28 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_HIGHSELF-mosfet_highself_driver_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N5819         
+          IS    2.835000E-06 
+         ISR   16.980000E-06 
+         IKF     .3227       
+          RS     .04712      
+         CJO  302.500000E-12 
+          VJ     .75         
+           M     .7206       
+         XTI    0            
+
+
+**** 10/22/16 20:34:28 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_HIGHSELF-mosfet_highself_driver_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC557A          BC547A          
+               PNP             NPN             
+       LEVEL    1               1            
+          IS    1.020000E-15    7.049000E-15 
+          BF  174.7           253            
+          NF    1               1            
+         VAF   73.79          127.9          
+         IKF     .1023           .07705      
+         ISE   10.730000E-15   96.260000E-15 
+          NE    1.644           1.556        
+          BR    4.432           1            
+          NR    1               1            
+         IKR    2.237           3.321        
+         ISC   14.740000E-15  130.800000E-15 
+          NC    1.296           1.602        
+          NK     .5033           .5305       
+         ISS    0               0            
+          RE    0               0            
+          RC    1.039            .8766       
+         CJE   30.000000E-12   11.500000E-12 
+         VJE     .5              .5          
+         MJE     .3333           .6715       
+         CJC    9.810000E-12    5.250000E-12 
+         VJC     .4865           .5697       
+         MJC     .332            .3147       
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          TF  830.300000E-12  409.500000E-12 
+         XTF   10.32           40.12         
+         VTF   10              10            
+         ITF     .8981          1.994        
+          TR   10.000000E-09   10.000000E-09 
+         XTB    1.5             1.5          
+          KF    0               0            
+          AF    1               1            
+          CN    2.2             2.42         
+           D     .52             .87         
+
+
+**** 10/22/16 20:34:28 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_HIGHSELF-mosfet_highself_driver_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 10/22/16 20:34:28 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_HIGHSELF-mosfet_highself_driver_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  V_H)   24.0000  (  V_L)    3.3000  (N330881)   24.0000                       
+
+(N330895)   24.0000                   (N330967)   24.0000                       
+
+(N331015)   23.7990                   (N331021)   12.0050                       
+
+(N331169)   23.7990                   (N331191)   11.9950                       
+
+(N331245)    0.0000                   (N331257) 1.134E-09                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -8.959E-11
+    V_V11        2.414E-11
+    V_V1         0.000E+00
+    V_V3        -2.399E-01
+
+    TOTAL POWER DISSIPATION   5.76E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/22/16 20:34:28 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "MOSFET_DRIVER_HIGHSELF-mosfet_highself_driver_analysis"  [ c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\sim\
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+
