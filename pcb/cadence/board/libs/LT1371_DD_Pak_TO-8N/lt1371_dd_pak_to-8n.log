@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : lt1371_dd_pak_to-8n.dra                       )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Tue Oct 25 20:41:58 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/LT1371_DD_Pak_TO-8N
+    Name      = lt1371_dd_pak_to-8n.psm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

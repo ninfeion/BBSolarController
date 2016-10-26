@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : ledseg_dip12_300_140_036inch.dra              )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Wed Oct 26 09:39:04 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/LEDSEG_DIP12_300_140_036INCH
+    Name      = ledseg_dip12_300_140_036inch.psm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

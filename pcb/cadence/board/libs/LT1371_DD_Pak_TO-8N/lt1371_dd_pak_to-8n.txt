@@ -1,0 +1,9 @@
+(Device File: LT1371_DD_Pak_TO-8N)
+
+PACKAGE LT1371_DD_Pak_TO-8N
+CLASS IC
+PINCOUNT 8
+PINORDER LT1371_DD_Pak_TO-8N '1' '2' '3' '4' '5' '6' '7' '8' 
+FUNCTION g1 LT1371_DD_Pak_TO-8N '1' '2' '3' '4' '5' '6' '7' '8' 
+
+END

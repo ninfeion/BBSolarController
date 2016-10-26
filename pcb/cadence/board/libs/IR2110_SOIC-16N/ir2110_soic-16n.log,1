@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : ir2110_soic-16n.dra                           )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Wed Oct 26 09:54:47 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/IR2110_SOIC-16N
+    Name      = ir2110_soic-16n.psm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

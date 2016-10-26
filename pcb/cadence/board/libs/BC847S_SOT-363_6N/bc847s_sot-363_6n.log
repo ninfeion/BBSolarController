@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : bc847s_sot-363_6n.dra                         )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Wed Oct 26 11:46:09 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/BC847S_SOT-363_6N
+    Name      = bc847s_sot-363_6n.psm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

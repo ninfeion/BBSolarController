@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : smd_8pin_jack.dra                             )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Mon Oct 24 22:30:29 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/SMD_8PIN_JACK
+    Name      = smd_8pin_jack.psm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

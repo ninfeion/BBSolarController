@@ -1,0 +1,21 @@
+\t (00:00:00) padstack_editor 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Oct 26 13:11:44 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=8380 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\padstack_editor.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\IRF3205_TO220AB-3P\s195h130t180_215_40.pad
+\t (00:00:00) 
+\d (00:00:00) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:00:01) QtSignal GuidedMaskLayersTab LayersTable itemSelectionChanged 2 Pad
+\d (00:00:01) QtSignal GuidedMaskLayersTab LayersTable cellClicked 2 Pad 2 1
+\d (00:00:02) QtSignal GuidedMaskLayersTab LayersTable cellClicked 2 Pad 2 1
+\d (00:00:02) QtSignal GuidedMaskLayersTab LayersTable customContextMenuRequest 2 Pad
+\d (00:00:02) QtFillin Copy|0
+\d (00:00:02) QtSignal GuidedMaskLayersTab LayersTable itemSelectionChanged 1 Pad
+\d (00:00:02) QtSignal GuidedMaskLayersTab LayersTable cellClicked 1 Pad 1 1
+\d (00:00:02) QtSignal GuidedMaskLayersTab LayersTable customContextMenuRequest 1 Pad
+\d (00:00:03) QtFillin Paste|1
+\d (00:00:03) QtSignal GuidedMaskLayersTab LayersTable itemSelectionChanged 2 Pad
+\d (00:00:03) QtSignal GuidedMaskLayersTab LayersTable cellClicked 2 Pad 2 1
+\d (00:00:05) QtSignal GuidedMaskLayersTab PadShape CurrentIndexChanged None
+\d (00:00:05) QtSignal GuidedMaskLayersTab PadShape activated None
+\d (00:00:07) QtSignal MainWindow Save triggered
+\t (00:00:08)     Journal end - Wed Oct 26 13:11:52 2016

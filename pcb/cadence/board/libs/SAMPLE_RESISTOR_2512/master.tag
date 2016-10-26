@@ -1,0 +1,1 @@
+sample_resistor_2512.dra

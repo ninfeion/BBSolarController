@@ -1,0 +1,42 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue Oct 25 23:36:28 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=15052 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\YSO751SR_50MHZ_SMD-7050-4N\yso751sr_50mhz_smd-7050-4n.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\d (00:00:00) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/YSO751SR_50MHZ_SMD-7050-4N/yso751sr_50mhz_smd-7050-4n.dra
+\i (00:00:00) trapsize 1636
+\i (00:00:00) trapsize 1726
+\i (00:00:00) trapsize 1726
+\i (00:00:00) trapsize 1299
+\i (00:00:00) trapsize 1432
+\i (00:00:00) trapsize 9817
+\i (00:00:00) trapsize 8917
+\i (00:00:01) trapsize 1251
+\i (00:00:01) generaledit 
+\i (00:00:01) zoom in 1 
+\i (00:00:01) setwindow pcb
+\i (00:00:01) zoom in -2.6182 2.5862
+\i (00:00:01) trapsize 626
+\i (00:00:02) zoom in 1 
+\i (00:00:02) setwindow pcb
+\i (00:00:02) zoom in -3.8373 2.5862
+\i (00:00:02) trapsize 313
+\i (00:00:02) zoom in 1 
+\i (00:00:02) setwindow pcb
+\i (00:00:02) zoom in -3.8372 2.5863
+\i (00:00:02) trapsize 156
+\i (00:00:04) zoom out 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom out -2.6487 2.8021
+\i (00:00:04) trapsize 313
+\i (00:00:04) zoom out 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom out -2.6800 2.8020
+\i (00:00:04) trapsize 626
+\i (00:00:06) pick grid -1.5799 2.5519
+\t (00:00:06) last pick:  -2.5400 2.5400
+\i (00:00:07) prepopup -1.6174 2.5519
+\i (00:00:10) exit 
+\t (00:00:10)     Journal end - Tue Oct 25 23:36:38 2016

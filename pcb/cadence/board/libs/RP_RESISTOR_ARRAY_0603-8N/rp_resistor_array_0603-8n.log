@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : rp_resistor_array_0603-8n.dra                 )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Wed Oct 26 00:02:30 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/RP_RESISTOR_ARRAY_0603-8N
+    Name      = rp_resistor_array_0603-8n.psm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

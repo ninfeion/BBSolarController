@@ -1,0 +1,17 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Mon Oct 24 21:10:15 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=14320 CPUs=4
+\t (00:00:00) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:02) Opening existing design...
+\d (00:00:02) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/8MHZYXC_HC49SMD/8mhzyxc_hc49smd.dra
+\i (00:00:02) trapsize 3489
+\i (00:00:02) trapsize 3503
+\i (00:00:02) trapsize 3764
+\i (00:00:02) trapsize 3764
+\i (00:00:02) trapsize 2903
+\i (00:00:02) generaledit 
+\i (00:00:07) new 
+\i (00:00:55) newdrawfillin "microusb.dra" "Package Symbol"
+\t (00:00:55)     Journal end - Mon Oct 24 21:11:11 2016

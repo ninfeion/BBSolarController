@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : complex17x10a178.dra                          )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Wed Oct 26 11:17:52 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: SHAPE
+    Directory = C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/MBR2045_TO-220AC_2P
+    Name      = complex17x10a178.ssm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

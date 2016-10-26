@@ -1,0 +1,827 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Mon Oct 24 17:25:40 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=3740 CPUs=4
+\t (00:00:00) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:02) Opening existing design...
+\d (00:00:02) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/TPS73150SOT23_5-6N/tps73150sot23_5_final.dra
+\i (00:00:02) trapsize 394
+\i (00:00:02) trapsize 408
+\i (00:00:02) trapsize 408
+\i (00:00:02) trapsize 343
+\i (00:00:03) etchedit 
+\i (00:00:07) pick grid 2.9245 0.1980
+\t (00:00:07) last pick:  3.1750 0.0000
+\i (00:00:08) zoom out 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom out 2.4645 0.1774
+\i (00:00:08) trapsize 686
+\i (00:00:14) pick grid -2.1280 -0.0697
+\t (00:00:14) last pick:  -1.9050 0.0000
+\i (00:00:16) pick grid 4.9015 -3.6257
+\t (00:00:16) last pick:  5.0800 -3.8100
+\i (00:00:19) pick grid 2.1281 -1.6624
+\t (00:00:19) last pick:  1.9050 -1.9050
+\i (00:00:21) pick grid 3.5011 -1.6761
+\t (00:00:21) last pick:  3.8100 -1.9050
+\i (00:00:50) zoom in 1 
+\i (00:00:50) setwindow pcb
+\i (00:00:50) zoom in 1.4828 0.9463
+\i (00:00:50) trapsize 343
+\i (00:00:50) prepopup 2.6498 0.6992
+\i (00:00:51) pop dyn_option_select 'Application Mode@:@General Edit' 
+\i (00:00:51) generaledit 
+\i (00:01:09) shape add circle 
+\i (00:01:12) setwindow form.mini
+\i (00:01:12) FORM mini class PACKAGE GEOMETRY 
+\i (00:01:16) FORM mini subclass PLACE_BOUND_TOP 
+\i (00:01:21) setwindow pcb
+\i (00:01:21) pick grid 2.7459 -0.1864
+\t (00:01:21) last pick:  2.5400 0.0000
+\i (00:01:22) pick grid 2.7459 -0.1864
+\t (00:01:22) last pick:  2.5400 0.0000
+\w (00:01:22) WARNING(SPMHA1-339): Pick equals previous pick ... try again.
+\t (00:01:22) last pick:  2.5400 0.0000
+\i (00:01:23) pick grid 3.1166 -0.4404
+\t (00:01:23) last pick:  2.5400 0.0000
+\w (00:01:23) WARNING(SPMHA1-339): Pick equals previous pick ... try again.
+\t (00:01:23) last pick:  2.5400 0.0000
+\i (00:01:24) zoom out 1 
+\i (00:01:24) setwindow pcb
+\i (00:01:24) zoom out 3.1372 -0.3374
+\i (00:01:24) trapsize 686
+\i (00:01:26) Esc 
+\i (00:01:26) generaledit 
+\i (00:01:36) pick 0 0 
+\t (00:01:36) last pick:  0.0000 0.0000
+\i (00:01:41) shape add circle 
+\i (00:01:45) pick 0 0 
+\t (00:01:45) last pick:  0.0000 0.0000
+\i (00:01:59) prmed 
+\i (00:02:05) setwindow form.prmedit
+\i (00:02:05) FORM prmedit design  
+\i (00:02:17) FORM prmedit display  
+\i (00:02:18) FORM prmedit design  
+\i (00:02:22) FORM prmedit text  
+\i (00:02:23) FORM prmedit shapes  
+\i (00:02:26) FORM prmedit done  
+\i (00:02:26) setwindow pcb
+\i (00:02:26) generaledit 
+\i (00:02:28) define grid 
+\t (00:02:28) Spacing fields allow simple equations to aid calculations; prefix with =
+\i (00:02:28) generaledit 
+\i (00:02:34) setwindow form.grid
+\i (00:02:34) FORM grid non_etch non_etch_x_grids 0.25400 
+\i (00:02:37) FORM grid non_etch non_etch_y_grids 0.25400 
+\i (00:02:38) FORM grid done  
+\i (00:02:44) setwindow pcb
+\i (00:02:44) shape add circle 
+\i (00:02:49) pick 0 0 
+\t (00:02:49) last pick:  0.0000 0.0000
+\i (00:03:05) ipick 1.3 
+\t (00:03:05) last pick:  1.3000 0.0000
+\i (00:03:09) Esc 
+\i (00:03:09) generaledit 
+\i (00:03:10) pick grid 2.0595 -0.0902
+\t (00:03:10) last pick:  2.0320 0.0000
+\e (00:03:10) Command not found: Del
+\i (00:03:12) prepopup 2.0732 -0.1040
+\i (00:03:13) pop dyn_option_select @:@Delete 
+\i (00:03:13) delete 
+\i (00:03:13) generaledit 
+\i (00:03:16) pick grid 2.0869 -0.1864
+\t (00:03:16) last pick:  2.0320 -0.2540
+\i (00:03:16) prepopup 2.0869 -0.1864
+\i (00:03:17) pop dyn_option_select @:@Delete 
+\i (00:03:17) delete 
+\i (00:03:17) generaledit 
+\i (00:03:19) undo 
+\i (00:03:19) trapsize 686
+\i (00:03:19) generaledit 
+\i (00:03:20) undo 
+\i (00:03:20) trapsize 686
+\i (00:03:20) generaledit 
+\i (00:03:22) undo 
+\i (00:03:22) trapsize 686
+\i (00:03:22) generaledit 
+\i (00:03:26) pick grid 2.8695 -0.3099
+\t (00:03:26) last pick:  2.7940 -0.2540
+\i (00:03:27) shape add circle 
+\i (00:03:31) pick 0 0 
+\t (00:03:31) last pick:  0.0000 0.0000
+\i (00:03:33) zoom in 1 
+\i (00:03:33) setwindow pcb
+\i (00:03:33) zoom in 1.0160 0.6237
+\i (00:03:33) trapsize 343
+\i (00:03:33) zoom in 1 
+\i (00:03:33) setwindow pcb
+\i (00:03:33) zoom in 1.0160 0.6237
+\i (00:03:33) trapsize 172
+\i (00:03:33) zoom out 1 
+\i (00:03:33) setwindow pcb
+\i (00:03:33) zoom out 1.0160 0.6238
+\i (00:03:33) trapsize 343
+\i (00:03:34) zoom out 1 
+\i (00:03:34) setwindow pcb
+\i (00:03:34) zoom out 1.0160 0.6237
+\i (00:03:34) trapsize 686
+\i (00:03:41) ipick 1.3 
+\t (00:03:41) last pick:  1.3000 0.0000
+\i (00:03:43) Esc 
+\i (00:03:43) generaledit 
+\i (00:03:45) pick grid 4.1051 -0.1863
+\t (00:03:45) last pick:  4.0640 -0.2540
+\i (00:03:45) prepopup 3.5559 0.0059
+\i (00:03:46) pop dyn_option_select 'Application Mode@:@General Edit' 
+\i (00:03:47) generaledit 
+\i (00:03:48) pick grid 5.2584 -0.0352
+\t (00:03:48) last pick:  5.3340 0.0000
+\i (00:03:49) prepopup 2.0320 -0.1725
+\i (00:03:50) pop dyn_option_select @:@Move 
+\i (00:03:50) move 
+\t (00:03:50) last pick:  2.0320 -0.2540
+\t (00:03:50) last pick:  2.0320 -0.2540
+\t (00:03:50) Element has no origin, using pick.
+\t (00:03:50) Pick new location for the element(s).
+\t (00:03:51) last pick:  6.7412 0.8023
+\w (00:03:51) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
+\t (00:03:52) last pick:  7.0432 0.4041
+\w (00:03:52) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
+\i (00:03:53) pick grid 6.5078 1.6809
+\t (00:03:53) last pick:  6.6040 1.7780
+\i (00:03:53) generaledit 
+\i (00:03:55) pick grid 2.0594 -0.4609
+\t (00:03:55) last pick:  2.0320 -0.5080
+\i (00:03:55) prepopup 2.0594 -0.4609
+\i (00:03:56) pop dyn_option_select @:@Move 
+\i (00:03:56) move 
+\t (00:03:56) last pick:  2.0320 -0.5080
+\t (00:03:56) last pick:  2.0320 -0.5080
+\t (00:03:56) Element has no origin, using pick.
+\t (00:03:56) Pick new location for the element(s).
+\i (00:03:58) pick grid -2.3889 1.2553
+\t (00:03:58) last pick:  -2.2860 1.2700
+\i (00:03:58) generaledit 
+\i (00:03:58) Esc 
+\i (00:03:59) pick grid 3.3225 -0.8590
+\t (00:03:59) last pick:  3.3020 -0.7620
+\i (00:04:11) shape add circle 
+\i (00:04:17) setwindow form.mini
+\i (00:04:17) FORM mini subclass DFA_BOUND_TOP 
+\i (00:04:24) setwindow pcb
+\i (00:04:24) pick 0 0 
+\t (00:04:24) last pick:  0.0000 0.0000
+\i (00:04:27) ipick 1.3 
+\t (00:04:27) last pick:  1.3000 0.0000
+\i (00:04:29) Esc 
+\i (00:04:30) generaledit 
+\i (00:04:30) pick grid 1.4553 0.9670
+\t (00:04:30) last pick:  1.5240 1.0160
+\e (00:04:31) Command not found: Del
+\e (00:04:33) Command not found: Del
+\i (00:04:34) prepopup 1.5926 0.7199
+\i (00:04:35) pop dyn_option_select @:@Delete 
+\i (00:04:35) delete 
+\i (00:04:35) generaledit 
+\i (00:04:36) prepopup -1.5240 0.9258
+\i (00:04:37) pop dyn_option_select @:@Delete 
+\i (00:04:37) delete 
+\i (00:04:38) generaledit 
+\i (00:04:38) prepopup -1.4828 -0.0215
+\i (00:04:39) pop dyn_option_select @:@Delete 
+\i (00:04:39) delete 
+\i (00:04:39) generaledit 
+\i (00:04:39) prepopup -1.4553 -1.0924
+\i (00:04:40) pop dyn_option_select @:@Delete 
+\i (00:04:40) delete 
+\i (00:04:40) generaledit 
+\i (00:04:40) prepopup 1.3318 -1.1199
+\i (00:04:41) pop dyn_option_select @:@Delete 
+\i (00:04:41) delete 
+\i (00:04:42) generaledit 
+\i (00:04:45) pick grid 0.7414 1.2965
+\t (00:04:45) last pick:  0.7620 1.2700
+\i (00:04:45) pick grid dbl 0.7414 1.2965
+\t (00:04:45) last pick:  0.7620 1.2700
+\i (00:04:45) pick grid 0.7414 1.2965
+\t (00:04:45) last pick:  0.7620 1.2700
+\i (00:04:47) pick grid 0.3982 1.3240
+\t (00:04:47) last pick:  0.5080 1.2700
+\i (00:04:47) pick grid dbl 0.3982 1.3240
+\t (00:04:47) last pick:  0.5080 1.2700
+\i (00:04:48) pick grid 0.3982 1.3240
+\t (00:04:48) last pick:  0.5080 1.2700
+\i (00:04:49) drag_start grid 1.1396 1.7359
+\i (00:04:50) drag_stop 0.3982 1.2416
+\i (00:04:51) prepopup 0.7139 1.3926
+\i (00:04:53) pop dyn_option_select @:@Move 
+\i (00:04:54) move 
+\t (00:04:54) last pick:  0.7620 1.2700
+\t (00:04:54) Element has no origin, using pick.
+\t (00:04:54) Element has no origin, using pick.
+\t (00:04:54) Element has no origin, using pick.
+\t (00:04:54) Element has no origin, using pick.
+\t (00:04:54) Element has no origin, using pick.
+\t (00:04:54) Element has no origin, using pick.
+\t (00:04:54) Pick new location for the element(s).
+\i (00:04:56) pick grid 5.7252 1.1043
+\t (00:04:56) last pick:  5.8420 1.0160
+\i (00:04:56) generaledit 
+\i (00:04:57) pick grid 2.9793 -0.8041
+\t (00:04:57) last pick:  3.0480 -0.7620
+\i (00:04:58) drag_start grid 3.2951 -0.3236
+\i (00:04:58) drag_stop 4.5033 -1.4768
+\i (00:04:59) prepopup 4.3797 -0.6943
+\i (00:05:02) pop dyn_option_select @:@Move 
+\i (00:05:02) move 
+\t (00:05:02) last pick:  4.3180 -0.7620
+\t (00:05:02) Pick new location for the element(s).
+\i (00:05:04) pick grid -0.3844 2.2576
+\t (00:05:04) last pick:  -0.5080 2.2860
+\i (00:05:04) generaledit 
+\i (00:05:05) drag_start grid -1.4828 -1.2846
+\i (00:05:06) drag_stop 0.6590 -2.0947
+\i (00:05:07) pick grid tgl 0.6727 -0.6256
+\t (00:05:07) last pick:  0.7620 -0.5080
+\i (00:05:08) pick grid tgl 1.2494 -0.4746
+\t (00:05:08) last pick:  1.2700 -0.5080
+\i (00:05:09) pick grid tgl 1.0984 -0.6668
+\t (00:05:09) last pick:  1.0160 -0.7620
+\i (00:05:10) prepopup 0.3158 -1.4631
+\i (00:05:11) pop dyn_option_select @:@Move 
+\i (00:05:12) move 
+\t (00:05:12) last pick:  0.2540 -1.5240
+\t (00:05:12) Element has no origin, using pick.
+\t (00:05:12) Element has no origin, using pick.
+\t (00:05:12) Element has no origin, using pick.
+\t (00:05:12) Element has no origin, using pick.
+\t (00:05:12) Element has no origin, using pick.
+\t (00:05:12) Element has no origin, using pick.
+\t (00:05:12) Pick new location for the element(s).
+\i (00:05:15) pick grid 5.2172 -1.8201
+\t (00:05:15) last pick:  5.3340 -1.7780
+\i (00:05:16) generaledit 
+\i (00:05:16) pick grid 3.0342 -1.4357
+\t (00:05:16) last pick:  3.0480 -1.5240
+\i (00:05:17) drag_start grid 0.7139 1.6672
+\i (00:05:18) drag_stop -0.9199 1.3240
+\i (00:05:19) prepopup -0.2059 1.3514
+\i (00:05:20) pop dyn_option_select @:@Move 
+\i (00:05:20) move 
+\t (00:05:20) last pick:  -0.2540 1.2700
+\t (00:05:20) Element has no origin, using pick.
+\t (00:05:20) Element has no origin, using pick.
+\t (00:05:20) Element has no origin, using pick.
+\t (00:05:20) Element has no origin, using pick.
+\t (00:05:20) Element has no origin, using pick.
+\t (00:05:20) Element has no origin, using pick.
+\t (00:05:20) Element has no origin, using pick.
+\t (00:05:20) Element has no origin, using pick.
+\t (00:05:20) Element has no origin, using pick.
+\t (00:05:20) Element has no origin, using pick.
+\t (00:05:20) Pick new location for the element(s).
+\i (00:05:23) pick grid 3.1990 -0.3510
+\t (00:05:23) last pick:  3.3020 -0.2540
+\i (00:05:24) generaledit 
+\i (00:05:24) pick grid 1.6338 -1.0375
+\t (00:05:24) last pick:  1.5240 -1.0160
+\i (00:05:25) prepopup 3.0480 -1.1473
+\i (00:05:29) pop dyn_option_select @:@Move 
+\i (00:05:29) move 
+\t (00:05:29) last pick:  3.0480 -1.2700
+\t (00:05:29) last pick:  3.5560 -0.9240
+\t (00:05:29) Pick new location for the element(s).
+\i (00:05:33) pick grid -0.1236 0.7336
+\t (00:05:33) last pick:  0.0000 0.7620
+\i (00:05:33) generaledit 
+\i (00:05:34) pick grid 1.3592 1.4475
+\t (00:05:34) last pick:  1.2700 1.5240
+\i (00:05:40) pick grid 1.0846 2.0516
+\t (00:05:40) last pick:  1.0160 2.0320
+\i (00:05:41) zoom in 1 
+\i (00:05:41) setwindow pcb
+\i (00:05:41) zoom in 1.3867 1.0631
+\i (00:05:41) trapsize 343
+\i (00:05:41) zoom in 1 
+\i (00:05:41) setwindow pcb
+\i (00:05:41) zoom in 1.3867 1.0631
+\i (00:05:41) trapsize 172
+\i (00:05:42) zoom in 1 
+\i (00:05:42) setwindow pcb
+\i (00:05:42) zoom in 1.3868 1.0631
+\i (00:05:42) trapsize 86
+\i (00:05:42) zoom out 1 
+\i (00:05:42) setwindow pcb
+\i (00:05:42) zoom out 1.3868 1.0631
+\i (00:05:42) trapsize 172
+\i (00:05:42) zoom out 1 
+\i (00:05:42) setwindow pcb
+\i (00:05:42) zoom out 1.3869 1.0632
+\i (00:05:42) trapsize 343
+\i (00:05:42) zoom out 1 
+\i (00:05:42) setwindow pcb
+\i (00:05:42) zoom out 1.3868 1.0426
+\i (00:05:42) trapsize 686
+\i (00:05:42) zoom out 1 
+\i (00:05:42) setwindow pcb
+\i (00:05:42) zoom out 1.3867 1.0426
+\i (00:05:42) trapsize 1373
+\i (00:05:43) zoom in 1 
+\i (00:05:43) setwindow pcb
+\i (00:05:43) zoom in -0.3570 -0.0824
+\i (00:05:43) trapsize 686
+\i (00:05:46) add pin 
+\t (00:05:46) Using 'R110_60.pad'.
+\i (00:05:48) setwindow form.mini
+\i (00:05:48) FORM mini pad_browse  
+\i (00:05:52) fillin "menu_cancel"
+\i (00:05:53) setwindow pcb
+\i (00:05:53) Esc 
+\w (00:05:53) WARNING(SPMHA1-314): Illegal event.
+\i (00:05:58) setwindow form.mini
+\i (00:05:58) FORM mini pad_browse  
+\i (00:06:07) fillin "menu_cancel"
+\i (00:06:33) setwindow pcb
+\i (00:06:33) enved 
+\i (00:06:36) setwindow form.prfedit
+\i (00:06:36) FORM prfedit treelist  My_favorites 
+\i (00:06:44) FORM prfedit treelist  Paths 
+\i (00:06:45) FORM prfedit treelist  Config Paths 
+\i (00:06:47) FORM prfedit treelist  Editor Paths 
+\i (00:06:49) FORM prfedit treelist  Library Paths 
+\i (00:06:52) FORM prfedit treelist  Signoise Paths 
+\i (00:06:53) FORM prfedit treelist  MCM Paths 
+\i (00:06:55) FORM prfedit treelist  Library Paths 
+\i (00:06:57) FORM prfedit psmpath  
+\i (00:07:11) FORM prfedit psmpath  
+\i (00:07:26) FORM prfedit padpath  
+\i (00:07:47) FORM prfedit treelist  MCM Paths 
+\i (00:07:49) FORM prfedit treelist  Signoise Paths 
+\i (00:07:51) FORM prfedit treelist  Library Paths 
+\i (00:07:52) FORM prfedit treelist  Editor Paths 
+\i (00:07:55) FORM prfedit treelist  Config Paths 
+\i (00:08:10) FORM prfedit done  
+\i (00:08:13) setwindow form.mini
+\i (00:08:13) FORM mini pad_browse  
+\i (00:08:39) fillin "J1"
+\w (00:08:39) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\t (00:08:39) Using 'J1.pad'.
+\i (00:09:09) FORM mini pad_browse  
+\i (00:09:17) fillin "menu_cancel"
+\i (00:09:29) setwindow pcb
+\i (00:09:29) padeditlib 
+\t (00:09:29) Exiting from Add Pin.
+\i (00:09:45) fillin "menu_cancel"
+\i (00:09:48) fillin yes 
+\i (00:09:48) generaledit 
+\i (00:10:01) shape add circle 
+\i (00:10:20) setwindow form.mini
+\i (00:10:20) FORM mini subclass SILKSCREEN_TOP 
+\i (00:10:27) setwindow pcb
+\i (00:10:27) pick 0 0 
+\t (00:10:27) last pick:  0.0000 0.0000
+\i (00:10:35) pick 1.3 
+\t (00:10:35) last pick:  1.3000 0.0000
+\i (00:10:38) prepopup 0.7689 -1.0297
+\i (00:10:44) cancel 
+\i (00:10:44) generaledit 
+\i (00:10:48) prepopup 0.6590 -1.0709
+\i (00:10:49) pop dyn_option_select @:@Move 
+\i (00:10:49) move 
+\t (00:10:49) last pick:  0.7620 -1.0160
+\t (00:10:49) last pick:  0.7620 -1.0160
+\t (00:10:49) Element has no origin, using pick.
+\t (00:10:49) Pick new location for the element(s).
+\i (00:10:50) pick grid -1.4004 -2.1144
+\t (00:10:50) last pick:  -1.5240 -2.0320
+\i (00:10:50) generaledit 
+\i (00:10:51) prepopup 0.5766 -1.2219
+\i (00:10:52) pop dyn_option_select @:@Move 
+\i (00:10:52) move 
+\t (00:10:52) last pick:  0.5080 -1.2700
+\t (00:10:52) last pick:  0.5080 -1.2700
+\t (00:10:52) Element has no origin, using pick.
+\t (00:10:52) Pick new location for the element(s).
+\i (00:10:53) pick grid 1.6338 -0.3844
+\t (00:10:53) last pick:  1.5240 -0.5080
+\i (00:10:53) generaledit 
+\i (00:10:53) undo 
+\i (00:10:53) trapsize 686
+\i (00:10:54) generaledit 
+\i (00:10:54) undo 
+\i (00:10:54) trapsize 686
+\i (00:10:54) generaledit 
+\i (00:10:56) Esc 
+\i (00:10:57) pick grid -3.8443 -1.8947
+\t (00:10:57) last pick:  -3.8100 -1.7780
+\i (00:12:32) add pin 
+\t (00:12:32) Using 'J1.pad'.
+\i (00:12:34) setwindow form.mini
+\i (00:12:34) FORM mini pad_browse  
+\i (00:12:37) fillin "menu_cancel"
+\i (00:12:40) setwindow pcb
+\i (00:12:40) trapsize 688
+\i (00:12:40) trapsize 724
+\i (00:12:40) trapsize 753
+\i (00:12:40) trapsize 752
+\i (00:12:41) trapsize 742
+\i (00:12:41) trapsize 724
+\i (00:12:41) trapsize 718
+\i (00:12:43) setwindow form.mini
+\i (00:12:43) FORM mini pad_browse  
+\i (00:12:55) fillin "menu_cancel"
+\i (00:13:09) setwindow pcb
+\i (00:13:09) cmgr_phys 
+\i (00:13:10) setwindow cmgr
+\i (00:13:10) cm select ( frame ( kConsmgr workbook 55:Physical "56:Physical Constraint Set" "57:All Layers" ) )
+\i (00:13:17) cm select ( frame ( kConsmgr workbook 55:Physical "56:Physical Constraint Set" "57:All Layers" ) )
+\t (00:13:32) Exiting from Add Pin.
+\i (00:13:33) setwindow pcb
+\i (00:13:33) generaledit 
+\i (00:13:36) QtFillin OK
+\w (00:13:37) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:37) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:37) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:37) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:37) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:37) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:37) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:37) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:37) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:37) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:37) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:37) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:46) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:48) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:49) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:49) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:49) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:49) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:49) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:49) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:49) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:49) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:49) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:49) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:49) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:53) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:53) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:53) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:53) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:53) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:53) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:53) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:54) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:54) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:54) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:54) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:54) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:54) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:54) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:54) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:54) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:54) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:54) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:55) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:55) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:55) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:55) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:55) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:57) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:57) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:57) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:57) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:57) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:57) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:57) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:57) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:57) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:13:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:14:10) setwindow cmgr
+\i (00:14:10) cm close ( frame ( kConsmgr workbook 55:Physical "56:Physical Constraint Set" "57:All Layers" ) )
+\i (00:14:10) cm exit
+\i (00:15:21) setwindow pcb
+\i (00:15:21) prmed 
+\i (00:15:25) setwindow form.prmedit
+\i (00:15:25) FORM prmedit display  
+\i (00:15:26) FORM prmedit design  
+\i (00:15:27) FORM prmedit cancel  
+\i (00:15:27) setwindow pcb
+\i (00:15:27) generaledit 
+\i (00:15:38) enved 
+\i (00:15:38) generaledit 
+\i (00:16:10) setwindow form.prfedit
+\i (00:16:10) FORM prfedit treelist  Editor Paths 
+\i (00:16:15) FORM prfedit treelist  Library Paths 
+\i (00:16:23) FORM prfedit padpath  
+\i (00:16:25) FORM prfedit psmpath  
+\i (00:17:06) FORM prfedit done  
+\i (00:17:13) setwindow pcb
+\i (00:17:13) save_as 
+\i (00:17:34) fillin "C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\TESTPOINT\testpoint120.dra"
+\i (00:17:34) cd "C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\TESTPOINT"
+   (00:17:34) Loading consmgr.cxt 
+   (00:17:34) Loading acns_formula.cxt 
+\t (00:17:34) Symbol 'testpoint120.psm' created.
+\i (00:17:35) generaledit 
+\i (00:17:42) add pin 
+\t (00:17:42) Using 'J1.pad'.
+\i (00:17:43) setwindow form.mini
+\i (00:17:43) FORM mini pad_browse  
+\i (00:17:48) fillin "C120"
+\t (00:17:48) Using 'C120.pad'.
+\i (00:17:58) setwindow pcb
+\i (00:17:58) pick 0 0 
+\t (00:17:58) last pick:  0.0000 0.0000
+\t (00:17:58) Using 'C120.pad'.
+\i (00:17:59) Esc 
+\w (00:17:59) WARNING(SPMHA1-314): Illegal event.
+\i (00:17:59) prepopup -1.6902 -2.1710
+\i (00:18:00) done 
+\t (00:18:00) Exiting from Add Pin.
+\i (00:18:00) generaledit 
+\i (00:18:18) drag_start grid 0.8937 -0.9078
+\i (00:18:18) move 
+\t (00:18:19) last pick:  1.0160 -1.0160
+\t (00:18:19) Element has no origin, using pick.
+\t (00:18:19) Pick new location for the element(s).
+\i (00:18:19) drag_stop grid -3.6568 -1.7261
+\i (00:18:19) generaledit 
+\i (00:18:20) drag_start grid 0.0611 -1.2954
+\i (00:18:20) move 
+\t (00:18:20) last pick:  0.0000 -1.2700
+\t (00:18:20) Element has no origin, using pick.
+\t (00:18:20) Pick new location for the element(s).
+\i (00:18:21) drag_stop grid -3.0252 -2.5156
+\i (00:18:21) generaledit 
+\i (00:18:25) shape add circle 
+\i (00:18:28) setwindow form.mini
+\i (00:18:28) FORM mini subclass DFA_BOUND_TOP 
+\i (00:18:31) setwindow pcb
+\i (00:18:31) pick 0 0 
+\t (00:18:31) last pick:  0.0000 0.0000
+\i (00:18:39) ipick 0.65 
+\t (00:18:39) last pick:  0.6500 0.0000
+\i (00:18:42) zoom in 1 
+\i (00:18:42) setwindow pcb
+\i (00:18:42) zoom in 0.4630 -0.0896
+\i (00:18:42) trapsize 359
+\i (00:18:43) zoom in 1 
+\i (00:18:43) setwindow pcb
+\i (00:18:43) zoom in 0.3625 -0.0107
+\i (00:18:43) trapsize 179
+\i (00:18:59) undo 
+\i (00:19:00) trapsize 718
+\i (00:19:00) generaledit 
+\i (00:19:01) shape add circle 
+\i (00:19:04) pick 0 0 
+\t (00:19:04) last pick:  0.0000 0.0000
+\i (00:19:12) setwindow form.mini
+\i (00:19:12) FORM mini subclass DFA_BOUND_TOP 
+\i (00:19:29) setwindow pcb
+\i (00:19:29) ipick 0.8 
+\t (00:19:29) last pick:  0.8000 0.0000
+\i (00:19:34) setwindow form.mini
+\i (00:19:34) FORM mini subclass PLACE_BOUND_TOP 
+\i (00:19:36) setwindow pcb
+\i (00:19:36) pick 0 0 
+\t (00:19:36) last pick:  0.0000 0.0000
+\i (00:19:43) ipick 0.8 
+\t (00:19:43) last pick:  0.8000 0.0000
+\i (00:19:49) zoom in 1 
+\i (00:19:49) setwindow pcb
+\i (00:19:49) zoom in 0.1903 0.1544
+\i (00:19:49) trapsize 359
+\i (00:19:50) zoom out 1 
+\i (00:19:50) setwindow pcb
+\i (00:19:50) zoom out 0.1042 0.0826
+\i (00:19:50) trapsize 718
+\i (00:19:51) zoom out 1 
+\i (00:19:51) setwindow pcb
+\i (00:19:51) zoom out 0.0180 0.0827
+\i (00:19:51) trapsize 1373
+\i (00:19:52) zoom in 1 
+\i (00:19:52) setwindow pcb
+\i (00:19:52) zoom in 1.2357 0.6865
+\i (00:19:52) trapsize 686
+\i (00:19:53) zoom in 1 
+\i (00:19:53) setwindow pcb
+\i (00:19:53) zoom in 0.3844 -0.8374
+\i (00:19:53) trapsize 343
+\i (00:19:53) zoom in 1 
+\i (00:19:53) setwindow pcb
+\i (00:19:53) zoom in 0.3844 -0.8374
+\i (00:19:53) trapsize 172
+\i (00:19:53) zoom in 1 
+\i (00:19:53) setwindow pcb
+\i (00:19:53) zoom in 0.3844 -0.8374
+\i (00:19:53) trapsize 86
+\i (00:19:53) zoom out 1 
+\i (00:19:53) setwindow pcb
+\i (00:19:53) zoom out 0.3844 -0.8373
+\i (00:19:53) trapsize 172
+\i (00:19:53) zoom out 1 
+\i (00:19:53) setwindow pcb
+\i (00:19:53) zoom out 0.3845 -0.8374
+\i (00:19:53) trapsize 343
+\i (00:19:54) zoom out 1 
+\i (00:19:54) setwindow pcb
+\i (00:19:54) zoom out 0.3845 -0.8374
+\i (00:19:54) trapsize 686
+\i (00:19:54) zoom out 1 
+\i (00:19:54) setwindow pcb
+\i (00:19:54) zoom out 0.4256 -0.8373
+\i (00:19:54) trapsize 1373
+\i (00:19:55) zoom in 1 
+\i (00:19:55) setwindow pcb
+\i (00:19:55) zoom in 1.6750 2.7734
+\i (00:19:55) trapsize 686
+\i (00:19:58) undo 
+\i (00:19:58) trapsize 718
+\i (00:19:58) generaledit 
+\i (00:19:58) undo 
+\i (00:19:58) trapsize 718
+\i (00:19:59) generaledit 
+\i (00:19:59) undo 
+\i (00:19:59) trapsize 718
+\i (00:20:00) generaledit 
+\i (00:20:03) pick grid 1.5396 -1.8265
+\t (00:20:03) last pick:  1.5240 -1.7780
+\i (00:20:05) zoom out 1 
+\i (00:20:05) setwindow pcb
+\i (00:20:05) zoom out 1.4248 -1.8696
+\i (00:20:05) trapsize 1373
+\i (00:20:05) zoom in 1 
+\i (00:20:05) setwindow pcb
+\i (00:20:05) zoom in -0.7963 0.3020
+\i (00:20:05) trapsize 686
+\i (00:20:07) zoom in 1 
+\i (00:20:07) setwindow pcb
+\i (00:20:07) zoom in 3.9541 -0.5080
+\i (00:20:07) trapsize 343
+\i (00:20:22) shape add circle 
+\i (00:20:26) pick 0 0 
+\t (00:20:26) last pick:  0.0000 0.0000
+\i (00:20:53) ipick 1.05 
+\t (00:20:53) last pick:  1.0500 0.0000
+\i (00:20:57) Esc 
+\i (00:20:57) generaledit 
+\i (00:21:06) zoom out 1 
+\i (00:21:07) setwindow pcb
+\i (00:21:07) zoom out 1.0504 -0.0893
+\i (00:21:07) trapsize 686
+\i (00:21:08) zoom out 1 
+\i (00:21:08) setwindow pcb
+\i (00:21:08) zoom out 1.8398 -0.6247
+\i (00:21:08) trapsize 1373
+\i (00:21:09) zoom in 1 
+\i (00:21:09) setwindow pcb
+\i (00:21:09) zoom in -0.7139 3.2127
+\i (00:21:09) trapsize 686
+\i (00:21:13) Esc 
+\i (00:21:15) drag_start grid -0.3569 3.3089
+\i (00:21:15) move 
+\t (00:21:15) last pick:  0.2540 3.5440
+\t (00:21:15) Pick new location for the element(s).
+\i (00:21:16) drag_stop grid 1.7437 3.2540
+\i (00:21:16) generaledit 
+\i (00:21:20) drag_start grid 1.6338 4.4210
+\i (00:21:20) move 
+\t (00:21:20) last pick:  1.7780 3.3020
+\t (00:21:20) Pick new location for the element(s).
+\i (00:21:23) drag_stop grid 0.1785 3.5423
+\i (00:21:23) generaledit 
+\i (00:21:23) prepopup 0.1785 3.6384
+\i (00:21:27) pick grid 1.0160 4.1052
+\t (00:21:27) last pick:  1.0160 4.0640
+\i (00:21:30) drag_start grid -1.4141 4.2425
+\i (00:21:31) drag_stop 0.8375 2.3341
+\i (00:21:31) pick grid -1.4828 1.8398
+\t (00:21:31) last pick:  -1.5240 1.7780
+\i (00:21:33) drag_start grid -1.9770 2.1007
+\i (00:21:34) drag_stop -2.0182 1.6339
+\i (00:21:34) zoom in 1 
+\i (00:21:34) setwindow pcb
+\i (00:21:34) zoom in -1.8947 1.6888
+\i (00:21:34) trapsize 343
+\i (00:21:35) drag_start grid -1.5926 1.6545
+\i (00:21:35) slide 
+\t (00:21:35) Selected item not valid for current operation, ignored: Arc Segment "Package Geometry/Silkscreen_Top"
+\t (00:21:35) No valid items selected for the current operation, exiting.
+\i (00:21:35) generaledit 
+\i (00:21:35) drag_stop grid -1.7161 1.0572
+\i (00:21:36) prepopup -1.6955 1.5446
+\i (00:21:37) pop dyn_option_select @:@Copy 
+\i (00:21:37) copy 
+\i (00:21:38) pick grid -1.9084 0.6797
+\t (00:21:38) last pick:  -2.0320 0.7620
+\i (00:21:39) pick grid -1.6681 2.1693
+\t (00:21:39) last pick:  -1.7780 2.2860
+\i (00:21:40) pick grid -2.4438 1.1465
+\t (00:21:40) last pick:  -2.5400 1.2700
+\i (00:21:41) pick grid -1.6475 1.0092
+\t (00:21:41) last pick:  -1.5240 1.0160
+\i (00:21:41) pick grid -1.6544 1.8055
+\t (00:21:41) last pick:  -1.7780 1.7780
+\i (00:21:42) pick grid -2.2173 1.9016
+\t (00:21:42) last pick:  -2.2860 1.7780
+\i (00:21:42) pick grid -2.0182 1.3387
+\t (00:21:42) last pick:  -2.0320 1.2700
+\i (00:21:44) prepopup -2.4644 1.4005
+\i (00:21:44) done 
+\i (00:21:45) generaledit 
+\i (00:21:45) zoom out 1 
+\i (00:21:45) setwindow pcb
+\i (00:21:45) zoom out -2.2996 1.2151
+\i (00:21:45) trapsize 686
+\i (00:21:46) drag_start grid -5.1211 4.3180
+\i (00:21:46) drag_stop -1.4828 -0.8580
+\i (00:21:47) prepopup -1.7985 1.5858
+\i (00:21:48) pick grid -3.1166 -0.4324
+\t (00:21:48) last pick:  -3.0480 -0.5080
+\i (00:21:49) drag_start grid -5.3682 5.0732
+\i (00:21:50) drag_stop -1.3867 -0.8580
+\i (00:21:51) prepopup -1.6201 1.7369
+\i (00:21:51) pop dyn_option_select @:@Delete 
+\i (00:21:51) delete 
+\i (00:21:52) generaledit 
+\i (00:21:53) zoom out 1 
+\i (00:21:53) setwindow pcb
+\i (00:21:53) zoom out 3.0480 2.6705
+\i (00:21:53) trapsize 1373
+\i (00:21:53) drag_start grid 2.0594 4.9426
+\i (00:21:54) drag_stop 8.6770 -4.1189
+\i (00:21:54) prepopup 4.3934 1.8123
+\i (00:21:55) pop dyn_option_select @:@Delete 
+\i (00:21:55) delete 
+\i (00:21:55) generaledit 
+\i (00:21:56) pick grid 2.0320 1.4553
+\t (00:21:56) last pick:  2.0320 1.5240
+\i (00:21:56) zoom in 1 
+\i (00:21:56) setwindow pcb
+\i (00:21:56) zoom in -1.3455 1.9496
+\i (00:21:56) trapsize 686
+\i (00:21:59) zoom out 1 
+\i (00:21:59) setwindow pcb
+\i (00:21:59) zoom out -1.4416 2.4301
+\i (00:21:59) trapsize 1373
+\i (00:22:00) zoom in 1 
+\i (00:22:00) setwindow pcb
+\i (00:22:00) zoom in -0.1373 3.1578
+\i (00:22:00) trapsize 686
+\i (00:22:00) drag_start grid -3.3088 4.1463
+\i (00:22:01) drag_stop 0.8101 2.3340
+\i (00:22:01) prepopup -0.2059 3.2265
+\i (00:22:02) pop dyn_option_select @:@Move 
+\i (00:22:02) move 
+\t (00:22:02) last pick:  -0.2540 3.3020
+\t (00:22:02) Pick new location for the element(s).
+\i (00:22:12) pick grid -1.6063 1.1533
+\t (00:22:12) last pick:  -1.5240 1.2700
+\i (00:22:12) generaledit 
+\i (00:22:13) pick grid 3.2677 1.1945
+\t (00:22:13) last pick:  3.3020 1.2700
+\i (00:22:42) save 
+\i (00:22:45) fillin yes 
+\t (00:22:45) Symbol 'testpoint120.psm' created.
+\i (00:22:45) generaledit 
+\i (00:22:48) exit 
+\t (00:22:49)     Journal end - Mon Oct 24 17:48:29 2016

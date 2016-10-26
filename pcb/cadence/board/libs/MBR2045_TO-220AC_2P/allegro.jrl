@@ -1,0 +1,633 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Oct 26 13:08:22 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=9056 CPUs=4
+\t (00:00:00) CmdLine= allegro -s mbr2045_to-220ac_2p.scr
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\d (00:00:00) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/MBR2045_TO-220AC_2P/mbr2045_to-220ac_2p.dra
+\i (00:00:00) trapsize 3405
+\i (00:00:00) trapsize 3512
+\i (00:00:00) trapsize 3512
+\i (00:00:00) trapsize 2644
+\i (00:00:00) trapsize 3027
+\i (00:00:00) trapsize 24076
+\i (00:00:00) trapsize 21869
+\i (00:00:00) replay mbr2045_to-220ac_2p.scr 
+\i (00:00:00) version 16.5 
+\t (00:00:00) Script version: 16.5
+\i (00:00:00) setwindow pcb 
+\i (00:00:00) new 
+\i (00:00:00) newdrawfillin mbr2045_to-220ac_2p.dra 'Package Symbol' 
+\t (00:00:00) Starting new design...
+\i (00:00:00) trapsize 4233
+\i (00:00:00) trapsize 4233
+\i (00:00:00) setwindow Form.vf_vis 
+\i (00:00:00) FORM vf_vis 1 all_colorvisible YES 
+\i (00:00:00) FORM vf_vis 2 all_colorvisible YES 
+\i (00:00:00) setwindow pcb 
+\i (00:00:00) Color 
+\i (00:00:00) setwindow form.cvf_main
+\i (00:00:00) FORM cvf_main class_list Geometry
+\i (00:00:01) setwindow Form.cvf_main 
+\i (00:00:01) FORM cvf_main class_list Components 
+\i (00:00:01) FORM cvf_main all_visible1 YES 
+\i (00:00:01) FORM cvf_main all_visible2 YES 
+\i (00:00:01) FORM cvf_main all_visible3 YES 
+\i (00:00:01) FORM cvf_main class_list Geometry 
+\i (00:00:01) FORM cvf_main all_visible5 YES 
+\i (00:00:01) FORM cvf_main package_geometry/pin_number/visible NO 
+\i (00:00:01) FORM cvf_main class_list Stack-Up 
+\i (00:00:01) FORM cvf_main all_visible1 YES 
+\i (00:00:01) FORM cvf_main ok 
+\i (00:00:01) generaledit 
+\i (00:00:01) prmed 
+\i (00:00:01) setwindow Form.prmedit 
+\i (00:00:01) FORM prmedit design 
+\i (00:00:01) FORM prmedit units Millimeter 
+\i (00:00:01) FORM prmedit accuracy 4 
+\i (00:00:01) FORM prmedit size Other 
+\i (00:00:01) FORM prmedit x -5 
+\i (00:00:01) FORM prmedit y -5 
+\i (00:00:01) FORM prmedit width 52.485 
+\i (00:00:01) FORM prmedit height 52.485 
+\i (00:00:01) FORM prmedit x -26.2425 
+\i (00:00:01) FORM prmedit y -26.2425 
+\i (00:00:01) FORM prmedit done 
+\i (00:00:01) trapsize 3360
+\i (00:00:01) trapsize 3513
+\i (00:00:02) setwindow pcb 
+\i (00:00:02) add pin 
+\i (00:00:02) setwindow Form.mini 
+\i (00:00:02) FORM mini pad_name s195h130t180_215_40 
+\t (00:00:02) Using 'S195H130T180_215_40.pad'.
+\i (00:00:02) FORM mini next_pin_number 1 
+\i (00:00:02) rotate 
+\t (00:00:02) Spin the element(s).
+\i (00:00:02) iangle 0 
+\t (00:00:02) last angle:  +0.000 Degrees
+\t (00:00:02) Pin rotated by '0.000' degrees.
+\t (00:00:02) Using 'S195H130T180_215_40.pad'.
+\i (00:00:02) FORM mini pintype_mechanical NO 
+\i (00:00:02) FORM mini offsetx 0 
+\i (00:00:02) FORM mini offsety 0 
+\i (00:00:02) setwindow pcb 
+\i (00:00:02) pick 0 0 
+\t (00:00:02) last pick:  0.0000 0.0000
+\t (00:00:02) Using 'S195H130T180_215_40.pad'.
+\i (00:00:02) setwindow Form.mini 
+\i (00:00:02) FORM mini pad_name c195h130t180_215_40 
+\t (00:00:02) Using 'C195H130T180_215_40.pad'.
+\i (00:00:02) setwindow pcb 
+\i (00:00:02) pick 0 -5.08 
+\t (00:00:02) last pick:  0.0000 -5.0800
+\t (00:00:02) Using 'C195H130T180_215_40.pad'.
+\i (00:00:02) setwindow Form.mini 
+\i (00:00:02) FORM mini pad_name r1725_1030c555h370t420_480_55 
+\t (00:00:02) Using 'R1725_1030C555H370T420_480_55.pad'.
+\i (00:00:02) setwindow pcb 
+\i (00:00:02) pick 17.9 -2.54 
+\t (00:00:02) last pick:  17.9000 -2.5400
+\t (00:00:02) Using 'R1725_1030C555H370T420_480_55.pad'.
+\i (00:00:02) done 
+\t (00:00:02) Exiting from Add Pin.
+\i (00:00:02) add line 
+\i (00:00:02) setwindow Form.mini 
+\i (00:00:02) FORM mini class PACKAGE GEOMETRY 
+\i (00:00:02) FORM mini subclass DISPLAY_TOP 
+\i (00:00:02) FORM mini line_width 0.001 
+\i (00:00:02) setwindow pcb 
+\i (00:00:02) pick 4.6675 -7.69 
+\t (00:00:02) last pick:  4.6675 -7.6900
+\i (00:00:02) pick 4.6675 2.61 
+\t (00:00:02) last pick:  4.6675 2.6100
+\i (00:00:02) pick 21.9175 2.61 
+\t (00:00:02) last pick:  21.9175 2.6100
+\i (00:00:02) pick 21.9175 -7.69 
+\t (00:00:02) last pick:  21.9175 -7.6900
+\i (00:00:02) pick 4.6675 -7.69 
+\t (00:00:02) last pick:  4.6675 -7.6900
+\i (00:00:02) done 
+\i (00:00:02) shape add 
+\i (00:00:02) setwindow Form.mini 
+\i (00:00:02) FORM mini class PACKAGE GEOMETRY 
+\i (00:00:02) FORM mini subclass DFA_BOUND_TOP 
+\i (00:00:02) FORM mini dyns_fill_type Static solid 
+\i (00:00:02) FORM mini dyns_grid None 
+\i (00:00:02) FORM mini dyns_lock_mode Line 
+\i (00:00:02) setwindow pcb 
+\i (00:00:02) pick -1.225 -8.29 
+\t (00:00:02) last pick:  -1.2250 -8.2900
+\i (00:00:02) pick -1.225 3.21 
+\t (00:00:02) last pick:  -1.2250 3.2100
+\i (00:00:02) pick 22.5175 3.21 
+\t (00:00:02) last pick:  22.5175 3.2100
+\i (00:00:02) pick 22.5175 -8.29 
+\t (00:00:02) last pick:  22.5175 -8.2900
+\i (00:00:02) pick -1.225 -8.29 
+\t (00:00:02) last pick:  -1.2250 -8.2900
+\i (00:00:02) done 
+\i (00:00:02) shape add 
+\i (00:00:02) setwindow Form.mini 
+\i (00:00:02) FORM mini class PACKAGE GEOMETRY 
+\i (00:00:02) FORM mini subclass PLACE_BOUND_TOP 
+\i (00:00:02) FORM mini dyns_fill_type Static solid 
+\i (00:00:02) FORM mini dyns_grid None 
+\i (00:00:02) FORM mini dyns_lock_mode Line 
+\i (00:00:02) setwindow pcb 
+\i (00:00:02) pick -1.225 -8.29 
+\t (00:00:02) last pick:  -1.2250 -8.2900
+\i (00:00:02) pick -1.225 3.21 
+\t (00:00:02) last pick:  -1.2250 3.2100
+\i (00:00:02) pick 22.5175 3.21 
+\t (00:00:02) last pick:  22.5175 3.2100
+\i (00:00:02) pick 22.5175 -8.29 
+\t (00:00:02) last pick:  22.5175 -8.2900
+\i (00:00:02) pick -1.225 -8.29 
+\t (00:00:02) last pick:  -1.2250 -8.2900
+\i (00:00:02) done 
+\i (00:00:02) add circle 
+\t (00:00:02) Pick center point of the circle.
+\t (00:00:02) Pick center point of the circle.
+\i (00:00:02) setwindow Form.mini 
+\i (00:00:02) FORM mini class PACKAGE GEOMETRY 
+\i (00:00:02) FORM mini subclass PLACE_BOUND_TOP 
+\i (00:00:02) FORM mini line_width 0.05 
+\i (00:00:02) setwindow pcb 
+\i (00:00:02) pick 0 0 
+\t (00:00:02) last pick:  0.0000 0.0000
+\t (00:00:02) Pick a perimeter point on the circle.
+\i (00:00:02) pick 0.35 0 
+\t (00:00:02) last pick:  0.3500 0.0000
+\t (00:00:02) Pick center point of the circle.
+\i (00:00:02) done 
+\i (00:00:03) add line 
+\i (00:00:03) setwindow Form.mini 
+\i (00:00:03) FORM mini class PACKAGE GEOMETRY 
+\i (00:00:03) FORM mini subclass PLACE_BOUND_TOP 
+\i (00:00:03) FORM mini line_width 0.05 
+\i (00:00:03) setwindow pcb 
+\i (00:00:03) pick 0 -0.5 
+\t (00:00:03) last pick:  0.0000 -0.5000
+\i (00:00:03) pick 0 0.5 
+\t (00:00:03) last pick:  0.0000 0.5000
+\i (00:00:03) done 
+\i (00:00:03) add line 
+\i (00:00:03) setwindow Form.mini 
+\i (00:00:03) FORM mini class PACKAGE GEOMETRY 
+\i (00:00:03) FORM mini subclass PLACE_BOUND_TOP 
+\i (00:00:03) FORM mini line_width 0.05 
+\i (00:00:03) setwindow pcb 
+\i (00:00:03) pick -0.5 0 
+\t (00:00:03) last pick:  -0.5000 0.0000
+\i (00:00:03) pick 0.5 0 
+\t (00:00:03) last pick:  0.5000 0.0000
+\i (00:00:03) done 
+\i (00:00:03) add circle 
+\t (00:00:03) Pick center point of the circle.
+\t (00:00:03) Pick center point of the circle.
+\i (00:00:03) setwindow Form.mini 
+\i (00:00:03) FORM mini class PACKAGE GEOMETRY 
+\i (00:00:03) FORM mini subclass ASSEMBLY_TOP 
+\i (00:00:03) FORM mini line_width 0.1 
+\i (00:00:03) setwindow pcb 
+\i (00:00:03) pick 17.9 -2.54 
+\t (00:00:03) last pick:  17.9000 -2.5400
+\t (00:00:03) Pick a perimeter point on the circle.
+\i (00:00:03) pick 19.735 -2.54 
+\t (00:00:03) last pick:  19.7350 -2.5400
+\t (00:00:03) Pick center point of the circle.
+\i (00:00:03) done 
+\i (00:00:03) add line 
+\i (00:00:03) setwindow Form.mini 
+\i (00:00:03) FORM mini class PACKAGE GEOMETRY 
+\i (00:00:03) FORM mini subclass ASSEMBLY_TOP 
+\i (00:00:03) FORM mini line_width 0.1 
+\i (00:00:03) setwindow pcb 
+\i (00:00:03) pick 14.465 -7.525 
+\t (00:00:03) last pick:  14.4650 -7.5250
+\i (00:00:03) pick 14.465 2.445 
+\t (00:00:03) last pick:  14.4650 2.4450
+\i (00:00:03) done 
+\i (00:00:03) add line 
+\i (00:00:03) setwindow Form.mini 
+\i (00:00:03) FORM mini class PACKAGE GEOMETRY 
+\i (00:00:03) FORM mini subclass ASSEMBLY_TOP 
+\i (00:00:03) FORM min
+\e (00:40:17) Command not found: xhilite
+\i (00:40:17) xname_flush 
+\i (00:40:17) done 
+\e (00:40:21) Command not found: xhilite
+\i (00:40:21) xname_flush 
+\e (00:40:21) No command active
+\i (00:40:21) done 
+\e (00:40:21) No command active
+\i (00:40:21) generaledit 
+\e (00:40:22) Command not found: xdehilite
+\i (00:40:22) xname_flush 
+\i (00:40:22) done 
+\e (00:40:40) Command not found: xhilite
+\i (00:40:40) xname_flush 
+\e (00:40:40) No command active
+\i (00:40:40) done 
+\e (00:40:40) No command active
+\i (00:40:40) generaledit 
+\e (00:40:44) Command not found: xdehilite
+\i (00:40:44) xname_flush 
+\i (00:40:44) done 
+\i (00:43:45) generaledit 
+\e (01:47:53) Command not found: xhilite
+\i (01:47:53) xname_flush 
+\i (01:47:53) done 
+\e (01:48:01) Command not found: xhilite
+\i (01:48:01) xname_flush 
+\e (01:48:01) No command active
+\i (01:48:01) done 
+\e (01:48:01) No command active
+\i (01:48:01) generaledit 
+\e (01:52:47) Command not found: xhilite
+\i (01:52:47) xname_flush 
+\i (01:52:47) done 
+\e (01:52:55) Command not found: xhilite
+\i (01:52:55) xname_flush 
+\e (01:52:55) No command active
+\i (01:52:55) done 
+\e (01:52:55) No command active
+\i (01:52:55) generaledit 
+\e (01:54:05) Command not found: xhilite
+\i (01:54:05) xname_flush 
+\i (01:54:05) done 
+\e (01:54:12) Command not found: xhilite
+\i (01:54:12) xname_flush 
+\e (01:54:12) No command active
+\i (01:54:12) done 
+\e (01:54:12) No command active
+\i (01:54:12) generaledit 
+\e (01:55:47) Command not found: xhilite
+\i (01:55:47) xname_flush 
+\i (01:55:47) done 
+\e (01:55:54) Command not found: xhilite
+\i (01:55:54) xname_flush 
+\e (01:55:54) No command active
+\i (01:55:54) done 
+\e (01:55:54) No command active
+\i (01:55:54) generaledit 
+\e (01:57:12) Command not found: xhilite
+\i (01:57:12) xname_flush 
+\i (01:57:12) done 
+\i (01:57:21) generaledit 
+\e (01:57:25) Command not found: xhilite
+\i (01:57:25) xname_flush 
+\i (01:57:25) done 
+\e (01:57:33) Command not found: xhilite
+\i (01:57:33) xname_flush 
+\e (01:57:33) No command active
+\i (01:57:33) done 
+\e (01:57:33) No command active
+\i (01:57:33) generaledit 
+\e (01:59:23) Command not found: xhilite
+\i (01:59:23) xname_flush 
+\i (01:59:23) done 
+\e (01:59:34) Command not found: xhilite
+\i (01:59:34) xname_flush 
+\e (01:59:34) No command active
+\i (01:59:34) done 
+\e (01:59:34) No command active
+\i (01:59:34) generaledit 
+\e (02:00:58) Command not found: xhilite
+\i (02:00:58) xname_flush 
+\i (02:00:58) done 
+\i (02:01:04) generaledit 
+\e (02:01:10) Command not found: xhilite
+\i (02:01:10) xname_flush 
+\i (02:01:10) done 
+\e (02:01:18) Command not found: xhilite
+\i (02:01:18) xname_flush 
+\e (02:01:18) No command active
+\i (02:01:18) done 
+\e (02:01:18) No command active
+\i (02:01:18) generaledit 
+\e (02:06:42) Command not found: xhilite
+\i (02:06:42) xname_flush 
+\i (02:06:42) done 
+\i (02:08:04) generaledit 
+\e (02:09:12) Command not found: xhilite
+\i (02:09:12) xname_flush 
+\i (02:09:12) done 
+\e (02:09:13) Command not found: xdehilite
+\i (02:09:13) xname_flush 
+\e (02:09:13) No command active
+\i (02:09:13) done 
+\e (02:09:13) No command active
+\i (02:09:13) generaledit 
+\e (02:09:20) Command not found: xdehilite
+\i (02:09:20) xname_flush 
+\i (02:09:20) done 
+\e (02:09:21) Command not found: xhilite
+\i (02:09:21) xname_flush 
+\e (02:09:21) No command active
+\i (02:09:21) done 
+\e (02:09:21) No command active
+\i (02:09:21) generaledit 
+\e (02:09:24) Command not found: xdehilite
+\i (02:09:24) xname_flush 
+\i (02:09:24) done 
+\e (02:09:29) Command not found: xhilite
+\i (02:09:29) xname_flush 
+\e (02:09:29) No command active
+\i (02:09:29) done 
+\e (02:09:29) No command active
+\i (02:09:29) generaledit 
+\e (02:09:31) Command not found: xhilite
+\i (02:09:31) xname_flush 
+\i (02:09:31) done 
+\e (02:09:38) Command not found: xdehilite
+\i (02:09:38) xname_flush 
+\e (02:09:38) No command active
+\i (02:09:38) done 
+\e (02:09:38) No command active
+\i (02:09:38) generaledit 
+\e (02:09:40) Command not found: xhilite
+\i (02:09:40) xname_flush 
+\i (02:09:40) done 
+\e (02:09:42) Command not found: xhilite
+\i (02:09:42) xname_flush 
+\e (02:09:42) No command active
+\i (02:09:42) done 
+\e (02:09:42) No command active
+\i (02:09:42) generaledit 
+\e (02:09:49) Command not found: xhilite
+\i (02:09:49) xname_flush 
+\i (02:09:49) done 
+\e (02:09:51) Command not found: xdehilite
+\i (02:09:51) xname_flush 
+\e (02:09:51) No command active
+\i (02:09:51) done 
+\e (02:09:51) No command active
+\i (02:09:51) generaledit 
+\e (02:09:51) Command not found: xhilite
+\i (02:09:51) xname_flush 
+\i (02:09:51) done 
+\e (02:09:52) Command not found: xdehilite
+\i (02:09:52) xname_flush 
+\e (02:09:52) No command active
+\i (02:09:52) done 
+\e (02:09:52) No command active
+\i (02:09:52) generaledit 
+\e (02:09:52) Command not found: xhilite
+\i (02:09:52) xname_flush 
+\i (02:09:52) done 
+\e (02:09:53) Command not found: xdehilite
+\i (02:09:53) xname_flush 
+\e (02:09:53) No command active
+\i (02:09:53) done 
+\e (02:09:53) No command active
+\i (02:09:53) generaledit 
+\e (02:09:54) Command not found: xhilite
+\i (02:09:54) xname_flush 
+\i (02:09:54) done 
+\e (02:09:55) Command not found: xdehilite
+\i (02:09:55) xname_flush 
+\e (02:09:55) No command active
+\i (02:09:55) done 
+\e (02:09:55) No command active
+\i (02:09:55) generaledit 
+\e (02:09:55) Command not found: xhilite
+\i (02:09:55) xname_flush 
+\i (02:09:55) done 
+\e (02:09:56) Command not found: xdehilite
+\i (02:09:56) xname_flush 
+\e (02:09:56) No command active
+\i (02:09:56) done 
+\e (02:09:56) No command active
+\i (02:09:56) generaledit 
+\e (02:09:56) Command not found: xhilite
+\i (02:09:56) xname_flush 
+\i (02:09:56) done 
+\e (02:09:58) Command not found: xdehilite
+\i (02:09:58) xname_flush 
+\e (02:09:58) No command active
+\i (02:09:58) done 
+\e (02:09:58) No command active
+\i (02:09:58) generaledit 
+\e (02:09:59) Command not found: xhilite
+\i (02:09:59) xname_flush 
+\i (02:09:59) done 
+\e (02:10:00) Command not found: xdehilite
+\i (02:10:00) xname_flush 
+\e (02:10:00) No command active
+\i (02:10:00) done 
+\e (02:10:00) No command active
+\i (02:10:00) generaledit 
+\e (02:10:02) Command not found: xhilite
+\i (02:10:02) xname_flush 
+\i (02:10:02) done 
+\e (02:10:03) Command not found: xdehilite
+\i (02:10:03) xname_flush 
+\e (02:10:03) No command active
+\i (02:10:03) done 
+\e (02:10:03) No command active
+\i (02:10:03) generaledit 
+\e (02:10:04) Command not found: xhilite
+\i (02:10:04) xname_flush 
+\i (02:10:04) done 
+\e (02:10:05) Command not found: xdehilite
+\i (02:10:05) xname_flush 
+\e (02:10:05) No command active
+\i (02:10:05) done 
+\e (02:10:05) No command active
+\i (02:10:05) generaledit 
+\e (02:10:05) Command not found: xhilite
+\i (02:10:05) xname_flush 
+\i (02:10:05) done 
+\e (02:10:06) Command not found: xdehilite
+\i (02:10:06) xname_flush 
+\e (02:10:06) No command active
+\i (02:10:06) done 
+\e (02:10:06) No command active
+\i (02:10:06) generaledit 
+\e (02:10:11) Command not found: xhilite
+\i (02:10:11) xname_flush 
+\i (02:10:11) done 
+\e (02:10:13) Command not found: xdehilite
+\i (02:10:13) xname_flush 
+\e (02:10:13) No command active
+\i (02:10:13) done 
+\e (02:10:13) No command active
+\i (02:10:13) generaledit 
+\e (02:17:19) Command not found: xhilite
+\i (02:17:19) xname_flush 
+\i (02:17:19) done 
+\e (02:17:28) Command not found: xhilite
+\i (02:17:28) xname_flush 
+\e (02:17:28) No command active
+\i (02:17:28) done 
+\e (02:17:28) No command active
+\i (02:17:28) generaledit 
+\e (02:19:50) Command not found: xhilite
+\i (02:19:50) xname_flush 
+\i (02:19:50) done 
+\i (02:19:58) generaledit 
+\e (02:19:58) Command not found: xhilite
+\i (02:19:58) xname_flush 
+\i (02:19:58) done 
+\i (02:19:59) generaledit 
+\e (02:20:16) Command not found: xhilite
+\i (02:20:16) xname_flush 
+\i (02:20:16) done 
+\i (02:20:16) generaledit 
+\e (02:20:24) Command not found: xdehilite
+\i (02:20:24) xname_flush 
+\i (02:20:24) done 
+\i (02:20:24) generaledit 
+\e (02:22:18) Command not found: xhilite
+\i (02:22:18) xname_flush 
+\i (02:22:18) done 
+\e (02:22:18) Command not found: xdehilite
+\i (02:22:18) xname_flush 
+\e (02:22:18) No command active
+\i (02:22:18) done 
+\e (02:22:18) No command active
+\i (02:22:18) generaledit 
+\e (02:22:18) Command not found: xhilite
+\i (02:22:18) xname_flush 
+\i (02:22:18) done 
+\i (02:22:24) generaledit 
+\e (02:22:26) Command not found: xdehilite
+\i (02:22:26) xname_flush 
+\i (02:22:26) done 
+\e (02:22:26) Command not found: xhilite
+\i (02:22:26) xname_flush 
+\e (02:22:26) No command active
+\i (02:22:26) done 
+\e (02:22:26) No command active
+\i (02:22:26) generaledit 
+\e (02:22:46) Command not found: xdehilite
+\i (02:22:46) xname_flush 
+\i (02:22:46) done 
+\i (02:22:47) generaledit 
+\e (02:22:57) Command not found: xhilite
+\i (02:22:57) xname_flush 
+\i (02:22:57) done 
+\i (02:22:57) generaledit 
+\e (02:22:58) Command not found: xhilite
+\i (02:22:58) xname_flush 
+\i (02:22:58) done 
+\i (02:22:58) generaledit 
+\e (02:22:59) Command not found: xhilite
+\i (02:22:59) xname_flush 
+\i (02:22:59) done 
+\i (02:22:59) generaledit 
+\e (02:23:04) Command not found: xhilite
+\i (02:23:04) xname_flush 
+\i (02:23:04) done 
+\i (02:23:04) generaledit 
+\e (02:23:05) Command not found: xhilite
+\i (02:23:05) xname_flush 
+\i (02:23:05) done 
+\i (02:23:06) generaledit 
+\e (02:23:06) Command not found: xhilite
+\i (02:23:06) xname_flush 
+\i (02:23:06) done 
+\i (02:23:06) generaledit 
+\e (02:23:07) Command not found: xhilite
+\i (02:23:07) xname_flush 
+\i (02:23:07) done 
+\i (02:23:07) generaledit 
+\e (02:23:08) Command not found: xhilite
+\i (02:23:08) xname_flush 
+\i (02:23:08) done 
+\i (02:23:08) generaledit 
+\e (02:23:10) Command not found: xhilite
+\i (02:23:10) xname_flush 
+\i (02:23:10) done 
+\i (02:23:10) generaledit 
+\e (02:23:11) Command not found: xhilite
+\i (02:23:11) xname_flush 
+\i (02:23:11) done 
+\i (02:23:11) generaledit 
+\e (02:23:43) Command not found: xhilite
+\i (02:23:43) xname_flush 
+\i (02:23:43) done 
+\e (02:23:43) Command not found: xdehilite
+\i (02:23:43) xname_flush 
+\e (02:23:43) No command active
+\i (02:23:43) done 
+\e (02:23:43) No command active
+\i (02:23:43) generaledit 
+\e (02:23:43) Command not found: xhilite
+\i (02:23:43) xname_flush 
+\i (02:23:43) done 
+\i (02:23:45) generaledit 
+\e (02:23:57) Command not found: xdehilite
+\i (02:23:57) xname_flush 
+\i (02:23:57) done 
+\i (02:23:57) generaledit 
+\e (02:24:16) Command not found: xhilite
+\i (02:24:16) xname_flush 
+\i (02:24:16) done 
+\i (02:24:16) generaledit 
+\e (02:24:17) Command not found: xhilite
+\i (02:24:17) xname_flush 
+\i (02:24:17) done 
+\i (02:24:17) generaledit 
+\e (02:24:18) Command not found: xhilite
+\i (02:24:18) xname_flush 
+\i (02:24:18) done 
+\i (02:24:18) generaledit 
+\e (02:24:52) Command not found: xhilite
+\i (02:24:52) xname_flush 
+\i (02:24:52) done 
+\i (02:24:52) generaledit 
+\e (02:24:57) Command not found: xhilite
+\i (02:24:57) xname_flush 
+\i (02:24:57) done 
+\i (02:24:57) generaledit 
+\e (02:24:58) Command not found: xhilite
+\i (02:24:58) xname_flush 
+\i (02:24:58) done 
+\i (02:24:58) generaledit 
+\e (02:24:59) Command not found: xhilite
+\i (02:24:59) xname_flush 
+\i (02:24:59) done 
+\i (02:24:59) generaledit 
+\e (02:26:23) Command not found: xdehilite
+\i (02:26:23) xname_flush 
+\i (02:26:23) done 
+\i (02:26:23) generaledit 
+\e (02:26:29) Command not found: xdehilite
+\i (02:26:29) xname_flush 
+\i (02:26:29) done 
+\e (02:26:29) Command not found: xhilite
+\i (02:26:29) xname_flush 
+\e (02:26:29) No command active
+\i (02:26:29) done 
+\e (02:26:29) No command active
+\i (02:26:29) generaledit 
+\e (02:32:56) Command not found: xhilite
+\i (02:32:56) xname_flush 
+\i (02:32:56) done 
+\i (02:32:56) generaledit 
+\e (02:34:28) Command not found: xdehilite
+\i (02:34:28) xname_flush 
+\i (02:34:28) done 
+\i (02:34:28) generaledit 
+\e (02:35:46) Command not found: xhilite
+\i (02:35:46) xname_flush 
+\i (02:35:46) done 
+\i (02:35:46) generaledit 
+\e (02:35:47) Command not found: xhilite
+\i (02:35:47) xname_flush 
+\i (02:35:47) done 
+\i (02:35:47) generaledit 
+\e (02:35:47) Command not found: xhilite
+\i (02:35:47) xname_flush 
+\i (02:35:47) done 
+\i (02:35:48) generaledit 
+\e (02:37:11) Command not found: xhilite
+\i (02:37:11) xname_flush 
+\i (02:37:11) done 
+\i (02:37:11) generaledit 
+\e (02:38:41) Command not found: xhilite
+\i (02:38:41) xname_flush 
+\i (02:38:41) don

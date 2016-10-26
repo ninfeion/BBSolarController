@@ -1,0 +1,23 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Mon Oct 24 16:39:54 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=1968 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\LM385TSSOP-8N\lm385tssop-8n.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:02) Opening existing design...
+\d (00:00:02) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/LM385TSSOP-8N/lm385tssop-8n.dra
+\i (00:00:02) trapsize 1575
+\i (00:00:02) trapsize 1661
+\i (00:00:02) trapsize 1661
+\i (00:00:02) trapsize 1432
+\i (00:00:02) generaledit 
+\i (00:00:03) zoom in 1 
+\i (00:00:03) setwindow pcb
+\i (00:00:03) zoom in -0.9346 0.4688
+\i (00:00:03) trapsize 716
+\i (00:00:04) drag_start grid -5.1801 2.2588
+\i (00:00:05) drag_stop 5.9753 -2.8821
+\i (00:00:05) pick grid 5.5314 -1.6363
+\t (00:00:05) last pick:  5.0800 -2.5400
+\i (00:00:11) exit 
+\t (00:00:11)     Journal end - Mon Oct 24 16:40:05 2016

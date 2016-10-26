@@ -1,0 +1,15 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Mon Oct 24 18:49:04 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=12776 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\TCAP_PO_1206\tcap_po_1206.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\d (00:00:00) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/TCAP_PO_1206/tcap_po_1206.dra
+\i (00:00:00) trapsize 1432
+\i (00:00:00) trapsize 1532
+\i (00:00:00) trapsize 1532
+\i (00:00:00) trapsize 1288
+\i (00:00:00) generaledit 
+\i (00:00:08) exit 
+\t (00:00:08)     Journal end - Mon Oct 24 18:49:12 2016

@@ -1,0 +1,16 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Mon Oct 24 23:46:48 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=11336 CPUs=4
+\t (00:00:00) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:02) Opening existing design...
+\d (00:00:02) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/BUTTON_2PIN/button_2pin.dra
+\i (00:00:02) trapsize 1175
+\i (00:00:02) trapsize 1218
+\i (00:00:02) trapsize 1218
+\i (00:00:02) trapsize 1025
+\i (00:00:02) generaledit 
+\i (00:02:50) new 
+\i (00:03:11) newdrawfillin "switch_6pin.dra" "Package Symbol"
+\t (00:03:11)     Journal end - Mon Oct 24 23:50:00 2016

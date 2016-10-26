@@ -1,0 +1,225 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Mon Oct 24 17:17:23 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=10640 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\TPS73150SOT23_5-6N\tps73150sot23_5-6n.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:02) Opening existing design...
+\d (00:00:02) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/TPS73150SOT23_5-6N/tps73150sot23_5-6n.dra
+\i (00:00:02) trapsize 1024
+\i (00:00:02) trapsize 1081
+\i (00:00:02) trapsize 1081
+\i (00:00:02) trapsize 932
+\i (00:00:03) generaledit 
+\i (00:00:04) trapsize 1460
+\i (00:00:06) trapsize 1016
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in -0.0963 0.0865
+\i (00:00:07) trapsize 508
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in -1.4377 0.0866
+\i (00:00:07) trapsize 254
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 1.5035 -0.1064
+\i (00:00:08) trapsize 127
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in 1.5035 -0.1191
+\i (00:00:09) trapsize 63
+\i (00:00:09) zoom out 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom out 1.5162 -0.1597
+\i (00:00:09) trapsize 127
+\i (00:00:09) zoom out 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom out 1.5162 -0.1648
+\i (00:00:09) trapsize 254
+\i (00:00:09) zoom out 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom out 1.5162 -0.1749
+\i (00:00:09) trapsize 508
+\i (00:00:10) zoom in 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom in 2.4939 1.2879
+\i (00:00:10) trapsize 254
+\i (00:00:13) prepopup 3.1898 0.4295
+\i (00:00:35) pick grid 2.7377 0.6377
+\t (00:00:35) last pick:  2.5400 0.0000
+\i (00:00:40) drag_start grid 1.0564 -0.0429
+\i (00:00:41) drag_stop 1.1580 0.3380
+\i (00:00:42) prepopup 1.1631 0.1196
+\i (00:00:43) pop dyn_option_select @:@Move 
+\i (00:00:43) move 
+\t (00:00:43) last pick:  0.0000 0.0000
+\t (00:00:43) last pick:  1.3000 0.0000
+\t (00:00:43) Pick new location for the element(s).
+\i (00:00:45) Esc 
+\i (00:00:49) pick grid 1.2850 1.1660
+\t (00:00:49) last pick:  2.5400 0.0000
+\i (00:00:49) generaledit 
+\i (00:00:50) Esc 
+\i (00:00:51) undo 
+\i (00:00:51) trapsize 254
+\i (00:00:51) generaledit 
+\i (00:00:53) prepopup 1.4933 0.0485
+\i (00:00:56) pick grid 2.7073 0.9120
+\t (00:00:56) last pick:  2.5400 0.0000
+\i (00:00:56) pick grid 1.3764 0.9882
+\t (00:00:56) last pick:  2.5400 0.0000
+\i (00:00:57) pick grid 1.3764 0.9882
+\t (00:00:57) last pick:  2.5400 0.0000
+\i (00:00:57) pick grid dbl 1.3764 0.9882
+\t (00:00:57) last pick:  2.5400 0.0000
+\i (00:00:59) prepopup 1.1987 0.9527
+\i (00:01:01) pop dyn_option_select '@:@Show element' 
+\i (00:01:01) show element 
+\i (00:01:02) generaledit 
+\i (00:01:03) zoom out 1 
+\i (00:01:03) setwindow pcb
+\i (00:01:03) zoom out 1.1987 -0.0480
+\i (00:01:03) trapsize 508
+\i (00:01:03) zoom out 1 
+\i (00:01:03) setwindow pcb
+\i (00:01:03) zoom out 1.2190 -0.0277
+\i (00:01:03) trapsize 1016
+\i (00:01:03) zoom out 1 
+\i (00:01:03) setwindow pcb
+\i (00:01:03) zoom out 6.7709 -0.4113
+\i (00:01:03) trapsize 1373
+\i (00:01:05) setwindow text
+\i (00:01:05) close 
+\i (00:01:06) setwindow pcb
+\i (00:01:06) zoom in 1 
+\i (00:01:06) setwindow pcb
+\i (00:01:06) zoom in 1.7574 0.5766
+\i (00:01:06) trapsize 686
+\i (00:01:06) zoom in 1 
+\i (00:01:06) setwindow pcb
+\i (00:01:06) zoom in 2.5262 1.2768
+\i (00:01:06) trapsize 343
+\i (00:01:07) zoom in 1 
+\i (00:01:07) setwindow pcb
+\i (00:01:07) zoom in 2.1212 1.1052
+\i (00:01:07) trapsize 172
+\i (00:01:09) text edit 
+\t (00:01:09) Selected item not valid for current operation, ignored: Pin "R110_60, 6"
+\t (00:01:09) No valid items selected for the current operation, exiting.
+\i (00:01:09) generaledit 
+\i (00:01:10) pick grid 1.4931 0.9576
+\t (00:01:10) last pick:  2.5400 0.0000
+\i (00:01:10) pick grid dbl 1.4931 0.9576
+\t (00:01:10) last pick:  2.5400 0.0000
+\i (00:01:12) pick grid 1.6029 0.9130
+\t (00:01:12) last pick:  2.5400 0.0000
+\i (00:01:12) pick grid dbl 1.6029 0.9130
+\t (00:01:12) last pick:  2.5400 0.0000
+\i (00:01:12) prepopup 1.5721 0.9130
+\i (00:02:16) property edit 
+\t (00:02:16) Selected item not valid for current operation, ignored: Pin "R110_60, 6"
+\t (00:02:16) No valid items selected for the current operation, exiting.
+\i (00:02:16) generaledit 
+\i (00:02:23) pick grid 2.5846 0.9679
+\t (00:02:23) last pick:  2.5400 0.0000
+\i (00:02:24) pick grid 1.6853 0.9782
+\t (00:02:24) last pick:  2.5400 0.0000
+\i (00:02:24) prepopup 1.6853 0.9782
+\i (00:02:41) pop dyn_option_select 'Application Mode@:@Shape Edit' 
+\i (00:02:41) shapeedit 
+\i (00:02:48) pick grid 1.5618 0.9061
+\t (00:02:48) last pick:  1.2700 0.6350
+\i (00:02:49) pick grid 2.9278 1.0778
+\t (00:02:49) last pick:  3.1750 1.2700
+\i (00:02:51) pick grid 0.9096 0.9576
+\t (00:02:51) last pick:  0.6350 1.2700
+\i (00:02:52) pick grid 3.1681 1.3489
+\t (00:02:52) last pick:  3.1750 1.2700
+\i (00:02:53) prepopup 2.7528 1.3832
+\i (00:02:54) pop dyn_option_select 'Application Mode@:@Etch Edit' 
+\i (00:02:54) etchedit 
+\i (00:02:55) pick grid 1.4760 0.7826
+\t (00:02:55) last pick:  1.2700 0.6350
+\i (00:02:56) prepopup 1.4760 0.7826
+\i (00:03:00) prepopup 1.3730 0.9542
+\i (00:03:46) prepopup 1.6888 0.7654
+\i (00:03:48) pick grid 2.7699 0.7036
+\t (00:03:48) last pick:  2.5400 0.6350
+\i (00:04:00) pick grid 1.7094 0.9542
+\t (00:04:00) last pick:  1.9050 1.2700
+\i (00:04:05) setwindow form.mini
+\i (00:04:05) FORM mini class PACKAGE GEOMETRY 
+\i (00:04:07) FORM mini subclass PIN_NUMBER 
+\i (00:04:11) setwindow pcb
+\i (00:04:11) zoom out 1 
+\i (00:04:11) setwindow pcb
+\i (00:04:11) zoom out 2.4748 0.7105
+\i (00:04:11) trapsize 343
+\i (00:04:12) zoom out 1 
+\i (00:04:12) setwindow pcb
+\i (00:04:12) zoom out 2.7219 0.6281
+\i (00:04:12) trapsize 686
+\i (00:04:14) pick grid 3.6383 0.6556
+\t (00:04:14) last pick:  2.5400 0.0000
+\i (00:04:15) zoom in 1 
+\i (00:04:15) setwindow pcb
+\i (00:04:15) zoom in 2.2928 0.9165
+\i (00:04:15) trapsize 343
+\i (00:04:16) setwindow form.mini
+\i (00:04:16) FORM mini subcolor 1 
+\i (00:04:22) setwindow pcb
+\i (00:04:22) prepopup 1.2493 1.4588
+\i (00:04:23) pick grid 3.1715 0.9439
+\t (00:04:23) last pick:  2.5400 0.0000
+\i (00:04:26) text edit 
+\i (00:04:27) pick grid 1.2082 1.4382
+\t (00:04:27) last pick:  0.0000 2.5400
+\i (00:04:30) setwindow pcb
+\i (00:04:30) pick 1.2082 1.4382
+\t (00:04:30) Pick text to edit.
+\i (00:04:31) Esc 
+\i (00:04:31) zoom out 1 
+\i (00:04:31) setwindow pcb
+\i (00:04:31) zoom out 2.7253 0.9783
+\i (00:04:31) trapsize 686
+\i (00:04:31) zoom out 1 
+\i (00:04:31) setwindow pcb
+\i (00:04:31) zoom out 3.1578 0.9782
+\i (00:04:31) trapsize 1373
+\i (00:04:31) zoom out 1 
+\i (00:04:31) setwindow pcb
+\i (00:04:31) zoom out 13.0156 -1.3729
+\i (00:04:31) trapsize 1373
+\i (00:04:32) zoom in 1 
+\i (00:04:32) setwindow pcb
+\i (00:04:32) zoom in 2.0869 0.2471
+\i (00:04:32) trapsize 686
+\i (00:04:32) prepopup 4.3934 0.1373
+\i (00:04:33) done 
+\i (00:04:33) etchedit 
+\i (00:04:34) zoom in 1 
+\i (00:04:34) setwindow pcb
+\i (00:04:34) zoom in 2.6223 0.0412
+\i (00:04:34) trapsize 343
+\i (00:04:35) prepopup 1.5789 -0.1236
+\i (00:04:35) pick grid 1.3936 -0.0892
+\t (00:04:35) last pick:  2.5400 0.0000
+\i (00:04:36) prepopup 1.3936 -0.0892
+\i (00:04:37) pop dyn_option_select @:@Delete 
+\i (00:04:38) delete 
+\i (00:04:38) etchedit 
+\i (00:04:39) pick grid 1.3867 0.8856
+\t (00:04:39) last pick:  2.5400 0.0000
+\i (00:04:40) setwindow form.mini
+\i (00:04:40) FORM mini subcolor 0 
+\i (00:04:41) setwindow pcb
+\i (00:04:41) pick grid 4.1051 0.4050
+\t (00:04:41) last pick:  5.0800 0.0000
+\i (00:04:41) save 
+\i (00:04:44) fillin no 
+\i (00:04:57) fillin "tps73150sot23_5_final.dra"
+\t (00:04:58) Symbol 'tps73150sot23_5_final.psm' created.
+\i (00:04:58) etchedit 
+\i (00:05:11) exit 
+\t (00:05:11)     Journal end - Mon Oct 24 17:22:34 2016

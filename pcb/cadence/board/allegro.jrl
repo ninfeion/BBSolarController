@@ -1,0 +1,387 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Oct 26 13:58:59 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=7564 CPUs=4
+\t (00:00:00) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Starting new design...
+\i (00:00:00) trapsize 1070
+\i (00:00:00) trapsize 1110
+\i (00:00:00) trapsize 1742
+\i (00:00:00) trapsize 1255
+\i (00:00:00) trapsize 1382
+\i (00:00:00) trapsize 9813
+\i (00:00:00) trapsize 8750
+\i (00:00:01) trapsize 1184
+\i (00:00:01) generaledit 
+\i (00:00:11) trapsize 1382
+\i (00:00:14) shape add rect 
+\i (00:00:26) pick grid 6772.4 8845.5
+\t (00:00:26) last pick:  6800.0 8800.0
+   (00:00:26) WARNING(SPMHA2-118): 'DESIGN_OUTLINE' and 'CUTOUT' are the preferred subclasses for defining an outline. Use these subclasses instead of the 'OUTLINE' subclass. [help]
+\i (00:00:29) fillin confirm
+\i (00:00:32) xymode toggle 
+\t (00:00:32) XY readout mode is relative to last pick
+\i (00:00:33) xymode toggle 
+\t (00:00:33) XY readout mode is absolute
+\i (00:00:40) showhide text 
+\i (00:00:45) prepopup 7131.7 3593.5
+\i (00:00:46) oops 
+\i (00:00:57) pick -100 -100 
+\t (00:00:57) last pick:  -100.0 -100.0
+\w (00:00:57) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
+\i (00:01:02) pick 100 100 
+\t (00:01:02) last pick:  100.0 100.0
+\i (00:01:13) Esc 
+\i (00:01:13) generaledit 
+\i (00:01:16) prmed 
+\i (00:01:18) setwindow form.prmedit
+\i (00:01:18) FORM prmedit design  
+\i (00:01:20) FORM prmedit units Millimeter 
+\e (00:01:20) Change may cause round-off; run dbcheck.
+\i (00:01:23) FORM prmedit x -250.0000 
+\i (00:01:24) FORM prmedit y -250.0000 
+\e (00:01:26) Must be a real number.
+\i (00:01:28) FORM prmedit width 500.0000 
+\i (00:01:30) FORM prmedit height 500.0000 
+\i (00:01:30) FORM prmedit apply  
+\w (00:01:30) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:01:30) setwindow pcb
+\i (00:01:30) trapsize 35106
+\t (00:01:30) Performing DRC...
+\t (00:01:30) Multithreaded DRC update (4 threads).
+\t (00:01:30) No DRC errors detected.
+\i (00:01:32) setwindow form.prmedit
+\i (00:01:32) FORM prmedit done  
+\i (00:01:32) setwindow pcb
+\i (00:01:32) generaledit 
+\i (00:01:34) grid toggle 
+\t (00:01:34) Grids are drawn 5.0800, 5.0800 apart for enhanced viewability.
+\i (00:01:34) generaledit 
+\i (00:01:36) shape add rect 
+\i (00:01:40) pick -100 -100 
+\t (00:01:40) last pick:  -100.0000 -100.0000
+\i (00:01:43) pick 100 100 
+\t (00:01:43) last pick:  100.0000 100.0000
+\i (00:01:44) zoom out 1 
+\i (00:01:44) setwindow pcb
+\i (00:01:44) zoom out 42.7819 35.8550
+\i (00:01:44) trapsize 51230
+\i (00:01:44) zoom out 1 
+\i (00:01:44) setwindow pcb
+\i (00:01:44) zoom out 177.2541 -62.5000
+\i (00:01:44) trapsize 51230
+\i (00:01:44) zoom out 1 
+\i (00:01:44) setwindow pcb
+\i (00:01:44) zoom out 177.2541 -62.5000
+\i (00:01:44) trapsize 51230
+\i (00:01:45) zoom in 1 
+\i (00:01:45) setwindow pcb
+\i (00:01:45) zoom in 63.5246 -46.1066
+\i (00:01:45) trapsize 25615
+\i (00:01:47) zoom out 1 
+\i (00:01:47) setwindow pcb
+\i (00:01:47) zoom out -35.3483 -3.5861
+\i (00:01:47) trapsize 51230
+\i (00:01:49) prepopup 19.4672 114.7541
+\i (00:01:49) oops 
+\t (00:01:49) last pick:  -100.0000 -100.0000
+\i (00:01:51) prepopup 115.7787 35.8606
+\i (00:01:51) oops 
+\e (00:02:00) Command not found: x-150 -100
+\i (00:02:08) pick -150 -100 
+\t (00:02:08) last pick:  -150.0000 -100.0000
+\i (00:02:11) pick 150 100 
+\t (00:02:11) last pick:  150.0000 100.0000
+\i (00:02:12) prepopup 58.4016 22.5410
+\i (00:02:13) done 
+\i (00:02:13) generaledit 
+\i (00:02:15) grid toggle 
+\i (00:02:15) generaledit 
+\i (00:02:16) zoom in 1 
+\i (00:02:16) setwindow pcb
+\i (00:02:16) zoom in -17.4180 -5.1230
+\i (00:02:16) trapsize 25615
+\i (00:02:27) setwindow form.mini
+\i (00:02:27) FORM mini class PACKAGE KEEPIN 
+\i (00:02:36) setwindow pcb
+\i (00:02:36) zcopy shape 
+\t (00:02:36) Select cline, cline segment, shape, rectangle or closed polygon.
+   (00:02:36) Loading cmds.cxt 
+\i (00:02:41) setwindow form.mini
+\i (00:02:41) FORM mini class_name PACKAGE KEEPIN 
+\i (00:02:44) FORM mini expand YES 
+\e (00:02:52) Must be greater or equal to 0.0000.
+\i (00:02:54) setwindow pcb
+\i (00:02:54) pick -151.6393 27.1516
+\t (00:02:54) last pick:  -151.6393 27.1516
+\i (00:02:56) zoom in 1 
+\i (00:02:56) setwindow pcb
+\i (00:02:56) zoom in -153.1762 41.4959
+\i (00:02:56) trapsize 12807
+\i (00:02:56) zoom in 1 
+\i (00:02:56) setwindow pcb
+\i (00:02:56) zoom in -153.1762 40.4713
+\i (00:02:56) trapsize 6404
+\i (00:02:56) zoom in 1 
+\i (00:02:56) setwindow pcb
+\i (00:02:56) zoom in -151.1270 39.3187
+\i (00:02:56) trapsize 3202
+\i (00:02:56) zoom in 1 
+\i (00:02:56) setwindow pcb
+\i (00:02:56) zoom in -151.0629 39.2547
+\i (00:02:56) trapsize 1601
+\i (00:02:56) zoom in 1 
+\i (00:02:56) setwindow pcb
+\i (00:02:56) zoom in -150.9669 38.9986
+\i (00:02:56) trapsize 800
+\i (00:02:57) zoom in 1 
+\i (00:02:57) setwindow pcb
+\i (00:02:57) zoom in -149.8622 38.2782
+\i (00:02:57) trapsize 400
+\i (00:02:57) zoom in 1 
+\i (00:02:57) setwindow pcb
+\i (00:02:57) zoom in -149.8623 38.2782
+\i (00:02:57) trapsize 200
+\i (00:02:57) zoom in 1 
+\i (00:02:57) setwindow pcb
+\i (00:02:57) zoom in -149.8623 38.2782
+\i (00:02:57) trapsize 100
+\i (00:02:58) zoom in 1 
+\i (00:02:58) setwindow pcb
+\i (00:02:58) zoom in -150.0325 38.2262
+\i (00:02:58) trapsize 50
+\i (00:02:58) zoom in 1 
+\i (00:02:58) setwindow pcb
+\i (00:02:58) zoom in -150.0325 38.2262
+\i (00:02:58) trapsize 25
+\i (00:03:01) undo 
+\i (00:03:01) trapsize 25615
+\i (00:03:01) generaledit 
+\i (00:03:04) zcopy shape 
+\t (00:03:04) Select cline, cline segment, shape, rectangle or closed polygon.
+\e (00:03:08) Must be greater or equal to 0.0000.
+\i (00:03:10) setwindow form.mini
+\i (00:03:10) FORM mini offset 5.0000 
+\i (00:03:13) FORM mini contract YES 
+\i (00:03:15) setwindow pcb
+\i (00:03:15) pick 150.1025 -21.0041
+\t (00:03:15) last pick:  150.1025 -21.0041
+\i (00:03:16) prepopup 79.9181 -10.2459
+\i (00:03:17) pop Done 
+\i (00:03:17) generaledit 
+\i (00:03:18) prepopup 161.8853 -14.3443
+\i (00:03:25) place manual 
+\i (00:03:27) setwindow form.plc_manual
+\i (00:03:27) FORM plc_manual tree  'Components by refdes' 
+\i (00:03:27) FORM plc_manual advanced_settings  
+\i (00:03:28) FORM plc_manual placement_list  
+\i (00:03:30) FORM plc_manual advanced_settings  
+\i (00:03:30) FORM plc_manual placement_list  
+\i (00:03:31) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
+\i (00:03:32) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
+\i (00:03:35) FORM plc_manual advanced_settings  
+\i (00:03:36) FORM plc_manual placement_list  
+\i (00:03:37) FORM plc_manual cancel  
+\i (00:03:37) setwindow pcb
+\i (00:03:37) generaledit 
+\i (00:03:41) open 
+\e (00:03:41) Do you want to save the changes you made to unnamed.brd?
+\i (00:03:42) fillin no 
+\i (00:03:44) fillin "BBSOLARCONTROLLER_V3000.brd"
+\t (00:03:44) Opening existing design...
+\t (00:03:44) Grids are drawn 5.0800, 5.0800 apart for enhanced viewability.
+\i (00:03:44) trapsize 39761
+\d (00:03:44) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/BBSOLARCONTROLLER_V3000.brd
+\i (00:03:44) generaledit 
+\i (00:03:46) zoom out 1 
+\i (00:03:46) setwindow pcb
+\i (00:03:46) zoom out -28.9314 66.4938
+\i (00:03:46) trapsize 51230
+\i (00:03:46) drag_start grid 30.7377 165.9836
+\i (00:03:46) drag_stop 37.9098 149.5902
+\i (00:03:47) shape add rect 
+\i (00:03:49) pick grid 72.7459 25.6147
+\t (00:03:49) last pick:  73.6600 25.4000
+\e (00:03:54) Command not found: x-150 -100
+\i (00:03:59) prepopup -37.9098 -52.2541
+\i (00:04:00) oops 
+\i (00:04:05) pick -150 -100 
+\t (00:04:05) last pick:  -150.0000 -100.0000
+\i (00:04:10) pick 150 100 
+\t (00:04:10) last pick:  150.0000 100.0000
+\i (00:04:11) prepopup 53.2787 26.6393
+\i (00:04:12) done 
+\i (00:04:12) generaledit 
+\i (00:04:14) grid toggle 
+\i (00:04:14) generaledit 
+\i (00:04:17) zcopy shape 
+\t (00:04:17) Select cline, cline segment, shape, rectangle or closed polygon.
+\i (00:04:20) pick 147.5410 4.0984
+\t (00:04:20) last pick:  147.5410 4.0984
+\i (00:04:21) prepopup 148.5656 4.0984
+\i (00:04:21) pop Done 
+\i (00:04:22) generaledit 
+\i (00:04:23) place manual 
+\i (00:04:41) setwindow form.plc_manual
+\i (00:04:41) FORM plc_manual tree 'MULTISEL YES' U21 'Components by refdes' 
+\e (00:04:41) Cannot load symbol 'AD780SOIC_N-8N'
+\i (00:04:41) FORM plc_manual tree  U21 'Components by refdes' 
+\i (00:04:46) FORM plc_manual tree 'MULTISEL YES' U20 'Components by refdes' 
+\e (00:04:46) Cannot load symbol 'SY7208_SOT23-6-6N'
+\i (00:04:46) FORM plc_manual tree  U20 'Components by refdes' 
+\i (00:04:55) FORM plc_manual tree 'MULTISEL YES' U22 'Components by refdes' 
+\i (00:04:55) FORM plc_manual tree  U22 'Components by refdes' 
+\i (00:05:21) FORM plc_manual tree 'MULTISEL YES' J4 'Components by refdes' 
+\e (00:05:21) Cannot load symbol 'SMD_8PIN_JACK'
+\i (00:05:21) FORM plc_manual tree  J4 'Components by refdes' 
+\i (00:05:23) setwindow pcb
+\i (00:05:23) pick grid -111.6803 32.7869
+\t (00:05:23) last pick:  -111.7600 33.0200
+\e (00:05:23) Cannot load symbol 'SY7208_SOT23-6-6N'
+\i (00:05:25) pick grid tgl -108.6066 17.4180
+\t (00:05:25) last pick:  -109.2200 17.7800
+\e (00:05:25) Cannot load symbol 'AD780SOIC_N-8N'
+\i (00:05:25) pick grid tgl -106.5574 15.3688
+\t (00:05:25) last pick:  -106.6800 15.2400
+\e (00:05:25) Cannot load symbol 'AXP209QFN-49N'
+\i (00:05:27) pick grid -92.2131 9.2213
+\t (00:05:27) last pick:  -91.4400 10.1600
+\i (00:05:28) pick grid -40.9836 -3.0738
+\t (00:05:28) last pick:  -40.6400 -2.5400
+\i (00:05:29) setwindow form.plc_manual
+\i (00:05:29) FORM plc_manual cancel  
+\i (00:05:29) setwindow pcb
+\i (00:05:29) generaledit 
+\i (00:06:11) place manual 
+\i (00:06:20) setwindow form.plc_manual
+\i (00:06:20) FORM plc_manual tree 'MULTISEL YES' U20 'Components by refdes' 
+\e (00:06:20) Cannot load symbol 'SY7208_SOT23-6-6N'
+\i (00:06:20) FORM plc_manual tree  U20 'Components by refdes' 
+\i (00:06:21) FORM plc_manual tree 'MULTISEL YES' U21 'Components by refdes' 
+\i (00:06:21) FORM plc_manual tree  U21 'Components by refdes' 
+\i (00:06:21) FORM plc_manual tree 'MULTISEL NO' U21 'Components by refdes' 
+\i (00:06:22) FORM plc_manual tree 'MULTISEL YES' U22 'Components by refdes' 
+\i (00:06:22) FORM plc_manual tree  U22 'Components by refdes' 
+\i (00:06:22) FORM plc_manual tree 'MULTISEL YES' U21 'Components by refdes' 
+\i (00:06:22) FORM plc_manual tree  U21 'Components by refdes' 
+\i (00:06:26) FORM plc_manual tree 'MULTISEL YES' J4 'Components by refdes' 
+\e (00:06:26) Cannot load symbol 'SMD_8PIN_JACK'
+\i (00:06:26) FORM plc_manual tree  J4 'Components by refdes' 
+\i (00:06:27) setwindow pcb
+\i (00:06:27) pick grid -70.6967 0.0000
+\t (00:06:27) last pick:  -71.1200 0.0000
+\e (00:06:27) Cannot load symbol 'SY7208_SOT23-6-6N'
+\i (00:06:28) pick grid -72.7459 24.5902
+\t (00:06:28) last pick:  -73.6600 25.4000
+\e (00:06:28) Cannot load symbol 'AD780SOIC_N-8N'
+\i (00:06:29) pick grid -44.0574 27.6639
+\t (00:06:29) last pick:  -43.1800 27.9400
+\e (00:06:29) Cannot load symbol 'AXP209QFN-49N'
+\i (00:06:29) pick grid -13.3197 19.4672
+\t (00:06:29) last pick:  -12.7000 20.3200
+\i (00:06:30) pick grid 14.3443 -47.1312
+\t (00:06:30) last pick:  15.2400 -48.2600
+\i (00:06:30) pick grid 35.8606 -64.5492
+\t (00:06:30) last pick:  35.5600 -63.5000
+\i (00:06:31) pick grid 75.8197 -19.4672
+\t (00:06:31) last pick:  76.2000 -20.3200
+\i (00:06:32) setwindow form.plc_manual
+\i (00:06:32) FORM plc_manual done  
+\i (00:06:33) setwindow pcb
+\i (00:06:33) generaledit 
+\i (00:08:21) place manual 
+\i (00:08:24) setwindow form.plc_manual
+\i (00:08:24) FORM plc_manual tree 'MULTISEL YES' U21 'Components by refdes' 
+\e (00:08:24) Cannot load symbol 'AD780SOIC_N-8N'
+\i (00:08:24) FORM plc_manual tree  U21 'Components by refdes' 
+\i (00:08:25) FORM plc_manual tree 'MULTISEL YES' U22 'Components by refdes' 
+\i (00:08:25) FORM plc_manual tree  U22 'Components by refdes' 
+\i (00:08:25) FORM plc_manual tree 'MULTISEL YES' U23 'Components by refdes' 
+\i (00:08:25) FORM plc_manual tree  U23 'Components by refdes' 
+\i (00:08:26) setwindow pcb
+\i (00:08:26) pick grid -106.5574 31.7623
+\t (00:08:26) last pick:  -106.6800 33.0200
+\e (00:08:26) Cannot load symbol 'AXP209QFN-49N'
+\i (00:08:27) pick grid -59.4262 33.8115
+\t (00:08:27) last pick:  -58.4200 33.0200
+\e (00:08:27) Cannot load symbol 'SY7208_SOT23-6-6N'
+\i (00:08:27) pick grid -57.3771 33.8115
+\t (00:08:27) last pick:  -58.4200 33.0200
+\i (00:08:27) pick grid -52.2541 33.8115
+\t (00:08:27) last pick:  -53.3400 33.0200
+\i (00:08:28) pick grid dbl -52.2541 33.8115
+\t (00:08:28) last pick:  -53.3400 33.0200
+\i (00:08:28) pick grid -52.2541 33.8115
+\t (00:08:28) last pick:  -53.3400 33.0200
+\i (00:08:29) pick grid dbl -52.2541 33.8115
+\t (00:08:29) last pick:  -53.3400 33.0200
+\i (00:08:31) setwindow form.plc_manual
+\i (00:08:31) FORM plc_manual tree 'MULTISEL YES' U21 'Components by refdes' 
+\e (00:08:31) Cannot load symbol 'AD780SOIC_N-8N'
+\i (00:08:31) FORM plc_manual tree  U21 'Components by refdes' 
+\i (00:08:32) setwindow pcb
+\i (00:08:32) pick grid 53.2787 -24.5902
+\t (00:08:32) last pick:  53.3400 -25.4000
+\i (00:09:52) setwindow form.plc_manual
+\i (00:09:52) FORM plc_manual tree 'MULTISEL YES' U21 'Components by refdes' 
+\e (00:09:52) ERROR(SPMHSY-24): 'R155_60', not found in search path.
+\e (00:09:52) ERROR(SPMHSY-24): 'R155_60', not found in search path.
+\e (00:09:52) Cannot load symbol 'AD780SOIC_N-8N'
+\e (00:09:52)   because WARNING(SPMHUT-127): Could not find padstack R155_60.
+\i (00:09:53) setwindow pcb
+\i (00:09:53) pick grid -133.1967 29.7131
+\t (00:09:53) last pick:  -132.0800 30.4800
+\i (00:09:53) pick grid -94.2623 32.7869
+\t (00:09:53) last pick:  -93.9800 33.0200
+\i (00:09:58) setwindow form.plc_manual
+\i (00:09:58) FORM plc_manual tree 'MULTISEL YES' U21 'Components by refdes' 
+\e (00:09:58) ERROR(SPMHSY-24): 'R155_60', not found in search path.
+\e (00:09:58) ERROR(SPMHSY-24): 'R155_60', not found in search path.
+\e (00:09:58) Cannot load symbol 'AD780SOIC_N-8N'
+\e (00:09:58)   because WARNING(SPMHUT-127): Could not find padstack R155_60.
+\i (00:09:58) FORM plc_manual tree 'MULTISEL YES' U22 'Components by refdes' 
+\i (00:09:58) FORM plc_manual tree  U22 'Components by refdes' 
+\i (00:09:58) FORM plc_manual tree 'MULTISEL YES' U23 'Components by refdes' 
+\i (00:09:58) FORM plc_manual tree  U23 'Components by refdes' 
+\i (00:09:59) setwindow pcb
+\i (00:09:59) pick grid 43.0328 4.0984
+\t (00:09:59) last pick:  43.1800 5.0800
+\e (00:09:59) ERROR(SPMHSY-24): 'D85_20', not found in search path.
+\e (00:09:59) ERROR(SPMHSY-24): 'D85_20', not found in search path.
+\e (00:09:59) Cannot load symbol 'AXP209QFN-49N'
+\e (00:09:59)   because WARNING(SPMHUT-127): Could not find padstack D85_20.
+\i (00:10:00) pick grid 17.4180 19.4672
+\t (00:10:00) last pick:  17.7800 20.3200
+\e (00:10:00) ERROR(SPMHSY-24): 'R115_60', not found in search path.
+\e (00:10:00) ERROR(SPMHSY-24): 'R115_60', not found in search path.
+\e (00:10:00) Cannot load symbol 'SY7208_SOT23-6-6N'
+\e (00:10:00)   because WARNING(SPMHUT-127): Could not find padstack R115_60.
+\i (00:10:00) pick grid dbl 17.4180 19.4672
+\t (00:10:00) last pick:  17.7800 20.3200
+\i (00:10:23) setwindow form.plc_manual
+\i (00:10:23) FORM plc_manual cancel  
+\i (00:10:23) setwindow pcb
+\i (00:10:23) generaledit 
+\i (00:10:38) enved 
+\i (00:10:38) generaledit 
+\i (00:10:40) setwindow form.prfedit
+\i (00:10:40) FORM prfedit treelist  Paths 
+\i (00:10:42) FORM prfedit treelist  Library Paths 
+\i (00:11:16) FORM prfedit padpath  
+\i (00:12:03) FORM prfedit psmpath  
+\i (00:12:28) FORM prfedit padpath  
+\i (00:12:31) FORM prfedit psmpath  
+\i (00:12:54) FORM prfedit psmpath  
+\i (00:12:57) FORM prfedit padpath  
+\i (00:13:04) FORM prfedit apply  
+\i (00:13:06) FORM prfedit done  
+\i (00:13:08) setwindow pcb
+\i (00:13:08) place manual 
+\i (00:13:12) setwindow form.plc_manual
+\i (00:13:12) FORM plc_manual tree 'MULTISEL YES' U20 'Components by refdes' 
+\e (00:13:12) ERROR(SPMHSY-24): 'R115_60', not found in search path.
+\e (00:13:12) ERROR(SPMHSY-24): 'R115_60', not found in search path.
+\e (00:13:12) Cannot load symbol 'SY7208_SOT23-6-6N'
+\e (00:13:12)   because WARNING(SPMHUT-127): Could not find padstack R115_60.
+\i (00:13:12) FORM plc_manual tree  U20 'Componen

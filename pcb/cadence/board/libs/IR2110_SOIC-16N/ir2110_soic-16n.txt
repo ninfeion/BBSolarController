@@ -1,0 +1,11 @@
+(Device File: IR2110_SOIC-16N)
+
+PACKAGE IR2110_SOIC-16N
+CLASS IC
+PINCOUNT 16
+PINORDER IR2110_SOIC-16N '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' ,
+'12' '13' '14' '15' '16' 
+FUNCTION g1 IR2110_SOIC-16N '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' ,
+'12' '13' '14' '15' '16' 
+
+END

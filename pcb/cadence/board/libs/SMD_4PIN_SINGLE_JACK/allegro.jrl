@@ -1,0 +1,16 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Mon Oct 24 23:21:55 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=15392 CPUs=4
+\t (00:00:00) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:02) Opening existing design...
+\d (00:00:02) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/SMD_4PIN_SINGLE_JACK/smd_4pin_single_jack.dra
+\i (00:00:02) trapsize 1175
+\i (00:00:02) trapsize 1218
+\i (00:00:02) trapsize 1218
+\i (00:00:02) trapsize 1025
+\i (00:00:03) generaledit 
+\i (00:00:18) new 
+\i (00:00:37) newdrawfillin "button_2pin.dra" "Package Symbol"
+\t (00:00:37)     Journal end - Mon Oct 24 23:22:32 2016

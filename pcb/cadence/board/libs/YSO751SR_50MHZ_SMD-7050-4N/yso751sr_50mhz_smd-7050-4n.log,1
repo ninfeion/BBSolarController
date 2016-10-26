@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : yso751sr_50mhz_smd-7050-4n.dra                )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Tue Oct 25 23:07:57 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/YSO751SR_50MHZ_SMD-7050-4N
+    Name      = yso751sr_50mhz_smd-7050-4n.psm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

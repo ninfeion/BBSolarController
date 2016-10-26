@@ -1,0 +1,69 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue Oct 25 23:50:16 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=11552 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\PTH_BUZZER_2PIN\pth_buzzer_2pin.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\d (00:00:00) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/PTH_BUZZER_2PIN/pth_buzzer_2pin.dra
+\i (00:00:00) trapsize 2294
+\i (00:00:00) trapsize 2419
+\i (00:00:00) trapsize 2419
+\i (00:00:00) trapsize 1821
+\i (00:00:00) trapsize 2008
+\i (00:00:00) trapsize 13761
+\i (00:00:00) trapsize 12500
+\i (00:00:01) trapsize 1754
+\i (00:00:01) generaledit 
+\i (00:00:01) zoom in 1 
+\i (00:00:01) setwindow pcb
+\i (00:00:01) zoom in -2.9337 -1.4254
+\i (00:00:01) trapsize 877
+\i (00:00:01) zoom in 1 
+\i (00:00:01) setwindow pcb
+\i (00:00:01) zoom in -5.0111 -1.4430
+\i (00:00:01) trapsize 438
+\i (00:00:01) zoom in 1 
+\i (00:00:01) setwindow pcb
+\i (00:00:01) zoom in -5.0023 -1.4955
+\i (00:00:01) trapsize 219
+\i (00:00:01) zoom in 1 
+\i (00:00:01) setwindow pcb
+\i (00:00:01) zoom in -5.0022 -1.4999
+\i (00:00:01) trapsize 110
+\i (00:00:02) zoom out 1 
+\i (00:00:02) setwindow pcb
+\i (00:00:02) zoom out -4.0354 -1.8572
+\i (00:00:02) trapsize 219
+\i (00:00:02) zoom out 1 
+\i (00:00:02) setwindow pcb
+\i (00:00:02) zoom out -4.0354 -1.8571
+\i (00:00:02) trapsize 438
+\i (00:00:04) zoom out 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom out -3.0620 -0.4366
+\i (00:00:04) trapsize 877
+\i (00:00:07) color192 
+\i (00:00:07) generaledit 
+\i (00:00:08) QtSignal CVDLayerContainer CVDVisibilityOff clicked
+\i (00:00:10) QtSignal CVDLayerTable CVDLayerTableHorzHeader clickedCheckBox 1
+\i (00:00:10) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Top Via
+\i (00:00:11) QtSignal CVDLayerTable CVDLayerTableHorzHeader clickedButton 1
+\i (00:00:11) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Top Via
+\i (00:00:12) QtSignal CVDLayerTable CVDLayerTableHorzHeader clickedButton 1
+\i (00:00:12) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Top Via
+\i (00:00:15) QtSignal ColorVisibilityDialog CVDCancelButton clicked
+\i (00:00:17) color192 
+\i (00:00:17) generaledit 
+\i (00:00:19) QtSignal CVDLayerContainer CVDVisibilityOff clicked
+\i (00:00:20) QtSignal CVDLayerTable CVDLayerTableHorzHeader clickedCheckBox 1
+\i (00:00:20) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Top Via
+\i (00:00:27) QtSignal ColorVisibilityDialog CVDOkButton clicked
+\i (00:00:29) color192 
+\i (00:00:29) generaledit 
+\i (00:00:32) QtSignal CVDLayerContainer CVDVisibilityOn clicked
+\i (00:00:33) QtSignal ColorVisibilityDialog CVDOkButton clicked
+\i (00:00:35) exit 
+\e (00:00:35) Do you want to save the changes you made to pth_buzzer_2pin.dra?
+\i (00:00:38) fillin no 
+\t (00:00:38)     Journal end - Tue Oct 25 23:50:54 2016

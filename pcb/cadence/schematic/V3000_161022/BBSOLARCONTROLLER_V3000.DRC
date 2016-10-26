@@ -1,0 +1,61 @@
+Date and Time : 10/26/16 11:47:42
+
+--------------------------------------------------
+Checking Schematic: Main Circuit
+--------------------------------------------------
+Checking Electrical Rules 
+WARNING(ORCAP-1829): Possible pin type conflict P1,MSEL0  Bidirectional Connected to Power
+                    Main Circuit, fpga-core  (525.78, 15.24) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (81.28, 154.94) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (81.28, 157.48) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (81.28, 160.02) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (81.28, 162.56) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (81.28, 165.10) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (81.28, 167.64) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (81.28, 170.18) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (81.28, 172.72) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (81.28, 175.26) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (81.28, 177.80) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (121.92, 154.94) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (121.92, 165.10) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (121.92, 157.48) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (121.92, 160.02) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,GND  Power Connected to Bidirectional
+                    Main Circuit, fpga-core  (121.92, 162.56) 
+WARNING(ORCAP-1829): Possible pin type conflict P1,NCE  Bidirectional Connected to Power
+                    Main Circuit, fpga-core  (525.78, 22.86) 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+Checking Off-Page Connections
+
+Checking Pin to Port Connections
+
+--------------------------------------------------
+Checking Schematic: Ideal Diode Module
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+Checking Off-Page Connections
+
+Checking Pin to Port Connections

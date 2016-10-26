@@ -1,0 +1,18 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue Oct 25 21:08:41 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=12184 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\SAMPLE_RESISTOR_2512\sample_resistor_2512.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:02) Opening existing design...
+\d (00:00:02) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/SAMPLE_RESISTOR_2512/sample_resistor_2512.dra
+\i (00:00:02) trapsize 1560
+\i (00:00:02) trapsize 1645
+\i (00:00:02) trapsize 1645
+\i (00:00:02) trapsize 1239
+\i (00:00:02) trapsize 1365
+\i (00:00:02) trapsize 7133
+\i (00:00:02) trapsize 1193
+\i (00:00:03) generaledit 
+\i (00:00:07) exit 
+\t (00:00:07)     Journal end - Tue Oct 25 21:08:48 2016

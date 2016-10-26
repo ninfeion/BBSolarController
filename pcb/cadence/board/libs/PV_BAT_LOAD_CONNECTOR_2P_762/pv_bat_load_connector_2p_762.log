@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : pv_bat_load_connector_2p_762.dra              )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Wed Oct 26 13:05:10 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/PV_BAT_LOAD_CONNECTOR_2P_762
+    Name      = pv_bat_load_connector_2p_762.psm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

@@ -1,0 +1,7 @@
+\t (00:00:00) padstack_editor 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Oct 26 13:10:14 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=8932 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\padstack_editor.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\LEDSEG_DIP12_300_140_036INCH\c135h85t135_165_45.pad
+\t (00:00:00) 
+\d (00:00:02) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\t (00:00:03)     Journal end - Wed Oct 26 13:10:17 2016

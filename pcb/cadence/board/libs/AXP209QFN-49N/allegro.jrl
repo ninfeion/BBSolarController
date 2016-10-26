@@ -1,0 +1,49 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue Oct 25 00:39:15 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=16068 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\AXP209QFN-49N\axp209qfn-49n.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\d (00:00:00) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/AXP209QFN-49N/axp209qfn-49n.dra
+\i (00:00:00) trapsize 1959
+\i (00:00:00) trapsize 2095
+\i (00:00:00) trapsize 2095
+\i (00:00:00) trapsize 1481
+\i (00:00:00) trapsize 1663
+\i (00:00:00) trapsize 9295
+\i (00:00:00) trapsize 8521
+\i (00:00:00) trapsize 1413
+\i (00:00:00) generaledit 
+\i (00:00:02) zoom in 1 
+\i (00:00:02) setwindow pcb
+\i (00:00:02) zoom in 0.2293 0.3424
+\i (00:00:02) trapsize 706
+\i (00:00:02) zoom in 1 
+\i (00:00:02) setwindow pcb
+\i (00:00:02) zoom in -2.2213 0.3283
+\i (00:00:02) trapsize 353
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out -1.8823 -0.2863
+\i (00:00:13) trapsize 706
+\i (00:01:26) pick grid 9.0101 1.2537
+\t (00:01:26) last pick:  10.1600 0.0000
+\i (00:01:31) zoom in 1 
+\i (00:01:31) setwindow pcb
+\i (00:01:31) zoom in -1.6985 -0.9220
+\i (00:01:31) trapsize 353
+\i (00:01:32) zoom in 1 
+\i (00:01:32) setwindow pcb
+\i (00:01:32) zoom in -1.6985 -0.9219
+\i (00:01:32) trapsize 177
+\i (00:01:35) zoom out 1 
+\i (00:01:35) setwindow pcb
+\i (00:01:35) zoom out -2.0940 -0.9043
+\i (00:01:35) trapsize 353
+\i (00:01:35) zoom out 1 
+\i (00:01:35) setwindow pcb
+\i (00:01:35) zoom out -2.0941 -0.9042
+\i (00:01:35) trapsize 706
+\i (00:02:02) exit 
+\t (00:02:02)     Journal end - Tue Oct 25 00:41:18 2016
