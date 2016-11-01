@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Oct-26-2016 at 13:51:32}
+{ Using PSTWRITER 17.2.0 d001Nov-01-2016 at 14:34:07}
 primitive 'SW PUSHBUTTON-SPST/SM_0_BUTTON_';
   pin
     '1':
@@ -495,21 +495,6 @@ primitive 'CAP NP_RCL_COM_1206_0.22U';
     VALUE='0.22u';
   end_body;
 end_primitive;
-primitive 'CAP NP_RCL_COM_1206_100N';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CAP NP';
-    JEDEC_TYPE='rcl_com_1206';
-    VALUE='100n';
-  end_body;
-end_primitive;
 primitive 'CAP NP_CAP_NPO_0603_0.1UF/0603';
   pin
     '1':
@@ -525,7 +510,7 @@ primitive 'CAP NP_CAP_NPO_0603_0.1UF/0603';
     VALUE='0.1uF/0603';
   end_body;
 end_primitive;
-primitive 'CAP NP_CAP_NPO_0603_47UF/0603';
+primitive 'CAP NP_TCAP_PO_1206_47UF/1206';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -536,8 +521,8 @@ primitive 'CAP NP_CAP_NPO_0603_47UF/0603';
   end_pin;
   body
     PART_NAME='CAP NP';
-    JEDEC_TYPE='cap_npo_0603';
-    VALUE='47uF/0603';
+    JEDEC_TYPE='tcap_po_1206';
+    VALUE='47uF/1206';
   end_body;
 end_primitive;
 primitive 'CAP NP_CAP_NPO_0603_0.01UF/0603';
@@ -645,6 +630,21 @@ primitive '1N4744A_SMA_1N4733_350_145_1N47';
     VALUE='1N4733';
   end_body;
 end_primitive;
+primitive 'DIODE SCHOTTKY_0_DIODE_SMA_B340';
+  pin
+    'ANODE':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'CATHODE':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='DIODE SCHOTTKY_0';
+    JEDEC_TYPE='diode_sma';
+    VALUE='B340A';
+  end_body;
+end_primitive;
 primitive 'DIODE SCHOTTKY_DIODE_SMA_B340A';
   pin
     'ANODE':
@@ -675,18 +675,18 @@ primitive '1N4744A_SMA_1N4733_520_270_1N47';
     VALUE='1N4744A';
   end_body;
 end_primitive;
-primitive 'D1N5819_MBR2045_TO-220AC_2P_MBR';
+primitive 'DIODE_1_DIODE_SMC_MBR2045';
   pin
-    '1':
+    'A':
       PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
-    '2':
+    'K':
       PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='D1N5819';
-    JEDEC_TYPE='mbr2045_to-220ac_2p';
+    PART_NAME='DIODE_1';
+    JEDEC_TYPE='diode_smc';
     VALUE='MBR2045';
   end_body;
 end_primitive;
@@ -735,24 +735,42 @@ primitive 'INDUCTOR_RCL_COM_1206_1U';
     VALUE='1u';
   end_body;
 end_primitive;
-primitive 'SIP4_0_SMD_4PIN_SINGLE_JACK_ARM';
+primitive 'HEADER 5X2_5_JTAG_10PIN_DIP_ARM';
   pin
     '1':
       PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
     '3':
       PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    '5':
+      PIN_NUMBER='(5)';
+      PINUSE='UNSPEC';
+    '7':
+      PIN_NUMBER='(7)';
+      PINUSE='UNSPEC';
+    '9':
+      PIN_NUMBER='(9)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
     '4':
       PIN_NUMBER='(4)';
       PINUSE='UNSPEC';
+    '6':
+      PIN_NUMBER='(6)';
+      PINUSE='UNSPEC';
+    '8':
+      PIN_NUMBER='(8)';
+      PINUSE='UNSPEC';
+    '10':
+      PIN_NUMBER='(10)';
+      PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='SIP4_0';
-    JEDEC_TYPE='smd_4pin_single_jack';
+    PART_NAME='Header 5X2_5';
+    JEDEC_TYPE='jtag_10pin_dip';
     VALUE='ARM_JTAG';
   end_body;
 end_primitive;
@@ -852,7 +870,7 @@ primitive 'HEADER 5X2_4_SMD_8PIN_JACK_ARM_';
     VALUE='ARM_EXTEN_PIN';
   end_body;
 end_primitive;
-primitive 'HEADER 5X2_3_SMD_8PIN_JACK_AXP_';
+primitive 'HEADER 5X2_2_SMD_8PIN_JACK_AXP_';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -866,15 +884,21 @@ primitive 'HEADER 5X2_3_SMD_8PIN_JACK_AXP_';
     '4':
       PIN_NUMBER='(4)';
       PINUSE='UNSPEC';
-    '6':
-      PIN_NUMBER='(6)';
-      PINUSE='UNSPEC';
     '5':
       PIN_NUMBER='(5)';
       PINUSE='UNSPEC';
+    '6':
+      PIN_NUMBER='(6)';
+      PINUSE='UNSPEC';
+    '7':
+      PIN_NUMBER='(7)';
+      PINUSE='UNSPEC';
+    '8':
+      PIN_NUMBER='(8)';
+      PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='Header 5X2_3';
+    PART_NAME='Header 5X2_2';
     JEDEC_TYPE='smd_8pin_jack';
     VALUE='AXP_ENTEN_LDO';
   end_body;
@@ -1053,42 +1077,42 @@ primitive '20PIN_HEADER_SMD_40PIN_JACK_PRO';
     VALUE='PROGRAM_SET';
   end_body;
 end_primitive;
-primitive 'HEADER 5X2_SMD_8PIN_JACK_FPGA_J';
+primitive 'HEADER 5X2_5_JTAG_10PIN_DIP_FPG';
   pin
     '1':
       PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
     '3':
       PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-    '4':
-      PIN_NUMBER='(4)';
       PINUSE='UNSPEC';
     '5':
       PIN_NUMBER='(5)';
       PINUSE='UNSPEC';
-    '6':
-      PIN_NUMBER='(6)';
-      PINUSE='UNSPEC';
     '7':
       PIN_NUMBER='(7)';
       PINUSE='UNSPEC';
-    '8':
-      PIN_NUMBER='(8)';
-      PINUSE='UNSPEC';
     '9':
       PIN_NUMBER='(9)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    '4':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+    '6':
+      PIN_NUMBER='(6)';
+      PINUSE='UNSPEC';
+    '8':
+      PIN_NUMBER='(8)';
       PINUSE='UNSPEC';
     '10':
       PIN_NUMBER='(10)';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='Header 5X2';
-    JEDEC_TYPE='smd_8pin_jack';
+    PART_NAME='Header 5X2_5';
+    JEDEC_TYPE='jtag_10pin_dip';
     VALUE='FPGA_JTAG';
   end_body;
 end_primitive;
@@ -1167,25 +1191,28 @@ primitive 'INDUCTOR IRON_INDUCTOR_0420_H2_';
     VALUE='15uH/0420';
   end_body;
 end_primitive;
-primitive 'MPF4150_IRF3205_TO220AB-3P_IRF3';
+primitive 'MPF4150_0_IRF3205_TO220AB-3P_IR';
   pin
     'DRAIN':
-      PIN_NUMBER='(3)';
+      PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
     'GATE':
       PIN_NUMBER='(1)';
       INPUT_LOAD='(*)';
     'SOURCE':
-      PIN_NUMBER='(2)';
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    'DRAIN2':
+      PIN_NUMBER='(4)';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='MPF4150';
+    PART_NAME='MPF4150_0';
     JEDEC_TYPE='irf3205_to220ab-3p';
     VALUE='IRF3205';
   end_body;
 end_primitive;
-primitive 'IRF1404_IRF3205_TO220AB-3P_IRF3';
+primitive 'IRF1404_0_IRF3205_TO220AB-3P_IR';
   pin
     'D':
       PIN_NUMBER='(2)';
@@ -1196,14 +1223,17 @@ primitive 'IRF1404_IRF3205_TO220AB-3P_IRF3';
     'S':
       PIN_NUMBER='(3)';
       PINUSE='UNSPEC';
+    'D2':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='IRF1404';
+    PART_NAME='IRF1404_0';
     JEDEC_TYPE='irf3205_to220ab-3p';
     VALUE='IRF3207';
   end_body;
 end_primitive;
-primitive 'EP4CE6E144_EP4CE6E144QFP-145N_(';
+primitive 'EP4CE6E144_7_EP4CE6E144QFP-145N';
   pin
     'VCCINT#29':
       PIN_NUMBER='(29,0,0,0,0)';
@@ -1276,6 +1306,9 @@ primitive 'EP4CE6E144_EP4CE6E144QFP-145N_(';
       PINUSE='POWER';
     'VCCINT#5':
       PIN_NUMBER='(5,0,0,0,0)';
+      PINUSE='POWER';
+    'EP':
+      PIN_NUMBER='(145,0,0,0,0)';
       PINUSE='POWER';
     'IO_B1_1':
       PIN_NUMBER='(0,1,0,0,0)';
@@ -1845,7 +1878,7 @@ primitive 'EP4CE6E144_EP4CE6E144QFP-145N_(';
       PINUSE='POWER';
   end_pin;
   body
-    PART_NAME='EP4CE6E144';
+    PART_NAME='EP4CE6E144_7';
     JEDEC_TYPE='ep4ce6e144qfp-145n';
     SWAP_INFO='(S1+S2+S3+S4+S5)';
     VALUE='EP4CE6E144';
@@ -1929,7 +1962,7 @@ primitive 'RESISTOR_CAP_NPO_0603_10K';
     VALUE='10k';
   end_body;
 end_primitive;
-primitive 'RESISTOR_RCL_COM_1206_100K';
+primitive 'RESISTOR_CAP_NPO_0603_100K';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -1940,11 +1973,11 @@ primitive 'RESISTOR_RCL_COM_1206_100K';
   end_pin;
   body
     PART_NAME='RESISTOR';
-    JEDEC_TYPE='rcl_com_1206';
+    JEDEC_TYPE='cap_npo_0603';
     VALUE='100K';
   end_body;
 end_primitive;
-primitive 'RESISTOR_RCL_COM_1206_REF_EN';
+primitive 'RESISTOR_CAP_NPO_0603_REF_EN';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -1955,11 +1988,11 @@ primitive 'RESISTOR_RCL_COM_1206_REF_EN';
   end_pin;
   body
     PART_NAME='RESISTOR';
-    JEDEC_TYPE='rcl_com_1206';
+    JEDEC_TYPE='cap_npo_0603';
     VALUE='REF_EN';
   end_body;
 end_primitive;
-primitive 'RESISTOR_RCL_COM_1206_REF_VCC';
+primitive 'RESISTOR_CAP_NPO_0603_REF_VCC';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -1970,11 +2003,11 @@ primitive 'RESISTOR_RCL_COM_1206_REF_VCC';
   end_pin;
   body
     PART_NAME='RESISTOR';
-    JEDEC_TYPE='rcl_com_1206';
+    JEDEC_TYPE='cap_npo_0603';
     VALUE='REF_VCC';
   end_body;
 end_primitive;
-primitive 'RESISTOR_RCL_COM_1206_REF_GND';
+primitive 'RESISTOR_CAP_NPO_0603_REF_GND';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -1985,11 +2018,11 @@ primitive 'RESISTOR_RCL_COM_1206_REF_GND';
   end_pin;
   body
     PART_NAME='RESISTOR';
-    JEDEC_TYPE='rcl_com_1206';
+    JEDEC_TYPE='cap_npo_0603';
     VALUE='REF_GND';
   end_body;
 end_primitive;
-primitive 'RESISTOR_RCL_COM_1206_SC_IC';
+primitive 'RESISTOR_CAP_NPO_0603_SC_IC';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -2000,7 +2033,7 @@ primitive 'RESISTOR_RCL_COM_1206_SC_IC';
   end_pin;
   body
     PART_NAME='RESISTOR';
-    JEDEC_TYPE='rcl_com_1206';
+    JEDEC_TYPE='cap_npo_0603';
     VALUE='SC_IC';
   end_body;
 end_primitive;
@@ -2019,7 +2052,7 @@ primitive 'RESISTOR_RCL_COM_1206_AD_BAT_GN';
     VALUE='AD_BAT_GND';
   end_body;
 end_primitive;
-primitive 'RESISTOR_RCL_COM_1206_6.8K';
+primitive 'RESISTOR_CAP_NPO_0603_6.8K';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -2030,7 +2063,7 @@ primitive 'RESISTOR_RCL_COM_1206_6.8K';
   end_pin;
   body
     PART_NAME='RESISTOR';
-    JEDEC_TYPE='rcl_com_1206';
+    JEDEC_TYPE='cap_npo_0603';
     VALUE='6.8K';
   end_body;
 end_primitive;
@@ -2049,7 +2082,7 @@ primitive 'RESISTOR_SAMPLE_RESISTOR_2512_0';
     VALUE='0.01';
   end_body;
 end_primitive;
-primitive 'RESISTOR_RCL_COM_1206_10K';
+primitive 'RESISTOR_CAP_NPO_0603_10K/0603/';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -2060,26 +2093,11 @@ primitive 'RESISTOR_RCL_COM_1206_10K';
   end_pin;
   body
     PART_NAME='RESISTOR';
-    JEDEC_TYPE='rcl_com_1206';
-    VALUE='10K';
-  end_body;
-end_primitive;
-primitive 'RESISTOR_RCL_COM_1206_10K/0603/';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='RESISTOR';
-    JEDEC_TYPE='rcl_com_1206';
+    JEDEC_TYPE='cap_npo_0603';
     VALUE='10K/0603/LowPPM';
   end_body;
 end_primitive;
-primitive 'RESISTOR_RCL_COM_1206_100K/0603';
+primitive 'RESISTOR_CAP_NPO_0603_100K/0603';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -2090,11 +2108,11 @@ primitive 'RESISTOR_RCL_COM_1206_100K/0603';
   end_pin;
   body
     PART_NAME='RESISTOR';
-    JEDEC_TYPE='rcl_com_1206';
+    JEDEC_TYPE='cap_npo_0603';
     VALUE='100K/0603/LowPPM';
   end_body;
 end_primitive;
-primitive 'RESISTOR_RCL_COM_1206_SC_AMP';
+primitive 'RESISTOR_CAP_NPO_0603_SC_AMP';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -2105,7 +2123,7 @@ primitive 'RESISTOR_RCL_COM_1206_SC_AMP';
   end_pin;
   body
     PART_NAME='RESISTOR';
-    JEDEC_TYPE='rcl_com_1206';
+    JEDEC_TYPE='cap_npo_0603';
     VALUE='SC_AMP';
   end_body;
 end_primitive;
@@ -2334,7 +2352,7 @@ primitive 'R_CAP_NPO_0603_2K/0603/1%';
     VALUE='2k/0603/1%';
   end_body;
 end_primitive;
-primitive 'RESISTOR_RCL_COM_1206_4.7';
+primitive 'RESISTOR_CAP_NPO_0603_4.7';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -2345,7 +2363,7 @@ primitive 'RESISTOR_RCL_COM_1206_4.7';
   end_pin;
   body
     PART_NAME='RESISTOR';
-    JEDEC_TYPE='rcl_com_1206';
+    JEDEC_TYPE='cap_npo_0603';
     VALUE='4.7';
   end_body;
 end_primitive;
@@ -2637,7 +2655,7 @@ primitive 'R_CAP_NPO_0603_2.2/0603';
     VALUE='2.2/0603';
   end_body;
 end_primitive;
-primitive 'R_RCL_COM_1206_0';
+primitive 'R_CAP_NPO_0603_0';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -2648,7 +2666,7 @@ primitive 'R_RCL_COM_1206_0';
   end_pin;
   body
     PART_NAME='R';
-    JEDEC_TYPE='rcl_com_1206';
+    JEDEC_TYPE='cap_npo_0603';
     VALUE='0';
   end_body;
 end_primitive;
@@ -2700,25 +2718,37 @@ primitive 'RESISTOR_RCL_COM_1206_AD_PV_GND';
     VALUE='AD_PV_GND';
   end_body;
 end_primitive;
-primitive 'SW_T_SPDT_SWITCH_6PIN_N_OE';
+primitive 'RESISTOR_RCL_COM_1206_4.7';
   pin
-    'NC':
+    '1':
       PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
-    'NO':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-    'COMMON':
+    '2':
       PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='SW_T_SPDT';
-    JEDEC_TYPE='switch_6pin';
-    VALUE='N_OE';
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='rcl_com_1206';
+    VALUE='4.7';
   end_body;
 end_primitive;
-primitive 'SW_T_SPDT_SWITCH_6PIN_VBUS_EN';
+primitive 'RESISTOR_RCL_COM_1206_47K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='rcl_com_1206';
+    VALUE='47K';
+  end_body;
+end_primitive;
+primitive 'SW_T_SPDT_3_SWITCH_6PIN_N_OE';
   pin
     'NC':
       PIN_NUMBER='(1)';
@@ -2729,11 +2759,20 @@ primitive 'SW_T_SPDT_SWITCH_6PIN_VBUS_EN';
     'COMMON':
       PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
+    'NO1':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+    'NO2':
+      PIN_NUMBER='(5)';
+      PINUSE='UNSPEC';
+    'NO3':
+      PIN_NUMBER='(6)';
+      PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='SW_T_SPDT';
+    PART_NAME='SW_T_SPDT_3';
     JEDEC_TYPE='switch_6pin';
-    VALUE='VBUS_EN';
+    VALUE='N_OE';
   end_body;
 end_primitive;
 primitive 'ETD29_TRAN_0_ETD29_L_14P_DIP_ET';
@@ -2955,18 +2994,6 @@ primitive 'TEST POINT_TESTPOINT120_SPI_MOS';
     VALUE='SPI_MOSI';
   end_body;
 end_primitive;
-primitive 'TEST POINT_TESTPOINT120_BAT_6V';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='TEST POINT';
-    JEDEC_TYPE='testpoint120';
-    VALUE='BAT_6V';
-  end_body;
-end_primitive;
 primitive 'TEST POINT_TESTPOINT120_AMP_5V';
   pin
     '1':
@@ -2977,6 +3004,18 @@ primitive 'TEST POINT_TESTPOINT120_AMP_5V';
     PART_NAME='TEST POINT';
     JEDEC_TYPE='testpoint120';
     VALUE='AMP_5V';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTPOINT120_BAT_6V';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='testpoint120';
+    VALUE='BAT_6V';
   end_body;
 end_primitive;
 primitive 'TEST POINT_TESTPOINT120_MDR_15V';
@@ -3048,7 +3087,7 @@ primitive 'TEST POINT_TESTPOINT120_AD_BA_1';
   body
     PART_NAME='TEST POINT';
     JEDEC_TYPE='testpoint120';
-    VALUE='AD_BAT_DIN';
+    VALUE='AD_BAT_SCLK';
   end_body;
 end_primitive;
 primitive 'TEST POINT_TESTPOINT120_PV_2._1';
@@ -3072,7 +3111,7 @@ primitive 'TEST POINT_TESTPOINT120_AD_BA_2';
   body
     PART_NAME='TEST POINT';
     JEDEC_TYPE='testpoint120';
-    VALUE='AD_BAT_CS';
+    VALUE='AD_BAT_DIN';
   end_body;
 end_primitive;
 primitive 'TEST POINT_TESTPOINT120_AD_BA_3';
@@ -3084,7 +3123,31 @@ primitive 'TEST POINT_TESTPOINT120_AD_BA_3';
   body
     PART_NAME='TEST POINT';
     JEDEC_TYPE='testpoint120';
-    VALUE='AD_BAT_SCLK';
+    VALUE='AD_BAT_CS';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTPOINT120_Q3/4_SD';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='testpoint120';
+    VALUE='Q3/4_SD';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTPOINT120_Q1/2_SD';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='testpoint120';
+    VALUE='Q1/2_SD';
   end_body;
 end_primitive;
 primitive 'TEST POINT_TESTPOINT120_Q1_PWM';
@@ -3306,7 +3369,7 @@ primitive 'ADC122S101_ADC122S101VSSOP-8N_A';
     VALUE='ADC122S101';
   end_body;
 end_primitive;
-primitive 'LM358-SINGLECHIP_LM358TSSOP-8NP';
+primitive 'LM358-SINGLECHIP_LM358TSSOP-8N_';
   pin
     '1OUT':
       PIN_NUMBER='(1)';
@@ -3335,7 +3398,7 @@ primitive 'LM358-SINGLECHIP_LM358TSSOP-8NP';
   end_pin;
   body
     PART_NAME='LM358-SingleChip';
-    JEDEC_TYPE='lm358tssop-8nP';
+    JEDEC_TYPE='lm358tssop-8n';
     VALUE='LM358';
   end_body;
 end_primitive;

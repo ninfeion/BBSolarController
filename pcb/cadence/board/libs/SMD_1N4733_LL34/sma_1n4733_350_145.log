@@ -4,13 +4,13 @@
 (                                                                     )
 (    Drawing          : sma_1n4733_350_145.dra                        )
 (    Software Version : 17.2S004                                      )
-(    Date/Time        : Mon Oct 24 20:07:46 2016                      )
+(    Date/Time        : Wed Oct 26 15:07:22 2016                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
 Create Symbol of type: PACKAGE
-    Directory = C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/SMA_1N4733_LL34
+    Directory = C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/SMD_1N4733_LL34
     Name      = sma_1n4733_350_145.psm
     User      = Ninfeion
     Machine   = NINFEION-PC

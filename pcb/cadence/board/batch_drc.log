@@ -2,9 +2,9 @@
 (                                                                     )
 (    DRC Update                                                       )
 (                                                                     )
-(    Drawing          : unnamed.brd                                   )
+(    Drawing          : BBSOLARCONTROLLER_V3000.brd                   )
 (    Software Version : 17.2S004                                      )
-(    Date/Time        : Wed Oct 26 14:00:30 2016                      )
+(    Date/Time        : Thu Oct 27 16:26:48 2016                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -20,7 +20,7 @@
  ========= check standalone text              0:00:00
  ========= check standalone rectangles        0:00:00
 
- ..... Total number of DRC errors  0
+ ..... Total number of DRC errors  450
 
  ..... DRC update completed, total CPU time   0:00:00
  *************************************************************************

@@ -1,73 +1,65 @@
-\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
-\t (00:00:00)     Journal start - Mon Oct 24 13:30:17 2016
-\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=7804 CPUs=4
-\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\EP4CE6E144QFP-145N\ep4ce6e144qfp-145n.dra
-\t (00:00:00) 
-   (00:00:00) Loading axlcore.cxt 
-\t (00:00:02) Opening existing design...
-\d (00:00:02) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/EP4CE6E144QFP-145N/ep4ce6e144qfp-145n.dra
-\i (00:00:02) trapsize 3960
-\i (00:00:02) trapsize 4177
-\i (00:00:02) trapsize 4177
-\i (00:00:02) trapsize 3601
-\i (00:00:02) generaledit 
-\i (00:00:03) zoom in 1 
-\i (00:00:03) setwindow pcb
-\i (00:00:03) zoom in -0.0456 -0.1176
-\i (00:00:03) trapsize 1800
-\i (00:00:03) zoom in 1 
-\i (00:00:03) setwindow pcb
-\i (00:00:03) zoom in -7.8763 -0.1176
-\i (00:00:03) trapsize 900
-\i (00:00:05) zoom out 1 
-\i (00:00:05) setwindow pcb
-\i (00:00:05) zoom out -5.5898 -1.4319
-\i (00:00:05) trapsize 1800
-\i (00:00:09) zoom out 1 
-\i (00:00:09) setwindow pcb
-\i (00:00:09) zoom out -10.5589 7.4982
-\i (00:00:09) trapsize 3601
-\i (00:00:10) zoom in 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom in -0.1897 0.1704
-\i (00:00:10) trapsize 1800
-\i (00:00:10) zoom in 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom in -7.9483 0.1704
-\i (00:00:10) trapsize 900
-\i (00:00:19) zoom in 1 
-\i (00:00:19) setwindow pcb
-\i (00:00:19) zoom in 1.1080 1.3947
-\i (00:00:19) trapsize 450
-\i (00:00:20) zoom in 1 
-\i (00:00:20) setwindow pcb
-\i (00:00:20) zoom in 1.1080 1.3947
-\i (00:00:20) trapsize 225
-\i (00:00:20) zoom in 1 
-\i (00:00:20) setwindow pcb
-\i (00:00:20) zoom in 1.1080 1.3948
-\i (00:00:20) trapsize 113
-\i (00:00:22) zoom out 1 
-\i (00:00:22) setwindow pcb
-\i (00:00:22) zoom out 1.1035 1.3566
-\i (00:00:22) trapsize 225
-\i (00:00:22) zoom out 1 
-\i (00:00:22) setwindow pcb
-\i (00:00:22) zoom out 1.1034 1.3566
-\i (00:00:22) trapsize 450
-\i (00:00:23) zoom out 1 
-\i (00:00:23) setwindow pcb
-\i (00:00:23) zoom out 1.1034 1.3567
-\i (00:00:23) trapsize 900
-\i (00:00:23) zoom out 1 
-\i (00:00:23) setwindow pcb
-\i (00:00:23) zoom out 1.1035 1.3567
-\i (00:00:23) trapsize 1801
-\i (00:00:23) zoom out 1 
-\i (00:00:23) setwindow pcb
-\i (00:00:23) zoom out 4.9251 1.2487
-\i (00:00:23) trapsize 3601
-\i (00:00:34) exit 
-\e (00:00:34) Do you want to save the changes you made to ep4ce6e144qfp-145n.dra?
-\i (00:00:35) fillin no 
-\t (00:00:35)     Journal end - Mon Oct 24 13:30:53 2016
+\t (00:05:50) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:05:50)     Journal start - Wed Oct 26 18:56:08 2016
+\t (00:05:50)         Host=NINFEION-PC User=Ninfeion Pid=8768 CPUs=4
+\t (00:05:50) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe -mpssession Ninfeion C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\BBSOLARCONTROLLER_V3000.brd
+\t (00:05:50) 
+\d (00:05:50) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/EP4CE6E144QFP-145N/ep4ce6e144qfp-145n.dra
+\i (00:05:50) generaledit 
+\i (00:05:50) zoom in 1 
+\i (00:05:50) setwindow pcb
+\i (00:05:50) zoom in 2.3352 -0.2123
+\i (00:05:50) trapsize 2654
+\i (00:05:51) zoom in 1 
+\i (00:05:51) setwindow pcb
+\i (00:05:51) zoom in -11.8354 -0.1592
+\i (00:05:51) trapsize 1327
+\i (00:05:58) setwindow form.mini
+\i (00:05:58) FORM mini class PACKAGE GEOMETRY 
+\i (00:06:00) FORM mini subclass PIN_NUMBER 
+\i (00:06:01) FORM mini subcolor 1 
+\i (00:06:02) FORM mini subcolor 0 
+\e (00:06:03) Command not found: xdehilite
+\i (00:06:03) setwindow pcb
+\i (00:06:03) xname_flush 
+\i (00:06:03) done 
+\i (00:06:03) generaledit 
+\e (00:06:06) Command not found: xhilite
+\i (00:06:06) xname_flush 
+\i (00:06:06) done 
+\i (00:06:06) generaledit 
+\e (00:06:18) Command not found: xdehilite
+\i (00:06:18) xname_flush 
+\i (00:06:18) done 
+\i (00:06:18) generaledit 
+\e (00:08:11) Command not found: xhilite
+\i (00:08:11) xname_flush 
+\i (00:08:11) done 
+\i (00:08:11) generaledit 
+\e (00:08:49) Command not found: xdehilite
+\i (00:08:49) xname_flush 
+\i (00:08:49) done 
+\i (00:08:49) generaledit 
+\e (00:08:50) Command not found: xhilite
+\i (00:08:50) xname_flush 
+\i (00:08:50) done 
+\i (00:08:50) generaledit 
+\e (00:08:51) Command not found: xdehilite
+\i (00:08:51) xname_flush 
+\i (00:08:51) done 
+\i (00:08:51) generaledit 
+\e (00:10:49) Command not found: xhilite
+\i (00:10:49) xname_flush 
+\i (00:10:49) done 
+\i (00:10:49) generaledit 
+\e (00:10:59) Command not found: xhilite
+\i (00:10:59) xname_flush 
+\i (00:10:59) done 
+\i (00:10:59) generaledit 
+\e (00:11:24) Command not found: xhilite
+\i (00:11:24) xname_flush 
+\i (00:11:24) done 
+\i (00:11:24) generaledit 
+\i (00:11:51) exit 
+\e (00:11:51) Do you want to save the changes you made to ep4ce6e144qfp-145n.dra?
+\i (00:11:52) fillin no 
+\t (00:11:52)     Journal end - Wed Oct 26 19:02:11 2016

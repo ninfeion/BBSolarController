@@ -1,6 +1,6 @@
 \t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
-\t (00:00:00)     Journal start - Mon Oct 24 18:49:04 2016
-\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=12776 CPUs=4
+\t (00:00:00)     Journal start - Wed Oct 26 14:56:31 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=7236 CPUs=4
 \t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\TCAP_PO_1206\tcap_po_1206.dra
 \t (00:00:00) 
    (00:00:00) Loading axlcore.cxt 
@@ -9,7 +9,14 @@
 \i (00:00:00) trapsize 1432
 \i (00:00:00) trapsize 1532
 \i (00:00:00) trapsize 1532
-\i (00:00:00) trapsize 1288
+\i (00:00:00) trapsize 1215
+\i (00:00:00) trapsize 6986
+\i (00:00:00) trapsize 6229
 \i (00:00:00) generaledit 
+\i (00:00:03) setwindow form.mini
+\i (00:00:03) FORM mini class PACKAGE GEOMETRY 
+\i (00:00:05) FORM mini subclass PIN_NUMBER 
+\i (00:00:06) FORM mini subcolor 1 
+\i (00:00:08) setwindow pcb
 \i (00:00:08) exit 
-\t (00:00:08)     Journal end - Mon Oct 24 18:49:12 2016
+\t (00:00:08)     Journal end - Wed Oct 26 14:56:39 2016

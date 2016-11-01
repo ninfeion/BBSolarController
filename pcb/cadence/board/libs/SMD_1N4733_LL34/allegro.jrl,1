@@ -1,0 +1,71 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Oct 26 15:06:56 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=5756 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\SMD_1N4733_LL34\sma_1n4733_350_145.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\d (00:00:00) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/SMD_1N4733_LL34/sma_1n4733_350_145.dra
+\i (00:00:00) trapsize 1340
+\i (00:00:00) trapsize 1390
+\i (00:00:00) trapsize 1573
+\i (00:00:00) trapsize 1248
+\i (00:00:00) trapsize 7173
+\i (00:00:00) trapsize 6396
+\i (00:00:00) generaledit 
+\i (00:00:03) setwindow form.mini
+\i (00:00:03) FORM mini class PACKAGE GEOMETRY 
+\i (00:00:06) FORM mini subclass PIN_NUMBER 
+\i (00:00:08) FORM mini subcolor 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) pick grid -0.6115 -5.2539
+\t (00:00:09) last pick:  0.0000 -5.0800
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in -0.6115 -1.1606
+\i (00:00:09) trapsize 624
+\i (00:00:10) zoom in 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom in -2.4585 -0.7613
+\i (00:00:10) trapsize 312
+\i (00:00:11) text edit 
+\i (00:00:11) pick grid -2.2837 -0.0686
+\t (00:00:11) last pick:  -2.5400 0.0000
+\i (00:00:14) setwindow pcb
+\i (00:00:14) pick grid -2.0216 -0.2246
+\t (00:00:14) last pick:  -2.5400 0.0000
+\i (00:00:14) setwindow pcb
+\i (00:00:14) pick -2.2837 -0.0686
+\t (00:00:14) Pick text to edit.
+\i (00:00:16) setwindow pcb
+\i (00:00:16) pick grid -1.8345 0.1685
+\t (00:00:16) last pick:  -2.5400 0.0000
+\i (00:00:16) setwindow pcb
+\i (00:00:16) pick -2.0216 -0.2246
+\t (00:00:16) Pick text to edit.
+\i (00:00:19) setwindow pcb
+\i (00:00:19) pick grid 1.2917 -0.0437
+\t (00:00:19) last pick:  2.5400 0.0000
+\i (00:00:19) setwindow pcb
+\i (00:00:19) pick -1.8345 0.1685
+\t (00:00:19) Pick text to edit.
+\i (00:00:21) setwindow pcb
+\i (00:00:21) prepopup -0.4867 -1.5849
+\i (00:00:21) done 
+\i (00:00:21) setwindow pcb
+\i (00:00:21) pick 1.2917 -0.0437
+\t (00:00:21) Pick text to edit.
+\i (00:00:21) setwindow pcb
+\i (00:00:21) generaledit 
+\i (00:00:22) pick grid -0.4305 -1.5662
+\t (00:00:22) last pick:  0.0000 -2.5400
+\i (00:00:22) zoom out 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom out -0.4305 -1.5662
+\i (00:00:22) trapsize 624
+\i (00:00:25) save 
+\i (00:00:26) fillin yes 
+\t (00:00:26) Symbol 'sma_1n4733_350_145.psm' created.
+\i (00:00:26) generaledit 
+\i (00:00:27) exit 
+\t (00:00:27)     Journal end - Wed Oct 26 15:07:24 2016

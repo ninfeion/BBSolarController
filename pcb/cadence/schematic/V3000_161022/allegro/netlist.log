@@ -1,116 +1,118 @@
-{ Using PSTWRITER 17.2.0 d001Oct-26-2016 at 13:51:30 }
+{ Using PSTWRITER 17.2.0 d001Nov-01-2016 at 14:34:06 }
 
-#1 WARNING(ORCAP-36038): "No_connect" property on Pin "U2.3" ignored for U2: Main Circuit, adc-part (15.20, 0.90). Connecting pin to net "N5514650".
+#1 WARNING(ORCAP-36038): "No_connect" property on Pin "J9.4" ignored for J9: Main Circuit, fpga-core (276.86, 88.90). Connecting pin to net "CORE_+2.5V".
 #2 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.5" ignored for U1: Main Circuit, adc-part (7.00, 1.00). Connecting pin to net "N5503870".
-#3 WARNING(ORCAP-36038): "No_connect" property on Pin "P1.101" ignored for P1: Main Circuit, fpga-core (457.20, 7.62). Connecting pin to net "SDRAM_A5".
-#4 WARNING(ORCAP-36038): "No_connect" property on Pin "J10.4" ignored for J10: Main Circuit, fpga-core (474.98, 264.16). Connecting pin to net "CORE_+3.3V".
-#5 WARNING(ORCAP-36038): "No_connect" property on Pin "U13.3" ignored for U13: Main Circuit, adc-part (7.00, 6.10). Connecting pin to net "N5503690".
-#6 WARNING(ORCAP-36038): "No_connect" property on Pin "U13.5" ignored for U13: Main Circuit, adc-part (7.00, 6.10). Connecting pin to net "N5515430".
-#7 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.3" ignored for U1: Main Circuit, adc-part (7.00, 1.00). Connecting pin to net "N5513850".
-#8 WARNING(ORCAP-36038): "No_connect" property on Pin "U2.5" ignored for U2: Main Circuit, adc-part (15.20, 0.90). Connecting pin to net "N5512270".
-#9 WARNING(ORCAP-36038): "No_connect" property on Pin "J4.4" ignored for J4: Main Circuit, chip-power-support (14.80, 6.10). Connecting pin to net "LDO4".
-#10 WARNING(ORCAP-36038): "No_connect" property on Pin "J4.5" ignored for J4: Main Circuit, chip-power-support (14.80, 6.10). Connecting pin to net "LDO3".
-#11 WARNING(ORCAP-36038): "No_connect" property on Pin "U22.28" ignored for U22: Main Circuit, chip-power-support (11.00, 1.50). Connecting pin to net "LDO1".
-#12 WARNING(ORCAP-36038): "No_connect" property on Pin "J3.4" ignored for J3: Main Circuit, arm-core (12.50, 3.60). Connecting pin to net "PA15".
-#13 WARNING(ORCAP-36038): "No_connect" property on Pin "U22.3" ignored for U22: Main Circuit, chip-power-support (11.00, 1.50). Connecting pin to net "PMIC_GPIO3".
+#3 WARNING(ORCAP-36038): "No_connect" property on Pin "J10.4" ignored for J10: Main Circuit, fpga-core (467.36, 266.70). Connecting pin to net "CORE_+3.3V".
+#4 WARNING(ORCAP-36038): "No_connect" property on Pin "U13.3" ignored for U13: Main Circuit, adc-part (7.00, 6.10). Connecting pin to net "N5503690".
+#5 WARNING(ORCAP-36038): "No_connect" property on Pin "U13.5" ignored for U13: Main Circuit, adc-part (7.00, 6.10). Connecting pin to net "N5515430".
+#6 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.3" ignored for U1: Main Circuit, adc-part (7.00, 1.00). Connecting pin to net "N5513850".
+#7 WARNING(ORCAP-36038): "No_connect" property on Pin "U2.5" ignored for U2: Main Circuit, adc-part (15.20, 0.90). Connecting pin to net "N5512270".
+#8 WARNING(ORCAP-36038): "No_connect" property on Pin "U22.28" ignored for U22: Main Circuit, chip-power-support (11.00, 1.50). Connecting pin to net "LDO1".
+#9 WARNING(ORCAP-36038): "No_connect" property on Pin "U2.3" ignored for U2: Main Circuit, adc-part (15.20, 0.90). Connecting pin to net "N5514650".
+#10 WARNING(ORCAP-36038): "No_connect" property on Pin "J3.4" ignored for J3: Main Circuit, arm-core (12.50, 3.60). Connecting pin to net "PA15".
+#11 WARNING(ORCAP-36038): "No_connect" property on Pin "U22.3" ignored for U22: Main Circuit, chip-power-support (11.00, 1.50). Connecting pin to net "PMIC_GPIO3".
+#12 WARNING(ORCAP-36038): "No_connect" property on Pin "J1.4" ignored for J1: Main Circuit, arm-core (4.60, 0.80). Connecting pin to net "ARM_GND".
+#13 WARNING(ORCAP-36038): "No_connect" property on Pin "J1.3" ignored for J1: Main Circuit, arm-core (4.60, 0.80). Connecting pin to net "ARM_GND".
 #14 WARNING(ORCAP-36038): "No_connect" property on Pin "J3.2" ignored for J3: Main Circuit, arm-core (12.50, 3.60). Connecting pin to net "PA7".
 #15 WARNING(ORCAP-36038): "No_connect" property on Pin "J3.7" ignored for J3: Main Circuit, arm-core (12.50, 3.60). Connecting pin to net "PA0".
 #16 WARNING(ORCAP-36038): "No_connect" property on Pin "U21.3" ignored for U21: Main Circuit, chip-power-support (3.20, 1.60). Connecting pin to net "N715146".
 #17 WARNING(ORCAP-36038): "No_connect" property on Pin "J3.5" ignored for J3: Main Circuit, arm-core (12.50, 3.60). Connecting pin to net "ARM_+3.3V".
-#18 WARNING(ORCAP-36038): "No_connect" property on Pin "Y2.2" ignored for Y2: Main Circuit, fpga-core (220.98, 307.34). Connecting pin to net "CRTSTAL_GND".
-#19 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST/SM_0_BUTTON_2PIN_KEYA1" is renamed to "SW PUSHBUTTON-SPST/SM_0_BUTTON_".
-#20 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST/SM_0_BUTTON_2PIN_KEYA2" is renamed to "SW PUSHBUTTON-SPST/SM_0_BUTTO_1".
-#21 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST/SM_0_BUTTON_2PIN_ARM_RST" is renamed to "SW PUSHBUTTON-SPST/SM_0_BUTTO_2".
-#22 WARNING(ORCAP-36006): Part Name "CAP NP_CAP_NPO_0603_10U/16V/0603" is renamed to "CAP NP_CAP_NPO_0603_10U/16V/060".
-#23 WARNING(ORCAP-36006): Part Name "CAP NP_CAP_NPO_0603_0.1U/50V/0603" is renamed to "CAP NP_CAP_NPO_0603_0.1U/50V/06".
-#24 WARNING(ORCAP-36006): Part Name "CAP NP_CAP_NPO_0603_0.1UF/50V/0603" is renamed to "CAP NP_CAP_NPO_0603_0.1UF/50V/0".
-#25 WARNING(ORCAP-36006): Part Name "CAP NP_CAP_NPO_0603_0.015UF/0603" is renamed to "CAP NP_CAP_NPO_0603_0.015UF/060".
-#26 WARNING(ORCAP-36006): Part Name "DIODE SCHOTTKY_DIODE_SMA_B340A/SMA" is renamed to "DIODE SCHOTTKY_DIODE_SMA_B340A/".
-#27 WARNING(ORCAP-36006): Part Name "1N4744A_SMA_1N4733_350_145_1N4733" is renamed to "1N4744A_SMA_1N4733_350_145_1N47".
-#28 WARNING(ORCAP-36006): Part Name "1N4744A_SMA_1N4733_520_270_1N4744A" is renamed to "1N4744A_SMA_1N4733_520_270_1N47".
-#29 WARNING(ORCAP-36006): Part Name "D1N5819_MBR2045_TO-220AC_2P_MBR2045" is renamed to "D1N5819_MBR2045_TO-220AC_2P_MBR".
-#30 WARNING(ORCAP-36006): Part Name "SIP4_0_SMD_4PIN_SINGLE_JACK_ARM_JTAG" is renamed to "SIP4_0_SMD_4PIN_SINGLE_JACK_ARM".
-#31 WARNING(ORCAP-36006): Part Name "HEADER 5X2_2_SMD_8PIN_JACK_FPGA_EXTEN_PIN" is renamed to "HEADER 5X2_2_SMD_8PIN_JACK_FPGA".
-#32 WARNING(ORCAP-36006): Part Name "HEADER 5X2_4_SMD_8PIN_JACK_ARM_EXTEN_PIN" is renamed to "HEADER 5X2_4_SMD_8PIN_JACK_ARM_".
-#33 WARNING(ORCAP-36006): Part Name "HEADER 5X2_3_SMD_8PIN_JACK_AXP_ENTEN_LDO" is renamed to "HEADER 5X2_3_SMD_8PIN_JACK_AXP_".
-#34 WARNING(ORCAP-36006): Part Name "PV_1_PV_BAT_LOAD_CONNECTOR_2P_762_PV" is renamed to "PV_1_PV_BAT_LOAD_CONNECTOR_2P_7".
-#35 WARNING(ORCAP-36006): Part Name "LOAD_PV_BAT_LOAD_CONNECTOR_2P_762_LOAD" is renamed to "LOAD_PV_BAT_LOAD_CONNECTOR_2P_7".
-#36 WARNING(ORCAP-36006): Part Name "BAT_0_PV_BAT_LOAD_CONNECTOR_2P_762_BAT" is renamed to "BAT_0_PV_BAT_LOAD_CONNECTOR_2P_".
-#37 WARNING(ORCAP-36006): Part Name "20PIN_HEADER_SMD_40PIN_JACK_PROGRAM_SET" is renamed to "20PIN_HEADER_SMD_40PIN_JACK_PRO".
-#38 WARNING(ORCAP-36006): Part Name "HEADER 5X2_SMD_8PIN_JACK_FPGA_JTAG" is renamed to "HEADER 5X2_SMD_8PIN_JACK_FPGA_J".
-#39 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST/SM_0_BUTTON_2PIN_BUTTON" is renamed to "SW PUSHBUTTON-SPST/SM_0_BUTTO_3".
-#40 WARNING(ORCAP-36006): Part Name "INDUCTOR_INDUCTOR_0420_H2_2.2U/0420" is renamed to "INDUCTOR_INDUCTOR_0420_H2_2.2U/".
-#41 WARNING(ORCAP-36006): Part Name "INDUCTOR_INDUCTOR_0420_H2_4.7U/0420" is renamed to "INDUCTOR_INDUCTOR_0420_H2_4.7U/".
-#42 WARNING(ORCAP-36006): Part Name "INDUCTOR IRON_INDUCTOR_0420_H2_15UH/0420" is renamed to "INDUCTOR IRON_INDUCTOR_0420_H2_".
-#43 WARNING(ORCAP-36006): Part Name "MPF4150_IRF3205_TO220AB-3P_IRF3205" is renamed to "MPF4150_IRF3205_TO220AB-3P_IRF3".
-#44 WARNING(ORCAP-36006): Part Name "IRF1404_IRF3205_TO220AB-3P_IRF3207" is renamed to "IRF1404_IRF3205_TO220AB-3P_IRF3".
-#45 WARNING(ORCAP-36006): Part Name "EP4CE6E144_EP4CE6E144QFP-145N_(S1+S2+S3+S4+S5)_EP4CE6E144" is renamed to "EP4CE6E144_EP4CE6E144QFP-145N_(".
-#46 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#29" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#47 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#45" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#48 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#61" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#49 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#78" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#50 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#102" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#51 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#116" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#52 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#134" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#53 WARNING(ORCAP-36042): Pin "VCCIO3" is renamed to "VCCIO3#40" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#54 WARNING(ORCAP-36042): Pin "VCCIO3" is renamed to "VCCIO3#47" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#55 WARNING(ORCAP-36042): Pin "VCCIO4" is renamed to "VCCIO4#56" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#56 WARNING(ORCAP-36042): Pin "VCCIO4" is renamed to "VCCIO4#62" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#57 WARNING(ORCAP-36042): Pin "VCCIO7" is renamed to "VCCIO7#117" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#58 WARNING(ORCAP-36042): Pin "VCCIO7" is renamed to "VCCIO7#122" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#59 WARNING(ORCAP-36042): Pin "VCCIO8" is renamed to "VCCIO8#130" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#60 WARNING(ORCAP-36042): Pin "VCCIO8" is renamed to "VCCIO8#139" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#61 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#5" as visible power pin of same name already exists in Package EP4CE6E144-1 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#62 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#4" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#63 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#19" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#64 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#22" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#65 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#27" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#66 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#41" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#67 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#48" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#68 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#57" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#69 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#63" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#70 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#79" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#71 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#82" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#72 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#95" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#73 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#118" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#74 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#123" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#75 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#131" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#76 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#140" as visible power pin of same name already exists in Package EP4CE6E144-5 , P1-1: Main Circuit, fpga-core (165.10, 48.26).
-#77 WARNING(ORCAP-36006): Part Name "INDUCTOR_INDUCTOR_ROUND_250_150_120-2N_15U" is renamed to "INDUCTOR_INDUCTOR_ROUND_250_150".
-#78 WARNING(ORCAP-36006): Part Name "RESISTOR_RCL_COM_1206_AD_BAT_GND" is renamed to "RESISTOR_RCL_COM_1206_AD_BAT_GN".
-#79 WARNING(ORCAP-36006): Part Name "RESISTOR_SAMPLE_RESISTOR_2512_0.01" is renamed to "RESISTOR_SAMPLE_RESISTOR_2512_0".
-#80 WARNING(ORCAP-36006): Part Name "RESISTOR_RCL_COM_1206_10K/0603/LOWPPM" is renamed to "RESISTOR_RCL_COM_1206_10K/0603/".
-#81 WARNING(ORCAP-36006): Part Name "RESISTOR_RCL_COM_1206_100K/0603/LOWPPM" is renamed to "RESISTOR_RCL_COM_1206_100K/0603".
-#82 WARNING(ORCAP-36006): Part Name "RESISTOR_RCL_COM_1206_AD_LOAD_GND" is renamed to "RESISTOR_RCL_COM_1206_AD_LOAD_G".
-#83 WARNING(ORCAP-36006): Part Name "R-PACK_1_RP_RESISTOR_ARRAY_0603-8N_KEY_1K" is renamed to "R-PACK_1_RP_RESISTOR_ARRAY_0603".
-#84 WARNING(ORCAP-36006): Part Name "R-PACK_1_RP_RESISTOR_ARRAY_0603-8N_1K" is renamed to "R-PACK_1_RP_RESISTOR_ARRAY_06_1".
-#85 WARNING(ORCAP-36006): Part Name "ETD29_TRAN_0_ETD29_L_14P_DIP_ETD29_TRAN" is renamed to "ETD29_TRAN_0_ETD29_L_14P_DIP_ET".
-#86 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_LOAD_2.5V" is renamed to "TEST POINT_TESTPOINT120_LOAD_2.".
-#87 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_LOAD_2.5V_TRIM" is renamed to "TEST POINT_TESTPOINT120_LOAD__1".
-#88 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_LOAD_AD2" is renamed to "TEST POINT_TESTPOINT120_LOAD_AD".
-#89 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_LOAD_AD1" is renamed to "TEST POINT_TESTPOINT120_LOAD__2".
-#90 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_BAT_2.5V" is renamed to "TEST POINT_TESTPOINT120_BAT_2.5".
-#91 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_SPI_MISO" is renamed to "TEST POINT_TESTPOINT120_SPI_MIS".
-#92 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_SPI_MOSI" is renamed to "TEST POINT_TESTPOINT120_SPI_MOS".
-#93 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_AD_BAT_DOUT" is renamed to "TEST POINT_TESTPOINT120_AD_BAT_".
-#94 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_AD_BAT_DIN" is renamed to "TEST POINT_TESTPOINT120_AD_BA_1".
-#95 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_PV_2.5V_TRIM" is renamed to "TEST POINT_TESTPOINT120_PV_2._1".
-#96 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_AD_BAT_CS" is renamed to "TEST POINT_TESTPOINT120_AD_BA_2".
-#97 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_AD_BAT_SCLK" is renamed to "TEST POINT_TESTPOINT120_AD_BA_3".
-#98 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_BAT_2.5V_TRIM" is renamed to "TEST POINT_TESTPOINT120_BAT_2_1".
-#99 WARNING(ORCAP-36006): Part Name "ADC122S101_ADC122S101VSSOP-8N_ADC122S101" is renamed to "ADC122S101_ADC122S101VSSOP-8N_A".
-#100 WARNING(ORCAP-36006): Part Name "LM358-SINGLECHIP_LM358TSSOP-8NP_LM358" is renamed to "LM358-SINGLECHIP_LM358TSSOP-8NP".
-#101 WARNING(ORCAP-36006): Part Name "TPS73150_1_TPS73150SOT23_5_FINAL_TPS73150" is renamed to "TPS73150_1_TPS73150SOT23_5_FINA".
-#102 WARNING(ORCAP-36006): Part Name "C8T6_0_STM32C8T6QFP-48N_STM32C8T6" is renamed to "C8T6_0_STM32C8T6QFP-48N_STM32C8".
-#103 WARNING(ORCAP-36006): Part Name "TPS54331_AD780SOIC_N-8N_TPS54331" is renamed to "TPS54331_AD780SOIC_N-8N_TPS5433".
-#104 WARNING(ORCAP-36006): Part Name "LT1371HV_0_LT1371_DD_PAK_TO-8N_LT1371HV" is renamed to "LT1371HV_0_LT1371_DD_PAK_TO-8N_".
-#105 WARNING(ORCAP-36006): Part Name "EPCS4SI8N_0_AD780SOIC_N-8N_EPCS4SI8N" is renamed to "EPCS4SI8N_0_AD780SOIC_N-8N_EPCS".
-#106 WARNING(ORCAP-36006): Part Name "MT48LC16M16A2TG-75_4_MT48LC16M16A275_TSOP-54N_MT48LC16M16A2TG-75" is renamed to "MT48LC16M16A2TG-75_4_MT48LC16M1".
-#107 WARNING(ORCAP-36006): Part Name "4_8_SEG_LEDSEG_DIP12_300_140_036INCH_4_8_SEG" is renamed to "4_8_SEG_LEDSEG_DIP12_300_140_03".
-#108 WARNING(ORCAP-36006): Part Name "IR2110S_IR2110_SOIC-16N_IR2110S_FORWARD" is renamed to "IR2110S_IR2110_SOIC-16N_IR2110S".
-#109 WARNING(ORCAP-36006): Part Name "IR2110S_IR2110_SOIC-16N_IR2110S_BACKWARD" is renamed to "IR2110S_IR2110_SOIC-16N_IR211_1".
-#110 WARNING(ORCAP-36006): Part Name "CRYSTAL_8MHZYXC_HC49SMD_ARM_CRYSTAL" is renamed to "CRYSTAL_8MHZYXC_HC49SMD_ARM_CRY".
-#111 WARNING(ORCAP-36006): Part Name "CRYSTAL1-4/SM_YSO751SR_50MHZ_SMD-7050-4N_FPGA_CRYSTAL" is renamed to "CRYSTAL1-4/SM_YSO751SR_50MHZ_SM".
+#18 WARNING(ORCAP-36038): "No_connect" property on Pin "J1.8" ignored for J1: Main Circuit, arm-core (4.60, 0.80). Connecting pin to net "ARM_+3.3V".
+#19 WARNING(ORCAP-36038): "No_connect" property on Pin "Y2.2" ignored for Y2: Main Circuit, fpga-core (213.36, 309.88). Connecting pin to net "CRTSTAL_GND".
+#20 WARNING(ORCAP-36038): "No_connect" property on Pin "J9.9" ignored for J9: Main Circuit, fpga-core (276.86, 88.90). Connecting pin to net "J_TDI".
+#21 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST/SM_0_BUTTON_2PIN_KEYA1" is renamed to "SW PUSHBUTTON-SPST/SM_0_BUTTON_".
+#22 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST/SM_0_BUTTON_2PIN_KEYA2" is renamed to "SW PUSHBUTTON-SPST/SM_0_BUTTO_1".
+#23 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST/SM_0_BUTTON_2PIN_ARM_RST" is renamed to "SW PUSHBUTTON-SPST/SM_0_BUTTO_2".
+#24 WARNING(ORCAP-36006): Part Name "CAP NP_CAP_NPO_0603_10U/16V/0603" is renamed to "CAP NP_CAP_NPO_0603_10U/16V/060".
+#25 WARNING(ORCAP-36006): Part Name "CAP NP_CAP_NPO_0603_0.1U/50V/0603" is renamed to "CAP NP_CAP_NPO_0603_0.1U/50V/06".
+#26 WARNING(ORCAP-36006): Part Name "CAP NP_CAP_NPO_0603_0.1UF/50V/0603" is renamed to "CAP NP_CAP_NPO_0603_0.1UF/50V/0".
+#27 WARNING(ORCAP-36006): Part Name "CAP NP_CAP_NPO_0603_0.015UF/0603" is renamed to "CAP NP_CAP_NPO_0603_0.015UF/060".
+#28 WARNING(ORCAP-36006): Part Name "DIODE SCHOTTKY_DIODE_SMA_B340A/SMA" is renamed to "DIODE SCHOTTKY_DIODE_SMA_B340A/".
+#29 WARNING(ORCAP-36006): Part Name "1N4744A_SMA_1N4733_350_145_1N4733" is renamed to "1N4744A_SMA_1N4733_350_145_1N47".
+#30 WARNING(ORCAP-36006): Part Name "DIODE SCHOTTKY_0_DIODE_SMA_B340A" is renamed to "DIODE SCHOTTKY_0_DIODE_SMA_B340".
+#31 WARNING(ORCAP-36006): Part Name "1N4744A_SMA_1N4733_520_270_1N4744A" is renamed to "1N4744A_SMA_1N4733_520_270_1N47".
+#32 WARNING(ORCAP-36006): Part Name "HEADER 5X2_5_JTAG_10PIN_DIP_ARM_JTAG" is renamed to "HEADER 5X2_5_JTAG_10PIN_DIP_ARM".
+#33 WARNING(ORCAP-36006): Part Name "HEADER 5X2_2_SMD_8PIN_JACK_FPGA_EXTEN_PIN" is renamed to "HEADER 5X2_2_SMD_8PIN_JACK_FPGA".
+#34 WARNING(ORCAP-36006): Part Name "HEADER 5X2_4_SMD_8PIN_JACK_ARM_EXTEN_PIN" is renamed to "HEADER 5X2_4_SMD_8PIN_JACK_ARM_".
+#35 WARNING(ORCAP-36006): Part Name "HEADER 5X2_2_SMD_8PIN_JACK_AXP_ENTEN_LDO" is renamed to "HEADER 5X2_2_SMD_8PIN_JACK_AXP_".
+#36 WARNING(ORCAP-36006): Part Name "PV_1_PV_BAT_LOAD_CONNECTOR_2P_762_PV" is renamed to "PV_1_PV_BAT_LOAD_CONNECTOR_2P_7".
+#37 WARNING(ORCAP-36006): Part Name "LOAD_PV_BAT_LOAD_CONNECTOR_2P_762_LOAD" is renamed to "LOAD_PV_BAT_LOAD_CONNECTOR_2P_7".
+#38 WARNING(ORCAP-36006): Part Name "BAT_0_PV_BAT_LOAD_CONNECTOR_2P_762_BAT" is renamed to "BAT_0_PV_BAT_LOAD_CONNECTOR_2P_".
+#39 WARNING(ORCAP-36006): Part Name "20PIN_HEADER_SMD_40PIN_JACK_PROGRAM_SET" is renamed to "20PIN_HEADER_SMD_40PIN_JACK_PRO".
+#40 WARNING(ORCAP-36006): Part Name "HEADER 5X2_5_JTAG_10PIN_DIP_FPGA_JTAG" is renamed to "HEADER 5X2_5_JTAG_10PIN_DIP_FPG".
+#41 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST/SM_0_BUTTON_2PIN_BUTTON" is renamed to "SW PUSHBUTTON-SPST/SM_0_BUTTO_3".
+#42 WARNING(ORCAP-36006): Part Name "INDUCTOR_INDUCTOR_0420_H2_2.2U/0420" is renamed to "INDUCTOR_INDUCTOR_0420_H2_2.2U/".
+#43 WARNING(ORCAP-36006): Part Name "INDUCTOR_INDUCTOR_0420_H2_4.7U/0420" is renamed to "INDUCTOR_INDUCTOR_0420_H2_4.7U/".
+#44 WARNING(ORCAP-36006): Part Name "INDUCTOR IRON_INDUCTOR_0420_H2_15UH/0420" is renamed to "INDUCTOR IRON_INDUCTOR_0420_H2_".
+#45 WARNING(ORCAP-36006): Part Name "MPF4150_0_IRF3205_TO220AB-3P_IRF3205" is renamed to "MPF4150_0_IRF3205_TO220AB-3P_IR".
+#46 WARNING(ORCAP-36006): Part Name "IRF1404_0_IRF3205_TO220AB-3P_IRF3207" is renamed to "IRF1404_0_IRF3205_TO220AB-3P_IR".
+#47 WARNING(ORCAP-36006): Part Name "EP4CE6E144_7_EP4CE6E144QFP-145N_(S1+S2+S3+S4+S5)_EP4CE6E144" is renamed to "EP4CE6E144_7_EP4CE6E144QFP-145N".
+#48 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#29" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#49 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#45" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#50 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#61" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#51 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#78" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#52 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#102" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#53 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#116" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#54 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#134" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#55 WARNING(ORCAP-36042): Pin "VCCIO3" is renamed to "VCCIO3#40" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#56 WARNING(ORCAP-36042): Pin "VCCIO3" is renamed to "VCCIO3#47" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#57 WARNING(ORCAP-36042): Pin "VCCIO4" is renamed to "VCCIO4#56" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#58 WARNING(ORCAP-36042): Pin "VCCIO4" is renamed to "VCCIO4#62" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#59 WARNING(ORCAP-36042): Pin "VCCIO7" is renamed to "VCCIO7#117" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#60 WARNING(ORCAP-36042): Pin "VCCIO7" is renamed to "VCCIO7#122" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#61 WARNING(ORCAP-36042): Pin "VCCIO8" is renamed to "VCCIO8#130" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#62 WARNING(ORCAP-36042): Pin "VCCIO8" is renamed to "VCCIO8#139" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#63 WARNING(ORCAP-36042): Pin "VCCINT" is renamed to "VCCINT#5" as visible power pin of same name already exists in Package EP4CE6E144_7-1 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#64 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#4" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#65 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#19" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#66 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#22" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#67 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#27" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#68 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#41" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#69 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#48" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#70 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#57" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#71 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#63" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#72 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#79" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#73 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#82" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#74 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#95" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#75 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#118" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#76 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#123" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#77 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#131" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#78 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#140" as visible power pin of same name already exists in Package EP4CE6E144_7-5 , P1-1: Main Circuit, fpga-core (157.48, 50.80).
+#79 WARNING(ORCAP-36006): Part Name "INDUCTOR_INDUCTOR_ROUND_250_150_120-2N_15U" is renamed to "INDUCTOR_INDUCTOR_ROUND_250_150".
+#80 WARNING(ORCAP-36006): Part Name "RESISTOR_RCL_COM_1206_AD_BAT_GND" is renamed to "RESISTOR_RCL_COM_1206_AD_BAT_GN".
+#81 WARNING(ORCAP-36006): Part Name "RESISTOR_SAMPLE_RESISTOR_2512_0.01" is renamed to "RESISTOR_SAMPLE_RESISTOR_2512_0".
+#82 WARNING(ORCAP-36006): Part Name "RESISTOR_CAP_NPO_0603_10K/0603/LOWPPM" is renamed to "RESISTOR_CAP_NPO_0603_10K/0603/".
+#83 WARNING(ORCAP-36006): Part Name "RESISTOR_CAP_NPO_0603_100K/0603/LOWPPM" is renamed to "RESISTOR_CAP_NPO_0603_100K/0603".
+#84 WARNING(ORCAP-36006): Part Name "RESISTOR_RCL_COM_1206_AD_LOAD_GND" is renamed to "RESISTOR_RCL_COM_1206_AD_LOAD_G".
+#85 WARNING(ORCAP-36006): Part Name "R-PACK_1_RP_RESISTOR_ARRAY_0603-8N_KEY_1K" is renamed to "R-PACK_1_RP_RESISTOR_ARRAY_0603".
+#86 WARNING(ORCAP-36006): Part Name "R-PACK_1_RP_RESISTOR_ARRAY_0603-8N_1K" is renamed to "R-PACK_1_RP_RESISTOR_ARRAY_06_1".
+#87 WARNING(ORCAP-36006): Part Name "ETD29_TRAN_0_ETD29_L_14P_DIP_ETD29_TRAN" is renamed to "ETD29_TRAN_0_ETD29_L_14P_DIP_ET".
+#88 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_LOAD_2.5V" is renamed to "TEST POINT_TESTPOINT120_LOAD_2.".
+#89 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_LOAD_2.5V_TRIM" is renamed to "TEST POINT_TESTPOINT120_LOAD__1".
+#90 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_LOAD_AD2" is renamed to "TEST POINT_TESTPOINT120_LOAD_AD".
+#91 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_LOAD_AD1" is renamed to "TEST POINT_TESTPOINT120_LOAD__2".
+#92 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_BAT_2.5V" is renamed to "TEST POINT_TESTPOINT120_BAT_2.5".
+#93 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_SPI_MISO" is renamed to "TEST POINT_TESTPOINT120_SPI_MIS".
+#94 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_SPI_MOSI" is renamed to "TEST POINT_TESTPOINT120_SPI_MOS".
+#95 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_AD_BAT_DOUT" is renamed to "TEST POINT_TESTPOINT120_AD_BAT_".
+#96 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_AD_BAT_SCLK" is renamed to "TEST POINT_TESTPOINT120_AD_BA_1".
+#97 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_PV_2.5V_TRIM" is renamed to "TEST POINT_TESTPOINT120_PV_2._1".
+#98 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_AD_BAT_DIN" is renamed to "TEST POINT_TESTPOINT120_AD_BA_2".
+#99 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_AD_BAT_CS" is renamed to "TEST POINT_TESTPOINT120_AD_BA_3".
+#100 WARNING(ORCAP-36006): Part Name "TEST POINT_TESTPOINT120_BAT_2.5V_TRIM" is renamed to "TEST POINT_TESTPOINT120_BAT_2_1".
+#101 WARNING(ORCAP-36006): Part Name "ADC122S101_ADC122S101VSSOP-8N_ADC122S101" is renamed to "ADC122S101_ADC122S101VSSOP-8N_A".
+#102 WARNING(ORCAP-36006): Part Name "LM358-SINGLECHIP_LM358TSSOP-8N_LM358" is renamed to "LM358-SINGLECHIP_LM358TSSOP-8N_".
+#103 WARNING(ORCAP-36006): Part Name "TPS73150_1_TPS73150SOT23_5_FINAL_TPS73150" is renamed to "TPS73150_1_TPS73150SOT23_5_FINA".
+#104 WARNING(ORCAP-36006): Part Name "C8T6_0_STM32C8T6QFP-48N_STM32C8T6" is renamed to "C8T6_0_STM32C8T6QFP-48N_STM32C8".
+#105 WARNING(ORCAP-36006): Part Name "TPS54331_AD780SOIC_N-8N_TPS54331" is renamed to "TPS54331_AD780SOIC_N-8N_TPS5433".
+#106 WARNING(ORCAP-36006): Part Name "LT1371HV_0_LT1371_DD_PAK_TO-8N_LT1371HV" is renamed to "LT1371HV_0_LT1371_DD_PAK_TO-8N_".
+#107 WARNING(ORCAP-36006): Part Name "EPCS4SI8N_0_AD780SOIC_N-8N_EPCS4SI8N" is renamed to "EPCS4SI8N_0_AD780SOIC_N-8N_EPCS".
+#108 WARNING(ORCAP-36006): Part Name "MT48LC16M16A2TG-75_4_MT48LC16M16A275_TSOP-54N_MT48LC16M16A2TG-75" is renamed to "MT48LC16M16A2TG-75_4_MT48LC16M1".
+#109 WARNING(ORCAP-36006): Part Name "4_8_SEG_LEDSEG_DIP12_300_140_036INCH_4_8_SEG" is renamed to "4_8_SEG_LEDSEG_DIP12_300_140_03".
+#110 WARNING(ORCAP-36006): Part Name "IR2110S_IR2110_SOIC-16N_IR2110S_FORWARD" is renamed to "IR2110S_IR2110_SOIC-16N_IR2110S".
+#111 WARNING(ORCAP-36006): Part Name "IR2110S_IR2110_SOIC-16N_IR2110S_BACKWARD" is renamed to "IR2110S_IR2110_SOIC-16N_IR211_1".
+#112 WARNING(ORCAP-36006): Part Name "CRYSTAL_8MHZYXC_HC49SMD_ARM_CRYSTAL" is renamed to "CRYSTAL_8MHZYXC_HC49SMD_ARM_CRY".
+#113 WARNING(ORCAP-36006): Part Name "CRYSTAL1-4/SM_YSO751SR_50MHZ_SMD-7050-4N_FPGA_CRYSTAL" is renamed to "CRYSTAL1-4/SM_YSO751SR_50MHZ_SM".
 INFO(ORCAP-36080): Scanning netlist files ...
 
 Loading... C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\allegro/pstchip.dat

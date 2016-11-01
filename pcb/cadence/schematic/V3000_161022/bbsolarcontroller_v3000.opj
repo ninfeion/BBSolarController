@@ -83,7 +83,7 @@
     ("Allegro Netlist Create DCF File" "FALSE")
     ("Update Allegro Board" "TRUE")
     ("Allegro Netlist Output Board File"
-       "C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\BBSOLARCONTROLLER_V3000.brd")
+       "C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\BBSOLARCONTROLLER_V3000_IMPROVE_I_1.brd")
     ("Allegro Netlist Remove Etch" "FALSE")
     ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
     ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
@@ -94,7 +94,9 @@
     ("Allegro Netlist Combine Property String" "PCB Footprint")
     ("Allegro Netlist Ignore Fixed Property" "FALSE")
     ("Allegro Netlist User Defined Property" "FALSE")
-    (Netlist_TAB "0"))
+    (Netlist_TAB "0")
+    ("Allegro Netlist Input Board File"
+       "C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\BBSOLARCONTROLLER_V3000_IMPROVE_I.brd"))
   (Folder "Outputs"
     (File ".\bbsolarcontroller_v3000.drc"
       (Type "Report"))
@@ -111,6 +113,16 @@
       (DisplayName "pstchip.dat")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (EP4CE6E144
+      (FullPartName "EP4CE6E144-5.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\EP4CE6.OLB")
+      (DeviceIndex "4"))
+    (DIODE
+      (FullPartName "DIODE.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
     (ETD29_TRAN
       (FullPartName "ETD29_TRAN.Normal")
       (LibraryName
@@ -200,6 +212,8 @@
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\v3000_161022\bbsolarcontroller_v3000.dsn"
          "Ideal Diode Module")
       (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\bbsccomponent.olb")
       (Path "Outputs")
       (Select "Design Resources"
          "c:\ninfeion_git\bbsolarcontroller\pcb\cadence\schematic\v3000_161022\bbsolarcontroller_v3000.dsn"))
@@ -212,41 +226,30 @@
     (Doc
       (Type "TextFile")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 66 1014 66 536"))
+        (Placement "44 0 1 -1 -1 -4 -23 220 1526 220 690"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\allegro\pstxnet.dat")
       (Scroll "0"))
     (Doc
       (Type "TextFile")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 88 1036 88 558"))
-      (Path
-         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\allegro\pstchip.dat")
-      (Scroll "0"))
-    (Doc
-      (Type "TextFile")
-      (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 44 992 44 514"))
+        (Placement "44 0 1 -1 -1 -4 -23 198 1504 198 668"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\allegro\pstxprt.dat")
       (Scroll "0"))
     (Doc
-      (Type "COrSchematicDoc")
+      (Type "TextFile")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 154 1102 154 624")
-        (Scroll "0 0")
-        (Zoom "100")
-        (Occurrence "/Diode_ideal_D1"))
+        (Placement "44 0 1 -1 -1 -4 -23 0 1306 0 470"))
       (Path
-         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
-      (Schematic "Ideal Diode Module")
-      (Page "main"))
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\allegro\pstchip.dat")
+      (Scroll "0"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 198 1146 198 668")
-        (Scroll "0 0")
-        (Zoom "47")
+        (Placement "44 0 1 -1 -1 -4 -23 66 1244 66 448")
+        (Scroll "0 535")
+        (Zoom "92")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
@@ -255,13 +258,70 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 88 1080 88 494")
-        (Scroll "-38 0")
-        (Zoom "51")
+        (Placement "44 0 1 -1 -1 -4 -23 132 1188 132 538")
+        (Scroll "0 573")
+        (Zoom "158")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
       (Schematic "Main Circuit")
-      (Page "adc-part")))
+      (Page "chip-power-support"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 154 1210 154 560")
+        (Scroll "0 647")
+        (Zoom "122")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
+      (Schematic "Main Circuit")
+      (Page "adc-part"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 110 1166 110 516")
+        (Scroll "0 0")
+        (Zoom "67")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
+      (Schematic "Main Circuit")
+      (Page "arm-core"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 154 1210 154 560")
+        (Scroll "1076 223")
+        (Zoom "180")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
+      (Schematic "Main Circuit")
+      (Page "dc-dc-converter"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 0 1056 0 406")
+        (Scroll "0 0")
+        (Zoom "123")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
+      (Schematic "Main Circuit")
+      (Page "mosfet-driver"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 22 1078 22 428")
+        (Scroll "-23 0")
+        (Zoom "100")
+        (Occurrence "/Diode_ideal_D1"))
+      (Path
+         "C:\NINFEION_GIT\BBSOLARCONTROLLER\PCB\CADENCE\SCHEMATIC\V3000_161022\BBSOLARCONTROLLER_V3000.DSN")
+      (Schematic "Ideal Diode Module")
+      (Page "main")))
   (MPSSessionName "Ninfeion")
-  (ISPCBBASICLICENSE "false"))
+  (ISPCBBASICLICENSE "false")
+  (LastUsedLibraryBrowseDirectory
+     "C:\Ninfeion_Git\BBSolarController\pcb\cadence\schematic"))

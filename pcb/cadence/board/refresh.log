@@ -1,0 +1,126 @@
+Thu Oct 27 16:26:48 2016				Page     1
+
+
+ 
+Update Symbols/Modules Logfile
+	Thu Oct 27 16:26:48 2016
+
+------ Module Refresh Messages ------
+
+SUMMARY:    Updated 0 out of 0 modules
+
+------ End Module Messages     ------
+
+
+
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Refresh Symbol                                                   )
+(                                                                     )
+(    Drawing          : BBSOLARCONTROLLER_V3000.brd                   )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Thu Oct 27 16:26:48 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Thu Oct 27 16:26:48 2016				Page     1
+
+
+------ Symbol Refresh Directives ------
+
+Input design  = 'C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/BBSOLARCONTROLLER_V3000.brd'
+Output design = ''
+
+Update mechanical symbols              = 'NO'
+Update format symbols                  = 'NO'
+Update package symbols                 = 'YES'
+Update shape/flash symbols             = 'YES'
+Update symbol padstacks                = 'NO'
+Preserve padstacks replaced on pins    = 'NO'
+Reset symbol text and size locations   = 'NO'
+Reset Pin Escapes (fanouts)            = 'NO'
+Ripup Etch                             = 'NO'
+Reset custom drill data                = 'NO'
+
+
+------ Library Paths ------
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/local/pcb/symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/pcb_lib/symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/allegrolib/symbols 
+           C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/ 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/local/pcb/padstacks 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/pcb_lib/symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/allegrolib/symbols 
+           C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs 
+
+
+------ Symbol Refresh Messages ------
+
+'8MHZYXC_HC49SMD'  symbol refreshed successfully.
+'PTH_BUZZER_2PIN'  symbol refreshed successfully.
+'SAMPLE_RESISTOR_2512'  symbol refreshed successfully.
+'INDUCTOR_ROUND_250_150_120-2N'  symbol refreshed successfully.
+'BUTTON_2PIN'  symbol refreshed successfully.
+'SMA_1N4733_520_270'  symbol refreshed successfully.
+'SMA_1N4733_350_145'  symbol refreshed successfully.
+'TCAP_PO_1206'  symbol refreshed successfully.
+'SMD_AL_CAP_100X102'  symbol refreshed successfully.
+'MBR2045_TO-220AC_2P'  symbol refreshed successfully.
+'SS8050_SOT23-3-3N'  symbol refreshed successfully.
+'YSO751SR_50MHZ_SMD-7050-4N'  symbol refreshed successfully.
+'IRF3205_TO220AB-3P'  symbol refreshed successfully.
+'TPS73150SOT23_5_FINAL'  symbol refreshed successfully.
+'BC847S_SOT-363_6N'  symbol refreshed successfully.
+'SWITCH_6PIN'  symbol refreshed successfully.
+'MICROUSB'  symbol refreshed successfully.
+'ADC122S101VSSOP-8N'  symbol refreshed successfully.
+'LM385TSSOP-8N'  symbol refreshed successfully.
+'LT1371_DD_PAK_TO-8N'  symbol refreshed successfully.
+'AD8210SOIC_N-8N'  symbol refreshed successfully.
+'RP_RESISTOR_ARRAY_0603-8N'  symbol refreshed successfully.
+'LM358TSSOP-8N'  symbol refreshed successfully.
+'SMD_8PIN_JACK'  symbol refreshed successfully.
+'JTAG_10PIN_DIP'  symbol refreshed successfully.
+'LEDSEG_DIP12_300_140_036INCH'  symbol refreshed successfully.
+'ETD29_L_14P_DIP'  symbol refreshed successfully.
+'IR2110_SOIC-16N'  symbol refreshed successfully.
+'SMD_40PIN_JACK'  symbol refreshed successfully.
+'STM32C8T6QFP-48N'  symbol refreshed successfully.
+'MT48LC16M16A275_TSOP-54N'  symbol refreshed successfully.
+'EP4CE6E144QFP-145N'  symbol refreshed successfully.
+'AD780SOIC_N-8N'  symbol refreshed successfully.
+'SY7208_SOT23-6-6N'  symbol refreshed successfully.
+'AXP209QFN-49N'  symbol refreshed successfully.
+'PV_BAT_LOAD_CONNECTOR_2P_762'  symbol refreshed successfully.
+'TCAP_PO_6032'  symbol refreshed successfully.
+'CAP_NPO_0603'  symbol refreshed successfully.
+'INDUCTOR_0420_H2'  symbol refreshed successfully.
+'DIODE_SMA'  symbol refreshed successfully.
+'TESTPOINT120'  symbol refreshed successfully.
+'RCL_COM_1206'  symbol refreshed successfully.
+Thu Oct 27 16:26:48 2016				Page     2
+
+
+'AB00'  symbol refreshed successfully.
+'COMPLEX15X11A162'  symbol refreshed successfully.
+'COMPLEX17X10A178'  symbol refreshed successfully.
+'CMPLXRR0-2X0-8A0'  symbol refreshed successfully.
+'COMPLEX4-2X4-2A17'  symbol refreshed successfully.
+'COMPLEX2-6X2-6A7'  symbol refreshed successfully.
+
+
+----- Symbol Update Summary ----
+
+Updated symbols: 48 out 48
+    Design updated.
+

@@ -1,0 +1,169 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    QUICKPLACE LOG                                                   )
+(                                                                     )
+(    Drawing          : BBSOLARCONTROLLER_V3000.brd                   )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Wed Oct 26 19:45:11 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+State: Placing on layer TOP
+
+         Placed symbol:  P1 / EP4CE6E144_7_EP4CE6E144QFP-145N / EP4CE6E144QFP-145N at (-100.7600 134.9000)
+         Placed symbol:  U26 / MT48LC16M16A2TG-75_4_MT48LC16M1 / MT48LC16M16A275_TSOP-54N at (-79.9200 134.6000)
+         Placed symbol:  U19 / C8T6_0_STM32C8T6QFP-48N_STM32C8 / STM32C8T6QFP-48N at (-65.5300 128.4500)
+         Placed symbol:  J8 / 20PIN_HEADER_SMD_40PIN_JACK_PRO / SMD_40PIN_JACK at (-54.2856 125.4352)
+         Placed symbol:  U29 / IR2110S_IR2110_SOIC-16N_IR2110S / IR2110_SOIC-16N at (-39.7750 128.7000)
+         Placed symbol:  U30 / IR2110S_IR2110_SOIC-16N_IR211_1 / IR2110_SOIC-16N at (-25.4350 128.7000)
+         Placed symbol:  T1 / ETD29_TRAN_0_ETD29_L_14P_DIP_ET / ETD29_L_14P_DIP at (2.2550 142.4500)
+         Placed symbol:  U27 / 4_8_SEG_LEDSEG_DIP12_300_140_03 / LEDSEG_DIP12_300_140_036INCH at (31.2950 138.4500)
+         Placed symbol:  J9 / HEADER 5X2_5_JTAG_10PIN_DIP_FPG / JTAG_10PIN_DIP at (43.2440 127.1878)
+         Placed symbol:  J1 / HEADER 5X2_5_JTAG_10PIN_DIP_ARM / JTAG_10PIN_DIP at (52.6674 127.1878)
+         Placed symbol:  J10 / HEADER 5X2_2_SMD_8PIN_JACK_FPGA / SMD_8PIN_JACK at (63.5386 124.8764)
+         Placed symbol:  U14 / LM358-SINGLECHIP_LM358TSSOP-8N_ / LM358TSSOP-8N at (76.4040 125.0000)
+         Placed symbol:  U3 / LM358-SINGLECHIP_LM358TSSOP-8N_ / LM358TSSOP-8N at (86.8440 125.0000)
+         Placed symbol:  J3 / HEADER 5X2_4_SMD_8PIN_JACK_ARM_ / SMD_8PIN_JACK at (96.9408 124.8764)
+         Placed symbol:  U4 / LM358-SINGLECHIP_LM358TSSOP-8N_ / LM358TSSOP-8N at (109.8062 125.0000)
+         Placed symbol:  J4 / HEADER 5X2_2_SMD_8PIN_JACK_AXP_ / SMD_8PIN_JACK at (-108.8532 178.8006)
+         Placed symbol:  RPKEY1 / R-PACK_1_RP_RESISTOR_ARRAY_0603 / RP_RESISTOR_ARRAY_0603-8N at (-98.3378 178.9742)
+         Placed symbol:  U7 / AD8210_AD8210SOIC_N-8N_AD8210 / AD8210SOIC_N-8N at (-90.4478 179.8742)
+         Placed symbol:  U16 / AD8210_AD8210SOIC_N-8N_AD8210 / AD8210SOIC_N-8N at (-80.4078 179.8742)
+         Placed symbol:  U8 / AD8210_AD8210SOIC_N-8N_AD8210 / AD8210SOIC_N-8N at (-70.3678 179.8742)
+         Placed symbol:  U24 / LT1371HV_0_LT1371_DD_PAK_TO-8N_ / LT1371_DD_PAK_TO-8N at (-56.3778 182.6742)
+         Placed symbol:  RPSEG1 / R-PACK_1_RP_RESISTOR_ARRAY_06_1 / RP_RESISTOR_ARRAY_0603-8N at (-44.5378 178.9742)
+         Placed symbol:  RPSEG2 / R-PACK_1_RP_RESISTOR_ARRAY_06_1 / RP_RESISTOR_ARRAY_0603-8N at (-38.7978 178.9742)
+         Placed symbol:  RPSEG3 / R-PACK_1_RP_RESISTOR_ARRAY_06_1 / RP_RESISTOR_ARRAY_0603-8N at (-33.0578 178.9742)
+         Placed symbol:  U12 / LM385_LM385TSSOP-8N_LM385 / LM385TSSOP-8N at (-25.0178 178.9242)
+         Placed symbol:  U9 / ADC122S101_ADC122S101VSSOP-8N_A / ADC122S101VSSOP-8N at (-15.3778 178.9242)
+         Placed symbol:  U17 / ADC122S101_ADC122S101VSSOP-8N_A / ADC122S101VSSOP-8N at (-6.4378 178.9242)
+         Placed symbol:  U10 / LM385_LM385TSSOP-8N_LM385 / LM385TSSOP-8N at (3.2022 178.9242)
+         Placed symbol:  U18 / LM385_LM385TSSOP-8N_LM385 / LM385TSSOP-8N at (13.5422 178.9242)
+         Placed symbol:  U11 / ADC122S101_ADC122S101VSSOP-8N_A / ADC122S101VSSOP-8N at (23.1822 178.9242)
+         Placed symbol:  J2 / MICROUSB_1_MICROUSB_MICRO USB / MICROUSB at (29.3540 177.4290)
+         Placed symbol:  SW2 / SW_T_SPDT_3_SWITCH_6PIN_N_OE / SWITCH_6PIN at (39.7934 179.1030)
+         Placed symbol:  SW1 / SW_T_SPDT_3_SWITCH_6PIN_N_OE / SWITCH_6PIN at (51.3758 179.1030)
+         Placed symbol:  U31 / BC847S_BC847S_SOT-363_6N_BC847S / BC847S_SOT-363_6N at (64.8082 178.4742)
+         Placed symbol:  U15 / TPS73150_1_TPS73150SOT23_5_FINA / TPS73150SOT23_5_FINAL at (71.2982 178.9242)
+         Placed symbol:  U5 / TPS73150_1_TPS73150SOT23_5_FINA / TPS73150SOT23_5_FINAL at (78.0382 178.9242)
+         Placed symbol:  U6 / TPS73150_1_TPS73150SOT23_5_FINA / TPS73150SOT23_5_FINAL at (84.7782 178.9242)
+         Placed symbol:  MB1 / MPF4150_0_IRF3205_TO220AB-3P_IR / IRF3205_TO220AB-3P at (90.6432 185.5392)
+         Placed symbol:  MB2 / MPF4150_0_IRF3205_TO220AB-3P_IR / IRF3205_TO220AB-3P at (-111.2350 199.8292)
+         Placed symbol:  MID1 / IRF1404_0_IRF3205_TO220AB-3P_IR / IRF3205_TO220AB-3P at (-84.8925 199.8292)
+         Placed symbol:  MF2 / MPF4150_0_IRF3205_TO220AB-3P_IR / IRF3205_TO220AB-3P at (-58.5500 199.8292)
+         Placed symbol:  MF1 / MPF4150_0_IRF3205_TO220AB-3P_IR / IRF3205_TO220AB-3P at (-32.2075 199.8292)
+         Placed symbol:  Y2 / CRYSTAL1-4/SM_YSO751SR_50MHZ_SM / YSO751SR_50MHZ_SMD-7050-4N at (-3.9900 195.5142)
+         Placed symbol:  QF1 / NPN BCE_SS8050_SOT23-3-3N_8050 / SS8050_SOT23-3-3N at (3.6000 193.1642)
+         Placed symbol:  DID5 / DIODE_0_MBR2045_TO-220AC_2P_MBR / MBR2045_TO-220AC_2P at (9.3150 199.7042)
+         Placed symbol:  CTR_F1 / C_SMD_AL_CAP_100X102_470U/35V / SMD_AL_CAP_100X102 at (41.3225 196.9142)
+         Placed symbol:  CTR_F3 / C_SMD_AL_CAP_100X102_470U/35V / SMD_AL_CAP_100X102 at (57.7625 196.9142)
+         Placed symbol:  CTR_F2 / C_SMD_AL_CAP_100X102_470U/35V / SMD_AL_CAP_100X102 at (74.2025 196.9142)
+         Placed symbol:  CTR_F4 / C_SMD_AL_CAP_100X102_470U/35V / SMD_AL_CAP_100X102 at (90.6425 196.9142)
+         Placed symbol:  CBS6 / CAP_TCAP_PO_1206_0.1UF / TCAP_PO_1206 at (102.4325 192.5642)
+         Placed symbol:  CBS7 / CAP_TCAP_PO_1206_0.1UF / TCAP_PO_1206 at (109.5725 192.5642)
+         Placed symbol:  CBAT2 / C_SMD_AL_CAP_100X102_470U/35V / SMD_AL_CAP_100X102 at (-105.5100 211.2042)
+         Placed symbol:  CTR_B4 / C_SMD_AL_CAP_100X102_470U/35V / SMD_AL_CAP_100X102 at (-89.0700 211.2042)
+         Placed symbol:  CBS9 / CAP_TCAP_PO_1206_0.1UF / TCAP_PO_1206 at (-77.2800 206.8542)
+         Placed symbol:  CLS9 / CAP_TCAP_PO_1206_0.1UF / TCAP_PO_1206 at (-70.1400 206.8542)
+         Placed symbol:  CPVS6 / CAP_TCAP_PO_1206_0.1UF / TCAP_PO_1206 at (-63.0000 206.8542)
+         Placed symbol:  CPVS7 / CAP_TCAP_PO_1206_0.1UF / TCAP_PO_1206 at (-55.8600 206.8542)
+         Placed symbol:  CF33 / CAP NP_CAP_NPO_0603_0.01UF / CAP_NPO_0603 at (-49.5200 206.4542)
+         Placed symbol:  CID1 / C_TCAP_PO_1206_10U / TCAP_PO_1206 at (-43.1800 206.8542)
+         Placed symbol:  CTR_B3 / C_SMD_AL_CAP_100X102_470U/35V / SMD_AL_CAP_100X102 at (-31.3900 211.2042)
+         Placed symbol:  CLS6 / CAP_TCAP_PO_1206_0.1UF / TCAP_PO_1206 at (-19.6000 206.8542)
+         Placed symbol:  CPV1 / C_SMD_AL_CAP_100X102_220U/50V / SMD_AL_CAP_100X102 at (-7.8100 211.2042)
+         Placed symbol:  CLS7 / CAP_TCAP_PO_1206_0.1UF / TCAP_PO_1206 at (3.9800 206.8542)
+         Placed symbol:  DBS1 / 1N4744A_SMA_1N4733_350_145_1N47 / SMA_1N4733_350_145 at (11.2200 206.7542)
+         Placed symbol:  CMDR_F1 / C_TCAP_PO_1206_0.22U / TCAP_PO_1206 at (18.4600 206.8542)
+         Placed symbol:  DLS1 / 1N4744A_SMA_1N4733_350_145_1N47 / SMA_1N4733_350_145 at (25.7000 206.7542)
+         Placed symbol:  DLS2 / 1N4744A_SMA_1N4733_350_145_1N47 / SMA_1N4733_350_145 at (33.0400 206.7542)
+         Placed symbol:  DPVS1 / 1N4744A_SMA_1N4733_350_145_1N47 / SMA_1N4733_350_145 at (40.3800 206.7542)
+         Placed symbol:  DPVS2 / 1N4744A_SMA_1N4733_350_145_1N47 / SMA_1N4733_350_145 at (47.7200 206.7542)
+         Placed symbol:  DID3 / 1N4744A_SMA_1N4733_520_270_1N47 / SMA_1N4733_520_270 at (55.8600 207.3042)
+         Placed symbol:  DLA1 / LED_TCAP_PO_1206_LED / TCAP_PO_1206 at (63.9000 206.8542)
+         Placed symbol:  DLA2 / LED_TCAP_PO_1206_LED / TCAP_PO_1206 at (71.0400 206.8542)
+         Placed symbol:  DLF1 / LED_TCAP_PO_1206_LED / TCAP_PO_1206 at (78.1800 206.8542)
+         Placed symbol:  DLF2 / LED_TCAP_PO_1206_LED / TCAP_PO_1206 at (85.3200 206.8542)
+         Placed symbol:  LED1.2V1 / LED_TCAP_PO_1206_LED / TCAP_PO_1206 at (92.4600 206.8542)
+         Placed symbol:  LED2.5V1 / LED_TCAP_PO_1206_LED / TCAP_PO_1206 at (99.6000 206.8542)
+         Placed symbol:  LED3.3V1 / LED_TCAP_PO_1206_LED / TCAP_PO_1206 at (106.7400 206.8542)
+         Placed symbol:  CTR_B2 / C_SMD_AL_CAP_100X102_470U/35V / SMD_AL_CAP_100X102 at (-105.5100 224.7442)
+         Placed symbol:  CPV2 / C_SMD_AL_CAP_100X102_220U/50V / SMD_AL_CAP_100X102 at (-89.0700 224.7442)
+         Placed symbol:  CLOAD2 / C_SMD_AL_CAP_100X102_470U/35V / SMD_AL_CAP_100X102 at (-72.6300 224.7442)
+         Placed symbol:  KEYF1 / SW PUSHBUTTON-SPST/SM_0_BUTTO_3 / BUTTON_2PIN at (-60.4636 220.5142)
+         Placed symbol:  DBS2 / 1N4744A_SMA_1N4733_350_145_1N47 / SMA_1N4733_350_145 at (-47.5132 220.2942)
+         Placed symbol:  KEYF3 / SW PUSHBUTTON-SPST/SM_0_BUTTO_3 / BUTTON_2PIN at (-39.8968 220.5142)
+         Placed symbol:  KEYF4 / SW PUSHBUTTON-SPST/SM_0_BUTTO_3 / BUTTON_2PIN at (-26.6700 220.5142)
+         Placed symbol:  PV_BAT_L1 / INDUCTOR_INDUCTOR_ROUND_250_150 / INDUCTOR_ROUND_250_150_120-2N at (-3.3696 225.4942)
+         Placed symbol:  CTR_B1 / C_SMD_AL_CAP_100X102_470U/35V / SMD_AL_CAP_100X102 at (18.8704 224.7442)
+         Placed symbol:  RBS17 / RESISTOR_SAMPLE_RESISTOR_2512_0 / SAMPLE_RESISTOR_2512 at (32.2104 221.1942)
+         Placed symbol:  RBS18 / RESISTOR_SAMPLE_RESISTOR_2512_0 / SAMPLE_RESISTOR_2512 at (42.4504 221.1942)
+         Placed symbol:  RLS17 / RESISTOR_SAMPLE_RESISTOR_2512_0 / SAMPLE_RESISTOR_2512 at (52.6904 221.1942)
+         Placed symbol:  RLS18 / RESISTOR_SAMPLE_RESISTOR_2512_0 / SAMPLE_RESISTOR_2512 at (62.9304 221.1942)
+         Placed symbol:  RPVS17 / RESISTOR_SAMPLE_RESISTOR_2512_0 / SAMPLE_RESISTOR_2512 at (73.1704 221.1942)
+         Placed symbol:  RPVS18 / RESISTOR_SAMPLE_RESISTOR_2512_0 / SAMPLE_RESISTOR_2512 at (83.4104 221.1942)
+         Placed symbol:  CLOAD1 / C_SMD_AL_CAP_100X102_470U/35V / SMD_AL_CAP_100X102 at (96.7504 224.7442)
+         Placed symbol:  CBAT1 / C_SMD_AL_CAP_100X102_470U/35V / SMD_AL_CAP_100X102 at (-105.5100 239.7842)
+         Placed symbol:  CPVS9 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-93.7200 235.4342)
+         Placed symbol:  CPVS5 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-86.5800 235.4342)
+         Placed symbol:  CPVS13 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-79.4400 235.4342)
+         Placed symbol:  CPVS10 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-72.3000 235.4342)
+         Placed symbol:  CLS4 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-65.1600 235.4342)
+         Placed symbol:  CLS13 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-58.0200 235.4342)
+         Placed symbol:  CLS10 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-50.8800 235.4342)
+         Placed symbol:  CF24 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-43.7400 235.4342)
+         Placed symbol:  CF23 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-36.6000 235.4342)
+         Placed symbol:  CBS5 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-29.4600 235.4342)
+         Placed symbol:  CBS13 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-22.3200 235.4342)
+         Placed symbol:  CBS10 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-15.1800 235.4342)
+         Placed symbol:  CA5 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-8.0400 235.4342)
+         Placed symbol:  CA3 / CAP_TCAP_PO_1206_10UF / TCAP_PO_1206 at (-0.9000 235.4342)
+         Placed symbol:  CF37 / CAP NP_CAP_NPO_0603_0.1UF / CAP_NPO_0603 at (5.4400 235.0342)
+         Placed symbol:  BUTTON3 / SW PUSHBUTTON-SPST/SM_0_BUTTO_2 / BUTTON_2PIN at (12.1564 235.5542)
+         Placed symbol:  BUTTON2 / SW PUSHBUTTON-SPST/SM_0_BUTTO_1 / BUTTON_2PIN at (25.3832 235.5542)
+         Placed symbol:  BUTTON1 / SW PUSHBUTTON-SPST/SM_0_BUTTON_ / BUTTON_2PIN at (38.6100 235.5542)
+         Placed symbol:  CP2 / CAP NP_TCAP_PO_1206_47UF/1206 / TCAP_PO_1206 at (51.4604 235.4342)
+         Placed symbol:  U28 / SOUNDER_PTH_BUZZER_2PIN_SOUNDER / PTH_BUZZER_2PIN at (62.5754 240.5592)
+         Placed symbol:  KEYF2 / SW PUSHBUTTON-SPST/SM_0_BUTTO_3 / BUTTON_2PIN at (74.0668 235.5542)
+         Placed symbol:  Y1 / CRYSTAL_8MHZYXC_HC49SMD_ARM_CRY / 8MHZYXC_HC49SMD at (91.9672 236.7342)
+         Placed symbol:  CMDR_B1 / C_TCAP_PO_1206_0.22U / TCAP_PO_1206 at (104.1572 235.4342)
+ERROR:   Cannot place symbol:  TEST_POINT32 / TEST POINT_TESTPOINT120_Q3/4_SD / TESTPOINT120
+         due to ERROR(SPMHA1-73): Text line is outside of the extents.
+WARNING: Could not place:  TEST_POINT33 / TEST POINT_TESTPOINT120_Q1/2_SD / TESTPOINT120; outside of drawing extents
+
+
+Placed 117 of 119 applicable (119 total) symbols.
+
+-----------------------------------------------------------------------
+
+State: Placing on layer TOP
+
+WARNING: Could not place:  TEST_POINT32 / TEST POINT_TESTPOINT120_Q3/4_SD / TESTPOINT120; outside of drawing extents
+WARNING: Could not place:  TEST_POINT33 / TEST POINT_TESTPOINT120_Q1/2_SD / TESTPOINT120; outside of drawing extents
+
+
+Placed 0 of 2 applicable (2 total) symbols.
+
+-----------------------------------------------------------------------
+
+State: Placing on layer TOP
+
+WARNING: Could not place:  TEST_POINT32 / TEST POINT_TESTPOINT120_Q3/4_SD / TESTPOINT120; outside of drawing extents
+WARNING: Could not place:  TEST_POINT33 / TEST POINT_TESTPOINT120_Q1/2_SD / TESTPOINT120; outside of drawing extents
+
+
+Placed 0 of 2 applicable (2 total) symbols.
+
+-----------------------------------------------------------------------
+
+State: Placing on layer TOP
+
+WARNING: Could not place:  TEST_POINT32 / TEST POINT_TESTPOINT120_Q3/4_SD / TESTPOINT120; outside of drawing extents
+WARNING: Could not place:  TEST_POINT33 / TEST POINT_TESTPOINT120_Q1/2_SD / TESTPOINT120; outside of drawing extents
+
+
+Placed 0 of 2 applicable (2 total) symbols.
+
+-----------------------------------------------------------------------
+

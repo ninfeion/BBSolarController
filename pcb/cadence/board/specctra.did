@@ -1,0 +1,396 @@
+# Cadence Design Systems, Inc.
+# Allegro PCB Router Automatic Router
+# Allegro PCB Router v17-2-50 made 2016/05/25 at 18:32:05
+# Running on host 
+# 
+#            Command Line Parameters
+#            -----------------------
+# Design File Name : C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Initialization options:
+#   -do pasde.do
+# Status File Name : C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\monitor.sts
+# -nog specified. Graphics not utilized.
+# -sim specified. Polygons simplified.
+# Use Colormap In Design File.
+#
+#
+#
+#
+# do $/BBSOLARCONTROLLER_V3000_rules.do
+rule PCB (width 0.2500)
+rule PCB (clearance 0.1270 (type buried_via_gap))
+rule PCB (clearance 2.5400 (type wire_wire))
+rule PCB (clearance -1 (type wire_smd))
+rule PCB (clearance 2.5400 (type wire_pin))
+rule PCB (clearance 2.5400 (type wire_via))
+rule PCB (clearance -1 (type smd_smd))
+rule PCB (clearance -1 (type smd_pin))
+rule PCB (clearance -1 (type smd_via))
+rule PCB (clearance 2.5400 (type pin_pin))
+rule PCB (clearance 2.5400 (type pin_via))
+rule PCB (clearance 2.5400 (type via_via))
+rule PCB (clearance 2.5400 (type test_test))
+rule PCB (clearance 2.5400 (type test_wire))
+rule PCB (clearance -1 (type test_smd))
+rule PCB (clearance 2.5400 (type test_pin))
+rule PCB (clearance 2.5400 (type test_via))
+rule PCB (clearance 0 (type area_wire))
+rule PCB (clearance 0 (type area_smd))
+rule PCB (clearance 0 (type area_area))
+rule PCB (clearance 0 (type area_pin))
+rule PCB (clearance 0 (type area_via))
+rule PCB (clearance 0 (type area_test))
+rule PCB (clearance 0.1270 (type microvia_microvia))
+set microvia_microvia on
+rule PCB (clearance 0.1270 (type microvia_thrupin))
+set microvia_thrupin on
+rule PCB (clearance 0.1270 (type microvia_smdpin))
+set microvia_smdpin on
+rule PCB (clearance 0.1270 (type microvia_thruvia))
+set microvia_thruvia on
+rule PCB (clearance 0.1270 (type microvia_bbvia))
+set microvia_bbvia on
+rule PCB (clearance 0.1270 (type microvia_wire))
+set microvia_wire on
+rule PCB (clearance 2.5400 (type bbvia_bbvia))
+set bbvia_bbvia on
+rule PCB (clearance 0.1270 (type microvia_testpin))
+set microvia_testpin on
+rule PCB (clearance 2.5400 (type bbvia_thrupin))
+set bbvia_thrupin on
+rule PCB (clearance 0.1270 (type microvia_testvia))
+set microvia_testvia on
+rule PCB (clearance 2.5400 (type bbvia_smdpin))
+set bbvia_smdpin off
+rule PCB (clearance 0.1270 (type microvia_bondpad))
+set microvia_bondpad on
+rule PCB (clearance 2.5400 (type bbvia_thruvia))
+set bbvia_thruvia on
+rule PCB (clearance 0.1270 (type microvia_area))
+set microvia_area on
+rule PCB (clearance 2.5400 (type bbvia_wire))
+set bbvia_wire on
+rule PCB (clearance 2.5400 (type nhole_pin))
+set nhole_pin off
+rule PCB (clearance 2.5400 (type nhole_via))
+set nhole_via off
+rule PCB (clearance 2.5400 (type bbvia_area))
+set bbvia_area on
+rule PCB (clearance 2.5400 (type nhole_wire))
+set nhole_wire off
+rule PCB (clearance 2.5400 (type nhole_area))
+set nhole_area off
+rule PCB (clearance 2.5400 (type nhole_nhole))
+set nhole_nhole off
+rule PCB (clearance 0.2032 (type mhole_pin))
+set mhole_pin off
+rule PCB (clearance 2.5400 (type bbvia_testpin))
+set bbvia_testpin on
+rule PCB (clearance 0.2032 (type mhole_via))
+set mhole_via off
+rule PCB (clearance 2.5400 (type bbvia_testvia))
+set bbvia_testvia on
+rule PCB (clearance 0.2032 (type mhole_wire))
+set mhole_wire on
+rule PCB (clearance 0.2032 (type mhole_area))
+set mhole_area off
+rule PCB (clearance 0.2032 (type mhole_nhole))
+set mhole_nhole off
+rule PCB (clearance 0.2032 (type mhole_mhole))
+set mhole_mhole on
+rule PCB (clearance 2.5400 (type bbvia_bondpad))
+set bbvia_bondpad on
+rule PCB (clearance -1 same_net (type wire_wire))
+rule PCB (clearance -1 same_net (type wire_smd))
+rule PCB (clearance -1 same_net (type wire_pin))
+rule PCB (clearance -1 same_net (type wire_via))
+rule PCB (clearance -1 same_net (type smd_smd))
+rule PCB (clearance -1 same_net (type smd_pin))
+rule PCB (clearance -1 same_net (type smd_via))
+rule PCB (clearance -1 same_net (type pin_pin))
+rule PCB (clearance -1 same_net (type pin_via))
+rule PCB (clearance -1 same_net (type via_via))
+rule PCB (clearance -1 same_net (type test_test))
+rule PCB (clearance -1 same_net (type test_wire))
+rule PCB (clearance -1 same_net (type test_smd))
+rule PCB (clearance -1 same_net (type test_pin))
+rule PCB (clearance -1 same_net (type test_via))
+rule PCB (clearance 0 same_net (type area_wire))
+rule PCB (clearance 0 same_net (type area_smd))
+rule PCB (clearance 0 same_net (type area_area))
+rule PCB (clearance 0 same_net (type area_pin))
+rule PCB (clearance 0 same_net (type area_via))
+rule PCB (clearance 0 same_net (type area_test))
+rule PCB (clearance 0.1270 same_net (type microvia_microvia))
+set microvia_microvia same_net off
+rule PCB (clearance 0.1270 same_net (type microvia_thrupin))
+set microvia_thrupin same_net off
+rule PCB (clearance 0.1270 same_net (type microvia_smdpin))
+set microvia_smdpin same_net off
+rule PCB (clearance 0.1270 same_net (type microvia_thruvia))
+set microvia_thruvia same_net off
+rule PCB (clearance 0.1270 same_net (type microvia_bbvia))
+set microvia_bbvia same_net off
+rule PCB (clearance 0.1270 same_net (type microvia_wire))
+set microvia_wire same_net off
+rule PCB (clearance 0.1270 same_net (type microvia_testpin))
+set microvia_testpin same_net off
+rule PCB (clearance 0.1270 same_net (type microvia_testvia))
+set microvia_testvia same_net off
+rule PCB (clearance 0.1270 same_net (type microvia_bondpad))
+set microvia_bondpad same_net off
+rule PCB (clearance 0.1270 same_net (type microvia_area))
+set microvia_area same_net off
+rule PCB (clearance 0.2032 same_net (type nhole_pin))
+set nhole_pin same_net off
+rule PCB (clearance 0.2032 same_net (type nhole_via))
+set nhole_via same_net off
+rule PCB (clearance 0.2032 same_net (type nhole_wire))
+set nhole_wire same_net off
+rule PCB (clearance 0.2032 same_net (type nhole_area))
+set nhole_area same_net off
+rule PCB (clearance 0.2032 same_net (type nhole_nhole))
+set nhole_nhole same_net off
+rule PCB (clearance 0.1270 same_net (type bbvia_bbvia))
+set bbvia_bbvia same_net off
+rule PCB (clearance 0.1270 same_net (type bbvia_thrupin))
+set bbvia_thrupin same_net off
+rule PCB (clearance 0.1270 same_net (type bbvia_smdpin))
+set bbvia_smdpin same_net off
+rule PCB (clearance 0.1270 same_net (type bbvia_thruvia))
+set bbvia_thruvia same_net off
+rule PCB (clearance 0.1270 same_net (type bbvia_wire))
+set bbvia_wire same_net off
+rule PCB (clearance 0.1270 same_net (type bbvia_area))
+set bbvia_area same_net off
+rule PCB (clearance 0.1270 same_net (type bbvia_testpin))
+set bbvia_testpin same_net off
+rule PCB (clearance 0.1270 same_net (type bbvia_testvia))
+set bbvia_testvia same_net off
+rule PCB (clearance 0.1270 same_net (type bbvia_bondpad))
+set bbvia_bondpad same_net off
+rule pcb (tjunction on)(junction_type all)
+rule pcb (staggered_via on (min_gap 0.1270))
+rule pcb (via_at_smd off)
+rule PCB (turn_under_pad off)
+rule layer TOP (restricted_layer_length_factor 1)
+rule layer BOTTOM (restricted_layer_length_factor 1)
+write colormap _notify.std
+# do C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaad05620.tmp
+unselect all routing
+set route_diagonal 0
+grid wire 0.000100 (direction x) (offset 0.000000)
+grid wire 0.000100 (direction y) (offset 0.000000)
+grid via 0.000100 (direction x) (offset 0.000000)
+grid via 0.000100 (direction y) (offset 0.000000)
+protect all wires
+direction TOP horizontal
+select layer TOP
+unprotect layer_wires TOP
+direction BOTTOM vertical
+select layer BOTTOM
+unprotect layer_wires BOTTOM
+cost via -1
+set turbo_stagger off
+limit outside -1
+rule pcb (patterns_allowed  trombone accordion)
+set pattern_stacking on
+rule pcb (sawtooth_amplitude -1 -1)
+rule pcb (sawtooth_gap -1)
+rule pcb (accordion_amplitude -1 -1)
+rule pcb (accordion_gap -1)
+rule pcb (trombone_run_length -1)
+rule pcb (trombone_gap -1)
+unprotect selected
+route 25 1
+clean 2
+write routes (changed_only) (reset_changed) C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaae05620.tmp
+# do C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaag05620.tmp
+unselect all objects
+select net SDRAM_DQMH
+select net N6014188
+select net V_MOS_DRIVER_H
+select net Q4_LOW_SIDE
+select net NCS
+select net N36696
+select net J_TDI
+select net XT_1
+select net Q1_VS
+select net CRTSTAL_GND
+select net GND
+select net ARM_+3.3V
+select net N563407
+select net Q3_HIGH_SIDE
+select net CORE_+1.2V
+select net N563303
+select net Q4_VS
+select net N562678
+select net Q3_VS
+select net USB_5V
+select net ARM_GND
+select net ARM_LED1
+select net Q4_PWM
+select net AMP_0V
+select net PV_BAT_GND
+select net N00533
+select net N611780
+select net DS_EN3
+select net LOAD_V_I+
+select net 'BAT_I-'
+select net 'LOAD_I-'
+select net PV_V_I+
+select net N562717
+select net PLL2_GND
+select net N00447
+select net PLL1_D_+1.2V
+select net N6014183
+select net N6014182
+select net MSEL1
+select net DCLK
+select net ARM_SPI_NSS
+select net NSTATUS
+select net BAT_V_I+
+select net PLL1_GND
+select net N473304
+select net FPGA_RXD
+select net N738645
+select net FLASH_CONFIG_DONE
+select net SOURCE_+3.3V
+select net NCONFIG
+select net SDRAM_DQ15
+select net PV_2.5VREF
+select net N167652
+select net CORE_+3.3V
+select net SDRAM_DQ0
+select net FLASH_NSTATUS
+select net FLASH_NCONFIG
+select net FLASH_NCS
+select net DATA0
+select net N6024041
+select net CONFIG_DONE
+select net PLL1_A_+2.5V
+select net FPGA_GND
+select net SDRAM_A3
+select net AMP_PV_VEE
+select net SDRAM_A1
+select net CORE_+2.5V
+select net SDRAM_CS_N
+select net MSEL2
+select net ASDO
+select net SDRAM_CKE
+unprotect selected
+delete selected
+unprotect selected polygon
+delete selected polygon
+unselect all objects
+read route C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaaf05620.tmp
+# do C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaah05620.tmp
+unselect all routing
+set route_diagonal 0
+grid wire 0.000100 (direction x) (offset 0.000000)
+grid wire 0.000100 (direction y) (offset 0.000000)
+grid via 0.000100 (direction x) (offset 0.000000)
+grid via 0.000100 (direction y) (offset 0.000000)
+protect all wires
+direction TOP horizontal
+select layer TOP
+unprotect layer_wires TOP
+direction BOTTOM vertical
+select layer BOTTOM
+unprotect layer_wires BOTTOM
+cost via -1
+set turbo_stagger off
+limit outside -1
+rule pcb (patterns_allowed  trombone accordion)
+set pattern_stacking on
+rule pcb (sawtooth_amplitude -1 -1)
+rule pcb (sawtooth_gap -1)
+rule pcb (accordion_amplitude -1 -1)
+rule pcb (accordion_gap -1)
+rule pcb (trombone_run_length -1)
+rule pcb (trombone_gap -1)
+unprotect selected
+route 25 1
+clean 2
+write routes (changed_only) (reset_changed) C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaai05620.tmp
+# do C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaak05620.tmp
+unselect all objects
+select net PLL1_GND
+select net Q3_VS
+select net Q4_LOW_SIDE
+select net XT_1
+select net XT_2
+select net N36696
+select net Q1_VS
+select net NCS
+select net CRTSTAL_GND
+select net ARM_DATA0
+select net GND
+select net ARM_+3.3V
+select net N562678
+select net N563407
+select net Q3_HIGH_SIDE
+select net CORE_+1.2V
+select net N563303
+select net ARM_NCONFIG
+select net USB_5V
+select net Q4_VS
+select net ARM_GND
+select net N561393
+select net Q3_PWM
+select net AMP_0V
+select net PV_BAT_GND
+select net PLL2_GND
+select net PV_V_I+
+select net LOAD_V_I+
+select net DS_EN2
+select net DS_A
+select net 'LOAD_I-'
+select net N00533
+select net 'BAT_I-'
+select net PLL1_D_+1.2V
+select net N60141810
+select net N60141811
+select net N00447
+select net N6014183
+select net N6014182
+select net MSEL1
+select net DCLK
+select net ARM_SPI_MISO
+select net N6014180
+select net ARM_SPI_SCK
+select net N562717
+select net NSTATUS
+select net BAT_V_I+
+select net N473304
+select net SOURCE_+3.3V
+select net SDRAM_DQ5
+select net PV_2.5VREF
+select net N738645
+select net FLAS_ASDI
+select net FLASH_CONFIG_DONE
+select net AMP_PV_VCC
+select net N167652
+select net CORE_+3.3V
+select net NCONFIG
+select net FPGA_TXD
+select net FLASH_NCONFIG
+select net FLASH_NSTATUS
+select net SDRAM_BA1
+select net N6024041
+select net CONFIG_DONE
+select net SDRAM_WE_N
+select net CORE_+2.5V
+select net FPGA_GND
+select net AMP_PV_VEE
+select net SDRAM_CAS_N
+select net ASDO
+select net SDRAM_CKE
+select net MSEL2
+unprotect selected
+delete selected
+unprotect selected polygon
+delete selected polygon
+unselect all objects
+read route C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaaj05620.tmp
+quit -c

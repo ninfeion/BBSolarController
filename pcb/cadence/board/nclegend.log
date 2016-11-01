@@ -1,0 +1,16 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    DRILL LEGEND                                                     )
+(                                                                     )
+(    Drawing          : BBSOLARCONTROLLER_V3000_IMPROVE_I.brd         )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Tue Nov 01 14:24:31 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Begin processing of drill legend template file 'C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/text/nclegend/default-mm.dlt' ...
+WARNING(SPMHSK-47): Column type 'HoleSize' does not exist.
+WARNING(SPMHSK-47): Column type 'PlateStatus' does not exist.
+End of drill legend template file processing.
+Drill Legend command cancelled.

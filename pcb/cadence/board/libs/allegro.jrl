@@ -1,0 +1,66 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Thu Oct 27 16:57:04 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=7020 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBSolarController\pcb\cadence\board\libs\irf3205_to220ab-3p.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\d (00:00:00) Design opened: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/irf3205_to220ab-3p.dra
+\i (00:00:00) trapsize 3627
+\i (00:00:00) trapsize 3762
+\i (00:00:00) trapsize 3762
+\i (00:00:00) trapsize 3163
+\i (00:00:00) trapsize 24582
+\i (00:00:00) trapsize 21919
+\i (00:00:02) zoom in 1 
+\i (00:00:02) setwindow pcb
+\i (00:00:02) zoom in 23.1678 -4.9450
+\i (00:00:02) trapsize 1582
+\i (00:00:02) zoom in 1 
+\i (00:00:02) setwindow pcb
+\i (00:00:02) zoom in 15.4532 -4.9450
+\i (00:00:02) trapsize 791
+\i (00:00:02) zoom out 1 
+\i (00:00:02) setwindow pcb
+\i (00:00:02) zoom out 18.9801 -3.2052
+\i (00:00:02) trapsize 1582
+\i (00:00:02) zoom out 1 
+\i (00:00:02) setwindow pcb
+\i (00:00:02) zoom out 18.9484 -3.2369
+\i (00:00:02) trapsize 3163
+\i (00:00:03) zoom in 1 
+\i (00:00:03) setwindow pcb
+\i (00:00:03) zoom in 27.2167 -1.0861
+\i (00:00:03) trapsize 1582
+\i (00:00:10) generaledit 
+\i (00:00:11) pick grid 19.3121 -2.8574
+\t (00:00:11) last pick:  20.3200 -2.5400
+\i (00:00:12) prepopup 12.8278 -3.3002
+\i (00:00:13) pop dyn_option_select @:@Move 
+\i (00:00:13) move 
+\t (00:00:13) last pick:  12.7000 -2.5400
+\t (00:00:13) last pick:  19.0500 -2.5400
+\t (00:00:13) Pick new location for the element(s).
+\i (00:00:16) prepopup 19.2805 -2.1299
+\i (00:00:17) cancel 
+\i (00:00:17) generaledit 
+\i (00:00:17) pick grid 24.9424 -3.8063
+\t (00:00:17) last pick:  25.4000 -2.5400
+\i (00:00:18) zoom in 1 
+\i (00:00:18) setwindow pcb
+\i (00:00:18) zoom in 21.8426 -2.4462
+\i (00:00:18) trapsize 791
+\i (00:00:18) zoom out 1 
+\i (00:00:18) setwindow pcb
+\i (00:00:18) zoom out 17.7464 -2.9839
+\i (00:00:18) trapsize 1582
+\i (00:00:23) pick grid 19.9763 -2.6044
+\t (00:00:23) last pick:  20.3200 -2.5400
+\i (00:00:24) prepopup 17.7306 -3.0788
+\i (00:00:35) pop dyn_option_select @:@Delete 
+\i (00:00:35) delete 
+\i (00:00:35) generaledit 
+\i (00:00:40) exit 
+\e (00:00:40) Do you want to save the changes you made to irf3205_to220ab-3p.dra?
+\i (00:00:41) fillin no 
+\t (00:00:41)     Journal end - Thu Oct 27 16:57:46 2016

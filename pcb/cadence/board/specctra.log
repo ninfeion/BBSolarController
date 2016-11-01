@@ -1,0 +1,1249 @@
+# 
+# ===============================================================================
+#                               Allegro PCB Router                               
+# Copyright 1990-2010 Cadence Design Systems, Inc.  All Rights Reserved.
+# ===============================================================================
+# 
+# Software licensed for sale by Cadence Design Systems, Inc.
+# Current time = Wed Oct 26 22:22:06 2016
+# 
+# Allegro PCB Router v17-2-50 made 2016/05/25 at 18:32:05
+# Running on: ninfeion-pc, OS Version: WindowsNT 6.1.7601, Architecture: Intel Pentium II, III, or 4
+# Licensing: The program will not obey any unlicensed rules
+# No graphics will be displayed.
+# Design Name C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Batch File Name: pasde.do
+# Did File Name: C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/specctra.did
+# Current time = Wed Oct 26 22:22:06 2016
+# PCB C:/Ninfeion_Git/BBSolarController/pcb/cadence/board
+# Master Unit set up as: MM 100000
+# PCB Limits xlo=-95.1600 ylo=-60.1600 xhi= 95.1600 yhi= 60.1600
+# Total 399 Images Consolidated.
+# Via VIA z=1, 2 xlo= -0.3048 ylo= -0.3048 xhi=  0.3048 yhi=  0.3048
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# Wires Processed 0, Vias Processed 0
+# Using colormap in design file.
+# Layers Processed: Signal Layers 2
+# Components Placed 438, Images Processed 480, Padstacks Processed 52
+# Nets Processed 320, Net Terminals 1338
+# PCB Area=17000.000  EIC=102  Area/EIC=166.667  SMDs=423
+# Total Pin Count: 1431
+# Signal Connections Created 1007
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0001 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Layer BOTTOM Vert Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 320 Connections 1018 Unroutes 1007
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected    1.08
+# Manhattan Length 23993.9217 Horizontal 12687.8384 Vertical 11306.0833
+# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Ratio Actual / Manhattan   0.0000
+# Unconnected Length 23993.9217 Horizontal 12530.7826 Vertical 11463.1391
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# Loading Do File pasde.do ...
+# Loading Do File C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000_rules.do ...
+# Colormap Written to File _notify.std
+# Enter command <# Loading Do File C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaad05620.tmp ...
+# All Components Unselected.
+# All Nets Unselected.
+set route_diagonal 0
+grid wire 0.000100 (direction x) (offset 0.000000)
+grid wire 0.000100 (direction y) (offset 0.000000)
+grid via 0.000100 (direction x) (offset 0.000000)
+grid via 0.000100 (direction y) (offset 0.000000)
+protect all wires
+# All Wires Protected.
+direction TOP horizontal
+select layer TOP
+unprotect layer_wires TOP
+# Wires on layer TOP were Unprotected.
+direction BOTTOM vertical
+select layer BOTTOM
+unprotect layer_wires BOTTOM
+# Wires on layer BOTTOM were Unprotected.
+cost via -1
+# System default cost will be used.
+set turbo_stagger off
+limit outside -1
+rule pcb (patterns_allowed  trombone accordion)
+set pattern_stacking on
+rule pcb (sawtooth_amplitude -1 -1)
+rule pcb (sawtooth_gap -1)
+rule pcb (accordion_amplitude -1 -1)
+rule pcb (accordion_gap -1)
+rule pcb (trombone_run_length -1)
+rule pcb (trombone_gap -1)
+unprotect selected
+# All Selected Wires Unprotected.
+route 25 1
+# Current time = Wed Oct 26 22:22:12 2016
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0001 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Layer BOTTOM Vert Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 320 Connections 1018 Unroutes 1007
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected    1.08
+# Manhattan Length 23993.9217 Horizontal 12687.8384 Vertical 11306.0833
+# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Ratio Actual / Manhattan   0.0000
+# Unconnected Length 23993.9217 Horizontal 12530.7826 Vertical 11463.1391
+# Start Route Pass 1 of 25
+# Routing 461 wires.
+# Total Conflicts: 1745 (Cross: 175, Clear: 1570, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 773
+# Attempts 461 Successes 234 Failures 227 Vias 94
+# Cpu Time = 0:00:03  Elapsed Time = 0:00:01
+# End Pass 1 of 25
+# Start Route Pass 2 of 25
+# Routing 608 wires.
+# 33 bend points have been removed.
+# 0 bend points have been removed.
+# 6 bend points have been removed.
+# Total Conflicts: 7344 (Cross: 605, Clear: 6739, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 621
+# Attempts 537 Successes 314 Failures 223 Vias 133
+# Cpu Time = 0:00:04  Elapsed Time = 0:00:02
+# Conflict Reduction -3.2086
+# End Pass 2 of 25
+# Start Route Pass 3 of 25
+# Routing 687 wires.
+# Total Conflicts: 7367 (Cross: 580, Clear: 6787, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 620
+# Attempts 586 Successes 180 Failures 406 Vias 149
+# Cpu Time = 0:00:03  Elapsed Time = 0:00:02
+# Conflict Reduction -0.0031
+# End Pass 3 of 25
+# Start Route Pass 4 of 25
+# Routing 745 wires.
+# 21 bend points have been removed.
+# 0 bend points have been removed.
+# 2 bend points have been removed.
+# Total Conflicts: 7479 (Cross: 585, Clear: 6894, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 617
+# Attempts 606 Successes 190 Failures 416 Vias 157
+# Cpu Time = 0:00:04  Elapsed Time = 0:00:02
+# Conflict Reduction -0.0152
+# End Pass 4 of 25
+# Start Route Pass 5 of 25
+# Routing 715 wires.
+# 14 bend points have been removed.
+# 0 bend points have been removed.
+# 6 bend points have been removed.
+# Total Conflicts: 7417 (Cross: 574, Clear: 6843, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 617
+# Attempts 608 Successes 193 Failures 415 Vias 159
+# Cpu Time = 0:00:05  Elapsed Time = 0:00:02
+# Conflict Reduction  0.0083
+# End Pass 5 of 25
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Start Route Pass 6 of 25
+# Routing 692 wires.
+# 25 bend points have been removed.
+# 0 bend points have been removed.
+# 8 bend points have been removed.
+# Total Conflicts: 915 (Cross: 101, Clear: 814, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 810
+# Attempts 563 Successes 285 Failures 278 Vias 137
+# Cpu Time = 0:00:11  Elapsed Time = 0:00:06
+# End Pass 6 of 25
+# Start Route Pass 7 of 25
+# Routing 650 wires.
+# 30 bend points have been removed.
+# 0 bend points have been removed.
+# 9 bend points have been removed.
+# Total Conflicts: 1783 (Cross: 134, Clear: 1649, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 738
+# Attempts 556 Successes 278 Failures 278 Vias 146
+# Cpu Time = 0:00:06  Elapsed Time = 0:00:03
+# End Pass 7 of 25
+# Start Route Pass 8 of 25
+# Routing 695 wires.
+# 48 bend points have been removed.
+# 0 bend points have been removed.
+# 5 bend points have been removed.
+# Total Conflicts: 1136 (Cross: 113, Clear: 1023, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 759
+# Attempts 573 Successes 317 Failures 256 Vias 129
+# Cpu Time = 0:00:08  Elapsed Time = 0:00:04
+# End Pass 8 of 25
+# Start Route Pass 9 of 25
+# Routing 670 wires.
+# 41 bend points have been removed.
+# 0 bend points have been removed.
+# 9 bend points have been removed.
+# Total Conflicts: 1272 (Cross: 109, Clear: 1163, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 743
+# Attempts 563 Successes 337 Failures 226 Vias 134
+# Cpu Time = 0:00:05  Elapsed Time = 0:00:03
+# End Pass 9 of 25
+# Start Route Pass 10 of 25
+# Routing 694 wires.
+# 29 bend points have been removed.
+# 0 bend points have been removed.
+# 4 bend points have been removed.
+# Total Conflicts: 1405 (Cross: 135, Clear: 1270, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 748
+# Attempts 582 Successes 337 Failures 245 Vias 127
+# Cpu Time = 0:00:08  Elapsed Time = 0:00:03
+# End Pass 10 of 25
+# Start Route Pass 11 of 25
+# Routing 697 wires.
+# 36 bend points have been removed.
+# 0 bend points have been removed.
+# 11 bend points have been removed.
+# Total Conflicts: 568 (Cross: 53, Clear: 515, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 773
+# Attempts 511 Successes 316 Failures 195 Vias 107
+# Cpu Time = 0:00:08  Elapsed Time = 0:00:03
+# End Pass 11 of 25
+# Start Route Pass 12 of 25
+# Routing 655 wires.
+# 49 bend points have been removed.
+# 0 bend points have been removed.
+# 8 bend points have been removed.
+# Total Conflicts: 1444 (Cross: 106, Clear: 1338, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 728
+# Attempts 496 Successes 325 Failures 171 Vias 116
+# Cpu Time = 0:00:04  Elapsed Time = 0:00:03
+# End Pass 12 of 25
+# Start Route Pass 13 of 25
+# Routing 671 wires.
+# 36 bend points have been removed.
+# 0 bend points have been removed.
+# 10 bend points have been removed.
+# Total Conflicts: 694 (Cross: 44, Clear: 650, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 763
+# Attempts 485 Successes 334 Failures 151 Vias 108
+# Cpu Time = 0:00:07  Elapsed Time = 0:00:03
+# End Pass 13 of 25
+# Start Route Pass 14 of 25
+# Routing 658 wires.
+# 40 bend points have been removed.
+# 0 bend points have been removed.
+# 13 bend points have been removed.
+# Total Conflicts: 916 (Cross: 45, Clear: 871, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 750
+# Attempts 496 Successes 347 Failures 149 Vias 99
+# Cpu Time = 0:00:05  Elapsed Time = 0:00:02
+# End Pass 14 of 25
+# Start Route Pass 15 of 25
+# Routing 614 wires.
+# 33 bend points have been removed.
+# 0 bend points have been removed.
+# 4 bend points have been removed.
+# Total Conflicts: 606 (Cross: 37, Clear: 569, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 761
+# Attempts 461 Successes 313 Failures 148 Vias 96
+# Cpu Time = 0:00:06  Elapsed Time = 0:00:03
+# End Pass 15 of 25
+# Start Route Pass 16 of 25
+# Routing 660 wires.
+# 43 bend points have been removed.
+# 0 bend points have been removed.
+# 7 bend points have been removed.
+# Total Conflicts: 747 (Cross: 42, Clear: 705, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 759
+# Attempts 492 Successes 336 Failures 156 Vias 102
+# Cpu Time = 0:00:06  Elapsed Time = 0:00:04
+# End Pass 16 of 25
+# Start Route Pass 17 of 25
+# Routing 643 wires.
+# 44 bend points have been removed.
+# 0 bend points have been removed.
+# 10 bend points have been removed.
+# Total Conflicts: 584 (Cross: 22, Clear: 562, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 768
+# Attempts 468 Successes 321 Failures 147 Vias 95
+# Cpu Time = 0:00:05  Elapsed Time = 0:00:02
+# End Pass 17 of 25
+# Start Route Pass 18 of 25
+# Routing 631 wires.
+# 43 bend points have been removed.
+# 0 bend points have been removed.
+# 8 bend points have been removed.
+# Total Conflicts: 646 (Cross: 34, Clear: 612, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 760
+# Attempts 468 Successes 311 Failures 157 Vias 99
+# Cpu Time = 0:00:06  Elapsed Time = 0:00:03
+# End Pass 18 of 25
+# Start Route Pass 19 of 25
+# Routing 591 wires.
+# 23 bend points have been removed.
+# 0 bend points have been removed.
+# 5 bend points have been removed.
+# Total Conflicts: 645 (Cross: 48, Clear: 597, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 753
+# Attempts 442 Successes 303 Failures 139 Vias 98
+# Cpu Time = 0:00:05  Elapsed Time = 0:00:03
+# End Pass 19 of 25
+# Start Route Pass 20 of 25
+# Routing 633 wires.
+# 27 bend points have been removed.
+# 0 bend points have been removed.
+# 4 bend points have been removed.
+# Total Conflicts: 1609 (Cross: 152, Clear: 1457, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 724
+# Attempts 566 Successes 324 Failures 242 Vias 134
+# Cpu Time = 0:00:07  Elapsed Time = 0:00:04
+# End Pass 20 of 25
+# Start Route Pass 21 of 25
+# Routing 706 wires.
+# 39 bend points have been removed.
+# 0 bend points have been removed.
+# 9 bend points have been removed.
+# Total Conflicts: 1170 (Cross: 111, Clear: 1059, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 742
+# Attempts 579 Successes 347 Failures 232 Vias 124
+# Cpu Time = 0:00:08  Elapsed Time = 0:00:04
+# End Pass 21 of 25
+# Start Route Pass 22 of 25
+# Routing 680 wires.
+# 38 bend points have been removed.
+# 0 bend points have been removed.
+# 18 bend points have been removed.
+# Total Conflicts: 1462 (Cross: 125, Clear: 1337, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 735
+# Attempts 579 Successes 349 Failures 230 Vias 145
+# Cpu Time = 0:00:06  Elapsed Time = 0:00:03
+# End Pass 22 of 25
+# Start Route Pass 23 of 25
+# Routing 676 wires.
+# 40 bend points have been removed.
+# 1 bend points have been removed.
+# 9 bend points have been removed.
+# Total Conflicts: 1291 (Cross: 85, Clear: 1206, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 734
+# Attempts 567 Successes 348 Failures 219 Vias 116
+# Cpu Time = 0:00:07  Elapsed Time = 0:00:03
+# End Pass 23 of 25
+# Start Route Pass 24 of 25
+# Routing 680 wires.
+# 32 bend points have been removed.
+# 0 bend points have been removed.
+# 13 bend points have been removed.
+# Total Conflicts: 1165 (Cross: 82, Clear: 1083, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 744
+# Attempts 583 Successes 360 Failures 223 Vias 144
+# Cpu Time = 0:00:07  Elapsed Time = 0:00:04
+# End Pass 24 of 25
+# Start Route Pass 25 of 25
+# Routing 671 wires.
+# 24 bend points have been removed.
+# 0 bend points have been removed.
+# 2 bend points have been removed.
+# Total Conflicts: 877 (Cross: 90, Clear: 787, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 755
+# Attempts 567 Successes 328 Failures 239 Vias 131
+# Cpu Time = 0:00:07  Elapsed Time = 0:00:03
+# End Pass 25 of 25
+# Cpu Time = 0:02:32  Elapsed Time = 0:01:17
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0001 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Layer BOTTOM Vert Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|   175|  1570| 227|  773|   94|    0|   0|  0|  0:00:03|  0:00:03|
+# Route    |  2|   605|  6739| 223|  621|  133|    0|   0|  0|  0:00:04|  0:00:07|
+# Route    |  3|   580|  6787| 406|  620|  149|    0|   0|  0|  0:00:03|  0:00:10|
+# Route    |  4|   585|  6894| 416|  617|  157|    0|   0|  0|  0:00:04|  0:00:14|
+# Route    |  5|   574|  6843| 415|  617|  159|    0|   0|  0|  0:00:05|  0:00:19|
+# Route    |  6|   101|   814| 278|  810|  137|    0|   0| 87|  0:00:11|  0:00:30|
+# Route    |  7|   134|  1649| 278|  738|  146|    0|   0|  0|  0:00:06|  0:00:36|
+# Route    |  8|   113|  1023| 256|  759|  129|    0|   0| 36|  0:00:08|  0:00:44|
+# Route    |  9|   109|  1163| 226|  743|  134|    0|   0|  0|  0:00:05|  0:00:49|
+# Route    | 10|   135|  1270| 245|  748|  127|    0|   0|  0|  0:00:08|  0:00:57|
+# Route    | 11|    53|   515| 195|  773|  107|    0|   0| 59|  0:00:08|  0:01:05|
+# Route    | 12|   106|  1338| 171|  728|  116|    0|   0|  0|  0:00:04|  0:01:09|
+# Route    | 13|    44|   650| 151|  763|  108|    0|   0| 51|  0:00:07|  0:01:16|
+# Route    | 14|    45|   871| 149|  750|   99|    0|   0|  0|  0:00:05|  0:01:21|
+# Route    | 15|    37|   569| 148|  761|   96|    0|   0| 33|  0:00:06|  0:01:27|
+# Route    | 16|    42|   705| 156|  759|  102|    0|   0|  0|  0:00:06|  0:01:33|
+# Route    | 17|    22|   562| 147|  768|   95|    0|   0| 21|  0:00:05|  0:01:38|
+# Route    | 18|    34|   612| 157|  760|   99|    0|   0|  0|  0:00:06|  0:01:44|
+# Route    | 19|    48|   597| 139|  753|   98|    0|   0|  0|  0:00:05|  0:01:49|
+# Route    | 20|   152|  1457| 242|  724|  134|    0|   0|  0|  0:00:07|  0:01:56|
+# Route    | 21|   111|  1059| 232|  742|  124|    0|   0| 27|  0:00:08|  0:02:04|
+# Route    | 22|   125|  1337| 230|  735|  145|    0|   0|  0|  0:00:06|  0:02:10|
+# Route    | 23|    85|  1206| 219|  734|  116|    0|   0| 11|  0:00:07|  0:02:17|
+# Route    | 24|    82|  1083| 223|  744|  144|    0|   0|  9|  0:00:07|  0:02:24|
+# Route    | 25|    90|   787| 239|  755|  131|    0|   0| 24|  0:00:07|  0:02:31|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:02:31
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 320 Connections 1018 Unroutes 755
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 190, at vias 55 Total Vias 130
+# Percent Connected   11.59
+# Manhattan Length 26302.9644 Horizontal 13940.1349 Vertical 12362.8296
+# Routed Length 6724.8946 Horizontal 3367.4947 Vertical 3357.9985
+# Ratio Actual / Manhattan   0.2557
+# Unconnected Length 21488.8198 Horizontal 11117.5840 Vertical 10371.2358
+clean 2
+# Current time = Wed Oct 26 22:23:29 2016
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0001 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Layer BOTTOM Vert Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 320 Connections 1018 Unroutes 755
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 190, at vias 55 Total Vias 130
+# Percent Connected   11.59
+# Manhattan Length 26302.9644 Horizontal 13940.1349 Vertical 12362.8296
+# Routed Length 6724.8946 Horizontal 3367.4947 Vertical 3357.9985
+# Ratio Actual / Manhattan   0.2557
+# Unconnected Length 21488.8198 Horizontal 11117.5840 Vertical 10371.2358
+# Start Clean Pass 1 of 2
+# Routing 729 wires.
+# Total Conflicts: 869 (Cross: 85, Clear: 784, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 755
+# Attempts 636 Successes 161 Failures 475 Vias 131
+# Cpu Time = 0:00:02  Elapsed Time = 0:00:00
+# End Pass 1 of 2
+# Start Clean Pass 2 of 2
+# Routing 791 wires.
+# 8 bend points have been removed.
+# 0 bend points have been removed.
+# 3 bend points have been removed.
+# Total Conflicts: 843 (Cross: 86, Clear: 757, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 755
+# Attempts 639 Successes 162 Failures 477 Vias 129
+# Cpu Time = 0:00:01  Elapsed Time = 0:00:01
+# End Pass 2 of 2
+# Cpu Time = 0:00:03  Elapsed Time = 0:00:02
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0001 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Layer BOTTOM Vert Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|   175|  1570| 227|  773|   94|    0|   0|  0|  0:00:03|  0:00:03|
+# Route    |  2|   605|  6739| 223|  621|  133|    0|   0|  0|  0:00:04|  0:00:07|
+# Route    |  3|   580|  6787| 406|  620|  149|    0|   0|  0|  0:00:03|  0:00:10|
+# Route    |  4|   585|  6894| 416|  617|  157|    0|   0|  0|  0:00:04|  0:00:14|
+# Route    |  5|   574|  6843| 415|  617|  159|    0|   0|  0|  0:00:05|  0:00:19|
+# Route    |  6|   101|   814| 278|  810|  137|    0|   0| 87|  0:00:11|  0:00:30|
+# Route    |  7|   134|  1649| 278|  738|  146|    0|   0|  0|  0:00:06|  0:00:36|
+# Route    |  8|   113|  1023| 256|  759|  129|    0|   0| 36|  0:00:08|  0:00:44|
+# Route    |  9|   109|  1163| 226|  743|  134|    0|   0|  0|  0:00:05|  0:00:49|
+# Route    | 10|   135|  1270| 245|  748|  127|    0|   0|  0|  0:00:08|  0:00:57|
+# Route    | 11|    53|   515| 195|  773|  107|    0|   0| 59|  0:00:08|  0:01:05|
+# Route    | 12|   106|  1338| 171|  728|  116|    0|   0|  0|  0:00:04|  0:01:09|
+# Route    | 13|    44|   650| 151|  763|  108|    0|   0| 51|  0:00:07|  0:01:16|
+# Route    | 14|    45|   871| 149|  750|   99|    0|   0|  0|  0:00:05|  0:01:21|
+# Route    | 15|    37|   569| 148|  761|   96|    0|   0| 33|  0:00:06|  0:01:27|
+# Route    | 16|    42|   705| 156|  759|  102|    0|   0|  0|  0:00:06|  0:01:33|
+# Route    | 17|    22|   562| 147|  768|   95|    0|   0| 21|  0:00:05|  0:01:38|
+# Route    | 18|    34|   612| 157|  760|   99|    0|   0|  0|  0:00:06|  0:01:44|
+# Route    | 19|    48|   597| 139|  753|   98|    0|   0|  0|  0:00:05|  0:01:49|
+# Route    | 20|   152|  1457| 242|  724|  134|    0|   0|  0|  0:00:07|  0:01:56|
+# Route    | 21|   111|  1059| 232|  742|  124|    0|   0| 27|  0:00:08|  0:02:04|
+# Route    | 22|   125|  1337| 230|  735|  145|    0|   0|  0|  0:00:06|  0:02:10|
+# Route    | 23|    85|  1206| 219|  734|  116|    0|   0| 11|  0:00:07|  0:02:17|
+# Route    | 24|    82|  1083| 223|  744|  144|    0|   0|  9|  0:00:07|  0:02:24|
+# Route    | 25|    90|   787| 239|  755|  131|    0|   0| 24|  0:00:07|  0:02:31|
+# Clean    | 26|    85|   784| 475|  755|  131|    0|   0|   |  0:00:02|  0:02:33|
+# Clean    | 27|    86|   757| 477|  755|  129|    0|   0|   |  0:00:01|  0:02:34|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:02:34
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 320 Connections 1018 Unroutes 755
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 179, at vias 57 Total Vias 129
+# Percent Connected   12.67
+# Manhattan Length 26199.0870 Horizontal 13874.8118 Vertical 12324.2752
+# Routed Length 6165.0882 Horizontal 3158.2611 Vertical 3007.4257
+# Ratio Actual / Manhattan   0.2353
+# Unconnected Length 21361.7246 Horizontal 11160.6474 Vertical 10201.0771
+write routes (changed_only) (reset_changed) C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaae05620.tmp
+# Routing Written to File C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaae05620.tmp
+# Loading Do File C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaag05620.tmp ...
+# All Components Unselected.
+# All Nets Unselected.
+# Net SDRAM_DQMH Selected.
+# Net N6014188 Selected.
+# Net V_MOS_DRIVER_H Selected.
+# Net Q4_LOW_SIDE Selected.
+# Net NCS Selected.
+# Net N36696 Selected.
+# Net J_TDI Selected.
+# Net XT_1 Selected.
+# Net Q1_VS Selected.
+# Net CRTSTAL_GND Selected.
+# Net GND Selected.
+# Net ARM_+3.3V Selected.
+# Net N563407 Selected.
+# Net Q3_HIGH_SIDE Selected.
+# Net CORE_+1.2V Selected.
+# Net N563303 Selected.
+# Net Q4_VS Selected.
+# Net N562678 Selected.
+# Net Q3_VS Selected.
+# Net USB_5V Selected.
+# Net ARM_GND Selected.
+# Net ARM_LED1 Selected.
+# Net Q4_PWM Selected.
+# Net AMP_0V Selected.
+# Net PV_BAT_GND Selected.
+# Net N00533 Selected.
+# Net N611780 Selected.
+# Net DS_EN3 Selected.
+# Net LOAD_V_I+ Selected.
+# Net 'BAT_I-' Selected.
+# Net 'LOAD_I-' Selected.
+# Net PV_V_I+ Selected.
+# Net N562717 Selected.
+# Net PLL2_GND Selected.
+# Net N00447 Selected.
+# Net PLL1_D_+1.2V Selected.
+# Net N6014183 Selected.
+# Net N6014182 Selected.
+# Net MSEL1 Selected.
+# Net DCLK Selected.
+# Net ARM_SPI_NSS Selected.
+# Net NSTATUS Selected.
+# Net BAT_V_I+ Selected.
+# Net PLL1_GND Selected.
+# Net N473304 Selected.
+# Net FPGA_RXD Selected.
+# Net N738645 Selected.
+# Net FLASH_CONFIG_DONE Selected.
+# Net SOURCE_+3.3V Selected.
+# Net NCONFIG Selected.
+# Net SDRAM_DQ15 Selected.
+# Net PV_2.5VREF Selected.
+# Net N167652 Selected.
+# Net CORE_+3.3V Selected.
+# Net SDRAM_DQ0 Selected.
+# Net FLASH_NSTATUS Selected.
+# Net FLASH_NCONFIG Selected.
+# Net FLASH_NCS Selected.
+# Net DATA0 Selected.
+# Net N6024041 Selected.
+# Net CONFIG_DONE Selected.
+# Net PLL1_A_+2.5V Selected.
+# Net FPGA_GND Selected.
+# Net SDRAM_A3 Selected.
+# Net AMP_PV_VEE Selected.
+# Net SDRAM_A1 Selected.
+# Net CORE_+2.5V Selected.
+# Net SDRAM_CS_N Selected.
+# Net MSEL2 Selected.
+# Net ASDO Selected.
+# Net SDRAM_CKE Selected.
+# All Selected Wires Unprotected.
+# All unprotected selected wires were deleted.
+# Current time = Wed Oct 26 22:24:41 2016
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 320 Connections 1018 Unroutes 1008
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 1, at vias 0 Total Vias 0
+# Percent Connected    0.98
+# Manhattan Length 23993.9217 Horizontal 12687.8384 Vertical 11306.0833
+# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Ratio Actual / Manhattan   0.0000
+# Unconnected Length 23996.7827 Horizontal 12531.8823 Vertical 11464.9004
+# All Components Unselected.
+# All Nets Unselected.
+# Current time = Wed Oct 26 22:24:41 2016
+# Nets Processed 321, Net Terminals 1431
+# Signal Connections Created 1007
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0001 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Layer BOTTOM Vert Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 321 Connections 1018 Unroutes 1007
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected    1.08
+# Manhattan Length 23993.9217 Horizontal 12687.8384 Vertical 11306.0833
+# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Ratio Actual / Manhattan   0.0000
+# Unconnected Length 23993.9217 Horizontal 12530.7826 Vertical 11463.1391
+# Loading Do File C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaah05620.tmp ...
+# All Components Unselected.
+# All Nets Unselected.
+set route_diagonal 0
+grid wire 0.000100 (direction x) (offset 0.000000)
+grid wire 0.000100 (direction y) (offset 0.000000)
+grid via 0.000100 (direction x) (offset 0.000000)
+grid via 0.000100 (direction y) (offset 0.000000)
+protect all wires
+# All Wires Protected.
+direction TOP horizontal
+select layer TOP
+unprotect layer_wires TOP
+# Wires on layer TOP were Unprotected.
+direction BOTTOM vertical
+select layer BOTTOM
+unprotect layer_wires BOTTOM
+# Wires on layer BOTTOM were Unprotected.
+cost via -1
+# System default cost will be used.
+set turbo_stagger off
+limit outside -1
+rule pcb (patterns_allowed  trombone accordion)
+set pattern_stacking on
+rule pcb (sawtooth_amplitude -1 -1)
+rule pcb (sawtooth_gap -1)
+rule pcb (accordion_amplitude -1 -1)
+rule pcb (accordion_gap -1)
+rule pcb (trombone_run_length -1)
+rule pcb (trombone_gap -1)
+unprotect selected
+# All Selected Wires Unprotected.
+route 25 1
+# Current time = Wed Oct 26 22:24:56 2016
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0001 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Layer BOTTOM Vert Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 321 Connections 1018 Unroutes 1007
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected    1.08
+# Manhattan Length 23993.9217 Horizontal 12687.8384 Vertical 11306.0833
+# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Ratio Actual / Manhattan   0.0000
+# Unconnected Length 23993.9217 Horizontal 12530.7826 Vertical 11463.1391
+# Start Route Pass 1 of 25
+# Routing 461 wires.
+# Total Conflicts: 1224 (Cross: 134, Clear: 1090, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 800
+# Attempts 461 Successes 207 Failures 254 Vias 73
+# Cpu Time = 0:00:02  Elapsed Time = 0:00:01
+# End Pass 1 of 25
+# Start Route Pass 2 of 25
+# Routing 587 wires.
+# 26 bend points have been removed.
+# 0 bend points have been removed.
+# 3 bend points have been removed.
+# Total Conflicts: 6172 (Cross: 480, Clear: 5692, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 670
+# Attempts 540 Successes 286 Failures 254 Vias 137
+# Cpu Time = 0:00:04  Elapsed Time = 0:00:02
+# Conflict Reduction -4.0425
+# End Pass 2 of 25
+# Start Route Pass 3 of 25
+# Routing 694 wires.
+# Total Conflicts: 6376 (Cross: 483, Clear: 5893, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 653
+# Attempts 592 Successes 178 Failures 414 Vias 147
+# Cpu Time = 0:00:03  Elapsed Time = 0:00:01
+# Conflict Reduction -0.0331
+# End Pass 3 of 25
+# Start Route Pass 4 of 25
+# Routing 739 wires.
+# 23 bend points have been removed.
+# 0 bend points have been removed.
+# 6 bend points have been removed.
+# Total Conflicts: 6780 (Cross: 500, Clear: 6280, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 643
+# Attempts 607 Successes 196 Failures 411 Vias 157
+# Cpu Time = 0:00:04  Elapsed Time = 0:00:02
+# Conflict Reduction -0.0634
+# End Pass 4 of 25
+# Start Route Pass 5 of 25
+# Routing 724 wires.
+# 15 bend points have been removed.
+# 0 bend points have been removed.
+# 2 bend points have been removed.
+# Total Conflicts: 6818 (Cross: 513, Clear: 6305, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 641
+# Attempts 624 Successes 184 Failures 440 Vias 155
+# Cpu Time = 0:00:04  Elapsed Time = 0:00:02
+# Conflict Reduction -0.0056
+# End Pass 5 of 25
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Start Route Pass 6 of 25
+# Routing 708 wires.
+# 27 bend points have been removed.
+# 0 bend points have been removed.
+# 10 bend points have been removed.
+# Total Conflicts: 840 (Cross: 93, Clear: 747, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 803
+# Attempts 589 Successes 312 Failures 277 Vias 133
+# Cpu Time = 0:00:10  Elapsed Time = 0:00:05
+# End Pass 6 of 25
+# Start Route Pass 7 of 25
+# Routing 666 wires.
+# 41 bend points have been removed.
+# 0 bend points have been removed.
+# 7 bend points have been removed.
+# Total Conflicts: 1887 (Cross: 146, Clear: 1741, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 729
+# Attempts 572 Successes 283 Failures 289 Vias 128
+# Cpu Time = 0:00:05  Elapsed Time = 0:00:03
+# End Pass 7 of 25
+# Start Route Pass 8 of 25
+# Routing 693 wires.
+# 38 bend points have been removed.
+# 0 bend points have been removed.
+# 13 bend points have been removed.
+# Total Conflicts: 1323 (Cross: 143, Clear: 1180, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 759
+# Attempts 587 Successes 345 Failures 242 Vias 138
+# Cpu Time = 0:00:09  Elapsed Time = 0:00:04
+# End Pass 8 of 25
+# Start Route Pass 9 of 25
+# Routing 698 wires.
+# 40 bend points have been removed.
+# 0 bend points have been removed.
+# 12 bend points have been removed.
+# Total Conflicts: 1007 (Cross: 102, Clear: 905, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 750
+# Attempts 577 Successes 336 Failures 241 Vias 150
+# Cpu Time = 0:00:05  Elapsed Time = 0:00:03
+# End Pass 9 of 25
+# Start Route Pass 10 of 25
+# Routing 705 wires.
+# 39 bend points have been removed.
+# 0 bend points have been removed.
+# 9 bend points have been removed.
+# Total Conflicts: 1230 (Cross: 123, Clear: 1107, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 757
+# Attempts 584 Successes 336 Failures 248 Vias 145
+# Cpu Time = 0:00:08  Elapsed Time = 0:00:04
+# End Pass 10 of 25
+# Start Route Pass 11 of 25
+# Routing 709 wires.
+# 45 bend points have been removed.
+# 0 bend points have been removed.
+# 6 bend points have been removed.
+# Total Conflicts: 714 (Cross: 49, Clear: 665, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 760
+# Attempts 519 Successes 337 Failures 182 Vias 124
+# Cpu Time = 0:00:07  Elapsed Time = 0:00:03
+# End Pass 11 of 25
+# Start Route Pass 12 of 25
+# Routing 682 wires.
+# 33 bend points have been removed.
+# 0 bend points have been removed.
+# 11 bend points have been removed.
+# Total Conflicts: 1231 (Cross: 77, Clear: 1154, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 725
+# Attempts 507 Successes 328 Failures 179 Vias 130
+# Cpu Time = 0:00:05  Elapsed Time = 0:00:03
+# End Pass 12 of 25
+# Start Route Pass 13 of 25
+# Routing 671 wires.
+# 35 bend points have been removed.
+# 0 bend points have been removed.
+# 9 bend points have been removed.
+# Total Conflicts: 533 (Cross: 23, Clear: 510, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 768
+# Attempts 485 Successes 323 Failures 162 Vias 118
+# Cpu Time = 0:00:06  Elapsed Time = 0:00:03
+# End Pass 13 of 25
+# Start Route Pass 14 of 25
+# Routing 669 wires.
+# 29 bend points have been removed.
+# 0 bend points have been removed.
+# 5 bend points have been removed.
+# Total Conflicts: 944 (Cross: 47, Clear: 897, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 739
+# Attempts 507 Successes 344 Failures 163 Vias 119
+# Cpu Time = 0:00:05  Elapsed Time = 0:00:03
+# End Pass 14 of 25
+# Start Route Pass 15 of 25
+# Routing 659 wires.
+# 23 bend points have been removed.
+# 0 bend points have been removed.
+# 3 bend points have been removed.
+# Total Conflicts: 714 (Cross: 47, Clear: 667, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 752
+# Attempts 488 Successes 325 Failures 163 Vias 119
+# Cpu Time = 0:00:07  Elapsed Time = 0:00:03
+# End Pass 15 of 25
+# Start Route Pass 16 of 25
+# Routing 674 wires.
+# 23 bend points have been removed.
+# 0 bend points have been removed.
+# 5 bend points have been removed.
+# Total Conflicts: 585 (Cross: 36, Clear: 549, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 752
+# Attempts 497 Successes 346 Failures 151 Vias 121
+# Cpu Time = 0:00:06  Elapsed Time = 0:00:03
+# End Pass 16 of 25
+# Start Route Pass 17 of 25
+# Routing 637 wires.
+# 33 bend points have been removed.
+# 0 bend points have been removed.
+# 11 bend points have been removed.
+# Total Conflicts: 622 (Cross: 36, Clear: 586, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 748
+# Attempts 466 Successes 324 Failures 142 Vias 123
+# Cpu Time = 0:00:04  Elapsed Time = 0:00:02
+# End Pass 17 of 25
+# Start Route Pass 18 of 25
+# Routing 647 wires.
+# 32 bend points have been removed.
+# 0 bend points have been removed.
+# 8 bend points have been removed.
+# Total Conflicts: 702 (Cross: 46, Clear: 656, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 750
+# Attempts 470 Successes 313 Failures 157 Vias 122
+# Cpu Time = 0:00:06  Elapsed Time = 0:00:04
+# End Pass 18 of 25
+# Start Route Pass 19 of 25
+# Routing 632 wires.
+# 29 bend points have been removed.
+# 0 bend points have been removed.
+# 11 bend points have been removed.
+# Total Conflicts: 608 (Cross: 27, Clear: 581, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 755
+# Attempts 462 Successes 320 Failures 142 Vias 122
+# Cpu Time = 0:00:05  Elapsed Time = 0:00:02
+# End Pass 19 of 25
+# Start Route Pass 20 of 25
+# Routing 657 wires.
+# 24 bend points have been removed.
+# 0 bend points have been removed.
+# 3 bend points have been removed.
+# Total Conflicts: 1800 (Cross: 135, Clear: 1665, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 722
+# Attempts 576 Successes 332 Failures 244 Vias 149
+# Cpu Time = 0:00:09  Elapsed Time = 0:00:04
+# End Pass 20 of 25
+# Start Route Pass 21 of 25
+# Routing 713 wires.
+# 40 bend points have been removed.
+# 0 bend points have been removed.
+# 4 bend points have been removed.
+# Total Conflicts: 978 (Cross: 106, Clear: 872, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 750
+# Attempts 583 Successes 353 Failures 230 Vias 145
+# Cpu Time = 0:00:07  Elapsed Time = 0:00:04
+# End Pass 21 of 25
+# Start Route Pass 22 of 25
+# Routing 690 wires.
+# 30 bend points have been removed.
+# 0 bend points have been removed.
+# 15 bend points have been removed.
+# Total Conflicts: 1278 (Cross: 106, Clear: 1172, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 734
+# Attempts 582 Successes 355 Failures 227 Vias 148
+# Cpu Time = 0:00:06  Elapsed Time = 0:00:03
+# End Pass 22 of 25
+# Start Route Pass 23 of 25
+# Routing 683 wires.
+# 38 bend points have been removed.
+# 0 bend points have been removed.
+# 9 bend points have been removed.
+# Total Conflicts: 1058 (Cross: 86, Clear: 972, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 739
+# Attempts 582 Successes 351 Failures 231 Vias 137
+# Cpu Time = 0:00:07  Elapsed Time = 0:00:04
+# End Pass 23 of 25
+# Start Route Pass 24 of 25
+# Routing 697 wires.
+# 32 bend points have been removed.
+# 0 bend points have been removed.
+# 9 bend points have been removed.
+# Total Conflicts: 1481 (Cross: 117, Clear: 1364, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 729
+# Attempts 591 Successes 366 Failures 225 Vias 141
+# Cpu Time = 0:00:07  Elapsed Time = 0:00:04
+# End Pass 24 of 25
+# Start Route Pass 25 of 25
+# Routing 681 wires.
+# 27 bend points have been removed.
+# 0 bend points have been removed.
+# 5 bend points have been removed.
+# Total Conflicts: 967 (Cross: 92, Clear: 875, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 743
+# Attempts 583 Successes 346 Failures 237 Vias 142
+# Cpu Time = 0:00:07  Elapsed Time = 0:00:03
+# End Pass 25 of 25
+# Cpu Time = 0:02:31  Elapsed Time = 0:01:16
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0001 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Layer BOTTOM Vert Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|   175|  1570| 227|  773|   94|    0|   0|  0|  0:00:03|  0:00:03|
+# Route    |  2|   605|  6739| 223|  621|  133|    0|   0|  0|  0:00:04|  0:00:07|
+# Route    |  3|   580|  6787| 406|  620|  149|    0|   0|  0|  0:00:03|  0:00:10|
+# Route    |  4|   585|  6894| 416|  617|  157|    0|   0|  0|  0:00:04|  0:00:14|
+# Route    |  5|   574|  6843| 415|  617|  159|    0|   0|  0|  0:00:05|  0:00:19|
+# Route    |  6|   101|   814| 278|  810|  137|    0|   0| 87|  0:00:11|  0:00:30|
+# Route    |  7|   134|  1649| 278|  738|  146|    0|   0|  0|  0:00:06|  0:00:36|
+# Route    |  8|   113|  1023| 256|  759|  129|    0|   0| 36|  0:00:08|  0:00:44|
+# Route    |  9|   109|  1163| 226|  743|  134|    0|   0|  0|  0:00:05|  0:00:49|
+# Route    | 10|   135|  1270| 245|  748|  127|    0|   0|  0|  0:00:08|  0:00:57|
+# Route    | 11|    53|   515| 195|  773|  107|    0|   0| 59|  0:00:08|  0:01:05|
+# Route    | 12|   106|  1338| 171|  728|  116|    0|   0|  0|  0:00:04|  0:01:09|
+# Route    | 13|    44|   650| 151|  763|  108|    0|   0| 51|  0:00:07|  0:01:16|
+# Route    | 14|    45|   871| 149|  750|   99|    0|   0|  0|  0:00:05|  0:01:21|
+# Route    | 15|    37|   569| 148|  761|   96|    0|   0| 33|  0:00:06|  0:01:27|
+# Route    | 16|    42|   705| 156|  759|  102|    0|   0|  0|  0:00:06|  0:01:33|
+# Route    | 17|    22|   562| 147|  768|   95|    0|   0| 21|  0:00:05|  0:01:38|
+# Route    | 18|    34|   612| 157|  760|   99|    0|   0|  0|  0:00:06|  0:01:44|
+# Route    | 19|    48|   597| 139|  753|   98|    0|   0|  0|  0:00:05|  0:01:49|
+# Route    | 20|   152|  1457| 242|  724|  134|    0|   0|  0|  0:00:07|  0:01:56|
+# Route    | 21|   111|  1059| 232|  742|  124|    0|   0| 27|  0:00:08|  0:02:04|
+# Route    | 22|   125|  1337| 230|  735|  145|    0|   0|  0|  0:00:06|  0:02:10|
+# Route    | 23|    85|  1206| 219|  734|  116|    0|   0| 11|  0:00:07|  0:02:17|
+# Route    | 24|    82|  1083| 223|  744|  144|    0|   0|  9|  0:00:07|  0:02:24|
+# Route    | 25|    90|   787| 239|  755|  131|    0|   0| 24|  0:00:07|  0:02:31|
+# Clean    | 26|    85|   784| 475|  755|  131|    0|   0|   |  0:00:02|  0:02:33|
+# Clean    | 27|    86|   757| 477|  755|  129|    0|   0|   |  0:00:01|  0:02:34|
+# Delete   | 27|     0|     0|   0| 1008|    0|    0|   0|   |  0:00:00|  0:02:34|
+# Read Rte | 27|     0|     0|   0| 1007|    0|    0|   0|   |  0:00:00|  0:02:34|
+# Route    | 28|   134|  1090| 254|  800|   73|    0|   0|  0|  0:00:02|  0:02:36|
+# Route    | 29|   480|  5692| 254|  670|  137|    0|   0|  0|  0:00:04|  0:02:40|
+# Route    | 30|   483|  5893| 414|  653|  147|    0|   0|  0|  0:00:03|  0:02:43|
+# Route    | 31|   500|  6280| 411|  643|  157|    0|   0|  0|  0:00:04|  0:02:47|
+# Route    | 32|   513|  6305| 440|  641|  155|    0|   0|  0|  0:00:04|  0:02:51|
+# Route    | 33|    93|   747| 277|  803|  133|    0|   0| 87|  0:00:10|  0:03:01|
+# Route    | 34|   146|  1741| 289|  729|  128|    0|   0|  0|  0:00:05|  0:03:06|
+# Route    | 35|   143|  1180| 242|  759|  138|    0|   0| 29|  0:00:09|  0:03:15|
+# Route    | 36|   102|   905| 241|  750|  150|    0|   0| 23|  0:00:05|  0:03:20|
+# Route    | 37|   123|  1107| 248|  757|  145|    0|   0|  0|  0:00:08|  0:03:28|
+# Route    | 38|    49|   665| 182|  760|  124|    0|   0| 41|  0:00:07|  0:03:35|
+# Route    | 39|    77|  1154| 179|  725|  130|    0|   0|  0|  0:00:05|  0:03:40|
+# Route    | 40|    23|   510| 162|  768|  118|    0|   0| 56|  0:00:06|  0:03:46|
+# Route    | 41|    47|   897| 163|  739|  119|    0|   0|  0|  0:00:05|  0:03:51|
+# Route    | 42|    47|   667| 163|  752|  119|    0|   0| 24|  0:00:07|  0:03:58|
+# Route    | 43|    36|   549| 151|  752|  121|    0|   0| 18|  0:00:06|  0:04:04|
+# Route    | 44|    36|   586| 142|  748|  123|    0|   0|  0|  0:00:04|  0:04:08|
+# Route    | 45|    46|   656| 157|  750|  122|    0|   0|  0|  0:00:06|  0:04:14|
+# Route    | 46|    27|   581| 142|  755|  122|    0|   0| 13|  0:00:05|  0:04:19|
+# Route    | 47|   135|  1665| 244|  722|  149|    0|   0|  0|  0:00:09|  0:04:28|
+# Route    | 48|   106|   872| 230|  750|  145|    0|   0| 45|  0:00:07|  0:04:35|
+# Route    | 49|   106|  1172| 227|  734|  148|    0|   0|  0|  0:00:06|  0:04:41|
+# Route    | 50|    86|   972| 231|  739|  137|    0|   0| 17|  0:00:07|  0:04:48|
+# Route    | 51|   117|  1364| 225|  729|  141|    0|   0|  0|  0:00:07|  0:04:55|
+# Route    | 52|    92|   875| 237|  743|  142|    0|   0| 34|  0:00:07|  0:05:02|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:05:02
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 321 Connections 1018 Unroutes 743
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 181, at vias 54 Total Vias 140
+# Percent Connected    8.74
+# Manhattan Length 26251.4732 Horizontal 13828.6738 Vertical 12422.7995
+# Routed Length 6551.4927 Horizontal 3265.3203 Vertical 3286.1724
+# Ratio Actual / Manhattan   0.2496
+# Unconnected Length 21732.4294 Horizontal 11373.6873 Vertical 10358.7421
+clean 2
+# Current time = Wed Oct 26 22:26:13 2016
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0001 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Layer BOTTOM Vert Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 321 Connections 1018 Unroutes 743
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 181, at vias 54 Total Vias 140
+# Percent Connected    8.74
+# Manhattan Length 26251.4732 Horizontal 13828.6738 Vertical 12422.7995
+# Routed Length 6551.4927 Horizontal 3265.3203 Vertical 3286.1724
+# Ratio Actual / Manhattan   0.2496
+# Unconnected Length 21732.4294 Horizontal 11373.6873 Vertical 10358.7421
+# Start Clean Pass 1 of 2
+# Routing 737 wires.
+# Total Conflicts: 948 (Cross: 90, Clear: 858, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 741
+# Attempts 625 Successes 149 Failures 476 Vias 141
+# Cpu Time = 0:00:01  Elapsed Time = 0:00:00
+# End Pass 1 of 2
+# Start Clean Pass 2 of 2
+# Routing 791 wires.
+# 6 bend points have been removed.
+# 0 bend points have been removed.
+# 7 bend points have been removed.
+# Total Conflicts: 929 (Cross: 89, Clear: 840, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 741
+# Attempts 626 Successes 145 Failures 481 Vias 141
+# Cpu Time = 0:00:01  Elapsed Time = 0:00:01
+# End Pass 2 of 2
+# Cpu Time = 0:00:03  Elapsed Time = 0:00:01
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0001 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Layer BOTTOM Vert Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|   175|  1570| 227|  773|   94|    0|   0|  0|  0:00:03|  0:00:03|
+# Route    |  2|   605|  6739| 223|  621|  133|    0|   0|  0|  0:00:04|  0:00:07|
+# Route    |  3|   580|  6787| 406|  620|  149|    0|   0|  0|  0:00:03|  0:00:10|
+# Route    |  4|   585|  6894| 416|  617|  157|    0|   0|  0|  0:00:04|  0:00:14|
+# Route    |  5|   574|  6843| 415|  617|  159|    0|   0|  0|  0:00:05|  0:00:19|
+# Route    |  6|   101|   814| 278|  810|  137|    0|   0| 87|  0:00:11|  0:00:30|
+# Route    |  7|   134|  1649| 278|  738|  146|    0|   0|  0|  0:00:06|  0:00:36|
+# Route    |  8|   113|  1023| 256|  759|  129|    0|   0| 36|  0:00:08|  0:00:44|
+# Route    |  9|   109|  1163| 226|  743|  134|    0|   0|  0|  0:00:05|  0:00:49|
+# Route    | 10|   135|  1270| 245|  748|  127|    0|   0|  0|  0:00:08|  0:00:57|
+# Route    | 11|    53|   515| 195|  773|  107|    0|   0| 59|  0:00:08|  0:01:05|
+# Route    | 12|   106|  1338| 171|  728|  116|    0|   0|  0|  0:00:04|  0:01:09|
+# Route    | 13|    44|   650| 151|  763|  108|    0|   0| 51|  0:00:07|  0:01:16|
+# Route    | 14|    45|   871| 149|  750|   99|    0|   0|  0|  0:00:05|  0:01:21|
+# Route    | 15|    37|   569| 148|  761|   96|    0|   0| 33|  0:00:06|  0:01:27|
+# Route    | 16|    42|   705| 156|  759|  102|    0|   0|  0|  0:00:06|  0:01:33|
+# Route    | 17|    22|   562| 147|  768|   95|    0|   0| 21|  0:00:05|  0:01:38|
+# Route    | 18|    34|   612| 157|  760|   99|    0|   0|  0|  0:00:06|  0:01:44|
+# Route    | 19|    48|   597| 139|  753|   98|    0|   0|  0|  0:00:05|  0:01:49|
+# Route    | 20|   152|  1457| 242|  724|  134|    0|   0|  0|  0:00:07|  0:01:56|
+# Route    | 21|   111|  1059| 232|  742|  124|    0|   0| 27|  0:00:08|  0:02:04|
+# Route    | 22|   125|  1337| 230|  735|  145|    0|   0|  0|  0:00:06|  0:02:10|
+# Route    | 23|    85|  1206| 219|  734|  116|    0|   0| 11|  0:00:07|  0:02:17|
+# Route    | 24|    82|  1083| 223|  744|  144|    0|   0|  9|  0:00:07|  0:02:24|
+# Route    | 25|    90|   787| 239|  755|  131|    0|   0| 24|  0:00:07|  0:02:31|
+# Clean    | 26|    85|   784| 475|  755|  131|    0|   0|   |  0:00:02|  0:02:33|
+# Clean    | 27|    86|   757| 477|  755|  129|    0|   0|   |  0:00:01|  0:02:34|
+# Delete   | 27|     0|     0|   0| 1008|    0|    0|   0|   |  0:00:00|  0:02:34|
+# Read Rte | 27|     0|     0|   0| 1007|    0|    0|   0|   |  0:00:00|  0:02:34|
+# Route    | 28|   134|  1090| 254|  800|   73|    0|   0|  0|  0:00:02|  0:02:36|
+# Route    | 29|   480|  5692| 254|  670|  137|    0|   0|  0|  0:00:04|  0:02:40|
+# Route    | 30|   483|  5893| 414|  653|  147|    0|   0|  0|  0:00:03|  0:02:43|
+# Route    | 31|   500|  6280| 411|  643|  157|    0|   0|  0|  0:00:04|  0:02:47|
+# Route    | 32|   513|  6305| 440|  641|  155|    0|   0|  0|  0:00:04|  0:02:51|
+# Route    | 33|    93|   747| 277|  803|  133|    0|   0| 87|  0:00:10|  0:03:01|
+# Route    | 34|   146|  1741| 289|  729|  128|    0|   0|  0|  0:00:05|  0:03:06|
+# Route    | 35|   143|  1180| 242|  759|  138|    0|   0| 29|  0:00:09|  0:03:15|
+# Route    | 36|   102|   905| 241|  750|  150|    0|   0| 23|  0:00:05|  0:03:20|
+# Route    | 37|   123|  1107| 248|  757|  145|    0|   0|  0|  0:00:08|  0:03:28|
+# Route    | 38|    49|   665| 182|  760|  124|    0|   0| 41|  0:00:07|  0:03:35|
+# Route    | 39|    77|  1154| 179|  725|  130|    0|   0|  0|  0:00:05|  0:03:40|
+# Route    | 40|    23|   510| 162|  768|  118|    0|   0| 56|  0:00:06|  0:03:46|
+# Route    | 41|    47|   897| 163|  739|  119|    0|   0|  0|  0:00:05|  0:03:51|
+# Route    | 42|    47|   667| 163|  752|  119|    0|   0| 24|  0:00:07|  0:03:58|
+# Route    | 43|    36|   549| 151|  752|  121|    0|   0| 18|  0:00:06|  0:04:04|
+# Route    | 44|    36|   586| 142|  748|  123|    0|   0|  0|  0:00:04|  0:04:08|
+# Route    | 45|    46|   656| 157|  750|  122|    0|   0|  0|  0:00:06|  0:04:14|
+# Route    | 46|    27|   581| 142|  755|  122|    0|   0| 13|  0:00:05|  0:04:19|
+# Route    | 47|   135|  1665| 244|  722|  149|    0|   0|  0|  0:00:09|  0:04:28|
+# Route    | 48|   106|   872| 230|  750|  145|    0|   0| 45|  0:00:07|  0:04:35|
+# Route    | 49|   106|  1172| 227|  734|  148|    0|   0|  0|  0:00:06|  0:04:41|
+# Route    | 50|    86|   972| 231|  739|  137|    0|   0| 17|  0:00:07|  0:04:48|
+# Route    | 51|   117|  1364| 225|  729|  141|    0|   0|  0|  0:00:07|  0:04:55|
+# Route    | 52|    92|   875| 237|  743|  142|    0|   0| 34|  0:00:07|  0:05:02|
+# Clean    | 53|    90|   858| 476|  741|  141|    0|   0|   |  0:00:01|  0:05:03|
+# Clean    | 54|    89|   840| 481|  741|  141|    0|   0|   |  0:00:01|  0:05:04|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:05:04
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 321 Connections 1018 Unroutes 741
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 183, at vias 55 Total Vias 141
+# Percent Connected   11.89
+# Manhattan Length 26349.6544 Horizontal 13854.4140 Vertical 12495.2404
+# Routed Length 6352.6548 Horizontal 3164.0636 Vertical 3188.5912
+# Ratio Actual / Manhattan   0.2411
+# Unconnected Length 21803.7372 Horizontal 11378.8787 Vertical 10424.8585
+write routes (changed_only) (reset_changed) C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaai05620.tmp
+# Routing Written to File C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaai05620.tmp
+# Loading Do File C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaak05620.tmp ...
+# All Components Unselected.
+# All Nets Unselected.
+# Net PLL1_GND Selected.
+# Net Q3_VS Selected.
+# Net Q4_LOW_SIDE Selected.
+# Net XT_1 Selected.
+# Net XT_2 Selected.
+# Net N36696 Selected.
+# Net Q1_VS Selected.
+# Net NCS Selected.
+# Net CRTSTAL_GND Selected.
+# Net ARM_DATA0 Selected.
+# Net GND Selected.
+# Net ARM_+3.3V Selected.
+# Net N562678 Selected.
+# Net N563407 Selected.
+# Net Q3_HIGH_SIDE Selected.
+# Net CORE_+1.2V Selected.
+# Net N563303 Selected.
+# Net ARM_NCONFIG Selected.
+# Net USB_5V Selected.
+# Net Q4_VS Selected.
+# Net ARM_GND Selected.
+# Net N561393 Selected.
+# Net Q3_PWM Selected.
+# Net AMP_0V Selected.
+# Net PV_BAT_GND Selected.
+# Net PLL2_GND Selected.
+# Net PV_V_I+ Selected.
+# Net LOAD_V_I+ Selected.
+# Net DS_EN2 Selected.
+# Net DS_A Selected.
+# Net 'LOAD_I-' Selected.
+# Net N00533 Selected.
+# Net 'BAT_I-' Selected.
+# Net PLL1_D_+1.2V Selected.
+# Net N60141810 Selected.
+# Net N60141811 Selected.
+# Net N00447 Selected.
+# Net N6014183 Selected.
+# Net N6014182 Selected.
+# Net MSEL1 Selected.
+# Net DCLK Selected.
+# Net ARM_SPI_MISO Selected.
+# Net N6014180 Selected.
+# Net ARM_SPI_SCK Selected.
+# Net N562717 Selected.
+# Net NSTATUS Selected.
+# Net BAT_V_I+ Selected.
+# Net N473304 Selected.
+# Net SOURCE_+3.3V Selected.
+# Net SDRAM_DQ5 Selected.
+# Net PV_2.5VREF Selected.
+# Net N738645 Selected.
+# Net FLAS_ASDI Selected.
+# Net FLASH_CONFIG_DONE Selected.
+# Net AMP_PV_VCC Selected.
+# Net N167652 Selected.
+# Net CORE_+3.3V Selected.
+# Net NCONFIG Selected.
+# Net FPGA_TXD Selected.
+# Net FLASH_NCONFIG Selected.
+# Net FLASH_NSTATUS Selected.
+# Net SDRAM_BA1 Selected.
+# Net N6024041 Selected.
+# Net CONFIG_DONE Selected.
+# Net SDRAM_WE_N Selected.
+# Net CORE_+2.5V Selected.
+# Net FPGA_GND Selected.
+# Net AMP_PV_VEE Selected.
+# Net SDRAM_CAS_N Selected.
+# Net ASDO Selected.
+# Net SDRAM_CKE Selected.
+# Net MSEL2 Selected.
+# All Selected Wires Unprotected.
+# All unprotected selected wires were deleted.
+# Current time = Wed Oct 26 22:27:13 2016
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 321 Connections 1018 Unroutes 1008
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 2, at vias 0 Total Vias 0
+# Percent Connected    0.98
+# Manhattan Length 23993.9217 Horizontal 12687.8384 Vertical 11306.0833
+# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Ratio Actual / Manhattan   0.0000
+# Unconnected Length 23985.2769 Horizontal 12529.7727 Vertical 11455.5043
+# All Components Unselected.
+# All Nets Unselected.
+# Current time = Wed Oct 26 22:27:13 2016
+# Nets Processed 321, Net Terminals 1431
+# Signal Connections Created 1006
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0001 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Layer BOTTOM Vert Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.2500, Clearance= 2.5400
+# Cpu Time = 0:00:01  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBSolarController/pcb/cadence/board\BBSOLARCONTROLLER_V3000.dsn
+# Nets 321 Connections 1018 Unroutes 1006
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected    1.18
+# Manhattan Length 23993.9217 Horizontal 12687.8384 Vertical 11306.0833
+# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Ratio Actual / Manhattan   0.0000
+# Unconnected Length 23989.2217 Horizontal 12530.7226 Vertical 11458.4991
+quit

@@ -1,1 +1,1 @@
-smd_40pin_jack.dra
+smd_10pin_jack.dra
